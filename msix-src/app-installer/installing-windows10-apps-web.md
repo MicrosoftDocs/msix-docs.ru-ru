@@ -9,11 +9,11 @@ keywords: windows 10, uwp, установщик приложений, AppInstall
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: 2a2645ae4527342af85d747a2217e576a91c0c2c
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59983536"
 ---
 # <a name="installing-windows-10-apps-from-a-web-page"></a>Установка приложений Windows 10 из веб-страницы
 

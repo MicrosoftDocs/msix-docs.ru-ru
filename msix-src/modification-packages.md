@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 7650ab881a3d1c8e6ef295f8c79297fa5ab23498
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: 142fce0927d916376733a0380fab6a0dc026a55e
+ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900546"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65795413"
 ---
 # <a name="customize-your-enterprise-apps-with-modification-packages"></a>Настройка приложений предприятия с помощью изменения пакетов 
 
@@ -57,5 +57,5 @@ ms.locfileid: "58900546"
 После внесения необходимых изменений, можно создать пакет изменения, как и любой другой пакет MSIX. Затем можно развернуть пакет с текущей настройки развертывания. При перезапуске основном приложении, вы увидите, что изменения, внесенные изменения пакета. Если вы решили удалить изменения пакета, основном приложении вернется в состояние без изменения пакета. 
 
 ## <a name="see-also"></a>См. также
-- [Изменение пакетов на Windows 10 версии 1809](modification-package-1809-update.md)
-- [Изменение пакетов на 18312 сборки Windows 10 Insider Preview и более поздней версии](modification-package-insider-preview-build-18312.md)
+- [Изменение пакетов в Windows 10 версии 1809](modification-package-1809-update.md)
+- [Изменение пакетов в Windows 10 версии 1903](modification-package-1903.md)

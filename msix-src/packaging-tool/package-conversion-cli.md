@@ -8,14 +8,14 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 538855e6d32beaac571253b7d880db9b21897174
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: 7dcd522a1c1b79fe59a5b6e1fd04c7aec19ed419
+ms.sourcegitcommit: 67e56f5414857671c47334c65d636d531632b8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900896"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59566508"
 ---
-# <a name="conversion-with-cli"></a>Преобразование с помощью интерфейса командной строки
+# <a name="conversion-with-command-line-interface-cli"></a>Преобразование с помощью командной строки (CLI)
 
 <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство упаковки MSIX</a></p></div>
       
@@ -39,6 +39,8 @@ ms.locfileid: "58900896"
     MSIXPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml --virtualMachinePassword pswd112893
     
 ```
+> [!NOTE]
+> App-V 5.x conversion is currently supported to be converted throught the command line. This includes capabilities. 
 
 **Conversion template file**
 

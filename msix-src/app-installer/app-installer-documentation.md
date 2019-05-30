@@ -9,10 +9,10 @@ keywords: Windows 10, универсальной платформы Windows, у�
 ms.localizationpriority: medium
 ms.custom: 19H1
 ms.openlocfilehash: 38a18c50ac1be215819b870215f89b9042d060d8
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 67e56f5414857671c47334c65d636d531632b8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58900696"
 ---
 # <a name="related-app-installer-file-documentation"></a>Сопутствующая документация файл установщика приложений
@@ -28,6 +28,6 @@ ms.locfileid: "58900696"
 |  [Package.GetAppInstallerInfo](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package.getappinstallerinfo)  | Возвращает расположение .appinstaller XML-файла. Это позволяет разработчикам приложений получить расположение .appinstaller XML-файла, если это требуется для их приложений. | Windows 10 версии 1809 (сборка 17763) |
 |  [Package.CheckUpdateAvailabilityAsync](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package.checkupdateavailabilityasync)  | Проверяет наличие обновлений для пакета основного приложения, перечисленные в файле .appinstaller. Он позволяет разработчику определить необходимость обновления из-за политики .appinstaller. Этот метод в настоящее время работает только для приложений, установленных с помощью .appinstaller файлов. | Windows 10 версии 1809 (сборка 17763) |
 
-## <a name="app-installer-file-schema"></a>Схема файла установщика приложений
+## <a name="app-installer-file-schema"></a>Схема файла Установщика приложений
 
 Дополнительные сведения о том, как вручную отформатировать файл установщика приложения, см. в разделе [по схеме файла установщика приложения](https://docs.microsoft.com/en-us/uwp/schemas/appinstallerschema/app-installer-file).

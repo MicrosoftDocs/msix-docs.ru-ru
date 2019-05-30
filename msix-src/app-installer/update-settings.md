@@ -9,13 +9,13 @@ keywords: Windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: fd234323185200895a6eaf276988fbe7a5c363b3
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59983496"
 ---
-# <a name="configure-update-settings-in-the-app-installer-file"></a>Настройка параметров обновления в файле установщика приложений
+# <a name="configure-update-settings-in-the-app-installer-file"></a>Настройка параметров обновления в файле Установщика приложений
 
 Как упоминалось в [Обзор файла установщика приложений](app-installer-file-overview.md), можно конфигурировать поведение обновления приложения в файле установщика приложения. В этой статье рассматриваются параметры обновления и их соответствующие компромиссы.
 

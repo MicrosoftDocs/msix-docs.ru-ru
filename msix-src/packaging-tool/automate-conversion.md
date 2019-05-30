@@ -9,10 +9,10 @@ keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: 4408381a0ebbcc7fbdad7c517c1b64bbec2254da
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 67e56f5414857671c47334c65d636d531632b8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58900176"
 ---
 # <a name="automate-conversion-of-windows-installers-to-msix-packages"></a>Автоматизация преобразования MSIX пакетов установщиков Windows

@@ -9,13 +9,13 @@ keywords: Windows 10, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
 ms.openlocfilehash: 54e6f063aa05c1a297725e6c1c7a091ebffbb043
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59983446"
 ---
-# <a name="bundle-msix-packages"></a>Пакеты MSIX наборов 
+# <a name="bundle-msix-packages"></a>Объединение пакетов MSIX 
 
 В этой статье описывается процесс создания пакета после преобразования x86 и x64 64 из собственных установщиков Windows, с помощью средства упаковки MSIX. 
 

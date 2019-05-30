@@ -1,6 +1,6 @@
 ---
-title: Создание пакета приложения с помощью MSI или App-V на виртуальной Машине
-description: Создать пакет MSIX, с помощью существующих MSI-файла на виртуальной Машине
+title: Создание пакета MSIX из установщика (MSI, EXE или App-V) на виртуальной Машине
+description: Создание пакета MSIX из установщика (MSI, EXE или App-V) на виртуальной Машине
 author: mcleanbyron
 ms.author: mcleans
 ms.date: 02/11/2019
@@ -8,18 +8,18 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 83a9666091ca04634c9494f3fa58c0a380692fae
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: cc9b0e1242df931a155da1735b59c54c7b109737
+ms.sourcegitcommit: c3bdc2150bba942dc95811746c7a0f14ce54fbc9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900636"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65984420"
 ---
-# <a name="create-an-application-package-with-msi-or-app-v-on-a-vm"></a>Создание пакета приложения с помощью MSI или App-V на виртуальной Машине
+# <a name="create-an-msix-package-from-a-desktop-installer-msi-exe-or-app-v-on-a-vm"></a>Создание пакета MSIX из установщика (MSI, EXE или App-V) на виртуальной Машине
 
 <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство упаковки MSIX</a></p></div>
 
-Средство упаковки MSIX можно использовать для создания пакета приложения MSIX для существующего установщика MSI или App-V на виртуальной машине Hyper-V (VM). Виртуальная машина должны удовлетворять следующим требованиям:
+Средство упаковки MSIX можно использовать для создания пакета приложения MSIX из существующего установщика MSI, EXE или App-V на виртуальной машине Hyper-V (VM). Виртуальная машина должны удовлетворять следующим требованиям:
 
 - Он должен быть настроен на [прием удаленных команд](https://docs.microsoft.com/windows-server/virtualization/hyper-v/manage/remotely-manage-hyper-v-hosts) (запустите [Enable-PSRemoting](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Enable-PSRemoting?view=powershell-5.1) команду на виртуальной Машине)
 - Он должен работать под управлением Windows 10, версия 1809 или более поздней версии Windows.

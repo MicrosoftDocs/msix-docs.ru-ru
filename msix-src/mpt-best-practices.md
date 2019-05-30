@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 419ea7ab48d9199629570d58efc2bc5ff85ebc05
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: 59f38d2f23470824687a739eb87a808baac29562
+ms.sourcegitcommit: fe59d6b39d81eb4a155887fa8fe9a08b6fe48584
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900436"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65488525"
 ---
-# <a name="best-practices-for-msix-packaging-tool"></a>Советы и рекомендации для средства упаковки MSIX
+# <a name="best-practices-for-msix-packaging-tool"></a>Рекомендации по использованию средства упаковки MSIX
 
 <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство упаковки MSIX</a></p></div>
 
@@ -31,15 +31,15 @@ ms.locfileid: "58900436"
 
 - Его также полезно знать, какие зависимости, у вас, чтобы понять, какие из них следует запускать с вашим приложением, а какие должны быть упакованы как пакет изменения. Например при наличии зависимости среды выполнения, рекомендуется включать в главное приложение. При наличии подключаемому модулю, должны упаковать как пакет связанные изменения. 
 
----
-## Best practices during repackaging 
-'When you are using the MSIX Packaging Tool, there are a few things that we also recommend you do as best practice':
-  - 'When packaging ClickOnce installers, it is necessary to send a shortcut to desktop if the installer is not doing so already. In general, it is good practice to always remember to send a shortcut to desktop for the main app executable.'
-  - 'When creating modification packages, you need to declare the package Name (identity name) of the parent application in the tool UI so that the tool sets the correct package dependency in the manifest of the modification package.'
-  - Declaring an installation location field in the **Package information** page is optional but recommended. Make sure that this path matches the installation location of application installer.
-  - Performing the preparation steps in the **Prepare computer** page is optional but highly recommended.
+
+## <a name="best-practices-during-repackaging"></a>Рекомендации по во время повторной упаковке 
+При использовании средства упаковки MSIX, существует несколько действий, которые мы также рекомендуем вам качестве рекомендаций.
+- При упаковке ClickOnce установщики, необходимые для отправки ярлык на рабочий стол, если установщик не выполняет это уже. Как правило рекомендуется всегда помнить, что отправка исполняемый файл ярлыка, рабочий стол для основного приложения.
+- При создании пакетов изменения, необходимо объявить пакет имя (удостоверение) родительского приложения в средстве пользовательского интерфейса, таким образом, чтобы средство задает правильный пакет зависимости в манифесте пакета изменения.
+- Объявление полем расположение установки в **данные пакетов** страница является необязательным, но рекомендуется. Убедитесь, что этот путь совпадает с расположением установки установщика приложения.
+- Выполнение подготовки шагов в **Подготовка компьютера** страница является необязательным, но настоятельно рекомендуется.
 ms.custom: RS5
----
+
 
 ## <a name="best-practices-while-bundling-msix-packages"></a>Рекомендации при объединении MSIX пакетов
 

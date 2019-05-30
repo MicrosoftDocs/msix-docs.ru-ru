@@ -8,12 +8,12 @@ ms.topic: article
 keywords: инструмент упаковки msix, известные проблемы, устранение неполадок
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 3853af303041fb0375557ec6e1735df9dbd793e7
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: 79b06fc4e3e0ff0600f6e2ab85ec27c9e3a5840c
+ms.sourcegitcommit: 67e56f5414857671c47334c65d636d531632b8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900736"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59468296"
 ---
 # <a name="known-issues-and-troubleshooting"></a>Сведения об известных проблемах и устранении неполадок
 
@@ -60,9 +60,19 @@ ms.locfileid: "58900736"
 
 ## <a name="log-files"></a>Файлы журнала
 
-Независимо от того, имеется ли на преобразование прошло успешно, создаются файлы журнала для каждого преобразования. Их можно найти здесь: %localappdata%\packages\Microsoft.MsixPackagingTool_8wekyb3d8bbwe\LocalState\DiagOutputDir\
+Независимо от того, имеется ли на преобразование прошло успешно, создаются файлы журнала для каждого преобразования. Их можно найти здесь: 
+
+`%localappdata%\packages\Microsoft.MsixPackagingTool_8wekyb3d8bbwe\LocalState\DiagOutputDir\`
 
 Коды ошибок написаны и указывать любые точки сбоя во время преобразования. Коды ошибок приведены для понятное для пользователя.
+
+### <a name="log-files-from-remote-devices-or-vms"></a>Файлы журнала из удаленных устройствах или виртуальных машин
+
+Если преобразование выполняется на удаленном устройстве или виртуальную Машину, мы рекомендуем скопировать файлы журналов с этого устройства и подключите их как часть элемент отзыва. Это поможет нам диагностики и устранения проблем более эффективно. 
+
+Можно найти журналы с удаленных преобразования здесь: `%localappdata%\packages\Microsoft.MsixPackagingTool_8wekyb3d8bbwe\LocalState\DiagOutputDir\<Logs_#>\RemoteServer\Log.txt`
+
+Это происходит еще более полезным в том случае, если можно совместно использовать всю папку журналов, которое будет содержать операции, происходящие при локальном клиенте как хорошо удаленного сервера.
 
 ## <a name="examples-of-failures-during-conversions"></a>Примеры ошибок во время преобразования
 

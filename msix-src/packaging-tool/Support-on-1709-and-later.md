@@ -1,21 +1,21 @@
 ---
 title: MSIX пакета поддержки в Windows 10 версии 1709 и более поздние версии
 description: Установите пакеты MSIX в 1709 и более поздних версий.
-author: nonasi
-ms.author: nonasir
-ms.date: 01/07/2019
+author: c-don
+ms.author: cdon
+ms.date: 04/04/2019
 ms.topic: article
 keywords: MSIX, MPT, инструмент упаковки MSIX, 1709, 16299
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 6202f8ec5d60c27affb30d244c7b4802ef99c4bd
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: bf737f108cc3c248fe5008a27fde15b79abfbaf9
+ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900226"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65795461"
 ---
-# <a name="msix-package-support-on-1709-and-later"></a>Поддержка пакета MSIX 1709 и более поздние версии
+# <a name="msix-package-support-on-windows-10-1709-and-later"></a>MSIX пакета поддержки в Windows 10 версии 1709 и более поздних версий
 
 Если существующее приложение преобразования для MSIX, можно использовать приложение в более ранних версиях Windows, чем 1809 (сборка 17701). В этой записи блога рассматривается включение таких приложений в сборках, как раньше 16299, также известный как Windows 10 версии 1709. 
  

@@ -9,10 +9,10 @@ keywords: windows 10, uwp, установщик приложений, AppInstall
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
 ms.openlocfilehash: a18b5e11ec87e625b757764994762cf0e29cab99
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 67e56f5414857671c47334c65d636d531632b8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58900466"
 ---
 # <a name="optional-packages-and-related-sets"></a>Дополнительные пакеты и связанные наборы
@@ -25,7 +25,7 @@ ms.locfileid: "58900466"
 
 1.  [Добавить в приложение, используя дополнительные пакеты](https://blogs.msdn.microsoft.com/appinstaller/2017/04/05/uwpoptionalpackages/)
 2.  [Создать свой первый пакет необязательно](https://blogs.msdn.microsoft.com/appinstaller/2017/05/09/build-your-first-optional-package/)
-3.  [Загрузка кода из дополнительного пакета](https://blogs.msdn.microsoft.com/appinstaller/2017/05/11/loading-code-from-an-optional-package/)
+3.  [Код загрузки из дополнительный пакет](https://blogs.msdn.microsoft.com/appinstaller/2017/05/11/loading-code-from-an-optional-package/)
 4.  [Для создания связанного набора](https://blogs.msdn.microsoft.com/appinstaller/2017/05/12/tooling-to-create-a-related-set/)
 
 Начиная с Windows 10 Fall Creators Update (Windows 10, версия 1709), связанные наборы теперь можно устанавливать с помощью установщика приложения. Такой подход позволяет распространять и развертывать пакеты приложений связанных наборов для пользователей. Дополнительные сведения о том, как создать файл установщика приложения для определения связанного набора см. в разделе [вручную создать файл установщика приложения](how-to-create-appinstaller-file.md).

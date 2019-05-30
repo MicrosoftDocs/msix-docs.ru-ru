@@ -1,19 +1,19 @@
 ---
-title: Руководство разработчика для целевого пакета SDK MSIX
+title: С помощью пакета SDK MSIX распространять пакет MSIX на платформах Windows 10
 description: Руководство для разработчиков, использующих пакет SDK для пакетов MSIX пакета для использования на нескольких платформах
 author: mcleanbyron
 ms.author: mcleans
 ms.date: 12/13/2018
 ms.topic: article
 ms.custom: RS5
-ms.openlocfilehash: 2c6134aad4f1da8da4e835fa2e195861bd7a461a
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: 64a780bbc7ef4edc6e2d0c829c7304fdf39762f7
+ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900646"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65795229"
 ---
-# <a name="use-the-msix-sdk-to-build-a-package-for-cross-platform-use"></a>Сборки пакета для использования на разных платформах с помощью пакета SDK MSIX
+# <a name="use-the-msix-sdk-to-distribute-an-msix-package-on-non-windows-10-platforms"></a>С помощью пакета SDK MSIX распространять пакет MSIX на платформах Windows 10
 
 Пакет SDK MSIX предлагает разработчикам универсальный способ распространения содержимого пакета для клиентских устройств, независимо от платформы операционной системы на клиентском устройстве. Это позволяет разработчикам упаковать их содержимое приложения один раз вместо того, чтобы пакет для каждой платформы.
 
@@ -30,7 +30,7 @@ ms.locfileid: "58900646"
   </tr>
   <tr>
     <td class="tg-yw4l" rowspan="6">Windows 10</td>
-    <td class="tg-yw4l">Телефон</td>
+    <td class="tg-yw4l">Phone</td>
     <td class="tg-031e" rowspan="24"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Platform.All<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></td>
     <td class="tg-baqh" rowspan="6">Зависимости Windows.Universal</td>
     <td class="tg-yw4l">Windows.Mobile</td>
@@ -63,7 +63,7 @@ ms.locfileid: "58900646"
   </tr>
   <tr>
     <td class="tg-yw4l" rowspan="4">iOS</td>
-    <td class="tg-yw4l">Телефон</td>
+    <td class="tg-yw4l">Phone</td>
     <td class="tg-yw4l" rowspan="4">Apple.Ios.All</td>
     <td class="tg-yw4l">Apple.Ios.Phone</td>
     <td class="tg-yw4l">iPhone, сенсорного ввода</td>
@@ -91,7 +91,7 @@ ms.locfileid: "58900646"
   </tr>
   <tr>
     <td class="tg-yw4l" rowspan="5">Android</td>
-    <td class="tg-yw4l">Телефон</td>
+    <td class="tg-yw4l">Phone</td>
     <td class="tg-yw4l" rowspan="5">Google.Android.All</td>
     <td class="tg-yw4l">Google.Android.Phone</td>
     <td class="tg-yw4l">Мобильных устройств, предназначенных для любой разновидности Android</td>

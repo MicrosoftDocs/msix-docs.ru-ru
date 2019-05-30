@@ -1,6 +1,6 @@
 ---
 author: mcleanbyron
-title: Создать файл установщика приложения вручную
+title: Создание файла Установщика приложений вручную
 description: В этой статье описывается установка связанного набора с помощью установщика приложения. Также здесь рассматриваются шаги по созданию файла *.appinstaller, определяющего связанный набор.
 ms.author: mcleans
 ms.date: 1/4/2018
@@ -9,13 +9,13 @@ keywords: windows 10, uwp, установщик приложений, AppInstall
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
 ms.openlocfilehash: 4256e95aa02e73330213034304abbe1354223641
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59983406"
 ---
-# <a name="create-an-app-installer-file-manually"></a>Создать файл установщика приложения вручную
+# <a name="create-an-app-installer-file-manually"></a>Создание файла Установщика приложений вручную
 
 В этой статье показано, как вручную создать файл установщика приложения, который определяет [связанные набора](install-related-set.md). Связанный набор — это не один объект, а сочетание основного и дополнительных пакетов. 
 

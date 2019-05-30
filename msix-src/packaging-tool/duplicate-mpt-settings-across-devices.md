@@ -8,11 +8,11 @@ ms.topic: article
 keywords: Windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.openlocfilehash: ea3f1d5b49be685315eda55c2fbb96704568337f
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59983436"
 ---
 # <a name="duplicate-msix-packaging-tool-settings-across-multiple-devices"></a>Повторяющиеся параметры средства упаковки MSIX на нескольких устройствах 
 

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 567417fb77ade5e048388a05ccc47651b32437dc
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: 7273f3866eb8ed416b8dc60a621498cbddec54bd
+ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900506"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65795422"
 ---
 # <a name="msix-modification-packages-on-windows-10-version-1809"></a>MSIX изменения пакетов в Windows 10 версии 1809 
 
@@ -46,5 +46,5 @@ ms.locfileid: "58900506"
 
 Этот процесс также поддерживает подключаемые модули системы файлов и настроек, а исполняемый файл основного приложения, не находится в виртуальной файловой системы (VFS). Это гарантирует, что главного пакета будут получены все VFS главного пакета и изменения пакета. 
 
-В следующем основном выпуске Windows планируется поддержка подключаемых модулей системы файлов и настроек во время VFS исполняемый файл основного приложения. Можно просмотреть эта поддержка, начиная с Windows 10 Insider Preview сборки 18312 или более поздней версии. Дополнительные сведения см. в [этой статье](modification-package-insider-preview-build-18312.md). 
+В следующем основном выпуске Windows планируется поддержка подключаемых модулей системы файлов и настроек во время VFS исполняемый файл основного приложения. Можно просмотреть эта поддержка, начиная с Windows 10 Insider Preview сборки 18312 или более поздней версии. Дополнительные сведения см. в [этой статье](modification-package-1903.md). 
 

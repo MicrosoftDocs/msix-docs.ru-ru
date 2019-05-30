@@ -1,6 +1,6 @@
 ---
 author: c-don
-title: Установка приложений Windows 10 из Azure веб-сервере | Документация Майкрософт
+title: Распространять приложения Windows 10 из веб-приложение Azure
 description: 'Этот учебник посвящен следующим процедурам: настройка веб-сервера Azure, проверка того, может ли ваше веб-приложение размещать пакеты приложений, а также вызов и эффективное использование Установщика приложений.'
 ms.author: cdon
 ms.date: 09/30/2018
@@ -8,14 +8,14 @@ ms.topic: article
 keywords: windows 10, uwp, установщик приложений, AppInstaller, загрузка неопубликованных приложений, связанный набор, дополнительные пакеты, веб-сервер Azure
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: b904922ad123a8b59659c217b748683116ee9a2a
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: 7dbe2592d0ed60a88d77476f797f1575fee3f172
+ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900556"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65795454"
 ---
-# <a name="install-a-windows-10-app-from-an-azure-web-app"></a>Установка приложения для Windows 10 из веб-приложение Azure
+# <a name="distribute-a-windows-10-app-from-an-azure-web-app"></a>Распространять приложения Windows 10 из веб-приложение Azure
 
 Приложение "Установщик приложений" позволяет разработчикам и ИТ-специалистам распространять приложения Windows 10 путем их размещения в собственной сети доставки содержимого (CDN). Это полезно для предприятий, которым не требуется публиковать свои приложения в Microsoft Store, но они все же хотят воспользоваться преимуществами платформы упаковки и развертывания Windows 10.
 

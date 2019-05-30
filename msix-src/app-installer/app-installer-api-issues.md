@@ -9,11 +9,11 @@ keywords: Windows 10, универсальной платформы Windows, у�
 ms.localizationpriority: medium
 ms.custom: 19H1
 ms.openlocfilehash: be13529ecbb1845447719c7951b77ca66287ffc0
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58900426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59983346"
 ---
 # <a name="app-installer-file-api-issues"></a>Проблемы с установщиком приложения API файлов
 

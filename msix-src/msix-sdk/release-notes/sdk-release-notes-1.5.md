@@ -9,10 +9,10 @@ keywords: Windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: 19H1
 ms.openlocfilehash: f6b6350c6d55b0d330d73c4588d4c9c50fb151e1
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.sourcegitcommit: 67e56f5414857671c47334c65d636d531632b8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58900496"
 ---
 # <a name="msix-sdk-15-update"></a>Обновление MSIX SDK 1.5
