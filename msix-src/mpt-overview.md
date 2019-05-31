@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 6432a4b33b93a6340acabfd6284f5f530b2fe8b9
-ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
+ms.openlocfilehash: 3832cdceab23506da7ed16f3d07aa070222e5c0b
+ms.sourcegitcommit: bc3f2bf9fe105576d0cc047d95b3f0de36fbc8b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65795445"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400701"
 ---
 # <a name="msix-packaging-tool"></a>Средство упаковки MSIX 
 
@@ -50,7 +50,7 @@ ms.locfileid: "65795445"
 - Пользователь может указать коды известных допустимых выхода для выполнения преобразований, интерфейса командной строки
 - Добавлена возможность для отметки времени вашего подписанного пакета во всех рабочих процессов, где подписи доступна в настоящее время 
     - Можно указать в URL-адрес отметки времени по умолчанию и тип сервера отметок времени в страницу параметров инструмента
-- Обновить [логика создания AppID](packaging-tool/release-notes/history.md#appid-generation-logic)и добавлены дополнительные проверки имени пакета и приложения 
+- Обновленные логика создания AppID и добавлены дополнительные проверки имени пакета и приложения 
 
 Вы найдете полный журнал заметок о выпуске средства упаковки MSIX [здесь](packaging-tool/release-notes/history.md).
 

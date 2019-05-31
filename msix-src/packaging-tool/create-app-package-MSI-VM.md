@@ -8,18 +8,18 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: cc9b0e1242df931a155da1735b59c54c7b109737
-ms.sourcegitcommit: c3bdc2150bba942dc95811746c7a0f14ce54fbc9
+ms.openlocfilehash: 457f9a0358cb8e72abd9539d1a4fe3131ffd2a54
+ms.sourcegitcommit: bc3f2bf9fe105576d0cc047d95b3f0de36fbc8b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65984420"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400809"
 ---
 # <a name="create-an-msix-package-from-a-desktop-installer-msi-exe-or-app-v-on-a-vm"></a>Создание пакета MSIX из установщика (MSI, EXE или App-V) на виртуальной Машине
 
 <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство упаковки MSIX</a></p></div>
 
-Средство упаковки MSIX можно использовать для создания пакета приложения MSIX из существующего установщика MSI, EXE или App-V на виртуальной машине Hyper-V (VM). Виртуальная машина должны удовлетворять следующим требованиям:
+Можно использовать [средство упаковки MSIX](../mpt-overview.md) для создания пакета приложения MSIX из существующего установщика MSI, EXE или App-V на виртуальной машине Hyper-V (VM). Виртуальная машина должны удовлетворять следующим требованиям:
 
 - Он должен быть настроен на [прием удаленных команд](https://docs.microsoft.com/windows-server/virtualization/hyper-v/manage/remotely-manage-hyper-v-hosts) (запустите [Enable-PSRemoting](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Enable-PSRemoting?view=powershell-5.1) команду на виртуальной Машине)
 - Он должен работать под управлением Windows 10, версия 1809 или более поздней версии Windows.

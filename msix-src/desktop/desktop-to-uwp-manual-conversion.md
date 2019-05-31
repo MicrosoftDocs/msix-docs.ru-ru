@@ -7,12 +7,12 @@ keywords: windows 10, uwp
 ms.assetid: e8c2a803-9803-47c5-b117-73c4af52c5b6
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 07e5ea931446c01c39a586062f1fd703ae4ab1bd
-ms.sourcegitcommit: c3bdc2150bba942dc95811746c7a0f14ce54fbc9
+ms.openlocfilehash: f645df3d1375924303540cd9d1f86402c5f34a3c
+ms.sourcegitcommit: 6173086c11ffeb5fa836da6bd42711a9a626fc0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65985634"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66411401"
 ---
 # <a name="package-a-desktop-application-manually"></a>Упаковка классического приложения вручную
 
@@ -24,8 +24,8 @@ ms.locfileid: "65985634"
 
 Если вы не знаете точно, какие изменения вносит в систему ваш установщик, или если предпочитаете использовать автоматические средства для создания пакета манифеста, попробуйте воспользоваться любым из [этих](desktop-to-uwp-root.md#convert) параметров.
 
->[!IMPORTANT]
->Возможность создания пакета приложения Windows для своего настольного приложения (также известное как мост для классических приложений) была введена в Windows 10 версии 1607, и может использоваться только в проектах, предназначенных для Windows 10 Anniversary Update (10.0; Сборка 14393) или более поздней версии, в Visual Studio.
+> [!IMPORTANT]
+> Возможность создания пакета приложения Windows для своего настольного приложения (также известное как мост для классических приложений) была введена в Windows 10 версии 1607, и может использоваться только в проектах, предназначенных для Windows 10 Anniversary Update (10.0; Сборка 14393) или более поздней версии, в Visual Studio.
 
 ## <a name="first-prepare-your-application"></a>Сначала подготовьте свое приложение
 
