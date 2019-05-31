@@ -9,27 +9,27 @@ ms.topic: landing-page
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 3e36c3c5031b1780513c92b2cb821aec6335eb4c
-ms.sourcegitcommit: 92e034ce942cf3df1ea243b03e7b38ed78af4d43
+ms.openlocfilehash: a19ce324f4a5993672e9f56c1b49bcadda5c7140
+ms.sourcegitcommit: c3bdc2150bba942dc95811746c7a0f14ce54fbc9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899588"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65984408"
 ---
 # <a name="msix-documentation"></a>Документация по MSIX
 MSIX — это безопасный и надежный формат упаковки, созданный на основе сочетания технологий установки с помощью MSI-файлов, APPX-файлов, App-V и ClickOnce. 
 
-<br>
-
+ > [!TIP]
+ > Посетите страницу [технического сообщества MSIX](https://aka.ms/msixcommunity), чтобы просматривать обсуждения и следить за новостями.
+ 
 :::row:::
     :::column:::
         ### Package existing Windows apps
-        MSIX Packaging Tool enables you to update existing Win32 application packages to the MSIX format. [Learn more](mpt-overview.md)
-<div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Скачать средство упаковки</a></p></div>
+Средство упаковки MSIX позволяет обновить существующие пакеты приложений Win32 в формате MSIX. [Подробнее](mpt-overview.md)
+<div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство</a></p></div>
     :::column-end:::
     :::column:::
-        ### Use MSIX anywhere
-Разработчики на различных платформах могут использовать пакет MSIX SDK для работы с пакетами, предназначенными для распространения через Microsoft Store или в других сетях распространения содержимого. [Подробнее...](msix-sdk/sdk-overview.md)
+        ### Use MSIX anywhere Разработчики, работающие на разных платформах, могут использовать пакет MSIX SDK для обработки пакетов, предназначенных для распространения через Microsoft Store или в других сетях распространения содержимого. [Подробнее...](msix-sdk/sdk-overview.md)
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -37,7 +37,7 @@ MSIX — это безопасный и надежный формат упако
         ### Установка пакетов приложений MSIX Установщик приложений позволяет устанавливать и обновлять пакеты приложений MSIX, размещенные как локально, так и в сетях распространения содержимого. [Подробнее...](app-installer/app-installer-root.md)
     :::column-end:::
     :::column:::
-    ### Платформа поддержки пакетов Платформа поддержки пакетов позволяет приложению обходить некоторые ограничения современных сред выполнения, гарантируя надлежащую работу приложения без необходимости изменения его исходного кода. [Узнайте больше](package-support-framework-overview.md)
+    ### Платформа поддержки пакетов Платформа поддержки пакетов позволяет приложению обходить некоторые ограничения современных сред выполнения, гарантируя надлежащую работу приложения без необходимости изменения его исходного кода. [Подробнее](psf/package-support-framework-overview.md)
     :::column-end:::
 :::row-end:::
 
@@ -59,7 +59,7 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Начало работы</h3>                                
                 <p>
-                                    <a href="/en-us/windows/msix/packaging-tool/create-app-package-msi-vm" data-linktype="absolute-path">Обновление установщиков до MSIX</a>
+                                    <a href="/en-us/windows/msix/packaging-tool/create-app-package-msi-vm" data-linktype="absolute-path">Обновление существующих установщиков до MSIX</a>
                                 </p>
                             </div>
                         </div>
@@ -78,13 +78,13 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Упаковка</h3>
                                 <p>
-                                    <a href="/en-us/windows/msix/mpt-overview" data-linktype="absolute-path">Работа со средством упаковки MSIX</a>
+                                    <a href="/en-us/windows/msix/mpt-overview" data-linktype="absolute-path">Использование средства упаковки MSIX</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/msix/packaging-tool/package-conversion-cli" data-linktype="absolute-path">Работа из командной строки</a>
+                                    <a href="/en-us/windows/msix/packaging-tool/package-conversion-cli" data-linktype="absolute-path">Использование командной строки</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/packaging/sign-app-package-using-signtool?context=/windows/msix/render" data-linktype="absolute-path">Подписание пакетов</a>
+                                    <a href="/en-us/windows/uwp/packaging/sign-app-package-using-signtool?context=/windows/msix/render" data-linktype="absolute-path">Подписывание пакетов</a>
                                 </p>
                             </div>
                         </div>
@@ -106,7 +106,7 @@ MSIX — это безопасный и надежный формат упако
                                     <a href="/en-us/windows/uwp/publish/package-flights?context=/windows/msix/render" data-linktype="absolute-path">Фокус-тестирование в Microsoft Store</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s?context=/windows/msix/render#first-download-the-policies-and-then-choose-one" data-linktype="absolute-path">Тестирование для Windows 10 в S-режиме</a>
+                                    <a href="/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s?context=/windows/msix/render#first-download-the-policies-and-then-choose-one" data-linktype="absolute-path">Тестирование для Windows 10 в S-режиме</a>
                                 </p>
                             </div>
                         </div>
@@ -162,7 +162,7 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Начало работы</h3>
                                 <p>
-                                    <a href="/en-us/windows/msix/overview">Что такое MSIX?</a>
+                                    <a href="/en-us/windows/msix/overview">Сведения об MSIX</a>
                                 </p>
                                 <p>
                                     <a href="/en-us/windows/msix/app-package-updates?context=/windows/msix/render">Обновления приложений MSIX</a>
@@ -190,7 +190,7 @@ MSIX — это безопасный и надежный формат упако
                                     <a href="/en-us/windows/uwp/packaging/manual-packaging-root?context=/windows/msix/render" data-linktype="absolute-path">Средства упаковки вручную</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/packaging/sign-app-package-using-signtool?context=/windows/msix/render" data-linktype="absolute-path">Подписание пакета приложения</a>
+                                    <a href="/en-us/windows/uwp/packaging/sign-app-package-using-signtool?context=/windows/msix/render" data-linktype="absolute-path">Подписывание пакета приложения</a>
                                 </p>
                             </div>
                         </div>
@@ -218,7 +218,7 @@ MSIX — это безопасный и надежный формат упако
                                     <a href="/en-us/windows/uwp/publish/package-flights?context=/windows/msix/render" data-linktype="absolute-path">Фокус-тестирование пакетов</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s?context=/windows/msix/render" data-linktype="absolute-path">Тестирование для Windows 10 в S-режиме</a>
+                                    <a href="/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s?context=/windows/msix/render" data-linktype="absolute-path">Тестирование для Windows 10 в S-режиме</a>
                                 </p>
                             </div>
                         </div>
@@ -286,17 +286,17 @@ MSIX — это безопасный и надежный формат упако
     :::column:::
     >[!VIDEO https://www.youtube.com/embed/sBOTQoi6iXQ]
         #### MSIX inside and out (Sept 2018)
-        MSIX is the future of app installation and a significant step forward in enabling enterprises to modernize their app deployment processes and stay current with Windows, Office and third-party apps. 
+MSIX — это инновационное решение в области установки приложений, которое поможет компаниям модернизировать процессы развертывания приложений, чтобы работать с актуальными версиями приложений Windows и Office, а также сторонних приложений. 
     :::column-end:::
     :::column:::
     >[!VIDEO https://www.youtube.com/embed/0kSwCOr7-Ao]
         #### MSIX – Accelerating Windows 10 and app deployment (Sept 2018)
-        MSIX provides lots of benefits across the app lifecycle management. Learn how to take advantage of MSIX in your enterprise and the benefits to developers, IT Pros and end users. 
+MSIX предоставляет множество преимуществ, связанных с управлением жизненным циклом приложений. Узнайте, как получить максимум пользы от использования MSIX в компании, а также обеспечить преимущества для разработчиков, ИТ-специалистов и пользователей. 
     :::column-end:::
     :::column:::
     >[!VIDEO https://www.youtube.com/embed/_wCv31TI_30]
         #### Updating your existing Configuration Manager apps to MSIX (Sept 2018)
-        MSIX simplifies and modernizes app deployment. It brings a faster, more reliable, and rot-free deployment for your enterprise. Learn the ins and outs of updating your existing System Center Configuration Manager apps to MSIX along with how it will integrate with Configuration Manager. 
+MSIX упрощает и оптимизирует процесс развертывания приложений. Это решение обеспечивает более быстрое, надежное и корректное развертывание для вашего предприятия. Узнайте об обновлении существующих приложений System Center Configuration Manager до MSIX, а также об интеграции с Configuration Manager. 
     :::column-end:::
 
     
