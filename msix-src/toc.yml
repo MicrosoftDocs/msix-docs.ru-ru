@@ -92,33 +92,37 @@
           href: msix-sdk/sdk-guidance.md
 - name: Упаковка
   items:
-    - name: Создание пакета MSIX из классического установщика
-      items:
-        - name: 'Создание пакета MSIX из MSI, EXE или App-V на виртуальной машине'
-          href: packaging-tool/create-app-package-MSI-VM.md
-        - name: Создание пакета MSIX с помощью других типов установщика
-          href: packaging-tool/create-other-installer.md
-        - name: Создание пакета MSIX с помощью командной строки
-          href: packaging-tool/package-conversion-cli.md
-        - name: Автоматизация преобразования с помощью командной строки
-          href: packaging-tool/automate-conversion.md
-        - name: Создание пакета MSIX на удаленном компьютере
-          href: packaging-tool/remote-conversion-setup.md
-        - name: Упаковка с помощью Desktop App Converter
-          href: desktop/desktop-to-uwp-run-desktop-app-converter.md
-        - name: Принцип работы упакованного классического приложения
-          href: desktop/desktop-to-uwp-behind-the-scenes.md
-    - name: Упаковка классического приложения с исходным кодом с помощью Visual Studio (мост для классических приложений)
+    - name: Упаковка классических приложений
       items:
         - name: Обзор
           href: desktop/desktop-to-uwp-root.md
-        - name: Подготовка приложения к упаковке
+        - name: Подготовка к упаковке классического приложения
           href: desktop/desktop-to-uwp-prepare.md
-        - name: Упаковка классического приложения с помощью Visual Studio
-          href: desktop/desktop-to-uwp-packaging-dot-net.md
-        - name: Оптимизация двоичных файлов с помощью собственных образов
-          href: desktop/desktop-to-uwp-r2r.md
-    - name: Упаковка приложения с помощью Visual Studio
+        - name: Упаковка классического приложения из существующего установщика
+          items:
+            - name: 'Создание пакета MSIX из MSI, EXE или App-V на виртуальной машине'
+              href: packaging-tool/create-app-package-MSI-VM.md
+            - name: Создание пакета MSIX с помощью других типов установщика
+              href: packaging-tool/create-other-installer.md
+            - name: Создание пакета MSIX с помощью командной строки
+              href: packaging-tool/package-conversion-cli.md
+            - name: Автоматизация преобразования с помощью командной строки
+              href: packaging-tool/automate-conversion.md
+            - name: Создание пакета MSIX на удаленном компьютере
+              href: packaging-tool/remote-conversion-setup.md
+            - name: Упаковка с помощью Desktop App Converter
+              href: desktop/desktop-to-uwp-run-desktop-app-converter.md
+        - name: Упаковка классического приложения с помощью исходного кода в Visual Studio
+          items:
+            - name: Обзор
+              href: desktop/desktop-to-uwp-packaging-dot-net.md
+            - name: Оптимизация двоичных файлов с помощью собственных образов
+              href: desktop/desktop-to-uwp-r2r.md
+        - name: Принцип работы упакованного классического приложения
+          href: desktop/desktop-to-uwp-behind-the-scenes.md
+        - name: Известные проблемы
+          href: desktop/desktop-to-uwp-known-issues.md
+    - name: Упаковка приложения UWP с помощью Visual Studio
       href: 'https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps?context=/windows/msix/render'
     - name: Средства упаковки вручную
       items:
