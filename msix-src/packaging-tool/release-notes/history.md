@@ -8,14 +8,21 @@ ms.topic: article
 keywords: Windows 10, uwp, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: 52a1306f9bf484b828cfa4471030dd0065f90981
-ms.sourcegitcommit: bc3f2bf9fe105576d0cc047d95b3f0de36fbc8b9
+ms.openlocfilehash: 576ce8abf3bbbe178dbd124f250a749136f50267
+ms.sourcegitcommit: e7d974ff7b318af19aa8d578d031914e1f1ff926
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66400690"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66826706"
 ---
 # <a name="msix-packaging-tool-release-notes"></a>Заметки о выпуске средства упаковки MSIX 
+
+### <a name="ver-120196040"></a>Ver 1.2019.604.0 
+
+- Подписывание пакета, если сертификат подписи по умолчанию указан в параметрах по умолчанию
+- Коды отрицательное установщика указаны в параметрах
+- Учитывает коды выхода установщика PowerShell
+- Информирует пользователя, когда им это требуется перезагрузка для драйвера
 
 #### <a name="ver-120195220"></a>Ver 1.2019.522.0
 
