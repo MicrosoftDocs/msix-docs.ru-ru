@@ -7,12 +7,12 @@ keywords: windows 10, uwp
 ms.assetid: 74373c24-f948-43bb-aa85-01e2e8e87162
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 14c27f77fae7f1af095eb0a8de5bd4836f51837f
-ms.sourcegitcommit: 6173086c11ffeb5fa836da6bd42711a9a626fc0e
+ms.openlocfilehash: 7e831023a6d21447d1175a1f802c568c5023be87
+ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66411437"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67126820"
 ---
 # <a name="package-desktop-applications-desktop-bridge"></a>Классические приложения пакета (мост для классических приложений)
 
@@ -21,9 +21,6 @@ ms.locfileid: "66411437"
 При создании пакета для приложения для настольных компьютеров, приложение будет получение удостоверения и с данным удостоверением своего настольного приложения имеет доступ к Windows универсальной API платформы (UWP). Их можно использовать для активации современных и привлекательных возможностей, таких как живые плитки и уведомления. Используйте простой условной компиляции и проверки времени выполнения для запуска кода в UWP только в том случае, если приложение выполняется в Windows 10.
 
 Помимо код, который используется для улучшения работы в Windows 10 приложение остается неизменной, и вы можете распространять его среди пользователей в предыдущих версиях Windows. В Windows 10, приложение продолжает выполняться с полным уровнем доверия пользовательском режиме, так же, как он известен на сегодня.
-
-> [!NOTE]
-> Ознакомьтесь с <a href="https://mva.microsoft.com/training-courses/developers-guide-to-the-desktop-bridge-17373?l=oZG0B1WhD_8406218965/">этой серии</a> коротких видео, опубликованный в Microsoft Virtual Academy. Эти видеоролики позволят вам весь процесс ввода своего настольного приложения для универсальной платформы Windows (UWP).
 
 ## <a name="prepare"></a>Подготовка
 

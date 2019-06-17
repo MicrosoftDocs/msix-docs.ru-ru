@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.assetid: 74c84eb6-4714-4e12-a658-09cb92b576e3
 ms.localizationpriority: medium
-ms.openlocfilehash: 6959d762430094cab449a9168defc8aac673fdc1
-ms.sourcegitcommit: 6173086c11ffeb5fa836da6bd42711a9a626fc0e
+ms.openlocfilehash: 4ab29d5559b118ea32b91f8a266b137bcb83bd5d
+ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66411446"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67126813"
 ---
 # <a name="package-a-desktop-application-using-the-desktop-app-converter"></a>Упаковка классического приложения с помощью Desktop App Converter
 
@@ -32,9 +32,6 @@ Desktop App Converter (DAC) создает пакеты для классиче�
 
 > [!IMPORTANT]
 > Desktop App Converter поддерживается в Windows 10 версии 1607 и более поздних версий. Может использоваться только в проектах, предназначенных для Windows 10 Anniversary Update (10.0; Сборка 14393) или более поздней версии, в Visual Studio.
-
-> [!NOTE]
-> Ознакомьтесь с <a href="https://mva.microsoft.com/en-US/training-courses/developers-guide-to-the-desktop-bridge-17373?l=oZG0B1WhD_8406218965/">этой серией</a> коротких видеозаписей, опубликованных академией Microsoft Virtual Academy. В них рассматриваются некоторые распространенные способы использования преобразователя Desktop App Converter.
 
 ## <a name="the-dac-does-more-than-just-generate-a-package-for-you"></a>DAC не просто создает для вас пакет.
 
@@ -160,10 +157,6 @@ DesktopAppConverter.exe -Installer C:\Installer\MyAppSetup.msi -Destination C:\O
 > [!IMPORTANT]
 > Существует два важных аспекта, о которых следует помнить. Во-первых, убедитесь, что ваш установщик находится в независимой папке и что в ней размещаются только файлы, связанные с этим установщиком. Преобразователь копирует все содержимое этой папки в изолированную среду Windows. <br> Во-вторых, если центр партнеров назначает удостоверение в пакет, который начинается с цифры, убедитесь, что можно также передать в <i>- AppId</i> параметр и использовать только суффикс string (после периода разделителя), как значение этого параметра.  
 
-**Видео**
-
-<iframe src="https://mva.microsoft.com/en-US/training-courses-embed/developers-guide-to-the-desktop-bridge-17373/Demo-Convert-an-Application-That-Has-an-MSI-Installer-Kh1UU2WhD_7106218965" width="636" height="480" allowFullScreen frameBorder="0"></iframe>
-
 Если ваш установщик включает установщики для зависимых библиотек или платформ, возможно, потребуется организовать все несколько иначе. См. раздел [Объединение нескольких установщиков в цепочку с помощью моста для классических приложений](https://blogs.msdn.microsoft.com/appconsult/2017/09/11/chaining-multiple-installers-with-the-desktop-app-converter/).
 
 <a id="setup-conversion" />
@@ -175,14 +168,11 @@ DesktopAppConverter.exe -Installer C:\Installer\MyAppSetup.msi -Destination C:\O
 ```cmd
 DesktopAppConverter.exe -Installer C:\Installer\MyAppSetup.exe -InstallerArguments "/S" -Destination C:\Output\MyApp -PackageName "MyApp" -Publisher "CN=MyPublisher" -Version 0.0.0.1
 ```
+
 >[!IMPORTANT]
 >Если центр партнеров назначает удостоверение в пакет, который начинается с цифры, убедитесь, что можно также передать в <i>- AppId</i> параметр и использовать только суффикс string (после периода разделителя), как значение этого параметра.
 
 Параметр ``InstallerArguments`` является необязательным. Тем не менее так как Desktop App Converter нужен установщик для запуска в автоматическом режиме, может потребоваться использовать его, если приложению требуется автоматическая флаги выполнение. Флаг ``/S`` — очень распространенный флаг автоматического режима, однако ваш флаг может отличаться в зависимости от того, какие технологии вы использовали для создания файла установки.
-
-**Видео**
-
-<iframe src="https://mva.microsoft.com/en-US/training-courses-embed/developers-guide-to-the-desktop-bridge-17373/Demo-Convert-an-Application-That-Has-a-Setup-exe-Installer-amWit2WhD_5306218965" width="636" height="480" allowFullScreen frameBorder="0"></iframe>
 
 <a id="no-installer-conversion" />
 
@@ -198,10 +188,6 @@ DesktopAppConverter.exe -Installer C:\Installer\MyApp\ -AppExecutable MyApp.exe 
 
 >[!IMPORTANT]
 >Если центр партнеров назначает удостоверение в пакет, который начинается с цифры, убедитесь, что можно также передать в <i>- AppId</i> параметр и использовать только суффикс string (после периода разделителя), как значение этого параметра.
-
-**Видео**
-
-<iframe src="https://mva.microsoft.com/en-US/training-courses-embed/developers-guide-to-the-desktop-bridge-17373/Demo-Convert-a-No-Installer-Application-agAXF2WhD_3506218965" width="636" height="480" allowFullScreen frameBorder="0"></iframe>
 
 <a id="optional-parameters" />
 
@@ -342,12 +328,6 @@ DesktopAppConverter.exe -Installer C:\Installer\MyAppSetup.exe -InstallerArgumen
 
 > [!NOTE]
 > Если вы изменили параметры реестра, заданные вашим установщиков, необходимо повторно запустить Desktop App Converter, чтобы восстановить эти изменения.
-
-**Просмотр видео**
-
-|Изменение и переупаковка выходных файлов |Демонстрация: Изменение и переупаковка выходных файлов|
-|---|---|
-|<iframe src="https://mva.microsoft.com/en-US/training-courses-embed/developers-guide-to-the-desktop-bridge-17373/Video-Modifying-and-Repackaging-Output-from-Desktop-App-Converter-OwpAJ3WhD_6706218965" width="426" height="472" allowFullScreen frameBorder="0"></iframe>|<iframe src="https://mva.microsoft.com/en-US/training-courses-embed/developers-guide-to-the-desktop-bridge-17373/Demo-Modify-Output-from-Desktop-App-Converter-gEnsa3WhD_8606218965" width="426" height="472" allowFullScreen frameBorder="0"></iframe>|
 
 Ниже описаны несколько необязательно исправлений для упакованного приложения, которое вы можете счесть.
 
