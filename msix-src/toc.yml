@@ -118,6 +118,8 @@
               href: desktop/desktop-to-uwp-packaging-dot-net.md
             - name: Оптимизация двоичных файлов с помощью собственных образов
               href: desktop/desktop-to-uwp-r2r.md
+        - name: Упаковка классического приложения с помощью сторонних установщиков
+          href: desktop/desktop-to-uwp-third-party-installer.md
         - name: Принцип работы упакованного классического приложения
           href: desktop/desktop-to-uwp-behind-the-scenes.md
         - name: Известные проблемы
