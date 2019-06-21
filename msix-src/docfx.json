@@ -41,7 +41,12 @@
       "extendBreadcrumb": true,
       "ms.prod": "msix"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+        "open_to_public_contributors": {
+             "/*.md": true,
+             "packaging-tool/**.md": true
+        }
+    },
     "template": [],
     "dest": "msix",
     "markdownEngineName": "markdig"
