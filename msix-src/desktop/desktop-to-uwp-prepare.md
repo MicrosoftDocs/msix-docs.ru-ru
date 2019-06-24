@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.assetid: 71a57ca2-ca00-471d-8ad9-52f285f3022e
 ms.localizationpriority: medium
-ms.openlocfilehash: f3d58c2e81e2d7eb56ed43286febac5cf81d717d
-ms.sourcegitcommit: bc3f2bf9fe105576d0cc047d95b3f0de36fbc8b9
+ms.openlocfilehash: c439ce279f3f0298af4208972e05a22cf7f6517b
+ms.sourcegitcommit: 2667ddb6b0d3c2e8686af7b048d1354f9b7b7e00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66400773"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67314181"
 ---
 # <a name="prepare-to-package-a-desktop-application"></a>Подготовка к упаковке классического приложения
 
@@ -45,7 +45,7 @@ ms.locfileid: "66400773"
 
 + __Приложению требуется UIAccess__. Если приложение задает значение `UIAccess=true` элементу `requestedExecutionLevel` манифеста UAC, то преобразование в UWP не поддерживается на данный момент. Подробнее см. в разделе [Обзор системы безопасности модели автоматизации пользовательского интерфейса](https://msdn.microsoft.com/library/ms742884.aspx).
 
-+ __Приложение предоставляет COM-объекты__. Процессы и расширения из пакета могут регистрировать и использовать серверы COM и OLE, как внутрипроцессные, так и внепроцессные (OOP).  Creators Update добавляет поддержку технологии Packaged COM, позволяющей регистрировать серверы OOP COM и OLE, которые видимы за пределами пакета.  См. раздел [Поддержка сервера COM и документа OLE для моста для классических приложений](https://blogs.windows.com/buildingapps/2017/04/13/com-server-ole-document-support-desktop-bridge/#bjPyETFgtpZBGrS1.97).
++ __Приложение предоставляет COM-объекты__. Процессы и расширения из пакета могут регистрировать и использовать серверы COM и OLE, как внутрипроцессные, так и внепроцессные (OOP).  Creators Update добавляет поддержку технологии Packaged COM, позволяющей регистрировать серверы OOP COM и OLE, которые видимы за пределами пакета.  См. раздел [Поддержка сервера COM и документа OLE для моста для классических приложений](https://blogs.windows.com/windowsdeveloper/2017/04/13/com-server-ole-document-support-desktop-bridge).
 
    Технология Packaged COM поддерживает работу с существующими API модели COM, но не будет работать для расширений приложения, которые зависят от чтения реестра напрямую, так как расположение для Packaged COM находится в частном расположении.
 
