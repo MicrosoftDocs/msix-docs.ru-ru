@@ -1,62 +1,62 @@
 ---
 author: c-don
-title: Как пакеты MSIX наборов
-description: Объединение пакетов MSIX различных архитектур
+title: Объединение пакетов MSIX
+description: Объединение пакетов MSIX с разными архитектурами
 ms.author: cdon
 ms.date: 10/25/2018
 ms.topic: article
-keywords: Windows 10, msix
+keywords: windows 10, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
 ms.openlocfilehash: 54e6f063aa05c1a297725e6c1c7a091ebffbb043
-ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
-ms.translationtype: MT
+ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59983446"
 ---
 # <a name="bundle-msix-packages"></a>Объединение пакетов MSIX 
 
-В этой статье описывается процесс создания пакета после преобразования x86 и x64 64 из собственных установщиков Windows, с помощью средства упаковки MSIX. 
+В этой статье описан процесс создания набора пакетов после преобразования версий x86 и x64 установщиков Windows с помощью средства упаковки MSIX. 
 
-Путем объединения нескольких версий архитектура установщика в одну сущность, только пакет, необходимо передать Store или другое расположение распространения. Платформа развертывания Windows 10 поддерживает тип пакета .msixbundle и загрузит только файлы, которые можно использовать для архитектуры вашего устройства. Имейте в виду, что если принято решение для распространения .msixbundle для конкретного приложения, вы не может вернуться к распространения пакет MSIX. 
+Объединив несколько версий установщика с разными архитектурами в один набор, вы можете выложить в Microsoft Store или на другую платформу распространения только этот набор. Платформа развертывания Windows 10 учитывает тип пакета MSIXBUNDLE и скачивает только те файлы, которые соответствуют архитектуре вашего устройства. Помните, что если вы решите распространять для определенного приложения набор MSIXBUNDLE, вы не сможете извлечь из него обратно только пакет MSIX для распространения. 
 
-Ниже представлены поэтапный подход для создания .msixbundle. Предполагается, что вы уже [преобразовать существующий x86 и x64 64](https://docs.microsoft.com/windows/msix/mpt-best-practices) MSIX пакетов установщика Windows. 
+В следующем разделе приведены пошаговые инструкции по созданию набора пакетов MSIXBUNDLE. Предполагается, что вы уже [преобразовали существующие версии x86 и x64](https://docs.microsoft.com/windows/msix/mpt-best-practices) установщика Windows в пакеты MSIX. 
 
 ### <a name="setup"></a>Установка
-Вам потребуются следующие настройки для успешного создания комплект MSIX:
-- [Пакет SDK для Windows 10](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) (версии 1809 или более поздней версии)
-- MSIX x64 и x86 преобразованных пакетов 
+Для успешного создания набора пакетов MSIX необходимо следующее:
+- [пакет SDK для Windows 10](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) (версия 1809 или более новая);
+- преобразованные пакеты MSIX x64 и x86. 
 
-## <a name="step-1-find-makeappxexe"></a>Шаг 1. Найти MakeAppx.exe
-[MakeAppx.exe](https://docs.microsoft.com/windows/desktop/appxpkg/make-appx-package--makeappx-exe-) — это средство, доступных в Windows 10 SDK, позволяющий для упаковки и объединение MSIX пакетов. Объединить два пакета MSIX, будет использовать это средство. 
+## <a name="step-1-find-makeappxexe"></a>Шаг 1. Открытие MakeAppx.exe
+[MakeAppx.exe](https://docs.microsoft.com/windows/desktop/appxpkg/make-appx-package--makeappx-exe-) — это средство из пакета SDK для Windows 10, которое позволяет создавать и объединять пакеты MSIX. С его помощью вы объедините два пакета MSIX. 
 
-MakeAppx.exe можно использовать для извлечения содержимого файла пакета приложения Windows 10 или пакета. Она также шифрует и расшифровывает пакеты приложений и пакетов.
+Средство MakeAppx.exe можно использовать для извлечения файлов из пакета приложения или набора пакетов Windows 10. Оно также позволяет шифровать и расшифровывать пакеты приложений и наборы пакетов.
 
-После установки пакета SDK для Windows 10 MakeAppx.exe обычно можно найти здесь: 
-- [x86] — C:\Program Files (x86) \Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe
-- [x64] — C:\Program Files (x86) \Windows Kits\10\bin\10.0.17763.0\x64\MakeAppx.exe
+После установки пакета SDK для Windows 10 средство MakeAppx.exe обычно размещено здесь: 
+- [x86] — C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe
+- [x64] — C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64\MakeAppx.exe
 
 ## <a name="step-2-bundle-the-packages"></a>Шаг 2. Объединение пакетов
 
-Для формирования пакета пакетов с помощью MakeApp.exe проще всего добавить все пакеты, которые вы хотите объединить в одной папке. Каталог должны оставаться свободными от всего остального, за исключением пакетов, было необходимо объединить в пакет. 
+Самый простой способ объединения пакетов с помощью MakeApp.exe — добавить все нужные пакеты в одну папку. В каталоге должны быть только пакеты, которые нужно объединить, и больше никаких лишних файлов. 
 
-Переместите пакеты приложений, которые вы хотите объединить в одном каталоге, как показано на следующем снимке экрана.
+Переместите нужные пакеты приложений в один каталог, как показано на снимке экрана ниже.
 
-![Пакеты наборов в каталоге](images/bundle-pic1.png)
+![Пакеты для объединения в каталоге](images/bundle-pic1.png)
 
 >[!NOTE] 
-> MakeAppx.exe объединяет только пакеты, которые имеют одинаковое удостоверение, это означает, что идентификатор приложения, издатель, версия должна быть одинаковыми. Только архитектуру процессора пакета для пакета приложения могут быть разными. 
+> MakeAppx.exe объединяет только пакеты с одинаковыми идентификаторами, то есть у них должен быть один идентификатор приложения, издатель и версия. Отличаться может только архитектура процессора пакета. 
 
-MakeAppx.exe имеет следующий синтаксис командной строки.
+В MakeAppx.exe используется следующий синтаксис командной строки.
 
-''' Командной строке C:\> «C:\Program файлы (x86) \Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe» объединить /d input_directorypath /p <filepath>.msixbundle
+```Command Prompt C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe" bundle /d input_directorypath /p <filepath>.msixbundle
 ```
 
 Here is an example command.
 
 ```
-C:\> «C:\Program файлы (x86) \Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe» объединить /d c:\AppPackages\ /p c:\MyLOBApp_10.0.0.0_ph32m9x8skttmg.msixbundle
+C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe" bundle /d c:\AppPackages\ /p c:\MyLOBApp_10.0.0.0_ph32m9x8skttmg.msixbundle
 ```
 
 After running the command, an unsigned .msixbundle will be created in the path specified. Packages do not need to be signed before bundling.  
@@ -86,7 +86,7 @@ C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\SignTool.exe" 
 /f c:\private-cert.pfx /p aaabbb123 c:\MyLOBApp_10.0.0.0_ph32m9x8skttmg.msixbundle
 ```
 
-Дополнительные сведения о подписи пакетов приложений с помощью SignTool.exe см. в разделе [в этой статье](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool). 
+Дополнительные сведения о подписании пакетов приложений с помощью SignTool.exe см. в [этой статье](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool). 
 
-После успешного входа пакета, вы готовы разместить его в общей сетевой папке или в любой сети распространения содержимого, а затем распространить его среди пользователей. 
+Подписав набор пакетов, вы можете разместить его в сетевой общей папке или в любой сети распространения содержимого для доступа пользователей. 
 

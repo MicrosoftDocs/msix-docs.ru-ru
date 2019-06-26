@@ -1,27 +1,27 @@
 ---
 title: Партнеры MSIX
-description: Ссылки на дополнительную документацию из наших доверенных партнеров на MSIX инструментарий и поддержки.
+description: В этой статье приводятся ссылки на дополнительную документацию по средствам и поддержке MSIX от наших доверенных партнеров.
 author: mcleanbyron
 ms.author: mcleans
 ms.date: 09/14/2018
 ms.topic: article
-keywords: Windows 10, uwp, msix
+keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: 011fe229491114299e9085be780798a68ddb2cbc
-ms.sourcegitcommit: fe59d6b39d81eb4a155887fa8fe9a08b6fe48584
-ms.translationtype: MT
+ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "65488516"
 ---
 # <a name="msix-partners"></a>Партнеры MSIX
 
-Следующие партнеры предоставляют дополнительные средства и поддержку сценариев разработки MSIX.
+Указанные ниже партнеры предоставляют дополнительные средства и поддержку для сценариев разработки MSIX.
 
 :::row:::
 :::column:::
-[![Расширенные логотип установщика](images/AdvancedInstaller_Logo.png)](https://www.advancedinstaller.com/desktop-bridge)
+[![Логотип Advanced Installer](images/AdvancedInstaller_Logo.png)](https://www.advancedinstaller.com/desktop-bridge)
 :::column-end:::
 
 :::column:::
@@ -45,7 +45,7 @@ ms.locfileid: "65488516"
 :::column-end:::
 
 :::column:::
-[![Логотип Installaware](images/installAware_logo.png)](https://www.installaware.com/msix.htm)
+[![Логотип InstallAware](images/installAware_logo.png)](https://www.installaware.com/msix.htm)
 :::column-end:::
 
 :::row-end:::
@@ -61,7 +61,7 @@ ms.locfileid: "65488516"
 :::column-end:::
 
 :::column:::
-[![Темпа логотип](images/Pace_Logo.png)](https://pacesuite.com/convert-exe-to-msix/)
+[![Логотип Pace](images/Pace_Logo.png)](https://pacesuite.com/convert-exe-to-msix/)
 :::column-end:::
 
 :::row-end:::
