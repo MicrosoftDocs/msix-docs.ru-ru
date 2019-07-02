@@ -8,12 +8,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: eb1e5400617559a3de85ce40a9ae3bf1bfcb13b0
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: d1c68d687e07b4e018358bb32c09c8094e10688f
+ms.sourcegitcommit: 0378a8897e0691bee4d9a957982961a377974856
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67027916"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67250971"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -37,11 +37,10 @@ ms.locfileid: "67027916"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-Версия 1.2019.611.0
+### <a name="version-120196180"></a>Версия 1.2019.618.0
 
-- При восстановлении параметров по умолчанию и элементов исключения теперь также удаляются пароль сертификата для подписи и коды выхода.
-- Устранена проблема, когда задачи первого запуска не удалялись надлежащим образом.
-- Ярлыки исключенных файлов игнорируются во время создания пакета.
+- Автоматически устанавливает для MinVersion значение 1709, когда требования к управлению версиями в Store отключены в разделе с параметрами.
+- Вы можете добавить новые папки в разделе с ресурсами в редакторе пакетов.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
