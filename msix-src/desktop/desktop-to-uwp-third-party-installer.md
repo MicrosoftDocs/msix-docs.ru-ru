@@ -1,19 +1,21 @@
 ---
 Description: В этом руководстве список продуктов независимых производителей и установщики классических приложениях пакета.
-title: Упаковка классического приложения с помощью сторонних программ установки
+title: Упаковка классического приложения с помощью сторонних установщиков
 ms.date: 06/17/2019
 ms.topic: article
+author: dianmsft
+ms.author: diahar
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: e07d44d2a809a183d57b59f3121683bf0e2ab971
-ms.sourcegitcommit: 0378a8897e0691bee4d9a957982961a377974856
+ms.openlocfilehash: 586314c33e3b33bdcfdd15ad95d415233355c99e
+ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253489"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67555549"
 ---
-# <a name="package-a-desktop-app-using-third-party-installers"></a>Упаковка классического приложения с помощью сторонних программ установки
+# <a name="package-a-desktop-app-using-third-party-installers"></a>Упаковка классического приложения с помощью сторонних установщиков
 
 Ниже приведен список популярных продуктов независимых производителей и установщики, которые поддерживают возможность упаковки классического приложения. Их можно использовать для создания установщиков MSI или пакетов упакованного приложения в несколько щелчков мышью. Поскольку мы не создаем документацию по использованию этих средств, посетите их веб-сайты, чтобы получить дополнительные сведения.
 

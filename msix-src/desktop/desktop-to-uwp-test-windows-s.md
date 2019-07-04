@@ -3,14 +3,16 @@ Description: Тестирование приложения для Windows 10 в 
 title: Тестирование приложения для Windows на Windows 10 S.
 ms.date: 05/11/2017
 ms.topic: article
-keywords: Windows 10 S, UWP
+author: dianmsft
+ms.author: diahar
+keywords: Windows 10 S, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 548349bbca82694c38509a5f4dc1f14a9c79b82f
-ms.sourcegitcommit: c3bdc2150bba942dc95811746c7a0f14ce54fbc9
+ms.openlocfilehash: 63803681601e03392273a1606f77c49d17fe11e8
+ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65985574"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67555594"
 ---
 # <a name="test-your-windows-app-for-windows-10-in-s-mode"></a>Тестирование приложения для Windows 10 в режиме S.
 
@@ -54,7 +56,7 @@ ms.locfileid: "65985574"
 #### <a name="optional-find-specific-failure-points-in-the-call-stack"></a>(Необязательно) Поиск конкретных точек сбоя в стеке вызовов
 Чтобы найти в стеке вызовов конкретные точки, в которых возникают блокирующие работу проблемы, добавьте этот раздел реестра, а затем [настройте среду отладки в режиме ядра](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-#span-idsetupakernel-modedebuggingspanspan-idsetupakernel-modedebuggingspanspan-idsetupakernel-modedebuggingspanset-up-a-kernel-mode-debugging).
 
-|Ключ|Имя|Тип|Значение|
+|Ключ|Имя|Type|Значение|
 |--|---|--|--|
 |HKEY_LOCAL_MACHINE\SYSTEM\CurentControlSet\Control\CI| DebugFlags |REG_DWORD | 1 |
 

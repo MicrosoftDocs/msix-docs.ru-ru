@@ -1,25 +1,27 @@
 ---
 Description: В этом руководстве описывается настройка решения Visual Studio для редактирования, отладки и упаковки классического приложения.
-title: Упаковка классического приложения из исходного кода, с помощью Visual Studio
+title: Упаковка классического приложения с помощью исходного кода в Visual Studio
 ms.date: 08/30/2017
 ms.topic: article
-keywords: windows 10, uwp
+author: dianmsft
+ms.author: diahar
+keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: 0cb6807c0aa126bbbdaf8e034f9fab489e49cffa
-ms.sourcegitcommit: 6173086c11ffeb5fa836da6bd42711a9a626fc0e
+ms.openlocfilehash: 71eec6e16c2ef012e5d60e437393afdd6f9af532
+ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66411404"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67555611"
 ---
-# <a name="package-a-desktop-app-from-source-code-using-visual-studio"></a>Упаковка классического приложения из исходного кода, с помощью Visual Studio
+# <a name="package-a-desktop-app-from-source-code-using-visual-studio"></a>Упаковка классического приложения с помощью исходного кода в Visual Studio
 
 Можно использовать **проект упаковки приложений Windows** проект в Visual Studio для создания пакета для вашего приложения. После этого вы публикуете, его в пакет для Microsoft Store или загрузки неопубликованных приложений на один или несколько компьютеров.
 
 **Проект упаковки приложений Windows** проект доступен в следующих версиях Visual Studio. Для получения наилучших результатов мы рекомендуем использовать последний выпуск.
 
-* Visual Studio 2019 г.
+* Visual Studio 2019
 * Visual Studio 2017 15.5 и более поздних версий
 
 > [!IMPORTANT]

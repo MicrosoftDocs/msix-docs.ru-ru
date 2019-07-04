@@ -3,15 +3,17 @@ Description: В этой статье описываются известные 
 title: Известные проблемы с упакованных приложений рабочего стола
 ms.date: 06/20/2018
 ms.topic: article
-keywords: windows 10, uwp
+author: dianmsft
+ms.author: diahar
+keywords: windows 10, uwp, msix
 ms.assetid: 71f8ffcb-8a99-4214-ae83-2d4b718a750e
 ms.localizationpriority: medium
-ms.openlocfilehash: 4f8ac1b2eee520c4a1a3facbaba6aca248e346e8
-ms.sourcegitcommit: bc3f2bf9fe105576d0cc047d95b3f0de36fbc8b9
+ms.openlocfilehash: 7238afbbc8717d8c4ca27d363950f6b6f48cfb79
+ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66400785"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67555496"
 ---
 # <a name="known-issues-with-packaged-desktop-apps"></a>Известные проблемы с упакованных приложений рабочего стола
 

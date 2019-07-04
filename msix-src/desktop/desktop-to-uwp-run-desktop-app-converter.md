@@ -3,15 +3,17 @@ Description: Запуск Desktop App Converter для упаковки клас
 title: Упаковка приложения с помощью Desktop App Converter (мост для классических приложений)
 ms.date: 08/21/2018
 ms.topic: article
+author: dianmsft
+ms.author: diahar
 keywords: windows 10, uwp
 ms.assetid: 74c84eb6-4714-4e12-a658-09cb92b576e3
 ms.localizationpriority: medium
-ms.openlocfilehash: 4ab29d5559b118ea32b91f8a266b137bcb83bd5d
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: e52cb34795fbf3bf83c43ea9194a6b0ec8a25c00
+ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67126813"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67555563"
 ---
 # <a name="package-a-desktop-application-using-the-desktop-app-converter"></a>Упаковка классического приложения с помощью Desktop App Converter
 

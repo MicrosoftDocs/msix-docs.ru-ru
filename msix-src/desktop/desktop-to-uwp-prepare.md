@@ -1,17 +1,19 @@
 ---
 Description: В этой статье перечислены задачи, которые необходимо знать перед упаковкой приложения для настольных компьютеров. Подготовка приложения к процессу упаковки, как правило, не требует больших усилий.
 title: Подготовка для упаковки классического приложения (мост для классических приложений)
-ms.date: 05/18/20188
+ms.date: 07/03/2019
 ms.topic: article
-keywords: windows 10, uwp
+author: dianmsft
+ms.author: diahar
+keywords: windows 10, uwp, msix
 ms.assetid: 71a57ca2-ca00-471d-8ad9-52f285f3022e
 ms.localizationpriority: medium
-ms.openlocfilehash: c439ce279f3f0298af4208972e05a22cf7f6517b
-ms.sourcegitcommit: 2667ddb6b0d3c2e8686af7b048d1354f9b7b7e00
+ms.openlocfilehash: 338ac2a974905670f8223045acaeaa2a73f14e33
+ms.sourcegitcommit: e90f6c00a1ecbd6af2cfef206f233a21831285b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67314181"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67557913"
 ---
 # <a name="prepare-to-package-a-desktop-application"></a>Подготовка к упаковке классического приложения
 

@@ -1,27 +1,26 @@
 ---
 Description: В этом руководстве описывается настройка решения Visual Studio для оптимизации двоичных файлов приложения с помощью образов в машинном коде.
 title: Оптимизируйте свои приложения Классические приложения .NET с помощью образов в машинном коде
-ms.date: 06/11/2018
+ms.date: 07/03/2019
 ms.topic: article
-keywords: Windows 10, образов в машинном коде компилятора
+author: dianmsft
+ms.author: diahar
+keywords: Windows 10, uwp, msix, образов в машинном коде компилятора
 ms.localizationpriority: medium
-ms.openlocfilehash: 1fa6d50f6dbb7e16d00a656f8fd931595a4ce69e
-ms.sourcegitcommit: c3bdc2150bba942dc95811746c7a0f14ce54fbc9
+ms.openlocfilehash: f49622ad78b50b5cf38918034fda9fbbd9087a11
+ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65985504"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67555589"
 ---
 # <a name="optimize-your-net-desktop-apps-with-native-images"></a>Оптимизируйте свои приложения Классические приложения .NET с помощью образов в машинном коде
 
-> [!NOTE]
-> Некоторые сведения относятся к предварительным версиям продуктов, в которые перед коммерческим выпуском могут быть внесены существенные изменения. Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.
-
 Время запуска приложения .NET Framework можно улучшить путем предварительной компиляции двоичных файлов. Эту технологию можно использовать в больших приложениях, которые вы упаковки и распространения через Microsoft Store. В некоторых случаях мы встречающейся повышение производительности на 20%. Дополнительные сведения об этой технологии в [Технический обзор](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/readytorun-overview.md).
 
-Мы выпустили предварительную версию компилятора образов в машинном коде, как [пакет NuGet](https://www.nuget.org/packages/Microsoft.DotNet.Framework.NativeImageCompiler). Этот пакет можно применить к любому приложению .NET Framework, предназначенный для .NET Framework версии 4.6.2 или более поздней версии. Этот пакет Добавляет шаг построения post, который содержит собственные полезные данные для всех двоичных файлов, используемых приложением. Этот оптимизированный полезных данных будут загружены, когда приложение работает в .NET Framework 4.7.2 и более поздних версий, а предыдущие версии по-прежнему будет загружать код MSIL.
+Мы выпустили компилятора образов в машинном коде, как [пакет NuGet](https://www.nuget.org/packages/Microsoft.DotNet.Framework.NativeImageCompiler). Этот пакет можно применить к любому приложению .NET Framework, предназначенный для .NET Framework версии 4.6.2 или более поздней версии. Этот пакет Добавляет шаг построения post, который содержит собственные полезные данные для всех двоичных файлов, используемых приложением. Этот оптимизированный полезных данных будут загружены, когда приложение работает в .NET Framework 4.7.2 и более поздних версий, а предыдущие версии по-прежнему будет загружать код MSIL.
 
-[.NET framework 4.7.2](https://blogs.msdn.microsoft.com/dotnet/2018/04/30/announcing-the-net-framework-4-7-2/) включается в [обновления Windows 10 апреля 2018 г](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/). Эта версия .NET Framework также можно установить на ПК, запустите Windows 7 + и Windows Server 2008 R2 более поздней версии.
+[.NET framework 4.7.2](https://blogs.msdn.microsoft.com/dotnet/2018/04/30/announcing-the-net-framework-4-7-2/) включается в [обновления Windows 10 апреля 2018 г](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/). Эта версия .NET Framework также можно установить на компьютерах под управлением Windows 7 + и Windows Server 2008 R2 более поздней версии.
 
 > [!IMPORTANT]
 > Если вы хотите создавать образы в машинном коде для вашего приложения, упакованные в проект упаковки приложений Windows, убедитесь, что значение целевой платформы начиная с версии проекта Юбилейное обновление Windows.
@@ -72,11 +71,8 @@ ms.locfileid: "65985504"
 Компилятор образов в машинном коде предоставляется как пакет NuGet, который необходимо добавить в проект Visual Studio, который создает исполняемый файл. Обычно это проект Windows Forms или WPF. Используйте эту команду PowerShell, чтобы сделать это.
 
 ```PS
-PM> Install-Package Microsoft.DotNet.Framework.NativeImageCompiler -Version 0.0.1-prerelease-00002  -PRE
+PM> Install-Package Microsoft.DotNet.Framework.NativeImageCompiler -Version 1.0.0
 ```
-
-> [!NOTE]
-> Предварительные версии пакетов, публикуются в NuGet.org как отсутствующие в списке. Вы не найдете их, просматривая сайт NuGet.org или с помощью пользовательского интерфейса диспетчера пакетов в Visual Studio. Тем не менее, их можно установить из консоли диспетчера пакетов и когда вы восстановление с другого компьютера. Сделаем пакеты полностью доступны при публикации первой версии не предварительного просмотра.
 
 ## <a name="create-a-release-build"></a>Создание сборки выпуска
 

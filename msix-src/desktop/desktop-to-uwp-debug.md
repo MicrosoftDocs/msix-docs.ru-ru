@@ -3,15 +3,17 @@ Description: Запустите неподписанное упакованно�
 title: Запуск, отладка и тестирование упакованного классического приложения (мост для классических приложений)
 ms.date: 08/31/2017
 ms.topic: article
-keywords: windows 10, uwp
+author: dianmsft
+ms.author: diahar
+keywords: windows 10, uwp, msix
 ms.assetid: f45d8b14-02d1-42e1-98df-6c03ce397fd3
 ms.localizationpriority: medium
-ms.openlocfilehash: 78109f90ec0687210a0ae8e02a41074cfbd17cf7
-ms.sourcegitcommit: c3bdc2150bba942dc95811746c7a0f14ce54fbc9
+ms.openlocfilehash: 3c186fe3baf543a459e9b65003d41ec52f4def2d
+ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65985534"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67555555"
 ---
 # <a name="run-debug-and-test-a-packaged-desktop-application"></a>Запуска, отладки и тестирования упакованные приложения рабочего стола
 
