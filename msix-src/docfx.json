@@ -37,16 +37,12 @@
     "globalMetadata": {
       "breadcrumb_path": "/windows/msix/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-MSIX",
+      "disable_contribution_on_translation_quality": ["MT"],
       "titleSuffix": "MSIX",
       "extendBreadcrumb": true,
       "ms.prod": "msix"
     },
-    "fileMetadata": {
-        "open_to_public_contributors": {
-             "/*.md": true,
-             "packaging-tool/**.md": true
-        }
-    },
+    "fileMetadata": {},
     "template": [],
     "dest": "msix",
     "markdownEngineName": "markdig"
