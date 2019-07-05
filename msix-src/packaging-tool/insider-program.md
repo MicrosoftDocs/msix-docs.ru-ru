@@ -3,17 +3,17 @@ title: Программа предварительной оценки средс
 description: Узнайте о Программе предварительной оценки средства упаковки и о том, как принять в ней участие
 author: c-don
 ms.author: cdon
-ms.date: 02/14/2019
+ms.date: 06/25/2019
 ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: d1c68d687e07b4e018358bb32c09c8094e10688f
-ms.sourcegitcommit: 0378a8897e0691bee4d9a957982961a377974856
+ms.openlocfilehash: ad6e30c3964dae41d6d479aa292c69dffb4e9af8
+ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67250971"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67555646"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -37,10 +37,9 @@ ms.locfileid: "67250971"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-### <a name="version-120196180"></a>Версия 1.2019.618.0
+Версия 1.2019.701.0.
 
-- Автоматически устанавливает для MinVersion значение 1709, когда требования к управлению версиями в Store отключены в разделе с параметрами.
-- Вы можете добавить новые папки в разделе с ресурсами в редакторе пакетов.
+- Исправлены ошибки для перезапуска сценариев.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 

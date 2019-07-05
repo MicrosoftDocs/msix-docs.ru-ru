@@ -8,12 +8,12 @@ ms.topic: article
 keywords: msix packaging tool, known issues, troubleshooting
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 79b06fc4e3e0ff0600f6e2ab85ec27c9e3a5840c
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: 6da45ad324e55dfbe3a95ec76993f28a38380da6
+ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "59468296"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67555624"
 ---
 # <a name="known-issues-and-troubleshooting"></a>Известные проблемы и устранение неполадок
 
@@ -55,6 +55,7 @@ ms.locfileid: "59468296"
 
 - Перезагрузка компьютера в процессе установки приложения не поддерживается. Если это возможно, игнорируйте запрос на перезагрузку или просто передайте установщику аргумент на запрет перезагрузки.
 - Возможно, что до начала работы установщик потребует установить определенные платформы или драйверы. Чтобы найти платформы и драйверы на компьютере, который используется для преобразования приложений, выполните следующие запросы: ```driverquery /v | Out-File``` или ```driverquery /v | Out-File "path to text file"```
+- Во время преобразования установщики могут запускать службы. Данные служб не собираются во время преобразования. В результате ваше приложение может быть установлено, но при работе могут возникать проблемы.
 
 # <a name="troubleshooting"></a>Поиск и устранение неисправностей
 
