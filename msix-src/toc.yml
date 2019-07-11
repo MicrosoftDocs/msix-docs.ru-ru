@@ -42,6 +42,8 @@
           href: mpt-overview.md
         - name: Изменение пакета с помощью редактора пакетов
           href: packaging-tool/package-editor.md
+        - name: Изменение значков и ресурсов
+          href: packaging-tool/edit-icons-and-assets.md
         - name: "Поддержка пакетов MSIX в Windows\_10, начиная со сборки 1709"
           href: packaging-tool/Support-on-1709-and-later.md
         - name: Рекомендации по использованию средства упаковки MSIX
