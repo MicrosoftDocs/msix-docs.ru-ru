@@ -1,19 +1,17 @@
 ---
 title: Заметки о выпуске средства упаковки MSIX
 description: Полный журнал заметок о выпуске средства упаковки MSIX
-author: c-don
-ms.author: cdon
 ms.date: 03/05/2019
 ms.topic: article
 keywords: Windows 10, uwp, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: 6eb6f4cedc8b25046450080c0a6a2e07b0a4fb12
-ms.sourcegitcommit: d505622e4f89daa0a9e7c7df0bd2228fd8ab792d
+ms.openlocfilehash: 08c07c9a57c6f5e42471763b448783dac81eaef8
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67694977"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829141"
 ---
 # <a name="msix-packaging-tool-release-notes"></a>Заметки о выпуске средства упаковки MSIX
 

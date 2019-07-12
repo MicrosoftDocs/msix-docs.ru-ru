@@ -1,19 +1,17 @@
 ---
-author: mcleanbyron
 title: Дополнительные пакеты и связанные наборы
 description: В этой статье перечислены ресурсы для изучения установки связанных наборов с помощью установщика приложения.
-ms.author: mcleans
 ms.date: 1/4/2018
 ms.topic: article
 keywords: windows 10, uwp, установщик приложений, AppInstaller, загрузка неопубликованных приложений, связанный набор, дополнительные пакеты
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: a18b5e11ec87e625b757764994762cf0e29cab99
-ms.sourcegitcommit: 67e56f5414857671c47334c65d636d531632b8f3
+ms.openlocfilehash: 5b77ceced9ce8f897d2f5f776a14e68eaa75530e
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58900466"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828579"
 ---
 # <a name="optional-packages-and-related-sets"></a>Дополнительные пакеты и связанные наборы
 

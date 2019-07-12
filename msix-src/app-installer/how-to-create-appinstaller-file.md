@@ -1,19 +1,17 @@
 ---
-author: mcleanbyron
 title: Создание файла Установщика приложений вручную
 description: В этой статье описывается установка связанного набора с помощью установщика приложения. Также здесь рассматриваются шаги по созданию файла *.appinstaller, определяющего связанный набор.
-ms.author: mcleans
 ms.date: 1/4/2018
 ms.topic: article
 keywords: windows 10, uwp, установщик приложений, AppInstaller, загрузка неопубликованных приложений, связанный набор, дополнительные пакеты
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 4256e95aa02e73330213034304abbe1354223641
-ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
+ms.openlocfilehash: 61b98b924015f021950c5f6a022d383f940443c8
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59983406"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828483"
 ---
 # <a name="create-an-app-installer-file-manually"></a>Создание файла Установщика приложений вручную
 

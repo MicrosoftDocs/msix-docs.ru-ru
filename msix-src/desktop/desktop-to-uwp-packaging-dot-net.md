@@ -3,17 +3,15 @@ Description: В этом руководстве описывается наст�
 title: Упаковка классического приложения с помощью исходного кода в Visual Studio
 ms.date: 08/30/2017
 ms.topic: article
-author: dianmsft
-ms.author: diahar
 keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: 71eec6e16c2ef012e5d60e437393afdd6f9af532
-ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
+ms.openlocfilehash: bf157014fd43a8fdfe3162a8b42e1f4b241d7938
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67555611"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828927"
 ---
 # <a name="package-a-desktop-app-from-source-code-using-visual-studio"></a>Упаковка классического приложения с помощью исходного кода в Visual Studio
 

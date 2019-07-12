@@ -1,19 +1,17 @@
 ---
 title: Параметры обновления файла установщика приложений
 description: Сведения о настройке обновлений приложения с помощью файла установщика приложения.
-author: mcleanbyron
-ms.author: mcleans
 ms.date: 12/12/2018
 ms.topic: article
-keywords: Windows 10, uwp, msix
+keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 5470a3e8c9b39734645da838b467aaf32bf8e79f
-ms.sourcegitcommit: e7d974ff7b318af19aa8d578d031914e1f1ff926
+ms.openlocfilehash: b95398ad0a63dde2a29c83d233099441aa2c8809
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826727"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828608"
 ---
 # <a name="configure-update-settings-in-the-app-installer-file"></a>Настройка параметров обновления в файле Установщика приложений
 

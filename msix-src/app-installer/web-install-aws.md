@@ -1,21 +1,19 @@
 ---
-author: mcleanbyron
-title: Распространять приложения Windows 10 веб-службе AWS
+title: Распространение приложения для Windows 10 из веб-службы AWS
 description: Руководство по настройке AWS веб-сервер для проверки установки приложения с помощью приложения установщика приложений
-ms.author: mcleans
 ms.date: 05/30/2018
 ms.topic: article
 keywords: Windows 10, Windows 10 UWP, неопубликованные установщика, AppInstaller, приложения, связанные с пакетов установлен, необязательно, AWS
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 63d1aeb5ec86bd0fa91deeb8869f58d52b893d90
-ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
+ms.openlocfilehash: 81d2d4afa0e6f8834461c5d561c23edf578bd24b
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65795270"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828778"
 ---
-# <a name="distribute-a-windows-10-app-from-an-aws-web-service"></a>Распространять приложения Windows 10 веб-службе AWS
+# <a name="distribute-a-windows-10-app-from-an-aws-web-service"></a>Распространение приложения для Windows 10 из веб-службы AWS
 
 Приложение "Установщик приложений" позволяет разработчикам и ИТ-специалистам распространять приложения Windows 10 путем их размещения в собственной сети доставки содержимого (CDN). Это полезно для предприятий, которым не требуется публиковать свои приложения в Microsoft Store, но они все же хотят воспользоваться преимуществами платформы упаковки и развертывания Windows 10.
 

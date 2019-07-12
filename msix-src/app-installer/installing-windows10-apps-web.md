@@ -1,19 +1,17 @@
 ---
-author: mcleanbyron
 title: Установка приложений Windows 10 из веб-страницы
 description: В этом разделе описываются действия, которые необходимо выполнить, чтобы дать пользователям возможность устанавливать приложения напрямую с веб-страницы.
-ms.author: mcleans
 ms.date: 11/16/2017
 ms.topic: article
 keywords: windows 10, uwp, установщик приложений, AppInstaller, загрузка неопубликованных приложений, связанный набор, дополнительные пакеты
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 2a2645ae4527342af85d747a2217e576a91c0c2c
-ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
+ms.openlocfilehash: c6007dfb124e308dad5d17bf7643a7021957e277
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59983536"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828701"
 ---
 # <a name="installing-windows-10-apps-from-a-web-page"></a>Установка приложений Windows 10 из веб-страницы
 

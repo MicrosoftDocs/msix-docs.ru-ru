@@ -1,19 +1,17 @@
 ---
 title: Настройка приложений предприятия с помощью изменения пакетов
 description: Дополнительные сведения о настройке корпоративных приложений
-author: mcleanbyron
-ms.author: mcleans
 ms.date: 01/15/2019
 ms.topic: article
-keywords: Windows 10, uwp, msix
+keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 142fce0927d916376733a0380fab6a0dc026a55e
-ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
+ms.openlocfilehash: a36c02d26e8c83ab43ceddd0704c78af68219649
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65795413"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829372"
 ---
 # <a name="customize-your-enterprise-apps-with-modification-packages"></a>Настройка приложений предприятия с помощью изменения пакетов 
 

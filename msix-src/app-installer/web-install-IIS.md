@@ -1,21 +1,19 @@
 ---
-author: mcleanbyron
-title: Распространять приложения Windows 10 с сервера IIS | Документация Майкрософт
+title: Распространение приложения для Windows 10 с сервера IIS
 description: Этом руководстве показано, как настроить сервер IIS, убедитесь, что веб-приложения может разместить пакеты приложения и вызвать и эффективного использования установщика приложений.
-ms.author: mcleans
 ms.date: 05/30/2018
 ms.topic: article
 keywords: Windows 10, универсальной платформы Windows, установщик приложения, AppInstaller, загрузки неопубликованных приложений, связанных с пакетов установлен, необязательно, сервера IIS
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 1e3762ca4cbca110cb17867c3e8e2cebd992b370
-ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
+ms.openlocfilehash: bacf7ab3125d651ef30320072dd45a94bffc677f
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65795288"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828744"
 ---
-# <a name="distribute-a-windows-10-app-from-an-iis-server"></a>Распространять приложения Windows 10 с сервера IIS
+# <a name="distribute-a-windows-10-app-from-an-iis-server"></a>Распространение приложения для Windows 10 с сервера IIS
 
 Этом руководстве показано, как настроить сервер IIS, убедитесь, что веб-приложения может разместить пакеты приложения и вызвать и эффективного использования установщика приложений.
 
@@ -25,7 +23,7 @@ ms.locfileid: "65795288"
 
 Чтобы успешно пройти с этим руководством, необходимо следующее:
 
-1. Visual Studio 2017  
+1. Visual Studio 2017  
 2. Средства веб-разработки и IIS 
 3. Пакет приложения Windows 10 — пакет приложения, который будет распространяться
 

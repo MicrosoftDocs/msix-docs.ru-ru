@@ -1,19 +1,17 @@
 ---
-author: c-don
 title: Распространять приложения Windows 10 из веб-приложение Azure
 description: 'Этот учебник посвящен следующим процедурам: настройка веб-сервера Azure, проверка того, может ли ваше веб-приложение размещать пакеты приложений, а также вызов и эффективное использование Установщика приложений.'
-ms.author: cdon
 ms.date: 09/30/2018
 ms.topic: article
 keywords: windows 10, uwp, установщик приложений, AppInstaller, загрузка неопубликованных приложений, связанный набор, дополнительные пакеты, веб-сервер Azure
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 7dbe2592d0ed60a88d77476f797f1575fee3f172
-ms.sourcegitcommit: 5669d59a0979a9de1dead4949f44d1544fd45988
+ms.openlocfilehash: 63c7163c9db550293da93b56434694c742462562
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65795454"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828812"
 ---
 # <a name="distribute-a-windows-10-app-from-an-azure-web-app"></a>Распространять приложения Windows 10 из веб-приложение Azure
 

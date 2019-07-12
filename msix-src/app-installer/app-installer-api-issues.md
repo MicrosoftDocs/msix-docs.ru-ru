@@ -1,25 +1,23 @@
 ---
-author: joshusto
 title: Проблемы с установщиком приложения API файлов
 description: Перечисляет известные проблемы с файлом установщика приложений API-интерфейсы.
-ms.author: joshusto
 ms.date: 2/20/2019
 ms.topic: article
 keywords: Windows 10, универсальной платформы Windows, установщик приложения, AppInstaller, неопубликованные API
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: be13529ecbb1845447719c7951b77ca66287ffc0
-ms.sourcegitcommit: 9bbb116d1984082123f694130b4d6cc078fa8510
+ms.openlocfilehash: f0ad59509ce95c94b790419cb46b159475be0f05
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59983346"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828462"
 ---
 # <a name="app-installer-file-api-issues"></a>Проблемы с установщиком приложения API файлов
 
 ## <a name="javascript-support-for-app-installer-file-apis"></a>Поддержка JavaScript для API-интерфейсов файлового установщика приложений
 
-[PackageManager](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager) и [пакета](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package) классы в пакете SDK для Windows содержат методы, которые можно использовать для добавления или изменения пакетов с помощью файлов установщика приложений или для получения сведений о приложениях с установщиком приложения связь. Дополнительные сведения см. в разделе [связанной документации](app-installer-documentation.md).
+[PackageManager](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager) и [пакета](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package) классы в пакете SDK для Windows содержат методы, которые можно использовать для добавления или изменения пакетов с помощью файлов установщика приложений или для получения сведений о приложениях с установщиком приложения связь. См. подробнее в [документации по Установщику приложений](app-installer-documentation.md).
 
 Из этих методов [PackageManager.AddPackageByAppInstallerFileAsync](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager.addpackagebyappinstallerfileasync), [PackageManager.RequestAddPackageByAppInstallerFileAsync](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager.requestaddpackagebyappinstallerfileasync), и [ Package.CheckUpdateAvailabilityAsync](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package.checkupdateavailabilityasync) не поддерживаются в JavaScript. Тем не менее, можно создать [компонента среды выполнения Windows](https://docs.microsoft.com/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript) , вызывает эти методы, а затем вызвать этот компонент из приложения JavaScript UWP.
 
