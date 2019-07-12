@@ -1,19 +1,17 @@
 ---
 title: Создание пакета с помощью интерфейса командной строки
 description: Из этой статьи вы узнаете, как создать пакет MSIX с помощью интерфейса командной строки.
-author: mcleanbyron
-ms.author: mcleans
 ms.date: 02/11/2019
 ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 7dcd522a1c1b79fe59a5b6e1fd04c7aec19ed419
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: 00a58a89975e0521038ae5e18895d5e7294a9df5
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "59566508"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829163"
 ---
 # <a name="conversion-with-command-line-interface-cli"></a>Преобразование с помощью интерфейса командной строки (CLI)
 

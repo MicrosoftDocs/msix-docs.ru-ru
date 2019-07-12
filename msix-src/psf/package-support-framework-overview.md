@@ -1,19 +1,17 @@
 ---
-author: mcleanbyron
 Description: Платформа поддержки пакетов позволяет устранять проблемы, препятствующие выполнению классических приложений в контейнере MSIX.
 title: Платформа поддержки пакетов
-ms.author: mcleans
 ms.date: 09/05/2018
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: f009690a704347e70db716b5491a873a820a0434
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: 98e837669feda0147ad9465330907c930132b43d
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "65985924"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829109"
 ---
 # <a name="package-support-framework"></a>Платформа поддержки пакетов
 

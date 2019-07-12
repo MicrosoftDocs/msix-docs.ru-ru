@@ -1,19 +1,17 @@
 ---
-author: c-don
 title: Объединение пакетов MSIX
 description: Объединение пакетов MSIX с разными архитектурами
-ms.author: cdon
 ms.date: 10/25/2018
 ms.topic: article
 keywords: windows 10, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 54e6f063aa05c1a297725e6c1c7a091ebffbb043
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: 14045d6bd5d78ba364c82b190d065d8630983fdb
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "59983446"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829297"
 ---
 # <a name="bundle-msix-packages"></a>Объединение пакетов MSIX 
 

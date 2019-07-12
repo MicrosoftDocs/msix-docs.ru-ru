@@ -1,19 +1,17 @@
 ---
 title: Известные проблемы и устранение неполадок
 description: В этой статье описаны известные проблемы, возникающие при работе со средством упаковки MSIX, и приведены советы по их устранению.
-author: dianmsft
-ms.author: diahar
 ms.date: 02/26/2019
 ms.topic: article
 keywords: msix packaging tool, known issues, troubleshooting
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 6da45ad324e55dfbe3a95ec76993f28a38380da6
-ms.sourcegitcommit: 52010495873758d9bfe7a9fb0b240108b25b3d3c
+ms.openlocfilehash: c5227d8a394e6af211e2409e34dfcb3648cd2c93
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67555624"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829193"
 ---
 # <a name="known-issues-and-troubleshooting"></a>Известные проблемы и устранение неполадок
 

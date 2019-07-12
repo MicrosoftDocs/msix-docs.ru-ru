@@ -1,19 +1,17 @@
 ---
-author: dianmsft
 title: Пакеты изменений MSIX в обновлении Windows 10, версия 1809
 description: Узнайте, как использовать пакеты изменений в обновлении Windows 10, версия 1809
-ms.author: diahar
 ms.date: 01/15/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 7273f3866eb8ed416b8dc60a621498cbddec54bd
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: b6f49d25628b4cd2358aa4054c9ca19e77013f99
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "65795422"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829399"
 ---
 # <a name="msix-modification-packages-on-windows-10-version-1809"></a>Пакеты изменений в Windows 10, версия 1809 
 

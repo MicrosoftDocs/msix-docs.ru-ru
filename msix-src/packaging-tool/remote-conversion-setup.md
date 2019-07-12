@@ -1,19 +1,17 @@
 ---
 title: Настройка удаленного преобразования в средстве упаковки MSIX
 description: Инструкции по настройке удаленного преобразования
-author: c-don
-ms.author: cdon
 ms.date: 02/26/2019
 ms.topic: article
 keywords: MSIX, MPT, MSIX Packaging Tool, remote IP
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 22ae4c4b939ed70c8a915ce1f3718105e2c65f49
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: 444b4a98d183f2473543c0ca2472f0fddf50052e
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "66186147"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829140"
 ---
 # <a name="setup-instructions-for-remote-machine-conversions"></a>Инструкции по настройке преобразования на удаленном компьютере 
 

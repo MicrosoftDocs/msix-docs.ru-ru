@@ -1,19 +1,17 @@
 ---
 title: Создание среды упаковки MSIX в Hyper-V Quick Create
 description: Создание виртуальной среды для проектов упаковки MSIX с помощью функции Hyper-V Quick Create.
-author: c-don
-ms.author: cdon
 ms.date: 04/04/2019
 ms.topic: article
 keywords: MSIX, MPT, MSIX Packaging Tool, Hyper-V Quick Create
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 807c8467338f8b01aa1643ab570c82e9675b1264
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: f22e81e26cda7c8e94f8f89cc1551b8771f640dd
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "59983426"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829337"
 ---
 # <a name="msix-packaging-environment-on-hyper-v-quick-create"></a>Создание среды упаковки MSIX в Hyper-V Quick Create
  

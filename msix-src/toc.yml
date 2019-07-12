@@ -39,7 +39,7 @@
     - name: Средство упаковки MSIX
       items:
         - name: Обзор
-          href: mpt-overview.md
+          href: packaging-tool/mpt-overview.md
         - name: Изменение пакета с помощью редактора пакетов
           href: packaging-tool/package-editor.md
         - name: Изменение значков и ресурсов
@@ -47,7 +47,7 @@
         - name: "Поддержка пакетов MSIX в Windows\_10, начиная со сборки 1709"
           href: packaging-tool/Support-on-1709-and-later.md
         - name: Рекомендации по использованию средства упаковки MSIX
-          href: mpt-best-practices.md
+          href: packaging-tool/mpt-best-practices.md
         - name: Создание пакетов с помощью средства Hyper-V Quick Create
           href: packaging-tool/Quick-Create-VM.md
         - name: Известные проблемы и устранение неполадок

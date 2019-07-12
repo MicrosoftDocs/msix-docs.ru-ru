@@ -1,19 +1,17 @@
 ---
 title: Что такое MSIX?
 description: Основные сведения формате пакетов MSIX.
-author: mcleanbyron
-ms.author: mcleans
 ms.date: 09/12/2018
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 73f659cd827bbcbb69c7f6179422a692dc1e50aa
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: 7f78574c85ce6ea06b750167fb02fd8380413c58
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "59983356"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829339"
 ---
 # <a name="what-is-msix"></a>Что такое MSIX?
 

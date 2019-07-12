@@ -1,19 +1,17 @@
 ---
 title: Обновления пакетов приложений
 description: Сведения о выборочном обновлении приложений.
-author: mcleanbyron
-ms.author: mcleans
 ms.date: 09/10/2018
 ms.topic: article
 keywords: windows 10, uwp, app package, app update, msix, appx
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 1d7fc6a2d899638a8d38c47a477653173f2c5c9d
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: 39d9434a4f36b9f9fb59f90b1840f2eba94617c5
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "65882602"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67828834"
 ---
 # <a name="app-package-updates"></a>Обновления пакетов приложений
 

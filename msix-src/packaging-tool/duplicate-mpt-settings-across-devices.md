@@ -1,18 +1,16 @@
 ---
 title: Копирование параметров средства упаковки MSIX на несколько устройств
 description: Узнайте, как скопировать параметры средства упаковки MSIX на несколько устройств
-author: dianmsft
-ms.author: diahar
 ms.date: 02/06/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: ea3f1d5b49be685315eda55c2fbb96704568337f
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: 4e153b384594fc9981ff44327bb5ff0afa918913
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "59983436"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829275"
 ---
 # <a name="duplicate-msix-packaging-tool-settings-across-multiple-devices"></a>Копирование параметров средства упаковки MSIX на несколько устройств 
 
