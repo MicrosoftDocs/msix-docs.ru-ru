@@ -2,24 +2,21 @@
 layout: LandingPage
 title: Видеоролики о MSIX
 description: Выступления команды разработчиков на темы, связанные с MSIX, на конференциях
-author: mcleanbyron
-ms.author: mcleans
 ms.date: 09/07/2018
 ms.topic: landing-page
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 44ec48793e0419c60ee789f555e2c6fe810a570e
-ms.sourcegitcommit: 789bef8a4d41acc516b66b5f2675c25dcd7c3bcf
+ms.openlocfilehash: a9a385bee27bae4e884ec71a8a4c449a9bcc216a
+ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "65795437"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67829065"
 ---
 # <a name="msix-videos"></a>Видеоролики о MSIX
-***
 
-Узнайте больше об MSIX из этих материалов и видеороликов с конференции.
+Узнайте больше о MSIX из этих видео.
 
 ## <a name="msix-overview"></a>Общие сведения об MSIX
  :::row:::
@@ -29,23 +26,21 @@ ms.locfileid: "65795437"
 :::row-end:::
 
 
-## <a name="conference-videos-by-the-msix-team"></a>Видеоролики от команды разработчиков MSIX с конференции
+## <a name="msix-training-videos"></a>Учебные видеоматериалы о MSIX
 :::row:::
     :::column:::
-    >[!VIDEO https://www.youtube.com/embed/sBOTQoi6iXQ]
-#### <a name="msix-inside-and-out-sept-2018"></a>MSIX inside and out (Sept 2018) (Все об MSIX (сентябрь 2018 г.))
-MSIX — это инновационное решение в области установки приложений, которое поможет компаниям модернизировать процессы развертывания приложений, чтобы работать с актуальными версиями приложений Windows и Office, а также сторонних приложений.
-    :::column-end:::
-    :::column:::
-    >[!VIDEO https://www.youtube.com/embed/0kSwCOr7-Ao]
-#### <a name="msix--accelerating-windows-10-and-app-deployment-sept-2018"></a>MSIX – Accelerating Windows 10 and app deployment (Sept 2018) (MSIX — ускорение развертывания приложений и Windows 10 (сентябрь 2018 г.))
+    >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ig2l]
+#### <a name="msix-overview"></a>Общие сведения об MSIX
 MSIX предоставляет множество преимуществ, связанных с управлением жизненным циклом приложений. Узнайте, как получить максимум пользы от использования MSIX в компании, а также обеспечить преимущества для разработчиков, ИТ-специалистов и пользователей.
     :::column-end:::
     :::column:::
-    >[!VIDEO https://www.youtube.com/embed/_wCv31TI_30]
-#### <a name="updating-your-existing-configuration-manager-apps-to-msix-sept-2018"></a>Updating your existing Configuration Manager apps to MSIX (Sept 2018) (Обновление существующих приложений Configuration Manager до MSIX (сентябрь 2018 г.))
-MSIX упрощает и оптимизирует процесс развертывания приложений. Это решение обеспечивает более быстрое, надежное и корректное развертывание для вашего предприятия. Узнайте об обновлении существующих приложений System Center Configuration Manager до MSIX, а также об интеграции с Configuration Manager.
+    >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3i5DH]
+#### <a name="msix-for-developers"></a>MSIX для разработчиков
+Узнайте, как разработчики могут воспользоваться преимуществами MSIX.
     :::column-end:::
-
-
+    :::column:::
+    >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3iiD5]
+#### <a name="evolving-and-enhancing-desktop-apps-with-msix"></a>Доработка и оптимизация классических приложений с помощью MSIX
+MSIX позволяет дорабатывать и улучшать классические приложения. Узнайте, как использовать новые API, новые элементы управления и другие возможности. 
+    :::column-end:::
 :::row-end:::
