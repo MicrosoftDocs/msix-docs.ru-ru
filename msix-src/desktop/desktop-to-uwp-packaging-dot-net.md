@@ -1,33 +1,33 @@
 ---
-Description: В этом руководстве описывается настройка решения Visual Studio для редактирования, отладки и упаковки классического приложения.
+Description: В этом руководство объясняется, как настроить решение Visual Studio для редактирования, отладки и упаковки классических приложений.
 title: Упаковка классического приложения с помощью исходного кода в Visual Studio
 ms.date: 08/30/2017
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: bf157014fd43a8fdfe3162a8b42e1f4b241d7938
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: aad9f460a9589e58d55583c7ffb80dd18e4bcbde
+ms.sourcegitcommit: 6a0a40ba5d941ff4c5b24569e15cdd588e143b6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67828927"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315708"
 ---
 # <a name="package-a-desktop-app-from-source-code-using-visual-studio"></a>Упаковка классического приложения с помощью исходного кода в Visual Studio
 
-Можно использовать **проект упаковки приложений Windows** проект в Visual Studio для создания пакета для вашего приложения. После этого вы публикуете, его в пакет для Microsoft Store или загрузки неопубликованных приложений на один или несколько компьютеров.
+Вы можете использовать проект **упаковки приложений Windows** в Visual Studio для создания пакета для классического приложения. Затем можно опубликовать этот пакет на Microsoft Store или загружать неопубликованные его на один или несколько компьютеров.
 
-**Проект упаковки приложений Windows** проект доступен в следующих версиях Visual Studio. Для получения наилучших результатов мы рекомендуем использовать последний выпуск.
+Проект **упаковки приложений Windows** доступен в следующих версиях Visual Studio. Для оптимальной работы рекомендуется использовать последний выпуск.
 
 * Visual Studio 2019
-* Visual Studio 2017 15.5 и более поздних версий
+* Visual Studio 2017 15,5 и более поздние версии
 
 > [!IMPORTANT]
-> **Проект упаковки приложений Windows** проект в Visual Studio поддерживается в Windows 10 версии 1607 и более поздних версий. Может использоваться только в проектах, предназначенных для Windows 10 Anniversary Update (10.0; Сборка 14393) или более поздней версии.
+> Проект **упаковки приложений Windows** в Visual Studio поддерживается в Windows 10, версии 1607 и более поздних версиях. Его можно использовать только в проектах, предназначенных для годовщины обновления Windows 10 (10,0; Сборка 14393) или более поздней версии.
 
-## <a name="first-prepare-your-application"></a>Сначала подготовьте свое приложение
+## <a name="prepare-your-application"></a>Подготовка приложения
 
-Ознакомьтесь с этим руководством прежде чем начать создание пакета для приложения: [Подготовка для упаковки классического приложения](desktop-to-uwp-prepare.md).
+Прежде чем приступить к созданию пакета для приложения, ознакомьтесь с этим руководством. [Подготовка к упаковке классического приложения](desktop-to-uwp-prepare.md).
 
 <a id="new-packaging-project"/>
 
@@ -45,7 +45,7 @@ ms.locfileid: "67828927"
 
    ![Диалоговое окно выбора версии упаковки](images/packaging-version.png)
 
-4. В проекте упаковки щелкните правой кнопкой мыши папку **Приложения** и выберите **Добавить ссылку**.
+4. В обозреватель решений щелкните правой кнопкой мыши папку **приложения** в проекте упаковки и выберите команду **Добавить ссылку**.
 
    ![Добавление ссылки на проект](images/add-project-reference.png)
 
@@ -57,13 +57,36 @@ ms.locfileid: "67828927"
 
    ![Задание точки входа](images/entry-point-set.png)
 
-6. Соберите проект упаковки, чтобы убедиться, что ошибок нет.  Если возникнут ошибки, откройте **Configuration Manager** и убедитесь, что ваши проекты предназначены для той же платформе.
+6. Если упакованное приложение предназначено для .NET Core 3, выполните следующие действия, чтобы добавить новый целевой объект сборки в файл проекта. Это необходимо только для приложений, предназначенных для .NET Core 3.  
 
-   ![Configuration manager](images/config-manager.png)
+    1. В обозреватель решений щелкните правой кнопкой мыши узел проект упаковки и выберите пункт **изменить файл проекта**.
 
-7. Используйте мастер [Создание пакетов приложений](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps), чтобы создать файл appxupload.
+    2. Добавьте следующий XML-код в файл проекта непосредственно перед закрывающим `</Project>` элементом.
 
-   Этот файл можно отправить непосредственно к Store.
+        ``` xml
+        <!-- Stomp the path to application executable. This task will copy the main exe to the appx root folder. -->
+        <Target Name="_StompSourceProjectForWapProject" BeforeTargets="_ConvertItems">
+          <ItemGroup>
+            <!-- Stomp all "SourceProject" values for all incoming dependencies to flatten the package. -->
+            <_TemporaryFilteredWapProjOutput Include="@(_FilteredNonWapProjProjectOutput)" />
+            <_FilteredNonWapProjProjectOutput Remove="@(_TemporaryFilteredWapProjOutput)" />
+            <_FilteredNonWapProjProjectOutput Include="@(_TemporaryFilteredWapProjOutput)">
+              <!-- Blank the SourceProject here to vend all files into the root of the package. -->
+              <SourceProject></SourceProject>
+            </_FilteredNonWapProjProjectOutput>
+          </ItemGroup>
+        </Target>
+        ```
+
+    3. Сохраните файл проекта и закройте его.
+
+7. Соберите проект упаковки, чтобы убедиться, что ошибок нет. При возникновении ошибок откройте **Configuration Manager** и убедитесь, что проекты предназначены для той же платформы.
+
+   ![Диспетчер конфигурации](images/config-manager.png)
+
+8. Используйте мастер [создания пакетов приложений](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) , чтобы создать файл. мсиксуплоад/. appxupload.
+
+   Этот файл можно передать непосредственно в хранилище.
 
 **Видео**
 
@@ -72,26 +95,26 @@ ms.locfileid: "67828927"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-**Найдите ответы на ваши вопросы**
+**Поиск ответов на вопросы**
 
 Есть вопросы? Задайте их на Stack Overflow. Наша команда следит за этими [тегами](https://stackoverflow.com/questions/tagged/project-centennial+or+desktop-bridge). Вы также можете задать нам вопросы [здесь](https://social.msdn.microsoft.com/Forums/en-US/home?filter=alltypes&sort=relevancedesc&searchTerm=%5BDesktop%20Converter%5D).
 
-**Отправить отзыв или предложения по функциям**
+**Отправьте отзыв или получите предложения по функциям**
 
 См. раздел [UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/161895-desktop-bridge-centennial)
 
-**Запустите, отладку или тестирование своего настольного приложения**
+**Запуск, отладка и тестирование приложения для настольных систем**
 
-См. в разделе [запуска, отладки и тестирования упакованные приложения рабочего стола](desktop-to-uwp-debug.md)
+См. раздел [Запуск, отладка и тестирование приложения в упакованном классическом приложении](desktop-to-uwp-debug.md) .
 
-**Улучшить своего настольного приложения, добавив API-интерфейсов универсальной платформы Windows**
+**Расширение классического приложения путем добавления API UWP**
 
 См. [Улучшение классического приложения для Windows 10](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-enhance)
 
-**Расширение своего настольного приложения путем добавления проектов универсальной платформы Windows и компонентов среды выполнения Windows**
+**Расширение классического приложения путем добавления проектов UWP и компонентов среда выполнения Windows**
 
 См. [Расширение классического приложения с помощью современных компонентов UWP](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-extend)
 
 **Распространение приложения**
 
-См. в разделе [распределить упакованные настольного приложения](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-distribute)
+См. раздел [распространение упакованного](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-distribute) классического приложения.
