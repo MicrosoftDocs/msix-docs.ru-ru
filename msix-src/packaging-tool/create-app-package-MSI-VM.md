@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 4acb1f829d724b27be8745958f08d5e180af7ce6
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: fec62c4a37529cf9f27828096c473a620c443419
+ms.sourcegitcommit: 70036a054d1a5da24f535ddd4ea0fae78c30d469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829312"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68238963"
 ---
 # <a name="create-an-msix-package-from-a-desktop-installer-msi-exe-or-app-v-on-a-vm"></a>Создание пакета MSIX с помощью классического установщика (MSI, EXE или App-V) на виртуальной машине
 
@@ -23,7 +23,7 @@ ms.locfileid: "67829312"
 - Требуется ОС Windows 10, версия 1809 и выше.
 
 > [!NOTE]
-> Сейчас средство упаковки MSIX поддерживает App-V 5.1. Если у вас есть пакеты с App-V 4.x, рекомендуем преобразовать их в пакеты App-V 5.1, прежде чем использовать средство упаковки MsIX для преобразования в MSIX. 
+> Сейчас средство упаковки MSIX поддерживает App-V 5.1. Если у вас есть пакеты с App-V 4.x, рекомендуем преобразовать их в пакеты App-V 5.1, прежде чем использовать средство упаковки MSIX для преобразования в MSIX. 
 
 При первом запуске средства вам будет предложено предоставить свое согласие на отправку данных телеметрии. Важно отметить, что диагностические данные, которые вы предоставляете нам, генерируются самим приложением и не используются для вашей идентификации или попыток связаться с вами. Они помогают нам быстрее устранять проблемы.
 
