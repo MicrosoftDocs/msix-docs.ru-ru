@@ -144,6 +144,8 @@
           href: package/signing-package-overview.md
         - name: Подписание пакета приложения с помощью SignTool
           href: 'https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool?context=/windows/msix/render'
+        - name: Подписывание пакета MSIX с помощью подписи Device Guard
+          href: package/signing-package-device-guard-signing.md
 - name: Проверить
   items:
     - name: комплект сертификации приложений для Windows;
