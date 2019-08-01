@@ -7,15 +7,23 @@
     - name: Форматы пакета приложений
       items:
         - name: Обзор
-          href: 'https://docs.microsoft.com/windows/uwp/launch-resume/extend-your-app-with-services-extensions-packages?context=/windows/msix/render'
+          href: package/app-package-formats.md
         - name: Дополнительные пакеты
-          href: 'https://docs.microsoft.com/windows/uwp/packaging/optional-packages?context=/windows/msix/render'
-        - name: Потоковая установка приложений для Windows
-          href: 'https://docs.microsoft.com/windows/uwp/packaging/streaming-install?context=/windows/msix/render'
+          items:
+            - name: Обзор
+              href: package/optional-packages.md
+            - name: Дополнительные пакеты с исполняемым кодом
+              href: package/optional-packages-with-executable-code.md
+        - name: Потоковая установка приложений
+          items:
+            - name: Обзор
+              href: package/streaming-install.md
+            - name: Создание и преобразование исходного файла сопоставления группы содержимого
+              href: package/create-cgm.md
         - name: Пакеты приложений на основе плоских пакетов
-          href: 'https://docs.microsoft.com/windows/uwp/packaging/flat-bundles?context=/windows/msix/render'
+          href: package/flat-bundles.md
         - name: Пакеты активов
-          href: 'https://docs.microsoft.com/windows/uwp/packaging/asset-packages?context=/windows/msix/render'
+          href: package/asset-packages.md
         - name: Пакеты с модификациями
           items:
             - name: Обзор
@@ -25,7 +33,7 @@
             - name: "Пакеты с модификациями в Windows\_10 версии\_1903"
               href: modification-package-1903.md
             - name: Архитектуры пакетов приложений
-              href: 'https://docs.microsoft.com/windows/uwp/packaging/device-architecture?context=/windows/msix/render'
+              href: package/device-architecture.md
     - name: Обновления пакетов приложений
       href: app-package-updates.md
     - name: Поддержка MSIX в сборках 1709 и 1803
@@ -122,6 +130,8 @@
               href: desktop/desktop-to-uwp-packaging-dot-net.md
             - name: Оптимизация двоичных файлов с помощью собственных образов
               href: desktop/desktop-to-uwp-r2r.md
+        - name: Упаковка классического приложения вручную
+          href: desktop/desktop-to-uwp-manual-conversion.md
         - name: Упаковка классического приложения с помощью сторонних установщиков
           href: desktop/desktop-to-uwp-third-party-installer.md
         - name: Принцип работы упакованного классического приложения
@@ -129,13 +139,19 @@
         - name: Известные проблемы
           href: desktop/desktop-to-uwp-known-issues.md
     - name: Упаковка приложения UWP с помощью Visual Studio
-      href: 'https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps?context=/windows/msix/render'
-    - name: Средства упаковки вручную
+      href: package/packaging-uwp-apps.md
+    - name: Упаковка приложения вручную
       items:
         - name: Обзор
-          href: 'https://docs.microsoft.com/windows/uwp/packaging/manual-packaging-root?context=/windows/msix/render'
-        - name: Упаковка классических приложений вручную
-          href: desktop/desktop-to-uwp-manual-conversion.md
+          href: package/manual-packaging-root.md
+        - name: Создание пакета приложений с помощью средства MakeAppx.exe
+          href: package/create-app-package-with-makeappx-tool.md
+        - name: Создание сертификата для подписания пакета
+          href: package/create-certificate-package-signing.md
+        - name: Разработка пакетов ресурсов и сворачивание пакета ресурсов
+          href: package/package-folding.md
+        - name: Создание пакета с использованием макета упаковки
+          href: package/packaging-layout.md
     - name: Объединение пакетов MSIX
       href: packaging-tool/bundle-msix-packages.md
     - name: Подписание пакета приложения
@@ -143,7 +159,7 @@
         - name: Обзор
           href: package/signing-package-overview.md
         - name: Подписание пакета приложения с помощью SignTool
-          href: 'https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool?context=/windows/msix/render'
+          href: package/sign-app-package-using-signtool.md
         - name: Подписывание пакета MSIX с помощью подписи Device Guard
           href: package/signing-package-device-guard-signing.md
 - name: Проверить

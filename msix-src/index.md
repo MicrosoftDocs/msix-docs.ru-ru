@@ -7,12 +7,12 @@ ms.topic: landing-page
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 4e31f0cf5af1ec9a637d0c59ed54f26c3ed80d31
-ms.sourcegitcommit: 70036a054d1a5da24f535ddd4ea0fae78c30d469
+ms.openlocfilehash: d3800d9af4808501afd5ad7862cf1bc62790dad3
+ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68238952"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68685351"
 ---
 # <a name="msix-documentation"></a>Документация по MSIX
 MSIX — это безопасный и надежный формат упаковки, созданный на основе сочетания технологий установки с помощью MSI-файлов, APPX-файлов, App-V и ClickOnce. 
@@ -57,7 +57,7 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Начало работы</h3>                                
                 <p>
-                                    <a href="/en-us/windows/msix/packaging-tool/create-app-package-msi-vm" data-linktype="absolute-path">Обновление существующих установщиков до MSIX</a>
+                                    <a href="/windows/msix/packaging-tool/create-app-package-msi-vm" data-linktype="absolute-path">Обновление существующих установщиков до MSIX</a>
                                 </p>
                             </div>
                         </div>
@@ -76,13 +76,13 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Упаковка</h3>
                                 <p>
-                                    <a href="/en-us/windows/msix/mpt-overview" data-linktype="absolute-path">Использование средства упаковки MSIX</a>
+                                    <a href="/windows/msix/mpt-overview" data-linktype="absolute-path">Использование средства упаковки MSIX</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/msix/packaging-tool/package-conversion-cli" data-linktype="absolute-path">Использование командной строки</a>
+                                    <a href="/windows/msix/packaging-tool/package-conversion-cli" data-linktype="absolute-path">Использование командной строки</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/packaging/sign-app-package-using-signtool?context=/windows/msix/render" data-linktype="absolute-path">Подписывание пакетов</a>
+                                    <a href="/windows/msix/package/sign-app-package-using-signtool" data-linktype="absolute-path">Подписывание пакетов</a>
                                 </p>
                             </div>
                         </div>
@@ -101,10 +101,10 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Проверить</h3>
                                 <p>
-                                    <a href="/en-us/windows/uwp/publish/package-flights?context=/windows/msix/render" data-linktype="absolute-path">Фокус-тестирование в Microsoft Store</a>
+                                    <a href="/windows/uwp/publish/package-flights?context=/windows/msix/render" data-linktype="absolute-path">Фокус-тестирование в Microsoft Store</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s?context=/windows/msix/render#first-download-the-policies-and-then-choose-one" data-linktype="absolute-path">Тестирование для Windows 10 в S-режиме</a>
+                                    <a href="/windows/uwp/porting/desktop-to-uwp-test-windows-s?context=/windows/msix/render#first-download-the-policies-and-then-choose-one" data-linktype="absolute-path">Тестирование для Windows 10 в S-режиме</a>
                                 </p>
                             </div>
                         </div>
@@ -123,19 +123,19 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Распространение</h3>
                                 <p>
-                                    <a href="/en-us/windows/uwp/publish/app-submissions?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Store</a>
+                                    <a href="/windows/uwp/publish/app-submissions?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Store</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/publish/distribute-lob-apps-to-enterprises?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Store для бизнеса</a>
+                                    <a href="/windows/uwp/publish/distribute-lob-apps-to-enterprises?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Store для бизнеса</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/sccm/apps/understand/introduction-to-application-management?context=/windows/msix/render" data-linktype="absolute-path">System Center Configuration Manager</a>
+                                    <a href="/sccm/apps/understand/introduction-to-application-management?context=/windows/msix/render" data-linktype="absolute-path">System Center Configuration Manager</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/intune/introduction-intune?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Intune</a>
+                                    <a href="/intune/introduction-intune?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Intune</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/msix/app-installer/app-installer-file-overview" data-linktype="absolute-path">Распространение по другим каналам</a>
+                                    <a href="/windows/msix/app-installer/app-installer-file-overview" data-linktype="absolute-path">Распространение по другим каналам</a>
                                 </p>
                             </div>
                         </div>
@@ -160,10 +160,10 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Начало работы</h3>
                                 <p>
-                                    <a href="/en-us/windows/msix/overview">Сведения об MSIX</a>
+                                    <a href="/windows/msix/overview">Сведения об MSIX</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/msix/app-package-updates?context=/windows/msix/render">Обновления приложений MSIX</a>
+                                    <a href="/windows/msix/app-package-updates?context=/windows/msix/render">Обновления приложений MSIX</a>
                                 </p>
                             </div>
                         </div>
@@ -182,13 +182,19 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Сборка</h3>
                                 <p>
-                                    <a href="/en-us/windows/uwp/packaging/packaging-uwp-apps?context=/windows/msix/render" data-linktype="absolute-path">Упаковка приложения с помощью Visual Studio</a>
+                                    <a href="/windows/msix/desktop/desktop-to-uwp-packaging-dot-net">Упаковка классического приложения с помощью Visual Studio</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/packaging/manual-packaging-root?context=/windows/msix/render" data-linktype="absolute-path">Средства упаковки вручную</a>
+                                    <a href="/windows/msix/package/packaging-uwp-apps" data-linktype="absolute-path">Упаковка приложения UWP с помощью Visual Studio</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/packaging/sign-app-package-using-signtool?context=/windows/msix/render" data-linktype="absolute-path">Подписывание пакета приложения</a>
+                                    <a href="/windows/msix/package/manual-packaging-root" data-linktype="absolute-path">Средства упаковки вручную</a>
+                                </p>
+                                <p>
+                                    <a href="/windows/msix/package/sign-app-package-using-signtool" data-linktype="absolute-path">Подписывание пакета приложения</a>
+                                </p>
+                                <p>
+                                    <a href="/windows/msix/package/streaming-install" data-linktype="absolute-path">Потоковая установка приложений</a>
                                 </p>
                             </div>
                         </div>
@@ -207,16 +213,16 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Проверить</h3>
                                 <p>
-                                    <a href="/en-us/windows/uwp/debug-test-perf/windows-app-certification-kit?context=/windows/msix/render" data-linktype="absolute-path">Комплект сертификации приложений для Windows</a>
+                                    <a href="/windows/uwp/debug-test-perf/windows-app-certification-kit?context=/windows/msix/render" data-linktype="absolute-path">Комплект сертификации приложений для Windows</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/debug-test-perf/device-portal?context=/windows/msix/render" data-linktype="absolute-path">Портал устройств Windows</a>
+                                    <a href="/windows/uwp/debug-test-perf/device-portal?context=/windows/msix/render" data-linktype="absolute-path">Портал устройств Windows</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/publish/package-flights?context=/windows/msix/render" data-linktype="absolute-path">Фокус-тестирование пакетов</a>
+                                    <a href="/windows/uwp/publish/package-flights?context=/windows/msix/render" data-linktype="absolute-path">Фокус-тестирование пакетов</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s?context=/windows/msix/render" data-linktype="absolute-path">Тестирование для Windows 10 в S-режиме</a>
+                                    <a href="/windows/uwp/porting/desktop-to-uwp-test-windows-s?context=/windows/msix/render" data-linktype="absolute-path">Тестирование для Windows 10 в S-режиме</a>
                                 </p>
                             </div>
                         </div>
@@ -235,13 +241,13 @@ MSIX — это безопасный и надежный формат упако
                             <div class="cardText">
                                 <h3>Распространение</h3>
                                 <p>
-                                    <a href="/en-us/windows/uwp/publish/?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Store</a>
+                                    <a href="/windows/uwp/publish/?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Store</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/publish/distribute-lob-apps-to-enterprises?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Store для бизнеса</a>
+                                    <a href="/windows/uwp/publish/distribute-lob-apps-to-enterprises?context=/windows/msix/render" data-linktype="absolute-path">Microsoft Store для бизнеса</a>
                                 </p>
                                 <p>
-                                    <a href="/en-us/windows/uwp/packaging/create-appinstallerfile-vs?context=/windows/msix/render" data-linktype="absolute-path">Распространение по другим каналам</a>
+                                    <a href="/windows/uwp/packaging/create-appinstallerfile-vs?context=/windows/msix/render" data-linktype="absolute-path">Распространение по другим каналам</a>
                                 </p>
                             </div>
                         </div>
