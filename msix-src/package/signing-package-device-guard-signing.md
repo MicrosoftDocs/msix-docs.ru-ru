@@ -4,12 +4,12 @@ title: Подписывание пакета MSIX с помощью подпис
 ms.date: 07/12/2019
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 0784d6c3bb8cf563d5238698f42653e7747f00e0
-ms.sourcegitcommit: c5aafec124a1b5e5bce364768f6f9127a8500f73
+ms.openlocfilehash: 61d2b3f62d8fa7cbcbf81fa7ae6a8cb046e5c4b3
+ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68663859"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68685302"
 ---
 # <a name="sign-an-msix-package-with-device-guard-signing"></a>Подписывание пакета MSIX с помощью подписи Device Guard
 
@@ -101,7 +101,7 @@ signtool sign /fd sha256 /dlib DgssLib.dll /dmdf <Azure AAD in .json format> /t 
 ```
 
 > [!NOTE]
-> * При подписывании пакета рекомендуется использовать один из параметров метки времени. Если вы не применяете метку времени, срок действия подписи истечет через один год, и приложение потребуется повторно подписать.
+> * При подписывании пакета рекомендуется использовать один из параметров метки времени. Если вы не применяете [метку времени](signing-package-overview.md#timestamping), срок действия подписи истечет через один год, и приложение потребуется повторно подписать.
 > * Убедитесь, что имя издателя в манифесте пакета совпадает с сертификатом, который используется для подписания пакета. Эта функция будет представлять собой конечный сертификат. Например, если конечным сертификатом является **CompanyName**, имя издателя в манифесте должно быть **CN = CompanyName**. В противном случае операция подписывания завершится ошибкой.
 > * Поддерживается только алгоритм SHA256.
 > * При подписывании пакета с помощью подписи Device Guard пакет не отправляется через Интернет.

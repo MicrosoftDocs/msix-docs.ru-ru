@@ -1,17 +1,17 @@
 ---
 Description: В этом руководство объясняется, как настроить решение Visual Studio для редактирования, отладки и упаковки классических приложений.
 title: Упаковка классического приложения с помощью исходного кода в Visual Studio
-ms.date: 08/30/2017
+ms.date: 07/18/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: aad9f460a9589e58d55583c7ffb80dd18e4bcbde
-ms.sourcegitcommit: 6a0a40ba5d941ff4c5b24569e15cdd588e143b6b
+ms.openlocfilehash: 8effa64d5b06739d1251423fc0776e3e010b73e2
+ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315708"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68685421"
 ---
 # <a name="package-a-desktop-app-from-source-code-using-visual-studio"></a>Упаковка классического приложения с помощью исходного кода в Visual Studio
 
@@ -84,7 +84,7 @@ ms.locfileid: "68315708"
 
    ![Диспетчер конфигурации](images/config-manager.png)
 
-8. Используйте мастер [создания пакетов приложений](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) , чтобы создать файл. мсиксуплоад/. appxupload.
+8. Используйте мастер [создания пакетов приложений](../package/packaging-uwp-apps.md) , чтобы создать файл. мсиксуплоад/. appxupload.
 
    Этот файл можно передать непосредственно в хранилище.
 

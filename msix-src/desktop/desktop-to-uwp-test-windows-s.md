@@ -1,16 +1,16 @@
 ---
-Description: Тестирование приложения для Windows 10 в режиме S.
+Description: Протестируйте приложение для Windows 10 в режиме S.
 title: Тестирование приложения для Windows на Windows 10 S.
-ms.date: 05/11/2017
+ms.date: 07/29/2019
 ms.topic: article
-keywords: Windows 10 S, uwp, msix
+keywords: Windows 10, UWP, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 18789e9c4294befc6a730b4763fb0a847b8c622d
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: d9517a7f350d58838e0b1de30a11b325dfe7cf1a
+ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829036"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68685229"
 ---
 # <a name="test-your-windows-app-for-windows-10-in-s-mode"></a>Тестирование приложения для Windows 10 в режиме S.
 
@@ -45,7 +45,7 @@ ms.locfileid: "67829036"
 ### <a name="audit-mode-policy"></a>Политика режима аудита
 В этом режиме ваше приложение работает, даже если оно выполняет задачи, не поддерживаемые в Windows 10 S. Windows регистрирует все исполняемые файлы, которые были бы заблокированы, в журналах событий целостности кода.
 
-Эти журналы можно найти, открыв **средство просмотра событий**и затем перейдите в это расположение: Журналы приложений и служб -> Майкрософт -> Windows -> CodeIntegrity "->" Operational.
+Эти журналы можно найти, открыв **Просмотр событий**и перейдя в следующее расположение: Журналы приложений и служб — > Microsoft-> Windows-> CodeIntegrity-> в рабочем состоянии.
 
 ![журналы событий целостности кода](images/code-integrity-logs.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "67829036"
 
 Если вы хотите применить эти политики на локальном компьютере, лучше всего начать с политики режима аудита. С ней вы сможете просмотреть журналы событий целостности кода, чтобы убедиться, что при ее принудительном применении не будут заблокированы никакие критичные функции.
 
-Когда вы будете готовы применить политику, найти. P7b – файл политики, которое вы выбрали, переименуйте его в **SIPolicy.P7B**, а затем сохраните этот файл в этом расположении в вашей системе: **C:\Windows\System32\CodeIntegrity\\** .
+Когда вы будете готовы применить политику, найдите. P7B файл для выбранной политики, переименуйте его в **сиполици. p7b**, а затем сохраните этот файл в следующую папку в системе: **C:\Windows\System32\CodeIntegrity\\** .
 
 Затем перезапустите компьютер.
 
@@ -84,18 +84,18 @@ ms.locfileid: "67829036"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-**Найдите ответы на ваши вопросы**
+**Поиск ответов на вопросы**
 
 Есть вопросы? Задайте их на Stack Overflow. Наша команда следит за этими [тегами](https://stackoverflow.com/questions/tagged/project-centennial+or+desktop-bridge). Вы также можете задать нам вопросы [здесь](https://social.msdn.microsoft.com/Forums/en-US/home?filter=alltypes&sort=relevancedesc&searchTerm=%5BDesktop%20Converter%5D).
 
-**Отправить отзыв или предложения по функциям**
+**Отправьте отзыв или получите предложения по функциям**
 
 См. раздел [UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/161895-desktop-bridge-centennial)
 
-**Просмотрите подробные блога, которая была отправлена нашей группой приложений см.**
+**Ознакомьтесь с подробными статьями блога, опубликованными нашей группой App Consult**
 
 См. [Перенос и тестирование классических приложений на Windows 10 S с помощью моста для классических приложений](https://blogs.msdn.microsoft.com/appconsult/2017/06/15/porting-and-testing-your-classic-desktop-applications-on-windows-10-s-with-the-desktop-bridge/).
 
-**Дополнительные сведения о средствах, которые упрощают процесс для тестирования для Windows в режиме S**
+**Узнайте о средствах, упрощающих тестирование Windows в режиме S**
 
 См. [Распаковка, изменение, перепаковка и подписание APPX](https://blogs.msdn.microsoft.com/appconsult/2017/08/07/unpack-modify-repack-sign-appx/).
