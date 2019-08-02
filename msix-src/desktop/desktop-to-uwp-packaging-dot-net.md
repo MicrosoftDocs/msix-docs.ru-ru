@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: 8effa64d5b06739d1251423fc0776e3e010b73e2
-ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
+ms.openlocfilehash: f97fc474aa9c25a381362a55120797d2a3c5131c
+ms.sourcegitcommit: 6c28c590cd563ba69b2350e556dbd2ae55d9d7f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68685421"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730402"
 ---
 # <a name="package-a-desktop-app-from-source-code-using-visual-studio"></a>Упаковка классического приложения с помощью исходного кода в Visual Studio
 
@@ -61,24 +61,33 @@ ms.locfileid: "68685421"
 
     1. В обозреватель решений щелкните правой кнопкой мыши узел проект упаковки и выберите пункт **изменить файл проекта**.
 
-    2. Добавьте следующий XML-код в файл проекта непосредственно перед закрывающим `</Project>` элементом.
+    2. Найдите в этом файле элемент `<Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />`.
+
+    3. Замените этот элемент следующим XML-кодом.
 
         ``` xml
-        <!-- Stomp the path to application executable. This task will copy the main exe to the appx root folder. -->
+        <ItemGroup>
+          <SDKReference Include="Microsoft.VCLibs,Version=14.0">
+            <TargetedSDKConfiguration Condition="'$(Configuration)'!='Debug'">Retail</TargetedSDKConfiguration>
+            <TargetedSDKConfiguration Condition="'$(Configuration)'=='Debug'">Debug</TargetedSDKConfiguration>
+            <TargetedSDKArchitecture>$(PlatformShortName)</TargetedSDKArchitecture>
+            <Implicit>true</Implicit>
+          </SDKReference>
+        </ItemGroup>
+        <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
         <Target Name="_StompSourceProjectForWapProject" BeforeTargets="_ConvertItems">
           <ItemGroup>
-            <!-- Stomp all "SourceProject" values for all incoming dependencies to flatten the package. -->
             <_TemporaryFilteredWapProjOutput Include="@(_FilteredNonWapProjProjectOutput)" />
             <_FilteredNonWapProjProjectOutput Remove="@(_TemporaryFilteredWapProjOutput)" />
             <_FilteredNonWapProjProjectOutput Include="@(_TemporaryFilteredWapProjOutput)">
-              <!-- Blank the SourceProject here to vend all files into the root of the package. -->
-              <SourceProject></SourceProject>
+              <SourceProject>
+              </SourceProject>
             </_FilteredNonWapProjProjectOutput>
           </ItemGroup>
         </Target>
         ```
 
-    3. Сохраните файл проекта и закройте его.
+    4. Сохраните файл проекта и закройте его.
 
 7. Соберите проект упаковки, чтобы убедиться, что ошибок нет. При возникновении ошибок откройте **Configuration Manager** и убедитесь, что проекты предназначены для той же платформы.
 
