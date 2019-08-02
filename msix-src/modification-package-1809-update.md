@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: b6f49d25628b4cd2358aa4054c9ca19e77013f99
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: 48e3eb8414b827ba1675214e9c0eec7ca451103f
+ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68685368"
 ---
 # <a name="msix-modification-packages-on-windows-10-version-1809"></a>Пакеты изменений в Windows 10, версия 1809 
 
@@ -31,7 +31,7 @@ ms.locfileid: "67829399"
 
 ## <a name="create-a-modification-package-using-makeappxexe"></a>Создание пакета изменений с помощью MakeAppx.exe
 
-Чтобы создать пакет изменений вручную с помощью средства [MakeAppX.exe](https://docs.microsoft.com/windows/uwp/packaging/create-app-package-with-makeappx-tool), включенного в пакет SDK для Windows 10, сделайте следующее:
+Чтобы создать пакет изменений вручную с помощью средства [MakeAppX.exe](package/create-app-package-with-makeappx-tool.md), включенного в пакет SDK для Windows 10, сделайте следующее:
 * В манифесте определите основной пакет. Укажите издателя и имя основного пакета.
 
     ```xml
