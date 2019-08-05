@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 14045d6bd5d78ba364c82b190d065d8630983fdb
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: 7742ca5e52ed5ee435ee3c8765fa45cfbdc903dc
+ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829297"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68685435"
 ---
 # <a name="bundle-msix-packages"></a>Объединение пакетов MSIX 
 
@@ -48,29 +48,32 @@ ms.locfileid: "67829297"
 
 В MakeAppx.exe используется следующий синтаксис командной строки.
 
-```Command Prompt C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe" bundle /d input_directorypath /p <filepath>.msixbundle
+```Command Prompt
+C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe" bundle /d input_directorypath 
+/p <filepath>.msixbundle
 ```
 
-Here is an example command.
+Ниже приведен пример команды.
 
 ```
-C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe" bundle /d c:\AppPackages\ /p c:\MyLOBApp_10.0.0.0_ph32m9x8skttmg.msixbundle
+C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\MakeAppx.exe" bundle /d c:\AppPackages\ 
+/p c:\MyLOBApp_10.0.0.0_ph32m9x8skttmg.msixbundle
 ```
 
-After running the command, an unsigned .msixbundle will be created in the path specified. Packages do not need to be signed before bundling.  
+После выполнения команды в указанном расположении будет создан неподписанный пакет .msixbundle. Перед объединением пакетов их не нужно подписывать.  
 
-## Step 3: Sign the bundle
+## <a name="step-3-sign-the-bundle"></a>Шаг 3. Подписание пакета
 
-After you create the bundle, you must sign the package before you can distribute the app to your users or install it. 
+После создания пакета его необходимо подписать, чтобы распространить приложение для пользователей или установить его. 
 
-To sign a package, you will need a general code signing certificate and use SignTool.exe from the Windows 10 SDK. 
+Чтобы подписать пакет, вам потребуется общий сертификат подписи кода и файл SignTool.exe из пакета SDK для Windows 10. 
 
-We strongly recommend that you use a trusted cert from certificate authority as that allows for the package to be distributed and deployed on your end users devices seamlessly. Once you have access to the private certificate (.pfx file), you can sign the package as shown below.
+Настоятельно рекомендуем использовать доверенный сертификат из центра сертификации, так как он позволяет беспрепятственно распространить и развернуть пакет на устройствах пользователей. Получив доступ к частному сертификату (PFX-файл), вы сможете подписать пакет, как показано ниже.
 
 >[!NOTE]
-> SignTool.exe is available in the same directory as MakeAppx.exe in the Windows 10 SDK. 
+> Файл SignTool.exe находится в том же каталоге в пакете SDK для Windows 10, что и MakeAppx.exe. 
 
-SignTool.exe has the following command line syntax.
+В SignTool.exe используется следующий синтаксис командной строки.
 
 ```Command Prompt
 C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\SignTool.exe" sign /fd <Hash Algorithm> /a 
@@ -84,7 +87,7 @@ C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\SignTool.exe" 
 /f c:\private-cert.pfx /p aaabbb123 c:\MyLOBApp_10.0.0.0_ph32m9x8skttmg.msixbundle
 ```
 
-Дополнительные сведения о подписании пакетов приложений с помощью SignTool.exe см. в [этой статье](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool). 
+Дополнительные сведения о подписании пакетов приложений с помощью SignTool.exe см. в [этой статье](../package/sign-app-package-using-signtool.md). 
 
 Подписав набор пакетов, вы можете разместить его в сетевой общей папке или в любой сети распространения содержимого для доступа пользователей. 
 
