@@ -7,12 +7,12 @@ ms.topic: landing-page
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: d3800d9af4808501afd5ad7862cf1bc62790dad3
-ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
+ms.openlocfilehash: 067a6b9730fe7de37e0c90587534fe67edf5d1ad
+ms.sourcegitcommit: 163d233b3f8bdf5d811ba1953aef7617926d9031
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68685351"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68786982"
 ---
 # <a name="msix-documentation"></a>Документация по MSIX
 MSIX — это безопасный и надежный формат упаковки, созданный на основе сочетания технологий установки с помощью MSI-файлов, APPX-файлов, App-V и ClickOnce. 
@@ -21,22 +21,22 @@ MSIX — это безопасный и надежный формат упако
  > Посетите страницу [технического сообщества MSIX](https://aka.ms/msixcommunity), чтобы просматривать обсуждения и следить за новостями.
  
 :::row:::
-    :::column:::
-        ### Package existing Windows apps
-Средство упаковки MSIX позволяет обновить существующие пакеты приложений Win32 в формате MSIX. [Подробнее](mpt-overview.md)
-<div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство</a></p></div>
-    :::column-end:::
-    :::column:::
-        ### Use MSIX anywhere Разработчики, работающие на разных платформах, могут использовать пакет MSIX SDK для обработки пакетов, предназначенных для распространения через Microsoft Store или в других сетях распространения содержимого. [Подробнее...](msix-sdk/sdk-overview.md)
-    :::column-end:::
+   :::column:::
+      ### <a name="package-existing-windows-apps"></a>Упаковка существующих приложений для Windows
+      Средство упаковки MSIX позволяет обновить существующие пакеты приложений Win32 в формате MSIX. [Подробнее](mpt-overview.md)
+      <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство</a></p></div>
+   :::column-end:::
+   :::column:::
+      ### Используйте MSIX на любых платформах. Разработчики, работающие на разных платформах, могут использовать пакет SDK MSIX для обработки пакетов, предназначенных для распространения через Microsoft Store или в других сетях распространения содержимого. [Подробнее...](msix-sdk/sdk-overview.md)
+   :::column-end:::
 :::row-end:::
 :::row:::
-        :::column:::
-        ### Установка пакетов приложений MSIX Установщик приложений позволяет устанавливать и обновлять пакеты приложений MSIX, размещенные как локально, так и в сетях распространения содержимого. [Подробнее...](app-installer/app-installer-root.md)
-    :::column-end:::
-    :::column:::
-    ### Платформа поддержки пакетов Платформа поддержки пакетов позволяет приложению обходить некоторые ограничения современных сред выполнения, гарантируя надлежащую работу приложения без необходимости изменения его исходного кода. [Подробнее](psf/package-support-framework-overview.md)
-    :::column-end:::
+   :::column:::
+      ### Установка пакетов приложений MSIX Установщик приложений позволяет устанавливать и обновлять пакеты приложений MSIX, размещенные как локально, так и в сетях распространения содержимого. [Подробнее...](app-installer/app-installer-root.md)
+   :::column-end:::
+   :::column:::
+      ### Платформа поддержки пакетов Платформа поддержки пакетов позволяет приложению обходить некоторые ограничения современных сред выполнения, гарантируя надлежащую работу приложения без необходимости изменения его исходного кода. [Подробнее](psf/package-support-framework-overview.md)
+   :::column-end:::
 :::row-end:::
 
 <br>
@@ -285,21 +285,19 @@ MSIX — это безопасный и надежный формат упако
 
 ## <a name="msix-training-videos"></a>Учебные видеоматериалы о MSIX
 :::row:::
-    :::column:::
-    >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ig2l]
-#### <a name="msix-overview"></a>Общие сведения об MSIX
-MSIX предоставляет множество преимуществ, связанных с управлением жизненным циклом приложений. Узнайте, как получить максимум пользы от использования MSIX в компании, а также обеспечить преимущества для разработчиков, ИТ-специалистов и пользователей.
-    :::column-end:::
-    :::column:::
-    >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3i5DH]
-#### <a name="msix-for-developers"></a>MSIX для разработчиков
-Узнайте, как разработчики могут воспользоваться преимуществами MSIX.
-    :::column-end:::
-    :::column:::
-    >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3iiD5]
-#### <a name="evolving-and-enhancing-desktop-apps-with-msix"></a>Доработка и оптимизация классических приложений с помощью MSIX
-MSIX позволяет дорабатывать и улучшать классические приложения. Узнайте, как использовать новые API, новые элементы управления и другие возможности. 
-    :::column-end:::
+   :::column:::
+      >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ig2l]
+      #### <a name="msix-overview"></a>Общие сведения об MSIX
+      MSIX предоставляет множество преимуществ, связанных с управлением жизненным циклом приложений. Узнайте, как получить максимум пользы от использования MSIX в компании, а также обеспечить преимущества для разработчиков, ИТ-специалистов и пользователей.
+   :::column-end:::
+   :::column:::
+      >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3i5DH]
+      #### <a name="msix-for-developers"></a>MSIX для разработчиков
+      Узнайте, как разработчики могут воспользоваться преимуществами MSIX.
+   :::column-end:::
+   :::column:::
+      >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3iiD5]
+      #### <a name="evolving-and-enhancing-desktop-apps-with-msix"></a>Доработка и оптимизация классических приложений с помощью MSIX
+      MSIX позволяет дорабатывать и улучшать классические приложения. Узнайте, как использовать новые API, новые элементы управления и другие возможности. 
+   :::column-end:::
 :::row-end:::
-
-
