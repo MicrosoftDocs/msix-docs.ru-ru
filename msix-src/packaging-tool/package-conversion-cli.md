@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 00a58a89975e0521038ae5e18895d5e7294a9df5
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: cc1c64fb367f66655c1a1303c898caff9b334b2b
+ms.sourcegitcommit: 163d233b3f8bdf5d811ba1953aef7617926d9031
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829163"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68786997"
 ---
 # <a name="conversion-with-command-line-interface-cli"></a>Преобразование с помощью интерфейса командной строки (CLI)
 
@@ -30,7 +30,7 @@ ms.locfileid: "67829163"
 
 Примеры
 
-``` командная строка
+```console
 
     MsixPackagingTool.exe create-package --template c:\users\documents\ConversionTemplate.xml -v
 
@@ -38,9 +38,9 @@ ms.locfileid: "67829163"
     
 ```
 > [!NOTE]
-> App-V 5.x conversion is currently supported to be converted throught the command line. This includes capabilities. 
+> Преобразование App-V 5.x сейчас можно выполнять с помощью командной строки. При этом поддерживаются некоторые возможности. 
 
-**Conversion template file**
+**Файл шаблона преобразования**
 
 ``` xml
 <MsixPackagingToolTemplate
