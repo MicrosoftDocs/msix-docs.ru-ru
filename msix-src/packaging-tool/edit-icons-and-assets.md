@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 82dfb48cdb02ee72f6dbcbb2a572dd8419e6c2d4
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: a0f02d99993d3ff73c2cfd57289d8f45b4bd29d1
+ms.sourcegitcommit: b014ea712802a2845468182770c7acd5ae6aea70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829258"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68935551"
 ---
 # <a name="edit-icons-and-assets-using-the-msix-packaging-tool"></a>Изменение значков и ресурсов с помощью средства упаковки MSIX
 
@@ -33,4 +33,4 @@ ms.locfileid: "67829258"
 - Чтобы добавить новый файл ресурсов, щелкните правой кнопкой мыши папку ресурсов и выберите **Добавить файл** или **Добавить папку**.
 - Чтобы удалить существующий файл ресурсов, щелкните правой кнопкой мыши файл и выберите **Удалить**.
 
-Чтобы проверить, внесены ли в ресурс изменения, перейдите к странице **Сведения о пакете** и откройте файл манифеста. Убедитесь, что сведения о добавленных или удаленных вами ресурсах представлены в узле [uap:VisualElements](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-visualelements).
+Чтобы проверить, внесены ли в ресурс изменения, перейдите к странице **Сведения о пакете** и откройте файл манифеста. Убедитесь, что сведения о добавленных или удаленных вами ресурсах представлены в узле [uap:VisualElements](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-visualelements). Ссылка на манифест должна быть конкретной, при этом файлы ресурсов можно называть как угодно. 

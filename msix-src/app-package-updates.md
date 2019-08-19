@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, app package, app update, msix, appx
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 39d9434a4f36b9f9fb59f90b1840f2eba94617c5
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: e49f0a9541bf3cbaa3f04d395dbc916befed049f
+ms.sourcegitcommit: b014ea712802a2845468182770c7acd5ae6aea70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67828834"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68935535"
 ---
 # <a name="app-package-updates"></a>Обновления пакетов приложений
 
@@ -55,7 +55,7 @@ ms.locfileid: "67828834"
 Семейство пакетов состоит из имени и издателя пакета. Для выполнения обновления новые метаданные пакета должны быть такими же, как у ранее установленного пакета. 
 
 #### <a name="app-updates-must-increment-to-a-higher-version"></a>Обновления приложения должны иметь больший номер версии
-Для обновлений приложения обычно требуется, чтобы новая версия пакета имела больший номер, чем у текущей версии пакета. При общем обновлении приложения по умолчанию запрещается устанавливать пакеты более ранних версий. В Windows 10 версии 1809 и выше представлена функция *отката*. Она позволяет устанавливать пакеты более ранних версий, если параметр переопределения предоставляется как часть аргументов обновления. Такую процедуру можно реализовать в PowerShell с помощью параметра ForceUpdateFromAnyVersion и в [файле AppInstaller](https://docs.microsoft.com/en-us/windows/msix/app-installer/update-settings).  
+Как правило, чтобы обновить приложение, обычно требуется, чтобы у новой версии пакета был больший номер, чем у текущей. При обновлении приложения по умолчанию нельзя устанавливать пакеты более ранних версий. Начиная с Windows 10, версия 1809, вы можете использовать ForceUpdateToAnyVersion, чтобы устанавливать пакеты более ранних версий, если параметр переопределения предоставляется как часть аргументов обновления. Сейчас это можно реализовать в PowerShell, используя параметр ForceUpdateFromAnyVersion, и в [файле AppInstaller](https://docs.microsoft.com/windows/msix/app-installer/update-settings).  
 
 #### <a name="app-update-package-can-have-a-different-architecture"></a>Пакет обновления приложения может иметь другую архитектуру
 Пакет обновления для установленного в этот момент пакета может иметь другую архитектуру, так как новая архитектура поддерживается в операционной системе, где развертывается пакет. Например: если вы установили 32-разрядную версию MyFavApp 1.0.0.0 на устройстве с 64-разрядной версией Windows 10, MyFavApp 1.0.0.0 успешно обновится до MyFavApp 2.0.0.0. 
