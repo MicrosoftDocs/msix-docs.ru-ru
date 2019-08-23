@@ -1,17 +1,17 @@
 ---
 Description: В этой статье перечислены вещи, которые необходимо знать перед упаковкой приложения для настольных систем. Подготовка приложения к процессу упаковки, как правило, не требует больших усилий.
 title: Подготовка к упаковке классического приложения (мост для настольных компьютеров)
-ms.date: 07/29/2019
+ms.date: 08/22/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 71a57ca2-ca00-471d-8ad9-52f285f3022e
 ms.localizationpriority: medium
-ms.openlocfilehash: b46dfe767f84987e6f4930b8a263812904274e3d
-ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
+ms.openlocfilehash: 4e907e4008389a5075575431dcb74d93fe3b4ddd
+ms.sourcegitcommit: 641ab68bc55d09291dbc26748658e64f15eaedee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68685391"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69979228"
 ---
 # <a name="prepare-to-package-a-desktop-application"></a>Подготовка к упаковке классического приложения
 
@@ -79,17 +79,29 @@ ms.locfileid: "68685391"
 
 + __Приложение использует зависимость в папке System32/SysWOW64__. Чтобы эти DLL-файлы начали работать, необходимо включить их в часть вашего пакета приложения для Windows, находящуюся в виртуальной файловой системе. Это гарантирует, что приложение ведет себя так, как если бы библиотеки DLL были установлены в папку **system32**/**SysWOW64** . В корне пакета создайте папку с именем **VFS**. В этой папке создайте папки **SystemX64** и **SystemX86**. Затем поместите 32-разрядную версию DLL-файла в папку **SystemX86**, а 64-разрядную версию — в папку **SystemX64**.
 
-+ __Ваше приложение использует пакет платформы VCLibs__. Библиотеки VCLibs можно установить напрямую из Microsoft Store, если они определены как зависимость в пакете приложения для Windows. Например, если приложение использует пакеты Dev11 Вклибс, внесите следующее изменение в манифест пакета приложения: `<Dependencies>` В узле добавьте:  
-`<PackageDependency Name="Microsoft.VCLibs.110.00.UWPDesktop" MinVersion="11.0.24217.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />`  
-Во время установки из Microsoft Store будет установлена нужная версия (x86 или x64) платформы VCLibs перед установкой приложения.  
-Зависимости не будут установлены, если приложение устанавливается с помощью загрузки неопубликованных приложений. Чтобы установить зависимости на компьютере вручную, вам потребуется скачать и установить соответствующий пакет платформы VCLibs для моста для настольных компьютеров. Подробнее об этих сценариях см. в разделе [Использование среды выполнения Visual C++ в проекте Centennial](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project/).
++ __Ваше приложение использует пакет платформы VCLibs__. При преобразовании приложения C++ Win32 необходимо выполнять развертывание среды выполнения Visual C++ . Visual Studio 2019 и Windows SDK включают последние пакеты платформы для версии 11,0, 12,0 и 14,0 среды выполнения Visual C++ в следующих папках:
 
-  **Пакеты платформы**:
+    * **Пакеты платформы VC 14,0**: C:\Program Files (x86) \Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0
 
-  * [Пакеты платформы VC 14,0 для настольного моста](https://www.microsoft.com/download/details.aspx?id=53175)
-  * [Пакеты платформы VC 12,0 для настольного моста](https://www.microsoft.com/download/details.aspx?id=53176)
-  * [Пакеты платформы VC 11,0 для настольного моста](https://www.microsoft.com/download/details.aspx?id=53340)
+    * **Пакеты платформы VC 12,0**: C:\Program Files (x86) \Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop.120\14.0
 
+    * **Пакеты платформы VC 11,0**: C:\Program Files (x86) \Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop.110\14.0
+
+    Чтобы использовать один из этих пакетов, необходимо сослаться на пакет как зависимость в манифесте пакета. Когда клиенты устанавливают розничную версию приложения из Microsoft Store, пакет будет установлен из магазина вместе с приложением. При загрузке приложения зависимости не будут установлены. Чтобы установить зависимости вручную, необходимо установить соответствующий пакет платформы с помощью соответствующего appx-пакета для x86, x64 или ARM, расположенного в перечисленных выше папках установки.
+
+    Для ссылки на пакет C++ платформы среды выполнения Visual Runtime в приложении:
+
+    1. Перейдите в папку установки пакета платформы, указанную выше, для версии среды выполнения C++ Visual, используемой приложением.
+
+    2. Откройте файл SDKManifest. XML в этой папке `FrameworkIdentity-Debug` , перейдите к атрибуту или `FrameworkIdentity-Retail` (в зависимости от того, используете ли вы отладочную или розничную версию среды выполнения `Name` ) и скопируйте значения и `MinVersion` из этого атрибута. Например, ниже `FrameworkIdentity-Retail` приведен атрибут для текущего пакета платформы VC 14,0.
+        ```xml
+        FrameworkIdentity-Retail = "Name = Microsoft.VCLibs.140.00.UWPDesktop, MinVersion = 14.0.27323.0, Publisher = 'CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US'"
+        ```
+
+    3. В манифесте пакета для приложения добавьте следующий `<PackageDependency>` элемент `<Dependencies>` в узел. Убедитесь, что значения `Name` и `MinVersion` были заменены значениями, скопированными на предыдущем шаге. В следующем примере задается зависимость для текущей версии пакета платформы VC 14,0.
+        ```xml
+        <PackageDependency Name="Microsoft.VCLibs.140.00.UWPDesktop" MinVersion="14.0.27323.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+        ```
 
 + __Приложение содержит пользовательский список переходов__. Списки переходов следует использовать с учетом некоторых оговорок и условий.
 
