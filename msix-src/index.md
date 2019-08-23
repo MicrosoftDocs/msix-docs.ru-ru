@@ -7,12 +7,12 @@ ms.topic: landing-page
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 067a6b9730fe7de37e0c90587534fe67edf5d1ad
-ms.sourcegitcommit: 163d233b3f8bdf5d811ba1953aef7617926d9031
+ms.openlocfilehash: 704da0b007ad6ff82341b01db38944476388a4de
+ms.sourcegitcommit: f5cd0d2d004bb93e60ec5231426b99deecb49601
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68786982"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69882533"
 ---
 # <a name="msix-documentation"></a>Документация по MSIX
 MSIX — это безопасный и надежный формат упаковки, созданный на основе сочетания технологий установки с помощью MSI-файлов, APPX-файлов, App-V и ClickOnce. 
@@ -26,16 +26,20 @@ MSIX — это безопасный и надежный формат упако
       Средство упаковки MSIX позволяет обновить существующие пакеты приложений Win32 в формате MSIX. [Подробнее](mpt-overview.md)
       <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство</a></p></div>
    :::column-end:::
+   
    :::column:::
-      ### Используйте MSIX на любых платформах. Разработчики, работающие на разных платформах, могут использовать пакет SDK MSIX для обработки пакетов, предназначенных для распространения через Microsoft Store или в других сетях распространения содержимого. [Подробнее...](msix-sdk/sdk-overview.md)
+      ### <a name="use-msix-anywhere"></a>Использование MSIX на разных платформах
+      Разработчики на различных платформах могут использовать пакет MSIX SDK для работы с пакетами, предназначенными для распространения через Microsoft Store или в других сетях распространения содержимого. [Подробнее](msix-sdk/sdk-overview.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column:::
-      ### Установка пакетов приложений MSIX Установщик приложений позволяет устанавливать и обновлять пакеты приложений MSIX, размещенные как локально, так и в сетях распространения содержимого. [Подробнее...](app-installer/app-installer-root.md)
+      ### <a name="install-msix-app-packages"></a>Установка пакетов приложений MSIX
+      Установщик приложений позволяет устанавливать и обновлять пакеты приложений MSIX, размещенные как локально, так и в сетях распространения содержимого. [Подробнее](app-installer/app-installer-root.md)
    :::column-end:::
    :::column:::
-      ### Платформа поддержки пакетов Платформа поддержки пакетов позволяет приложению обходить некоторые ограничения современных сред выполнения, гарантируя надлежащую работу приложения без необходимости изменения его исходного кода. [Подробнее](psf/package-support-framework-overview.md)
+      ### <a name="package-support-framework"></a>Платформа поддержки пакетов
+      Платформа поддержки пакетов позволяет приложению обходить некоторые ограничения современных сред выполнения, гарантируя надлежащую работу приложения без необходимости изменения его исходного кода. [Подробнее](psf/package-support-framework-overview.md)
    :::column-end:::
 :::row-end:::
 
