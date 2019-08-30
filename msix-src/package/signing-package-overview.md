@@ -2,14 +2,15 @@
 Description: В этой статье описываются требования к подписи для приложений Windows 10.
 title: Подписывание пакета приложения Windows 10
 ms.date: 07/03/2019
+ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 5068d3adc3926a589d1f440146098e1e19265671
-ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
+ms.openlocfilehash: d1a779be300de2b29703455874d823374bc8d708
+ms.sourcegitcommit: 2eb663be861f2eb29f4882a15a4913ced9da833a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68685154"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "70014854"
 ---
 # <a name="sign-a-windows-10-app-package"></a>Подписывание пакета приложения Windows 10
 
