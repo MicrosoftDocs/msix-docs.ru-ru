@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 98e837669feda0147ad9465330907c930132b43d
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: 3efb0ef21810ba4e5aa8cf9071c2ed3e985ebc12
+ms.sourcegitcommit: 9cb3d2cdbe03b300bef60ed949e5e4d3b24d35ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829109"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864030"
 ---
 # <a name="package-support-framework"></a>Платформа поддержки пакетов
 
@@ -42,6 +42,9 @@ ms.locfileid: "67829109"
 Обнаружив проблему, можно просмотреть соответствующую страницу [GitHub](https://github.com/Microsoft/MSIX-PackageSupportFramework/), чтобы получить исправление. Найдя нужное исправление, вы можете применить его к своему пакету. В этом [пошаговом руководстве](https://docs.microsoft.com/windows/uwp/porting/package-support-framework) показано, как это сделать. Вы также узнаете, как использовать отладчик Visual Studio, чтобы поэтапно проверить работу приложения и убедиться, что исправление работает и что проблемы совместимости решены.
 
 Если вы не можете найти исправление среды выполнения, которое устранит вашу проблему, его можно создать. Для этого вам нужно определить, какая функция вызывает сбой при запуске приложения в контейнере MSIX. Затем вам нужно создать альтернативные функции, которые должен вызвать диспетчер среды выполнения. Это позволит вам заменить реализацию функции, чтобы ее поведение соответствовало правилам работы с современными средами выполнения.
+
+## <a name="limitation-of-package-support-framework"></a>Ограничения платформы поддержки пакетов 
+Платформа поддержки пакетов не поддерживает переопределение реестра. Она устранит проблемы, связанные со средой выполнения. Выберите из приведенных ниже те библиотеки DLL, которые будут соответствовать вашим потребностям. 
 
 ## <a name="get-started-with-the-package-support-framework"></a>Начало работы с платформой поддержки пакетов
 

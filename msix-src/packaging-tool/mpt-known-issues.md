@@ -6,12 +6,12 @@ ms.topic: article
 keywords: msix packaging tool, known issues, troubleshooting
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: c5227d8a394e6af211e2409e34dfcb3648cd2c93
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: b38231f6cf918ecbcd598c01e17c68e4e072cfd5
+ms.sourcegitcommit: 9cb3d2cdbe03b300bef60ed949e5e4d3b24d35ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829193"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864002"
 ---
 # <a name="known-issues-and-troubleshooting"></a>Известные проблемы и устранение неполадок
 
@@ -49,9 +49,15 @@ ms.locfileid: "67829193"
 
 Полученные отдельно пакеты с компонентами по запросу можно установить с помощью параметров командной строки системы DISM.
 
+### <a name="getting-the-msix-packaging-tool-for-offline-use"></a>Получение средства упаковки MSIX для использования в автономном режиме
+
+Средство упаковки MSIX также можно скачать с [веб-портала](https://businessstore.microsoft.com/store) Microsoft Store для бизнеса, чтобы использовать на предприятии в автономном режиме. См. подробнее об [автономном распространении](https://docs.microsoft.com/microsoft-store/distribute-offline-apps). Если возникают проблемы с автономной копией средства упаковки, убедитесь, что у вас есть [автономная копия лицензии](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) для этого средства. 
+
+После получения автономной версии приложения можно добавить на компьютер пакет приложения и лицензию с помощью [PowerShell](https://docs.microsoft.com/powershell/module/dism/add-appxprovisionedpackage?view=win10-ps).
+
+
 ## <a name="other-known-issues"></a>Другие известные проблемы
 
-- Перезагрузка компьютера в процессе установки приложения не поддерживается. Если это возможно, игнорируйте запрос на перезагрузку или просто передайте установщику аргумент на запрет перезагрузки.
 - Возможно, что до начала работы установщик потребует установить определенные платформы или драйверы. Чтобы найти платформы и драйверы на компьютере, который используется для преобразования приложений, выполните следующие запросы: ```driverquery /v | Out-File``` или ```driverquery /v | Out-File "path to text file"```
 - Во время преобразования установщики могут запускать службы. Данные служб не собираются во время преобразования. В результате ваше приложение может быть установлено, но при работе могут возникать проблемы.
 

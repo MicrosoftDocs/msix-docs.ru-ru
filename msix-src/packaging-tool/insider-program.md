@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 5997ac7b870d5030440fcf357f298d776db9d87e
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: 4e9f066ee57d06c5cf0f7cde4a68683c99fa8792
+ms.sourcegitcommit: 9cb3d2cdbe03b300bef60ed949e5e4d3b24d35ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829255"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864010"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -35,9 +35,13 @@ ms.locfileid: "67829255"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-Выпущена общедоступная сборка версии 1.2019.701.0.
-
-Ожидайте первую сборку предварительной версии следующего выпуска.
+### <a name="version-120198080"></a>Версия 1.2019.808.0
+- Улучшения параметров.
+    - Разделены параметры по умолчанию и прочие параметры средства.
+    - Добавлена возможность импорта и экспорта параметров.
+- Усовершенствования подписывания.
+    - Теперь можно выбрать вариант подписывания по умолчанию для рабочих процессов.
+- Обновлены шаги в процессе упаковки для улучшения взаимодействия с пользователем.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 

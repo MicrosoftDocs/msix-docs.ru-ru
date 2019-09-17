@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 855e80bfc859cf2ff4b2f46ce921841080cb7fce
-ms.sourcegitcommit: b014ea712802a2845468182770c7acd5ae6aea70
+ms.openlocfilehash: 0fccdcbf9a5d03155695e420871d6b204d9a83d7
+ms.sourcegitcommit: 9cb3d2cdbe03b300bef60ed949e5e4d3b24d35ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68935557"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864084"
 ---
 # <a name="create-an-msix-package-from-a-desktop-installer-msi-exe-or-app-v-on-a-vm"></a>Создание пакета MSIX с помощью классического установщика (MSI, EXE или App-V) на виртуальной машине
 
@@ -39,6 +39,7 @@ ms.locfileid: "68935557"
 
 Дополнительные возможности:
 - Установите флажок **Подписать пакет**, найдите PFX-файл сертификата и выберите его. Если сертификат защищен паролем, введите пароль в соответствующем поле. Вы можете определить в параметрах этот вариант как вариант по умолчанию, чтобы автоматизировать выполнение некоторых шагов при каждом преобразовании. 
+  - При подписывании можно дополнительно добавить к сертификату **метку времени**, чтобы сертификат мог быть действительным и после даты окончания срока действия. Допустимый формат — [URL-адрес сервера меток времени](https://docs.microsoft.com/windows/win32/seccrypto/signtool) в соответствии со стандартом RFC 3161. 
 - Установите флажок для параметра **Use installer arguments** (Использовать аргументы установщика) и введите нужные аргументы в соответствующем поле. В поле можно ввести любую строку.
 
 ## <a name="packaging-method"></a>Метод упаковки
