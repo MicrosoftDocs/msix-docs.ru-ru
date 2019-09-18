@@ -40,6 +40,9 @@
       "disable_contribution_on_translation_quality": ["MT"],
       "titleSuffix": "MSIX",
       "extendBreadcrumb": true,
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/msix-docs.ru-ru",
+      "feedback_product_url": "https://aka.ms/msixcommunity",
       "ms.prod": "msix"
     },
     "fileMetadata": {},
