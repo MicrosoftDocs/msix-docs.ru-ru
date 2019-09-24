@@ -6,22 +6,26 @@ ms.topic: article
 keywords: Windows 10, UWP, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: 676c58574457261adbeaf150279a8eda82b7fc7a
-ms.sourcegitcommit: 031e481716f6f02ad2d5dd67d5eea35869c99c0c
+ms.openlocfilehash: 03a5b366f028a8686658cd3836c8b2ba5af84c55
+ms.sourcegitcommit: 1c3a0f5c27ee741d26f693ad657754c4ab29ac73
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68991423"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71189895"
 ---
 # <a name="msix-packaging-tool-release-notes"></a>Заметки о выпуске средства упаковки MSIX
 
+### <a name="version-120199190"></a>Версия 1.2019.919.0
+- Подписывание Device Guard теперь доступно. Для этого параметра подписывания требуется учетная запись Active Microsoft Azure Active Directory, настроенная для Microsoft Store для бизнеса. Дополнительные сведения см. в [этой статье](https://docs.microsoft.com/windows/msix/package/signing-package-device-guard-signing).
+- **Редактор пакетов** теперь поддерживает возможность выбора нескольких элементов для выполнения действия.
+
 ### <a name="version-120198080"></a>Версия 1.2019.808.0
-- Улучшения параметров
-    - Отделяйте настройки инструмента по умолчанию от других параметров
+- Улучшения параметров.
+    - Разделены параметры по умолчанию и прочие параметры средства.
     - Добавлена возможность импорта и экспорта параметров.
-- Улучшения подписывания
+- Усовершенствования подписывания.
     - Теперь можно выбрать вариант подписывания по умолчанию для рабочих процессов.
-- Обновлены шаги в процессе упаковки для улучшения работы
+- Обновлены шаги в процессе упаковки для улучшения взаимодействия с пользователем.
 
 ## <a name="version-120197010---public-release"></a>Версия 1.2019.701.0 — общедоступный выпуск
 
