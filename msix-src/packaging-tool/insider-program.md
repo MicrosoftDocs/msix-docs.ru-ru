@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 4e9f066ee57d06c5cf0f7cde4a68683c99fa8792
-ms.sourcegitcommit: 9cb3d2cdbe03b300bef60ed949e5e4d3b24d35ba
+ms.openlocfilehash: eea73079a33821cbd1c97653e83f0bec0ab95a5b
+ms.sourcegitcommit: 1c3a0f5c27ee741d26f693ad657754c4ab29ac73
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864010"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71189870"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -35,13 +35,9 @@ ms.locfileid: "70864010"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-### <a name="version-120198080"></a>Версия 1.2019.808.0
-- Улучшения параметров.
-    - Разделены параметры по умолчанию и прочие параметры средства.
-    - Добавлена возможность импорта и экспорта параметров.
-- Усовершенствования подписывания.
-    - Теперь можно выбрать вариант подписывания по умолчанию для рабочих процессов.
-- Обновлены шаги в процессе упаковки для улучшения взаимодействия с пользователем.
+### <a name="version-120199190"></a>Версия 1.2019.919.0
+- Теперь доступно использование подписи Device Guard. Для использования этого варианта подписи требуется учетная запись Microsoft Azure Active Directory, настроенная для использования Microsoft Store для бизнеса. Дополнительные сведения см. в [этой статье](https://docs.microsoft.com/windows/msix/package/signing-package-device-guard-signing).
+- **Редактор пакетов** теперь поддерживает возможность выбора нескольких элементов для выполнения действия.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 

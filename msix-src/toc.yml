@@ -180,6 +180,8 @@
           href: desktop/desktop-to-uwp-test-windows-s.md
     - name: Применение исправлений среды выполнения к пакету классического приложения
       href: psf/package-support-framework.md
+    - name: Выполнение сценариев с помощью платформы поддержки пакетов
+      href: psf/run-scripts-with-package-support-framework.md
 - name: Распространение
   items:
     - name: Публикация в Microsoft Store
