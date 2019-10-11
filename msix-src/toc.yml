@@ -92,6 +92,8 @@
       items:
         - name: Обзор
           href: msix-sdk/sdk-overview.md
+        - name: Распространение пакета MSIX с помощью пакета SDK для MSIX
+          href: msix-sdk/sdk-guidance.md
         - name: Заметки о выпуске
           items:
             - name: Выпуск MSIX SDK 1.4
@@ -102,8 +104,6 @@
               href: msix-sdk/release-notes/sdk-release-notes-1.6.md
             - name: 'Пакет SDK для MSIX , выпуск 1.7'
               href: msix-sdk/release-notes/sdk-release-notes-1.7.md
-        - name: "Распространение пакета MSIX на платформах, отличающихся от Windows\_10, с помощью пакета SDK MSIX"
-          href: msix-sdk/sdk-guidance.md
 - name: Упаковка
   items:
     - name: Упаковка классических приложений
