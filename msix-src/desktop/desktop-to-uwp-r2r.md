@@ -5,12 +5,12 @@ ms.date: 07/29/2019
 ms.topic: article
 keywords: Компилятор образов в машинном образах Windows 10, UWP, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 6ce41bafb2debfb8c2d99135634ba30c91f4400a
-ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
+ms.openlocfilehash: 1327a48d40576dc47eebd8c0bad6fc075dea23d4
+ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68685404"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776523"
 ---
 # <a name="optimize-your-net-desktop-apps-with-native-images"></a>Оптимизация классических приложений .NET с помощью образов в машинном коде
 
@@ -18,7 +18,7 @@ ms.locfileid: "68685404"
 
 Мы выпустили компилятор образов в машинном код как [пакет NuGet](https://www.nuget.org/packages/Microsoft.DotNet.Framework.NativeImageCompiler). Этот пакет можно применить к любому .NET Framework приложению, предназначенному для .NET Framework версии 4.6.2 или более поздней. Этот пакет добавляет шаг после сборки, который включает собственные полезные данные во все двоичные файлы, используемые приложением. Эти оптимизированные полезные данные будут загружены при запуске приложения в .NET 4.7.2 и более поздних версиях, в то время как предыдущие версии будут по-прежнему загружать код MSIL.
 
-          [.NET framework 4.7.2](https://blogs.msdn.microsoft.com/dotnet/2018/04/30/announcing-the-net-framework-4-7-2/) включается в [обновления Windows 10 апреля 2018 г](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/). Эту версию .NET Framework можно также установить на компьютерах под управлением Windows 7 и Windows Server 2008 R2 +.
+Платформа [.NET Framework 4.7.2](https://blogs.msdn.microsoft.com/dotnet/2018/04/30/announcing-the-net-framework-4-7-2/) включена в [Обновление Windows 10 от апреля 2018](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/). Эту версию .NET Framework можно также установить на компьютерах под управлением Windows 7 и Windows Server 2008 R2 +.
 
 > [!IMPORTANT]
 > Если вы хотите создавать образы в машинном коде для приложения, упакованного проектом упаковки приложений Windows, обязательно установите для минимальной версии целевой платформы проекта обновление годовщины Windows.
@@ -41,7 +41,7 @@ ms.locfileid: "68685404"
 
 ![Установка средств разработки .NET 4.6.2](images/install-4.6.2-devpack.png)
 
-Кроме того, можно получить пакеты для разработчиков .NET по следующим параметрам:[https://www.microsoft.com/net/download/visual-studio-sdks](https://www.microsoft.com/net/download/visual-studio-sdks)
+Кроме того, можно получить пакеты разработчика .NET из: [https://www.microsoft.com/net/download/visual-studio-sdks](https://www.microsoft.com/net/download/visual-studio-sdks)
 
 ## <a name="configure-the-target-platform-as-x86-or-x64"></a>Настройка целевой платформы как x86 или x64
 
@@ -59,7 +59,7 @@ ms.locfileid: "68685404"
 
 ![Настройка x86](images/configure-x86.png)
 
-Повторите этот шаг для `Release/x64` , если требуется создать двоичные файлы x64.
+Повторите этот шаг для `Release/x64`, если требуется создать двоичные файлы x64.
 
 >[!IMPORTANT]
 > Конфигурация AnyCPU не поддерживается компилятором образов в машинном код.
@@ -81,20 +81,22 @@ PM> Install-Package Microsoft.DotNet.Framework.NativeImageCompiler -Version 1.0.
 Native image obj\x86\Release\\R2R\DesktopApp1.exe generated successfully.
 ```
 
+Компиляцию образа в машинный код можно запустить в сборках, не относящихся к выпуску, задав для свойства `NgenR2R` значение `true` в файле проекта.
+
 ## <a name="faq"></a>Вопросы и ответы
 
-**ФОРМАТЕ. Работают ли новые двоичные файлы на компьютерах без .NET Framework 4.7.2?**
+**Вопрос. работают ли новые двоичные файлы на компьютерах без .NET Framework 4.7.2?**
 
-A. Оптимизированные двоичные файлы помогут улучшить работу с .NET Framework 4.7.2. Клиенты, которые работают с предыдущими версиями .NET Framework, загружают неоптимизированный код MSIL из двоичного файла.
+А) Оптимизированные двоичные файлы помогут улучшить работу с .NET Framework 4.7.2. Клиенты, которые работают с предыдущими версиями .NET Framework, загружают неоптимизированный код MSIL из двоичного файла.
 
-**ФОРМАТЕ. Как можно отправить отзыв или сообщить о проблемах?**
+**Вопрос. как можно отправить отзыв или сообщить о проблемах?**
 
-A. Сообщите о проблемах с помощью средства обратной связи в Visual Studio 2017. [Дополнительные сведения](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+А) Сообщите о проблемах с помощью средства обратной связи в Visual Studio 2017. [Дополнительные сведения](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
 
-**ФОРМАТЕ. Каково влияние добавления собственного образа в существующие двоичные файлы?**
+**Вопрос. Каково влияние добавления собственного образа в существующие двоичные файлы?**
 
-A. Оптимизированные двоичные файлы содержат управляемый и машинный код, что делает окончательные файлы более большими.
+А) Оптимизированные двоичные файлы содержат управляемый и машинный код, что делает окончательные файлы более большими.
 
-**ФОРМАТЕ. Можно ли освободить двоичные файлы с помощью этой технологии?**
+**Вопрос. можно ли освободить двоичные файлы с помощью этой технологии?**
 
-A. Эта версия включает лицензию Go Live, которую можно использовать сегодня.
+А) Эта версия включает лицензию Go Live, которую можно использовать сегодня.

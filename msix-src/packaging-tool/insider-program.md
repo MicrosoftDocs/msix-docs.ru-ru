@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: eea73079a33821cbd1c97653e83f0bec0ab95a5b
-ms.sourcegitcommit: 1c3a0f5c27ee741d26f693ad657754c4ab29ac73
-ms.translationtype: HT
+ms.openlocfilehash: 6584abe50111bba8215acae2d4ab34a8b9675be1
+ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71189870"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776548"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -19,13 +19,13 @@ ms.locfileid: "71189870"
 
 <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://aka.ms/MSIXPackagingPreviewProgram" data-linktype="external">Щелкните здесь, чтобы принять участие</a></p></div>
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые условия
 
 - Windows 10, версия 1809 или более поздняя.
 - Допустимая учетная запись Майкрософт для доступа к приложению из Microsoft Store.
 - Права администратора на компьютере для запуска средства.
 
-## <a name="install"></a>Установка
+## <a name="install"></a>"Установить"
 
 После регистрации для участия в программе вы получите сообщение электронной почты с подтверждением регистрации. 
 
@@ -35,9 +35,11 @@ ms.locfileid: "71189870"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-### <a name="version-120199190"></a>Версия 1.2019.919.0
+### <a name="version-1201910180-public"></a>Версия 1.2019.1018.0 (общедоступная)
 - Теперь доступно использование подписи Device Guard. Для использования этого варианта подписи требуется учетная запись Microsoft Azure Active Directory, настроенная для использования Microsoft Store для бизнеса. Дополнительные сведения см. в [этой статье](https://docs.microsoft.com/windows/msix/package/signing-package-device-guard-signing).
 - **Редактор пакетов** теперь поддерживает возможность выбора нескольких элементов для выполнения действия.
+- Теперь можно щелкнуть правой кнопкой мыши, чтобы изменить пакет MSIX.
+- Улучшения UX для рабочего процесса упаковки.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
