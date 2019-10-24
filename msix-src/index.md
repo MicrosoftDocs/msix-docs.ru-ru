@@ -7,12 +7,12 @@ ms.topic: landing-page
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 704da0b007ad6ff82341b01db38944476388a4de
-ms.sourcegitcommit: f5cd0d2d004bb93e60ec5231426b99deecb49601
+ms.openlocfilehash: 43a351aaffaf56ed312dad1bc318dbba316416d1
+ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69882533"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776500"
 ---
 # <a name="msix-documentation"></a>Документация по MSIX
 MSIX — это безопасный и надежный формат упаковки, созданный на основе сочетания технологий установки с помощью MSI-файлов, APPX-файлов, App-V и ClickOnce. 
@@ -22,23 +22,23 @@ MSIX — это безопасный и надежный формат упако
  
 :::row:::
    :::column:::
-      ### <a name="package-existing-windows-apps"></a>Упаковка существующих приложений для Windows
+      **Упаковка существующих приложений для Windows**  
       Средство упаковки MSIX позволяет обновить существующие пакеты приложений Win32 в формате MSIX. [Подробнее](mpt-overview.md)
       <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство</a></p></div>
    :::column-end:::
    
    :::column:::
-      ### <a name="use-msix-anywhere"></a>Использование MSIX на разных платформах
+      **Использование MSIX на разных платформах**  
       Разработчики на различных платформах могут использовать пакет MSIX SDK для работы с пакетами, предназначенными для распространения через Microsoft Store или в других сетях распространения содержимого. [Подробнее](msix-sdk/sdk-overview.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column:::
-      ### <a name="install-msix-app-packages"></a>Установка пакетов приложений MSIX
+      **Установка пакетов приложений MSIX**  
       Установщик приложений позволяет устанавливать и обновлять пакеты приложений MSIX, размещенные как локально, так и в сетях распространения содержимого. [Подробнее](app-installer/app-installer-root.md)
    :::column-end:::
    :::column:::
-      ### <a name="package-support-framework"></a>Платформа поддержки пакетов
+      **Платформа поддержки пакетов**  
       Платформа поддержки пакетов позволяет приложению обходить некоторые ограничения современных сред выполнения, гарантируя надлежащую работу приложения без необходимости изменения его исходного кода. [Подробнее](psf/package-support-framework-overview.md)
    :::column-end:::
 :::row-end:::
@@ -291,17 +291,16 @@ MSIX — это безопасный и надежный формат упако
 :::row:::
    :::column:::
       >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ig2l]
-      #### <a name="msix-overview"></a>Общие сведения об MSIX
-      MSIX предоставляет множество преимуществ, связанных с управлением жизненным циклом приложений. Узнайте, как получить максимум пользы от использования MSIX в компании, а также обеспечить преимущества для разработчиков, ИТ-специалистов и пользователей.
+      **Общие сведения о MSIX** MSIX предоставляет множество преимуществ, связанных с управлением жизненным циклом приложений. Узнайте, как получить максимум пользы от использования MSIX в компании, а также обеспечить преимущества для разработчиков, ИТ-специалистов и пользователей.
    :::column-end:::
    :::column:::
       >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3i5DH]
-      #### <a name="msix-for-developers"></a>MSIX для разработчиков
+      **MSIX для разработчиков**  
       Узнайте, как разработчики могут воспользоваться преимуществами MSIX.
    :::column-end:::
    :::column:::
       >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3iiD5]
-      #### <a name="evolving-and-enhancing-desktop-apps-with-msix"></a>Доработка и оптимизация классических приложений с помощью MSIX
+      **Доработка и оптимизация классических приложений с помощью MSIX**  
       MSIX позволяет дорабатывать и улучшать классические приложения. Узнайте, как использовать новые API, новые элементы управления и другие возможности. 
    :::column-end:::
 :::row-end:::
