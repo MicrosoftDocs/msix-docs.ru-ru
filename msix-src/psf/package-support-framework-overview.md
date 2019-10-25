@@ -6,16 +6,22 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: b62a73942ad0bd8324aa76b0df43f6aa52237e8b
-ms.sourcegitcommit: cc7fe74ea7c7b8c06190330023b3dff43034960e
+ms.openlocfilehash: fa8cc955d44ddf2a3db5900e9f054a23e0037242
+ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71310979"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776474"
 ---
 # <a name="package-support-framework"></a>Платформа поддержки пакетов
 
 Платформа поддержки пакетов — это набор средств с открытым исходным кодом, который помогает применять исправления к существующим приложениям win32 для выполнения в контейнере MSIX, когда у вас нет доступа к исходному коду. Платформа поддержки пакетов помогает настроить приложения в соответствии с требованиями современных сред выполнения.
+
+Ниже приведено несколько распространенных примеров, в которых удобно применять платформу поддержки пакетов.
+
+* Ваше приложение не может найти некоторые библиотеки DLL при запуске. Может потребоваться задать текущий рабочий каталог. Перед преобразованием в MSIX требуемый текущий рабочий каталог можно определить в исходном ярлыке.
+* Приложение записывает данные в папку установки. Обычно при этом в [мониторе процессов](https://docs.microsoft.com/windows/msix/psf/package-support-framework) отображаются ошибки "Отказано в доступе".
+* Приложению необходимо передать параметры в исполняемый файл при запуске. [Здесь](package-support-framework.md#identify-packaged-application-compatibility-issues) вы можете узнать больше о том, как выявить эту проблему, а [здесь](https://github.com/microsoft/MSIX-PackageSupportFramework/tree/master/PsfLauncher) вы можете узнать больше о доступных конфигурациях.
 
 Чтобы создать платформу поддержки пакетов, мы использовали технологию [Detours](https://www.microsoft.com/en-us/research/project/detours) — платформу с открытым исходным кодом, разработанную Microsoft Research (MSR), которая помогает выполнять подключения и перенаправления API.
 

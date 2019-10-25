@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 254fd757bd16a72f597fa0c8183d66f9562625b4
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: ee9d47ef88f8281a707550b67cf976da29efe9e2
+ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67840718"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776540"
 ---
 # <a name="msix-packaging-tool"></a>Средство упаковки MSIX 
 
@@ -37,13 +37,13 @@ ms.locfileid: "67840718"
 Средство упаковки MSIX также можно скачать для автономного использования в организации на [веб-портале](https://businessstore.microsoft.com/) Microsoft Store для бизнеса. См. подробнее об [автономном распространении](https://docs.microsoft.com/en-us/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app).
 
  
-## <a name="latest-public-version---120197010"></a>Последняя общедоступная версия — 1.2019.701.0.
+## <a name="latest-public-version---1201910180"></a>Последняя общедоступная версия — 1.2019.1018.0.
 
 ### <a name="new-features"></a>Новые возможности.
-
-- Возможность перезапуска во время преобразования.
-- Возможность указать сертификат по умолчанию для подписи.
-- Возможность указать коды выхода для перезапуска.
+- Теперь доступно использование подписи Device Guard. Для использования этого варианта подписи требуется учетная запись Microsoft Azure Active Directory, настроенная для использования Microsoft Store для бизнеса. Дополнительные сведения см. в [этой статье](https://docs.microsoft.com/windows/msix/package/signing-package-device-guard-signing).
+- **Редактор пакетов** теперь поддерживает возможность выбора нескольких элементов для выполнения действия.
+- Теперь можно изменить пакет MSIX, щелкнув его правой кнопкой мыши.
+- Улучшение взаимодействия с пользователем в рабочем процессе упаковки.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
