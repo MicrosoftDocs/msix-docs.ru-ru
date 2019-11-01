@@ -1,28 +1,30 @@
 ---
 title: Заметки о выпуске средства упаковки MSIX
-description: Полный журнал заметок о выпуске средства упаковки MSIX
+description: В этой статье содержится полный журнал заметок о выпуске для различных версий средства упаковки MSIX.
 ms.date: 03/05/2019
 ms.topic: article
 keywords: Windows 10, UWP, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: a8921645761a92b31f88f28ec18b39c39e56095c
-ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
+ms.openlocfilehash: 89785c53d29ce418e68819cc09600ed532f2eced
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776476"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328440"
 ---
-# <a name="msix-packaging-tool-release-notes"></a>Заметки о выпуске средства упаковки MSIX
+# <a name="release-notes-for-the-msix-packaging-tool"></a>Заметки о выпуске для средства упаковки MSIX
 
 ## <a name="version-1201910180-public-release"></a>Выпуск общедоступной версии 1.2019.1018.0
+
 - Обновленные строки для общедоступного выпуска
 
-### <a name="version-120199260"></a>Версия 1.2019.926.0 
+## <a name="version-120199260"></a>Версия 1.2019.926.0
+
 - Теперь доступно использование подписи Device Guard. Для использования этого варианта подписи требуется учетная запись Microsoft Azure Active Directory, настроенная для использования Microsoft Store для бизнеса. Дополнительные сведения см. в [этой статье](https://docs.microsoft.com/windows/msix/package/signing-package-device-guard-signing).
 - **Редактор пакетов** теперь поддерживает возможность выбора нескольких элементов для выполнения действия.
-- Теперь можно щелкнуть правой кнопкой мыши, чтобы изменить пакет MSIX.
-- Улучшения UX для рабочего процесса упаковки.
+- Теперь можно изменить пакет MSIX, щелкнув его правой кнопкой мыши.
+- Улучшение взаимодействия с пользователем в рабочем процессе упаковки.
 - Улучшения параметров:
     - Параметры по умолчанию для инструментов отделены от других параметров.
     - Добавлена возможность импорта и экспорта параметров.

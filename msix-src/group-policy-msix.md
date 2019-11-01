@@ -1,16 +1,16 @@
 ---
 title: Использование групповой политики с упакованными приложениями MSIX
-description: Узнайте, как использовать групповую политику с приложениями, преобразованными в пакет MSIX
+description: В этой статье описывается, как приложения, упакованные в пакеты MSIX, могут использовать групповую политику, как и любые другие типы установщиков.
 ms.date: 04/12/2019
 ms.topic: article
 keywords: msix
 ms.localizationpriority: medium
-ms.openlocfilehash: c812fc18ead17c145d8359971fa25d15dad5ee47
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: fb8c31a08ed92663596aef053afc7339e88be124
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829041"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328497"
 ---
 # <a name="group-policy-and-msix-packaged-apps"></a>Групповая политика и упакованные приложения MSIX
 

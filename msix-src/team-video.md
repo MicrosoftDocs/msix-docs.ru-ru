@@ -1,18 +1,18 @@
 ---
 layout: LandingPage
 title: Видеоролики о MSIX
-description: Выступления команды разработчиков на темы, связанные с MSIX, на конференциях
+description: В этой статье представлены темы, связанные с упаковкой и развертыванием пакетов MSIX, которые группа разработчиков MSIX обсуждала на конференции.
 ms.date: 09/07/2018
 ms.topic: landing-page
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: a9a385bee27bae4e884ec71a8a4c449a9bcc216a
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: a11238ed231681c636c96a10b7dac2a03d00a891
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829065"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328132"
 ---
 # <a name="msix-videos"></a>Видеоролики о MSIX
 

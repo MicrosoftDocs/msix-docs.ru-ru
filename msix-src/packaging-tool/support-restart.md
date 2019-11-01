@@ -6,12 +6,12 @@ ms.topic: article
 keywords: MSIX, MPT, MSIX Packaging Tool, 1709, 16299
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 8a48358c94e9c799ff285cd3d1e20940e79f4731
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
-ms.translationtype: HT
+ms.openlocfilehash: 2be11523b1af099b168a9d7744dc3f11bd7407df
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829122"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328900"
 ---
 # <a name="support-for-desktop-installers-that-require-device-restart"></a>Поддержка классических установщиков, которые требуют перезагрузки устройства
 
@@ -27,5 +27,5 @@ ms.locfileid: "67829122"
 
 Вы можете активировать перезагрузку через пользовательский интерфейс во время рабочего процесса преобразования или через меню &quot;Пуск&quot; на компьютере преобразования. После перезагрузки вы возобновите работу со средством, чтобы продолжить процесс преобразования.
 
-Помните, что эта функция находится на стадии разработки, поэтому могут возникать ошибки. В таком случае не забудьте [отправить нам свой отзыв](https://docs.microsoft.com/en-us/windows/msix/packaging-tool/insider-program#share-your-feedback), чтобы мы могли исправить их.
+Помните, что эта функция находится на стадии разработки, поэтому могут возникать ошибки. В таком случае не забудьте [отправить нам свой отзыв](https://docs.microsoft.com/windows/msix/packaging-tool/insider-program#share-your-feedback), чтобы мы могли исправить их.
 

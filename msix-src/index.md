@@ -1,18 +1,18 @@
 ---
 layout: LandingPage
 title: Документация по MSIX
-description: Документация по MSIX — обновленному безопасному формату упаковки, сочетающему в себе технологии установки с использованием MSI-файлов, APPX-файлов, App-V и ClickOnce.
+description: Содержит руководство по MSIX — безопасному, защищенному и надежному современному формату упаковки для приложений для Windows 10.
 ms.date: 09/07/2018
 ms.topic: landing-page
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 43a351aaffaf56ed312dad1bc318dbba316416d1
-ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
+ms.openlocfilehash: 76f31462dbfcab60b23e81281b6b0b0eaaaf5785
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776500"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328903"
 ---
 # <a name="msix-documentation"></a>Документация по MSIX
 MSIX — это безопасный и надежный формат упаковки, созданный на основе сочетания технологий установки с помощью MSI-файлов, APPX-файлов, App-V и ClickOnce. 

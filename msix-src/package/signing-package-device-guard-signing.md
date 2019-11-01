@@ -1,16 +1,16 @@
 ---
-Description: В этой статье описывается, как подписываться с помощью подписывания Device Guard.
+description: В этой статье описывается, как подписать пакет MSIX с помощью подписи Device Guard, что позволяет предприятиям гарантировать, что приложения поступают из надежного источника.
 title: Подписывание пакета MSIX с помощью подписи Device Guard
 ms.date: 07/12/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: f373b5a67e5af6eb0c88ae45c0a2b8f6e092ad39
-ms.sourcegitcommit: 2eb663be861f2eb29f4882a15a4913ced9da833a
+ms.openlocfilehash: cd79074fa8cd74d6a32d3fc2c517e1930ee7ff68
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "70014866"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328699"
 ---
 # <a name="sign-an-msix-package-with-device-guard-signing"></a>Подписывание пакета MSIX с помощью подписи Device Guard
 
@@ -44,10 +44,10 @@ ms.locfileid: "70014866"
 
 Чтобы зарегистрировать приложение с соответствующими параметрами, чтобы можно было использовать аутентификацию Azure AD с Microsoft Store для бизнеса:
 
-1. Войдите в [портал Azure](https://portal.azure.com/) и следуйте инструкциям в [кратком руководстве: Зарегистрируйте приложение на платформе](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) удостоверений Майкрософт, чтобы зарегистрировать приложение, которое будет использовать подписывание Device Guard.
+1. Войдите в [портал Azure](https://portal.azure.com/) и следуйте инструкциям в [кратком руководстве по регистрации приложения на платформе Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) , чтобы зарегистрировать приложение, которое будет использовать подписывание Device Guard.
 
     > [!NOTE]
-    > В разделе **URI перенаправления** рекомендуется выбрать общедоступный **клиент (мобильный & Рабочий стол)** . В противном случае, если выбран вариант " **Интернет** " для типа приложения, необходимо указать [секрет клиента](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application) при получении маркера доступа Azure AD позже в этом процессе.
+    > В разделе **URI перенаправления** рекомендуется выбрать **общедоступный клиент (мобильный & Рабочий стол)** . В противном случае, если выбран вариант " **Интернет** " для типа приложения, необходимо указать [секрет клиента](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application) при получении маркера доступа Azure AD позже в этом процессе.
 
 2. После регистрации приложения на главной странице приложения в портал Azure щелкните **разрешения API** и добавьте разрешение для **API магазина Windows для бизнеса**.
 
@@ -107,7 +107,7 @@ signtool sign /fd sha256 /dlib DgssLib.dll /dmdf <Azure AAD in .json format> /t 
 > * Поддерживается только алгоритм SHA256.
 > * При подписывании пакета с помощью подписи Device Guard пакет не отправляется через Интернет.
 
-## <a name="test"></a>Тест
+## <a name="test"></a>Тестирование
 
 Чтобы проверить подпись Device Guard, скачайте корневой сертификат организацию с портала Microsoft Store для бизнеса.
 

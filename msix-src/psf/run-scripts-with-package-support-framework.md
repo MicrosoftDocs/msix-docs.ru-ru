@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: ea76000a25fd8e3af76309cdd7c4b7cc28629c9a
-ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
+ms.openlocfilehash: 1ba8767e2fbbe5eb6ace39e14518462bfb7d853d
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776451"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328238"
 ---
 # <a name="run-scripts-with-the-package-support-framework"></a>Выполнение сценариев с помощью платформы поддержки пакетов
 
@@ -38,7 +38,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 * 32-разрядный компьютер:
   * 32-разрядный исполняемый файл:%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe
 
-Дополнительные сведения о политиках выполнения PowerShell см. в [этой статье](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-6).
+Дополнительные сведения о политиках выполнения PowerShell см. в [этой статье](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-6).
 
 Убедитесь, что в пакет включен следующий "Стартингскриптвраппер. ps1", и укажите его в той же папке, где находится исполняемый файл. Его можно скопировать из пакета NuGet платформы поддержки пакетов (https://www.nuget.org/packages/Microsoft.PackageSupportFramework/).
 

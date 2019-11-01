@@ -1,21 +1,21 @@
 ---
 title: Общие сведения о средстве упаковки MSIX
-description: Общие сведения для начала работы со средством упаковки MSIX
+description: В этой статье описывается средство упаковки MSIX, которое позволяет переупаковывать существующие классические приложения Windows в формат MSIX.
 ms.date: 02/19/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: ee9d47ef88f8281a707550b67cf976da29efe9e2
-ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
+ms.openlocfilehash: b8afc46195c1c7f467ddf302edd9553a2ba0c049
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776540"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328468"
 ---
 # <a name="msix-packaging-tool"></a>Средство упаковки MSIX 
 
-<div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство упаковки MSIX</a></p></div>
+<div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство упаковки MSIX</a></p></div>
 
 Средство упаковки MSIX позволяет повторно упаковывать существующие пакеты приложений Win32 в формате MSIX. Оно включает интерактивный пользовательский интерфейс и командную строку для преобразования, позволяя преобразовывать приложения без использования исходного кода. Мы хотим упростить для ИТ-специалистов операцию преобразования существующих ресурсов в формат MSIX, оптимизируя процесс упаковки и управления приложениями.
 
@@ -32,9 +32,9 @@ ms.locfileid: "72776540"
  
  ## <a name="install"></a>Установка
  
-Чтобы установить средство упаковки MSIX из Microsoft Store, перейдите [сюда](https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf), выполнив вход с использованием MSA, которая используется для Программы предварительной оценки Windows. Затем перейдите к странице с описанием продукта и щелкните значок установки, чтобы начать установку.
+Чтобы установить средство упаковки MSIX из Microsoft Store, перейдите [сюда](https://www.microsoft.com/p/msix-packaging-tool/9n5lw3jbcxkf), выполнив вход с использованием MSA, которая используется для Программы предварительной оценки Windows. Затем перейдите к странице с описанием продукта и щелкните значок установки, чтобы начать установку.
 
-Средство упаковки MSIX также можно скачать для автономного использования в организации на [веб-портале](https://businessstore.microsoft.com/) Microsoft Store для бизнеса. См. подробнее об [автономном распространении](https://docs.microsoft.com/en-us/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app).
+Средство упаковки MSIX также можно скачать для автономного использования в организации на [веб-портале](https://businessstore.microsoft.com/) Microsoft Store для бизнеса. См. подробнее об [автономном распространении](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app).
 
  
 ## <a name="latest-public-version---1201910180"></a>Последняя общедоступная версия — 1.2019.1018.0.

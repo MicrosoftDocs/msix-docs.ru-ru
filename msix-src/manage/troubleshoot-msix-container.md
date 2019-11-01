@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: c1a8d489ca93c075ce8b87e98fb2ada3bade7d91
-ms.sourcegitcommit: 9cb3d2cdbe03b300bef60ed949e5e4d3b24d35ba
+ms.openlocfilehash: bac524ead0db9d7c56502b534571989aa9e6d0d9
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864023"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328912"
 ---
 # <a name="troubleshoot-runtime-issues-in-an-msix-container"></a>Устранение неполадок во время выполнения в контейнере MSIX 
 
@@ -19,7 +19,7 @@ ms.locfileid: "70864023"
 
 Возможны случаи, когда порядок установки этих приложений может вызвать непредвиденные проблемы, при которых ожидаемые разделы реестра могут быть перезаписаны, а ожидаемые файлы могут быть заменены. 
 
-Чтобы помочь в диагностике таких проблем, [Invoke-коммандиндесктоппаккаже](https://docs.microsoft.com/en-us/powershell/module/appx/invoke-commandindesktoppackage?view=win10-ps) — это командлет PowerShell, который можно использовать для запуска приложения в контейнере MSIX. Это позволяет пользователям запускать командную строку, редактор реестра, PowerShell в контейнере MSIX и просматривать объединенную файловую систему и Объединенный куст реестра. 
+Чтобы помочь в диагностике таких проблем, [Invoke-коммандиндесктоппаккаже](https://docs.microsoft.com/powershell/module/appx/invoke-commandindesktoppackage?view=win10-ps) — это командлет PowerShell, который можно использовать для запуска приложения в контейнере MSIX. Это позволяет пользователям запускать командную строку, редактор реестра, PowerShell в контейнере MSIX и просматривать объединенную файловую систему и Объединенный куст реестра. 
 
  > [!IMPORTANT]
  > Командлет Invoke-Коммандиндесктоппаккаже требует, чтобы устройство было в режиме разработчика для сборок Windows 10, предшествовавших версии 18922.

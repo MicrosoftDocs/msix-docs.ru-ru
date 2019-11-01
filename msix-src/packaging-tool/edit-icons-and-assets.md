@@ -1,17 +1,17 @@
 ---
 title: Изменение значков и ресурсов с помощью средства упаковки MSIX
-description: Здесь объясняется, как изменять значки и ресурсы с помощью средства упаковки MSIX.
+description: Описывает, как изменять значки и ресурсы в процессе преобразования приложения при использовании средства упаковки MSIX.
 ms.date: 06/27/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: a0f02d99993d3ff73c2cfd57289d8f45b4bd29d1
-ms.sourcegitcommit: b014ea712802a2845468182770c7acd5ae6aea70
-ms.translationtype: HT
+ms.openlocfilehash: 54bc62d90ee3fef134668c562655d4b4bef39801
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68935551"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328730"
 ---
 # <a name="edit-icons-and-assets-using-the-msix-packaging-tool"></a>Изменение значков и ресурсов с помощью средства упаковки MSIX
 
@@ -33,4 +33,4 @@ ms.locfileid: "68935551"
 - Чтобы добавить новый файл ресурсов, щелкните правой кнопкой мыши папку ресурсов и выберите **Добавить файл** или **Добавить папку**.
 - Чтобы удалить существующий файл ресурсов, щелкните правой кнопкой мыши файл и выберите **Удалить**.
 
-Чтобы проверить, внесены ли в ресурс изменения, перейдите к странице **Сведения о пакете** и откройте файл манифеста. Убедитесь, что сведения о добавленных или удаленных вами ресурсах представлены в узле [uap:VisualElements](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-visualelements). Ссылка на манифест должна быть конкретной, при этом файлы ресурсов можно называть как угодно. 
+Чтобы проверить, внесены ли в ресурс изменения, перейдите к странице **Сведения о пакете** и откройте файл манифеста. Убедитесь, что сведения о добавленных или удаленных вами ресурсах представлены в узле [uap:VisualElements](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap-visualelements). Ссылка на манифест должна быть конкретной, при этом файлы ресурсов можно называть как угодно. 

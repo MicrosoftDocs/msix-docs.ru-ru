@@ -1,17 +1,17 @@
 ---
 title: Поддержка пакетов MSIX в Windows 10, версия 1709 и выше
-description: Установка пакетов MSIX в версии 1709 и выше
+description: В этой статье описывается, как обеспечить поддержку пакета MSIX в Windows 10 версии 1709 (сборка 16299) и более поздних версий.
 ms.date: 04/04/2019
 ms.topic: article
 keywords: MSIX, MPT, MSIX Packaging Tool, 1709, 16299
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: f4a27ce99eb949400b319bed6977a4e93338251a
-ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
+ms.openlocfilehash: 4dbb6fdb5893835475d79a8052e35fc902680425
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776513"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328751"
 ---
 # <a name="msix-package-support-on-windows-10-version-1709-and-later"></a>Поддержка пакетов MSIX в Windows 10, начиная со сборки 1709
 

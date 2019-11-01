@@ -1,25 +1,25 @@
 ---
-title: Проблемы с установщиком приложения API файлов
-description: Перечисляет известные проблемы с файлом установщика приложений API-интерфейсы.
+title: Проблемы API файла установщика приложений
+description: В этой статье перечислены известные проблемы с интерфейсами API PackageManager и Package для управления файлами установщика приложений.
 ms.date: 2/20/2019
 ms.topic: article
-keywords: Windows 10, универсальной платформы Windows, установщик приложения, AppInstaller, неопубликованные API
+keywords: Windows 10, UWP, установщик приложений, AppInstaller, загружать неопубликованные, API
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: f0ad59509ce95c94b790419cb46b159475be0f05
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: ca759a80d443daeb58dd66913be2b2acd9e17eef
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67828462"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328265"
 ---
-# <a name="app-installer-file-api-issues"></a>Проблемы с установщиком приложения API файлов
+# <a name="app-installer-file-api-issues"></a>Проблемы API файла установщика приложений
 
-## <a name="javascript-support-for-app-installer-file-apis"></a>Поддержка JavaScript для API-интерфейсов файлового установщика приложений
+## <a name="javascript-support-for-app-installer-file-apis"></a>Поддержка JavaScript для файловых API установщика приложений
 
-[PackageManager](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager) и [пакета](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package) классы в пакете SDK для Windows содержат методы, которые можно использовать для добавления или изменения пакетов с помощью файлов установщика приложений или для получения сведений о приложениях с установщиком приложения связь. См. подробнее в [документации по Установщику приложений](app-installer-documentation.md).
+Классы [PackageManager](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager) и [Package](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package) в Windows SDK предоставляют методы, которые можно использовать для добавления или изменения пакетов через файлы установщика приложений или для получения сведений о приложениях с помощью Ассоциации установщика приложения. См. подробнее в [документации по Установщику приложений](app-installer-documentation.md).
 
-Из этих методов [PackageManager.AddPackageByAppInstallerFileAsync](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager.addpackagebyappinstallerfileasync), [PackageManager.RequestAddPackageByAppInstallerFileAsync](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager.requestaddpackagebyappinstallerfileasync), и [ Package.CheckUpdateAvailabilityAsync](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package.checkupdateavailabilityasync) не поддерживаются в JavaScript. Тем не менее, можно создать [компонента среды выполнения Windows](https://docs.microsoft.com/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript) , вызывает эти методы, а затем вызвать этот компонент из приложения JavaScript UWP.
+Из этих методов [PackageManager. аддпаккажебяппинсталлерфилеасинк](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager.addpackagebyappinstallerfileasync), [PackageManager. рекуестаддпаккажебяппинсталлерфилеасинк](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager.requestaddpackagebyappinstallerfileasync)и [Package. Чеккупдатеаваилабилитясинк](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package.checkupdateavailabilityasync) не поддерживаются в JavaScript. Однако можно создать [Среда выполнения Windows компонент](https://docs.microsoft.com/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript) , вызывающий эти методы, а затем вызвать этот компонент из приложения UWP для JavaScript.
 
 Ниже приведен пример.
 
