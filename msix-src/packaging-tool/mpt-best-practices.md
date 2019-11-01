@@ -1,17 +1,17 @@
 ---
 title: Рекомендации по использованию средства упаковки MSIX
-description: Рекомендации по использованию средства упаковки MSIX
+description: В статье описано, как повторно упаковывать приложения в формате MSIX с помощью средства упаковки MSIX.
 ms.date: 09/07/2018
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: a6dbbb8fb70b0fb9db1941e3918abcaa873569ed
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
-ms.translationtype: HT
+ms.openlocfilehash: 85b01da2e8f36ebe632380cfbf87382c51a5c959
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67840728"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328485"
 ---
 # <a name="best-practices-for-the-msix-packaging-tool"></a>Рекомендации по использованию средства упаковки MSIX
 
@@ -36,7 +36,7 @@ ms.locfileid: "67840728"
 - При создании пакетов изменений необходимо объявить имя пакета (имя удостоверения) родительского приложения в пользовательском интерфейсе средства, чтобы средство правильно установило зависимость пакета в манифесте пакета изменения.
 - Объявлять поле расположения установки на странице **сведений о пакете** необязательно, но рекомендуется. Убедитесь, что этот путь совпадает с расположением установки установщика приложений.
 - Выполнять подготовительные шаги на странице **подготовки компьютера** необязательно, но настоятельно рекомендуется.
-ms.custom: RS5
+MS. Custom: RS5
 
 
 ## <a name="best-practices-while-bundling-msix-packages"></a>Рекомендации по объединению пакетов MSIX

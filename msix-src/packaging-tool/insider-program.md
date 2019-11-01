@@ -1,17 +1,17 @@
 ---
 title: Программа предварительной оценки средства упаковки MSIX
-description: Узнайте о Программе предварительной оценки средства упаковки и о том, как принять в ней участие
+description: В этой статье описывается программа предварительной оценки для программы MSIX Packaging Tool, которая предоставляет выпуски с ранним доступом средства упаковки MSIX.
 ms.date: 06/25/2019
 ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 6584abe50111bba8215acae2d4ab34a8b9675be1
-ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
+ms.openlocfilehash: 7201d3907d84e4a42fbcb3d9f19adf84d5fe353f
+ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776548"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73328480"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -38,8 +38,8 @@ ms.locfileid: "72776548"
 ### <a name="version-1201910180-public"></a>Версия 1.2019.1018.0 (общедоступная)
 - Теперь доступно использование подписи Device Guard. Для использования этого варианта подписи требуется учетная запись Microsoft Azure Active Directory, настроенная для использования Microsoft Store для бизнеса. Дополнительные сведения см. в [этой статье](https://docs.microsoft.com/windows/msix/package/signing-package-device-guard-signing).
 - **Редактор пакетов** теперь поддерживает возможность выбора нескольких элементов для выполнения действия.
-- Теперь можно щелкнуть правой кнопкой мыши, чтобы изменить пакет MSIX.
-- Улучшения UX для рабочего процесса упаковки.
+- Теперь можно изменить пакет MSIX, щелкнув его правой кнопкой мыши.
+- Улучшение взаимодействия с пользователем в рабочем процессе упаковки.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
