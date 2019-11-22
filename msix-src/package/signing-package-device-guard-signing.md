@@ -5,12 +5,12 @@ ms.date: 07/12/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: cd79074fa8cd74d6a32d3fc2c517e1930ee7ff68
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 73ed0fcb5ef4bb1656eda01dcb8ecbdd2bb5b65e
+ms.sourcegitcommit: 073a228653f004914851c3461b9ad6eef343f915
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328699"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74309001"
 ---
 # <a name="sign-an-msix-package-with-device-guard-signing"></a>Подписывание пакета MSIX с помощью подписи Device Guard
 
@@ -124,3 +124,4 @@ signtool sign /fd sha256 /dlib DgssLib.dll /dmdf <Azure AAD in .json format> /t 
 Ниже приведены распространенные ошибки, которые могут возникнуть.
 
 * 0x800700d: Эта распространенная ошибка означает, что формат JSON-файла Azure AD недопустим.
+* Прежде чем довнлоадиднг корневой сертификат подписывания Device Guard, может потребоваться принять условия и условия Microsoft Store для бизнеса. Это можно сделать, получению бесплатное приложение на портале.
