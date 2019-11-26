@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix, 1709, 1803
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 9e2a4864d8f5f15f70a48eb04e787c80cd7c90a8
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: 700656bb7a6de66a876d8d46a9ac724d01caa11a
+ms.sourcegitcommit: 073a228653f004914851c3461b9ad6eef343f915
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829392"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74309026"
 ---
 # <a name="msix-support-on-windows-10-version-1709-and-1803"></a>Поддержка MSIX в Windows 10 версий 1709 и 1803
 
@@ -52,7 +52,7 @@ Microsoft Intune и System Center Configuration Manger (SCCM) поддержив
 
 В Windows 10 версий 1709, 1803 и 1809 поддерживаются основные сценарии корпоративного развертывания. К ним относятся установка с помощью SCCM, Microsoft Intune, PowerShell или двойного щелчка мыши.
 
-Сейчас для установки MSIX через Microsoft Store и Microsoft Store для бизнеса требуется Windows 10 версии 1809.
+Сейчас для установки MSIX через Microsoft Store и Microsoft Store для бизнеса требуется Windows 10 версии 1803.
 
 ## <a name="packaging-and-signing"></a>Упаковка и подписывание
 
