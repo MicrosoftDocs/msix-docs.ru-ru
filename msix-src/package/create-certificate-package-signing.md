@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.assetid: 7bc2006f-fc5a-4ff6-b573-60933882caf8
 ms.localizationpriority: medium
-ms.openlocfilehash: 49686fcfbe9ab4e414047c996e5d69ef0c1b3fa4
-ms.sourcegitcommit: f47c140e2eb410c2748be7912955f43e7adaa8f9
+ms.openlocfilehash: b251930550aa1a5c6d5d42c117256ca579504fde
+ms.sourcegitcommit: d749fa662214bddaa6854f1ee95761c547db8dae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776487"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "75008114"
 ---
 # <a name="create-a-certificate-for-package-signing"></a>Создание сертификата для подписания пакета
 
@@ -86,8 +86,8 @@ Get-ChildItem | Format-Table Subject, FriendlyName, Thumbprint
 ### <a name="password-usage"></a>Использование пароля
 
 ```powershell
-$pwd = ConvertTo-SecureString -String <Your Password> -Force -AsPlainText 
-Export-PfxCertificate -cert "Cert:\CurrentUser\My\<Certificate Thumbprint>" -FilePath <FilePath>.pfx -Password $pwd
+$password = ConvertTo-SecureString -String <Your Password> -Force -AsPlainText 
+Export-PfxCertificate -cert "Cert:\CurrentUser\My\<Certificate Thumbprint>" -FilePath <FilePath>.pfx -Password $password
 ```
 
 ### <a name="protectto-usage"></a>Использование ProtectTo
