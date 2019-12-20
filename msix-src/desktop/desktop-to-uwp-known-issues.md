@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 71f8ffcb-8a99-4214-ae83-2d4b718a750e
 ms.localizationpriority: medium
-ms.openlocfilehash: d82306906f09f5c07882da5a996a8a45a846e6c6
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 2f56cc122f82f2806b0cc1d014c9ab4c14307895
+ms.sourcegitcommit: 0412ba69187ce791c16313d0109a5d896141d44c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328569"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303191"
 ---
 # <a name="known-issues-with-packaged-desktop-apps"></a>Известные проблемы с упакованными классическими приложениями
 
@@ -104,12 +104,7 @@ ERROR: [AppxSipCustomLoggerCallback] File has malformed certificate: uninstall.e
 
 ...   
 ```
+
 ## <a name="next-steps"></a>Дальнейшие действия
 
-**Поиск ответов на вопросы**
-
 Есть вопросы? Задайте их на Stack Overflow. Наша команда следит за этими [тегами](https://stackoverflow.com/questions/tagged/project-centennial+or+desktop-bridge). Вы также можете задать нам вопросы [здесь](https://social.msdn.microsoft.com/Forums/en-US/home?filter=alltypes&sort=relevancedesc&searchTerm=%5BDesktop%20Converter%5D).
-
-**Отправьте отзыв или получите предложения по функциям**
-
-См. раздел [UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/161895-desktop-bridge-centennial)

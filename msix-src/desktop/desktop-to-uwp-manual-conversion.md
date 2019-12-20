@@ -7,12 +7,12 @@ keywords: windows 10, uwp, msix
 ms.assetid: e8c2a803-9803-47c5-b117-73c4af52c5b6
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: e36cfe1a0ed1c16d2778d33599133d7bc9e06c1c
-ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
+ms.openlocfilehash: 04b92d8b8665fb75f2484e5e0e1bebcf01e93d22
+ms.sourcegitcommit: 0412ba69187ce791c16313d0109a5d896141d44c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68685382"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303300"
 ---
 # <a name="package-a-desktop-app-manually"></a>Упаковка классического приложения вручную
 
@@ -29,7 +29,7 @@ ms.locfileid: "68685382"
 
 ## <a name="first-prepare-your-application"></a>Сначала подготовьте свое приложение
 
-Прежде чем приступить к созданию пакета для приложения, ознакомьтесь с этим руководством. [Подготовка к упаковке классического приложения](desktop-to-uwp-prepare.md).
+Прежде чем приступить к созданию пакета для приложения, ознакомьтесь с этим руководством. [Подготовка к упаковке](desktop-to-uwp-prepare.md)классического приложения.
 
 ## <a name="create-a-package-manifest"></a>Создание пакета манифеста
 
@@ -85,7 +85,7 @@ ms.locfileid: "68685382"
 > [!NOTE]
 > Если вы зарезервированы имя приложения в Microsoft Store, вы можете получить имя и издателя с помощью [центра партнеров](https://partner.microsoft.com/dashboard). Если вы планируете загружать неопубликованные приложение на другие системы, вы можете указать собственные имена, пока имя издателя совпадает с именем сертификата, используемого для подписания приложения.
 
-### <a name="properties"></a>Свойства
+### <a name="properties"></a>"Свойства"
 
 Элемент [Properties](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-properties) имеет три обязательных дочерних элемента. Вот пример узла **Properties** с замещающим текстом для элементов. **DisplayName** — это имя приложения, которое вы резервируете в хранилище, для приложений, которые передаются в хранилище.
 
@@ -108,7 +108,7 @@ ms.locfileid: "68685382"
 ```
 ### <a name="dependencies"></a>Зависимости
 
-Для классических приложений, для которых создается пакет, всегда присвойте ``Name`` ``Windows.Desktop``атрибуту значение.
+Для классических приложений, для которых создается пакет, всегда присвойте атрибуту ``Name`` значение ``Windows.Desktop``.
 
 ```XML
 <Dependencies>
@@ -117,7 +117,7 @@ ms.locfileid: "68685382"
 ```
 
 ### <a name="capabilities"></a>Возможности
-Для классических приложений, для которых создается пакет, необходимо добавить ``runFullTrust`` возможность.
+Для классических приложений, для которых создается пакет, необходимо добавить функцию ``runFullTrust``.
 
 ```XML
 <Capabilities>
@@ -130,7 +130,7 @@ ms.locfileid: "68685382"
 
 ### <a name="application-element"></a>Элемент приложения
 
-Для классических приложений, для которых создается пакет, ``EntryPoint`` атрибут элемента Application всегда ``Windows.FullTrustApplication``имеет значение.
+Для классических приложений, для которых создается пакет, атрибут ``EntryPoint`` элемента Application всегда ``Windows.FullTrustApplication``.
 
 ```XML
 <Applications>
@@ -206,15 +206,11 @@ ms.locfileid: "68685382"
 > [!NOTE]
 > Упакованное приложение всегда запускается как интерактивный пользователь, а любой диск, на котором устанавливается упакованное приложение, должен быть отформатирован в формате NTFS.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 **Поиск ответов на вопросы**
 
 Есть вопросы? Задайте их на Stack Overflow. Наша команда отслеживает эти [теги](https://stackoverflow.com/questions/tagged/project-centennial+or+desktop-bridge). Вы также можете задать нам вопрос [здесь](https://social.msdn.microsoft.com/Forums/en-US/home?filter=alltypes&sort=relevancedesc&searchTerm=%5BDesktop%20Converter%5D).
-
-**Отправьте отзыв или получите предложения по функциям**
-
-См. раздел [UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/161895-desktop-bridge-centennial)
 
 **Пошаговое прохождение кода, Поиск и устранение проблем**
 

@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: f45d8b14-02d1-42e1-98df-6c03ce397fd3
 ms.localizationpriority: medium
-ms.openlocfilehash: 7c8faa1ec1c6e8fcd86a59be46143d0d42b3b5ad
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 5a687e94182c2516040d0e061ed26e35b1b937a9
+ms.sourcegitcommit: 0412ba69187ce791c16313d0109a5d896141d44c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328306"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303315"
 ---
 # <a name="run-debug-and-test-a-packaged-desktop-application"></a>Запуск, отладка и тестирование упакованного классического приложения
 
@@ -121,10 +121,4 @@ Invoke-CommandInDesktopPackage [-PackageFamilyName] <string> [-AppId] <string> [
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-**Поиск ответов на вопросы**
-
 Есть вопросы? Задайте их на Stack Overflow. Наша команда следит за этими [тегами](https://stackoverflow.com/questions/tagged/project-centennial+or+desktop-bridge). Вы также можете задать нам вопросы [здесь](https://social.msdn.microsoft.com/Forums/en-US/home?filter=alltypes&sort=relevancedesc&searchTerm=%5BDesktop%20Converter%5D).
-
-**Отправьте отзыв или получите предложения по функциям**
-
-См. раздел [UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/161895-desktop-bridge-centennial)

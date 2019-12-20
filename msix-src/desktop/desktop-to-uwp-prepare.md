@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 71a57ca2-ca00-471d-8ad9-52f285f3022e
 ms.localizationpriority: medium
-ms.openlocfilehash: 6842263efa77515753f14941ee8b5eac36f03ec7
-ms.sourcegitcommit: d749fa662214bddaa6854f1ee95761c547db8dae
+ms.openlocfilehash: 3dde98d7e5d92b3f3e9fe3afe5dc5eb9485f7b57
+ms.sourcegitcommit: 0412ba69187ce791c16313d0109a5d896141d44c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "75008124"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303287"
 ---
 # <a name="prepare-to-package-a-desktop-application"></a>Подготовка к упаковке классического приложения
 
@@ -136,10 +136,6 @@ ms.locfileid: "75008124"
 **Поиск ответов на вопросы**
 
 Есть вопросы? Задайте их на Stack Overflow. Наша команда следит за этими [тегами](https://stackoverflow.com/questions/tagged/project-centennial+or+desktop-bridge). Вы также можете задать нам вопросы [здесь](https://social.msdn.microsoft.com/Forums/en-US/home?filter=alltypes&sort=relevancedesc&searchTerm=%5BDesktop%20Converter%5D).
-
-**Отправьте отзыв или получите предложения по функциям**
-
-См. раздел [UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/161895-desktop-bridge-centennial)
 
 **Создание пакета приложения Windows для классического приложения**
 
