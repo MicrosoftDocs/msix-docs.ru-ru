@@ -39,7 +39,17 @@
     - name: Поддержка MSIX в сборках 1709 и 1803
       href: msix-1709-and-1803-support.md
     - name: MSIX Core
-      href: msix-sdk/msixcore.md
+      items:
+        - name: Обзор
+          href: msix-core/msixcore.md
+        - name: Обновление существующего пакета MSIX для включение поддержки MSIX Core
+          href: msix-core/support-msix-core.md
+        - name: Развертывание пакета MSIX с помощью MSIX Core
+          href: msix-core/deploy-with-msix-core.md
+        - name: Создание пакета MSIX из исходного кода с помощью MSIX Core
+          href: msix-core/msixcore-clickonce-solution.md
+        - name: Поиск и устранение неисправностей
+          href: msix-core/msixcore-troubleshoot.md
     - name: Групповая политика и упакованные приложения MSIX
       href: group-policy-msix.md
 - name: Инструменты
