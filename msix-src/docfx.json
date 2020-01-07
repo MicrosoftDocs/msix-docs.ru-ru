@@ -37,7 +37,12 @@
     "globalMetadata": {
       "breadcrumb_path": "/windows/msix/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-MSIX",
-      "disable_contribution_on_translation_quality": ["MT"],
+      "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ],
       "titleSuffix": "MSIX",
       "extendBreadcrumb": true,
       "feedback_system": "GitHub",
