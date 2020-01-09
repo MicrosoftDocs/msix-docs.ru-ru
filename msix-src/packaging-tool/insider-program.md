@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 7201d3907d84e4a42fbcb3d9f19adf84d5fe353f
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 0d5c124f4f7655fb3685ee13eeef8c116f8432d6
+ms.sourcegitcommit: 44b9510ea76623d668d87ddca575a7921c60a19a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328480"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75322648"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -35,11 +35,10 @@ ms.locfileid: "73328480"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-### <a name="version-1201910180-public"></a>Версия 1.2019.1018.0 (общедоступная)
-- Теперь доступно использование подписи Device Guard. Для использования этого варианта подписи требуется учетная запись Microsoft Azure Active Directory, настроенная для использования Microsoft Store для бизнеса. Дополнительные сведения см. в [этой статье](https://docs.microsoft.com/windows/msix/package/signing-package-device-guard-signing).
-- **Редактор пакетов** теперь поддерживает возможность выбора нескольких элементов для выполнения действия.
-- Теперь можно изменить пакет MSIX, щелкнув его правой кнопкой мыши.
-- Улучшение взаимодействия с пользователем в рабочем процессе упаковки.
+## <a name="version-1201912180"></a>Версия 1.2019.1218.0
+- Добавлена возможность перетаскивания файлов для перемещения их в редакторе пакетов.
+- Новый параметр для добавления целостности пакета в приложения
+- Показывать расположение сохранения по умолчанию на странице "Создание пакета"
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
@@ -51,7 +50,7 @@ ms.locfileid: "73328480"
 
 **Центр отзывов** также позволяет обмениваться идеями и предложениями, связанными с новыми функциями, которые вы хотели бы видеть в приложении.  
 
-## <a name="faqs"></a>Вопросы и ответы
+## <a name="faqs"></a>Частые вопросы
 
 1. Мне не пришло сообщение электронной почты с подтверждением моей регистрации в Программе предварительной оценки. 
     - Попробуйте [присоединиться к программе](https://aka.ms/MSIXPackagingPreviewProgram) еще раз.  

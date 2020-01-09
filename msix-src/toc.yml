@@ -48,7 +48,7 @@
           href: msix-core/deploy-with-msix-core.md
         - name: Создание пакета MSIX из исходного кода с помощью MSIX Core
           href: msix-core/msixcore-clickonce-solution.md
-        - name: Поиск и устранение неисправностей
+        - name: Диагностика
           href: msix-core/msixcore-troubleshoot.md
     - name: Групповая политика и упакованные приложения MSIX
       href: group-policy-msix.md
@@ -68,6 +68,8 @@
           href: packaging-tool/mpt-best-practices.md
         - name: Создание пакетов с помощью средства Hyper-V Quick Create
           href: packaging-tool/Quick-Create-VM.md
+        - name: 'Преобразование установщика, который содержит службы'
+          href: packaging-tool/convert-an-installer-with-services.md
         - name: Известные проблемы и устранение неполадок
           href: packaging-tool/mpt-known-issues.md
         - name: Дублирование настроек средства упаковки MSIX на нескольких устройствах
@@ -98,7 +100,7 @@
           href: app-installer/install-related-set.md
         - name: Сопутствующая документация
           href: app-installer/app-installer-documentation.md
-    - name: MSIX SDK
+    - name: SDK для MSIX
       items:
         - name: Обзор
           href: msix-sdk/sdk-overview.md
@@ -114,7 +116,7 @@
               href: msix-sdk/release-notes/sdk-release-notes-1.6.md
             - name: 'Пакет SDK для MSIX , выпуск 1.7'
               href: msix-sdk/release-notes/sdk-release-notes-1.7.md
-- name: Упаковка
+- name: Пакет
   items:
     - name: Упаковка классических приложений
       items:
@@ -130,8 +132,6 @@
               href: packaging-tool/create-other-installer.md
             - name: Создание пакета MSIX с помощью командной строки
               href: packaging-tool/package-conversion-cli.md
-            - name: Автоматизация преобразования с помощью командной строки
-              href: packaging-tool/automate-conversion.md
             - name: Создание пакета MSIX на удаленном компьютере
               href: packaging-tool/remote-conversion-setup.md
             - name: Упаковка с помощью Desktop App Converter
@@ -176,7 +176,7 @@
           href: package/signing-package-device-guard-signing.md
 - name: Проверить
   items:
-    - name: комплект сертификации приложений для Windows;
+    - name: Комплект сертификации приложений для Windows
       href: 'https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit?context=/windows/msix/render'
     - name: Портал устройств Windows
       href: 'https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal?context=/windows/msix/render'
