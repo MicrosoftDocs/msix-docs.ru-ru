@@ -9,12 +9,12 @@ f1_keywords:
 - vs.packagewizard
 - vs.storeassociationwizard
 ms.localizationpriority: medium
-ms.openlocfilehash: e151cf2edb41b8a26b48189e4ab91a342a3ddaa8
-ms.sourcegitcommit: d749fa662214bddaa6854f1ee95761c547db8dae
+ms.openlocfilehash: 548981deb38ce651367bec2207013eff56cf511d
+ms.sourcegitcommit: 90eed7d23240aefa3761085955a193323f4661d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "75008134"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75831496"
 ---
 # <a name="package-an-msix-app-with-visual-studio"></a>Упаковка приложения MSIX с помощью Visual Studio
 
@@ -89,10 +89,12 @@ Visual Studio содержит конструктор манифестов, ко
 
 ## <a name="create-an-app-package-upload-file"></a>Создание файла пакета отправки приложения
 
-Чтобы распространить приложение с помощью Microsoft Store необходимо создать пакет приложения (Appx или msix), набор приложений (. appxbundle или. msixbundle) или файл отправки пакета приложения (. appxupload или. мсиксуплоад) и [Отправить упакованное приложение в центр партнеров](https://docs.microsoft.com/windows/uwp/publish/app-submissions). Хотя пакет приложения или набор приложений можно отправить только в центр партнеров, рекомендуется отправить файл отправки пакета приложения. Вы можете создать файл отправки пакета приложения с помощью мастера **создания пакетов приложений** в Visual Studio или создать его вручную из существующих пакетов приложений или наборов приложений.
+Чтобы распространить приложение с помощью Microsoft Store необходимо создать пакет приложения (Appx или msix), набор приложений (. appxbundle или. msixbundle) или файл отправки пакета приложения (. appxupload или. мсиксуплоад) и [Отправить упакованное приложение в центр партнеров](https://docs.microsoft.com/windows/uwp/publish/app-submissions). 
 
->[!NOTE]
+> [!NOTE]
 > Если вы хотите вручную создать пакет приложения (Appx или msix) или набор приложений (. appxbundle или. msixbundle), см. раздел [Создание пакета приложения с помощью средства программе makeappx. exe](create-app-package-with-makeappx-tool.md).
+
+Хотя пакет приложения или набор приложений можно отправить только в центр партнеров, рекомендуется отправить **файл отправки пакета приложения**. Вы можете создать файл отправки пакета приложения с помощью мастера **создания пакетов приложений** в Visual Studio или создать его вручную из существующих пакетов приложений или наборов приложений, как показано в разделе [Создание файла отправки пакета приложения вручную](#create-your-app-package-upload-file-manually).
 
 ### <a name="create-your-app-package-upload-file-using-visual-studio"></a>Создание файла отправки пакета приложения с помощью Visual Studio
 
@@ -138,9 +140,9 @@ Visual Studio содержит конструктор манифестов, ко
     - Один или несколько пакетов приложений (. msix или. appx) или набор приложений (. msixbundle или. appxbundle).
     - Файл аппкссим. Это сжатый PDB-файл, содержащий открытые символы приложения, используемые для [анализа сбоев](https://docs.microsoft.com/windows/uwp/publish/health-report) в центре партнеров. Этот файл можно опустить, но в этом случае для приложения не будут доступны сведения о сбое или отладке.
 
-2. Заархивировать папку.
+2. Выберите все файлы в папке, щелкните их правой кнопкой мыши и выберите **отправить в** -> **сжатую ZIP-папку**.
 
-3. Измените имя расширения ZIP-папки с ZIP-файла на. мсиксуплоад или. appxupload.
+3. Измените имя нового расширения ZIP-файла с ZIP на мсиксуплоад или appxupload.
 
 ## <a name="validate-your-app-package"></a>Проверка пакета приложения
 

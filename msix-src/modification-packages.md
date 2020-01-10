@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 89a3e99d1ac7c10993570763add20b92f5cd1685
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 6db2a7aa009f0a4bce9a2aa8950e029473df63aa
+ms.sourcegitcommit: 90eed7d23240aefa3761085955a193323f4661d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328595"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75831467"
 ---
 # <a name="customize-your-enterprise-apps-with-modification-packages"></a>Настройка корпоративных приложений с помощью пакетов изменений 
 
@@ -44,7 +44,7 @@ ms.locfileid: "73328595"
 
 ```
 
-Это простая конфигурация, если связь между пакетом изменений и основным пакетом — один к одному. Типичные настройки часто занимают разделы реестра в КУСТе HKEY_CURRENT_USER или HKEY_CURRENT_USERCLASS. Внутри нашего пакета MSIX у нас есть файлы user. dat и userclass. dat для записи разделов реестра. Необходимо создать User. dat, если вам нужны разделы реестра в разделе Хкку\софтваре\* (так же, как Registry. dat используется для HKLM\Software\*). Используйте userclass. dat, если вам нужны ключи в разделе Хкку\софваре\классес\*. 
+Это простая конфигурация, если связь между пакетом изменений и основным пакетом — один к одному. Типичные настройки часто занимают разделы реестра в разделе HKEY_CURRENT_USER или HKEY_CURRENT_USERCLASS. Внутри нашего пакета MSIX у нас есть файлы user. dat и userclass. dat для записи разделов реестра. Необходимо создать User. dat, если вам нужны разделы реестра в разделе Хкку\софтваре\* (так же, как Registry. dat используется для HKLM\Software\*). Используйте userclass. dat, если вам нужны ключи в разделе Хкку\софваре\классес\*. 
 
 Ниже приведены типичные способы создания файла. dat. 
 
@@ -54,6 +54,9 @@ ms.locfileid: "73328595"
 
 После внесения необходимых изменений можно создать пакет изменений, как и любой другой пакет MSIX. Затем можно развернуть пакет с текущим набором развертывания. При перезапуске основного приложения можно увидеть изменения, внесенные в пакет изменений. Если вы решили удалить пакет изменений, основное приложение вернется в состояние без пакета изменений. 
 
-## <a name="see-also"></a>См. также
+## <a name="find-out-what-modification-packages-are-installed-on-your-device"></a>Узнайте, какие пакеты изменений установлены на вашем устройстве
+С помощью PowerShell можно просмотреть установленные пакеты изменений с помощью: Get-AppPackage-Паккажетипефилтер необязательно.
+
+## <a name="see-also"></a>См. также статью
 - [Пакеты изменений в Windows 10 версии 1809](modification-package-1809-update.md)
 - [Пакеты изменений в Windows 10 версии 1903](modification-package-1903.md)
