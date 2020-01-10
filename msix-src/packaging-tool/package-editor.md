@@ -3,15 +3,15 @@ title: Изменение пакета с помощью редактора па
 description: В этой статье описывается, как использовать редактор пакетов в пакете MSIX Тулто изменения сведений о пакете, таких как свойства в манифесте.
 ms.date: 09/07/2018
 ms.topic: article
-keywords: windows 10, uwp
+keywords: Windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 8d93cc9ecb8c56ca00cf003c598e95fd62726580
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 66e140987fda894d8eb3af8df8594acf07f33059
+ms.sourcegitcommit: 71c49de79d061909fb1ab632ec7550227d2287bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328452"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75754914"
 ---
 # <a name="modify-a-package-using-package-editor"></a>Изменение пакета с помощью редактора пакетов
 
@@ -20,6 +20,8 @@ ms.locfileid: "73328452"
 Вы можете использовать **редактор пакетов** в средстве упаковки MSIX, чтобы вносить изменения в существующий пакет MSIX. Например, можно изменить свойства манифеста или содержимое пакета без необходимости упаковывать установщик снова.
 
 На главной странице средства упаковки MSIX щелкните значок **редактора пакетов**, перейдите к нужному пакету MSIX и выберите **Open package** (Открыть пакет).
+
+Вы можете распаковать пакет MSIX в редакторе пакетов с помощью кнопки "распаковать" внизу. Затем можно выбрать расположение для распаковки пакета MSIX. 
 
 ## <a name="package-information-page"></a>Страница сведений о пакете
 
@@ -72,4 +74,3 @@ ms.locfileid: "73328452"
 - Переместить: переименовать или переместить файл в новое расположение.
 
 ![Рис. 13](images/pic13.png)
-
