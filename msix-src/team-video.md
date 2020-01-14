@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: daa274e03b74879c218ddc377a87e591fa4f4786
-ms.sourcegitcommit: 0412ba69187ce791c16313d0109a5d896141d44c
+ms.openlocfilehash: eee8d23907c21882f344efb74ff120704b53d860
+ms.sourcegitcommit: 71c49de79d061909fb1ab632ec7550227d2287bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303373"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75754848"
 ---
 # <a name="msix-videos"></a>Видеоролики о MSIX
 
@@ -53,20 +53,10 @@ MSIX позволяет дорабатывать и улучшать класс�
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3iiD5]
 
-<!-- :::row:::
-    :::column:::
-    >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ig2l]
-#### MSIX overview
-MSIX provides lots of benefits across the app lifecycle management. Learn how to take advantage of MSIX in your enterprise and the benefits to developers, IT Pros and end users.
-    :::column-end:::
-    :::column:::
-    >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3i5DH]
-#### MSIX for developers
-Learn how developers can take advantage of the benefits of MSIX.
-    :::column-end:::
-    :::column:::
-    >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3iiD5]
-#### Evolving and enhancing desktop apps with MSIX
-Evolve and enhance your desktop apps with MSIX. Leverage new APIs, new controls and other features. 
-    :::column-end:::
-:::row-end::: -->
+### <a name="msix-app-attach-in-windows-virtual-desktop"></a>MSIX App Attach на Виртуальном рабочем столе Windows
+
+Узнайте, как с помощью MSIX реализовать динамическую доставку приложений в виртуальных средах, таких как Виртуальный рабочий стол Windows.
+
+<br/>
+
+> [!VIDEO https://www.youtube.com/embed/6kkPLFgPaN8]
