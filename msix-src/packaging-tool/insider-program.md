@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 0d5c124f4f7655fb3685ee13eeef8c116f8432d6
-ms.sourcegitcommit: 44b9510ea76623d668d87ddca575a7921c60a19a
+ms.openlocfilehash: 5f354ac1ffa74c0fc17bda210b0abb12fd736528
+ms.sourcegitcommit: 0bd5ebc32feba8a4f4669f232129a8953d5cf773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75322648"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76021989"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -35,10 +35,8 @@ ms.locfileid: "75322648"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-## <a name="version-1201912180"></a>Версия 1.2019.1218.0
-- Добавлена возможность перетаскивания файлов для перемещения их в редакторе пакетов.
-- Новый параметр для добавления целостности пакета в приложения
-- Показывать расположение сохранения по умолчанию на странице "Создание пакета"
+## <a name="version-1201912200"></a>Версия 1.2019.1220.0
+- Средство упаковки MSIX только что выпустило общедоступную версию приложения. Предварительные выпуски будут возвращаться в ближайшее время.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 

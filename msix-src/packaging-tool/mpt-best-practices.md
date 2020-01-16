@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 21f12e081dbda622be7d6f3d5800425fdf1f2305
-ms.sourcegitcommit: 71c49de79d061909fb1ab632ec7550227d2287bd
+ms.openlocfilehash: 00c3831995383cea4b558c6353f4b545ae5b94ac
+ms.sourcegitcommit: 0bd5ebc32feba8a4f4669f232129a8953d5cf773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75754829"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022008"
 ---
 # <a name="best-practices-for-the-msix-packaging-tool"></a>Рекомендации по использованию средства упаковки MSIX
 
@@ -21,7 +21,7 @@ ms.locfileid: "75754829"
 
 ## <a name="best-practices-for-environment-setup"></a>Рекомендации по настройке среды
  
-Убедитесь, что у вас установлена [Последняя версия средства упаковки MSIX](mpt-overview.md#latest-public-version---1201910180). Перед тем как приступить к процессу преобразования, необходимо продумать ряд моментов.
+Убедитесь, что у вас установлена [Последняя версия средства упаковки MSIX](mpt-overview.md#latest-public-version---1201912200). Перед тем как приступить к процессу преобразования, необходимо продумать ряд моментов.
 
 - Минимальным требованием к версии ОС для средства упаковки MSIX является Windows 10 1809. Мы понимаем, что не у всех установлено обновление Windows 10 за октябрь 2018 г. или просто Windows 10. Поэтому рекомендуется создать виртуальную машину с минимальной поддержкой MSIX.
 
