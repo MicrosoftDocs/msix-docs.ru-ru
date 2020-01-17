@@ -9,12 +9,12 @@ metadata:
   keywords: windows 10, uwp, MSIX
   ms.localizationpriority: medium
   ms.custom: RS5, seodec18
-  ms.openlocfilehash: 69b19ec505394514740ead523d2b56804834bb2b
-  ms.sourcegitcommit: f095305b47b5ba14f96413ee520777be45090e3b
+  ms.openlocfilehash: f85a2dc7a3b0cf8e7bed6785df296c2aeb3ba0c2
+  ms.sourcegitcommit: 228754268930f8abe3839209a1e6672b4ae42944
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/10/2020
-  ms.locfileid: "75886091"
+  ms.lasthandoff: 01/16/2020
+  ms.locfileid: "76146621"
 highlightedContent:
   items:
   - title: Что такое MSIX?
@@ -85,7 +85,7 @@ additionalContent:
       - text: Microsoft Endpoint Configuration Manager
         url: https://docs.microsoft.com/configmgr/apps/understand/introduction-to-application-management
       - text: Microsoft Intune
-        url: https://docs.microsoft.com/intune/fundamentals/what-is-intune
+        url: https://docs.microsoft.com/intune/apps/lob-apps-windows
       - text: Установка пакетов MSIX с помощью Установщика приложений
         url: app-installer/app-installer-file-overview.md
     - title: Ресурсы по теме
