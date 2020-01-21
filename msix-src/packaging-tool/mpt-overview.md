@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 0dd681286b8bfcec432b566e11e6234854301a71
-ms.sourcegitcommit: 71c49de79d061909fb1ab632ec7550227d2287bd
+ms.openlocfilehash: 71ce462f6c696d500b5627a1bf96ab04d336ac3f
+ms.sourcegitcommit: 0bd5ebc32feba8a4f4669f232129a8953d5cf773
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75754812"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76021926"
 ---
 # <a name="msix-packaging-tool"></a>Средство упаковки MSIX 
 
@@ -43,13 +43,12 @@ ms.locfileid: "75754812"
 PS C:\> Add-AppxProvisionedPackage -Path C:\offline -PackagePath C:\MSIX\MyPackage.msix -LicensePath C:\MSIX\MyLicense.xml
 ```
  
-## <a name="latest-public-version---1201910180"></a>Последняя общедоступная версия — 1.2019.1018.0.
+## <a name="latest-public-version---1201912200"></a>Последняя общедоступная версия — 1.2019.1220.0.
 
 ### <a name="new-features"></a>Новые возможности.
-- Теперь доступно использование подписи Device Guard. Для использования этого варианта подписи требуется учетная запись Microsoft Azure Active Directory, настроенная для использования Microsoft Store для бизнеса. Дополнительные сведения см. в [этой статье](https://docs.microsoft.com/windows/msix/package/signing-package-device-guard-signing).
-- **Редактор пакетов** теперь поддерживает возможность выбора нескольких элементов для выполнения действия.
-- Теперь можно изменить пакет MSIX, щелкнув его правой кнопкой мыши.
-- Улучшение взаимодействия с пользователем в рабочем процессе упаковки.
+- Теперь доступна поддержка преобразования существующего установщика с помощью служб.
+  - Просмотрите все обнаруженные службы и внесите в них изменения на новой [странице отчета "Службы"](https://docs.microsoft.com/windows/msix/packaging-tool/convert-an-installer-with-services).
+- Новый параметр для добавления проверки целостности пакета в приложения.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
