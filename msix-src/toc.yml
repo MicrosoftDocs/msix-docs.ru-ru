@@ -38,7 +38,7 @@
       href: app-package-updates.md
     - name: "Поддержка MSIX в Windows Server\_2019"
       href: msix-server-2019.md
-    - name: Поддержка MSIX в сборках 1709 и 1803
+    - name: "Поддержка MSIX в Windows\_10 версий 1709 и 1803"
       href: msix-1709-and-1803-support.md
     - name: MSIX Core
       items:
@@ -152,7 +152,7 @@
           href: desktop/desktop-to-uwp-behind-the-scenes.md
         - name: Известные проблемы
           href: desktop/desktop-to-uwp-known-issues.md
-    - name: Упаковка приложения UWP с помощью Visual Studio
+    - name: Упаковка приложения MSIX с помощью Visual Studio
       href: package/packaging-uwp-apps.md
     - name: Упаковка приложения вручную
       items:
