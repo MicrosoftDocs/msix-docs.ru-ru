@@ -35,11 +35,18 @@
             - name: Архитектуры пакетов приложений
               href: package/device-architecture.md
     - name: Обновления пакетов приложений
-      href: app-package-updates.md
+      items:
+        - name: Обзор
+          href: app-package-updates.md
+        - name: 'Обновление приложений, опубликованных в Store, с помощью кода'
+          href: store-developer-package-update.md
+        - name: 'Обновление приложений, опубликованных не в Store, с помощью кода'
+          href: non-store-developer_updates.md
+    - name: Поддержка MSIX в сборках 1709 и 1803
+      href: msix-1709-and-1803-support.md
     - name: "Поддержка MSIX в Windows Server\_2019"
       href: msix-server-2019.md
     - name: "Поддержка MSIX в Windows\_10 версий 1709 и 1803"
-      href: msix-1709-and-1803-support.md
     - name: MSIX Core
       items:
         - name: Обзор
@@ -144,8 +151,6 @@
               href: desktop/desktop-to-uwp-packaging-dot-net.md
             - name: Оптимизация двоичных файлов с помощью собственных образов
               href: desktop/desktop-to-uwp-r2r.md
-        - name: Упаковка классического приложения вручную
-          href: desktop/desktop-to-uwp-manual-conversion.md
         - name: Упаковка классического приложения с помощью сторонних установщиков
           href: desktop/desktop-to-uwp-third-party-installer.md
         - name: Принцип работы упакованного классического приложения
@@ -158,6 +163,8 @@
       items:
         - name: Обзор
           href: package/manual-packaging-root.md
+        - name: Создание пакета
+          href: desktop/desktop-to-uwp-manual-conversion.md
         - name: Создание пакета приложений с помощью средства MakeAppx.exe
           href: package/create-app-package-with-makeappx-tool.md
         - name: Создание сертификата для подписания пакета
@@ -190,6 +197,8 @@
           href: desktop/desktop-to-uwp-debug.md
         - name: Тестирование для Windows 10 в S-режиме
           href: desktop/desktop-to-uwp-test-windows-s.md
+        - name: Определение идентификатора пакета и контекста среды выполнения
+          href: detect-package-identity.md
     - name: Применение исправлений среды выполнения к пакету классического приложения
       href: psf/package-support-framework.md
     - name: Выполнение сценариев с помощью платформы поддержки пакетов
