@@ -118,6 +118,6 @@ Invoke-CommandInDesktopPackage [-PackageFamilyName] <string> [-AppId] <string> [
     <string>]  [<CommonParameters>]
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Есть вопросы? Попросите нас обратиться к [сообществу MSIX Tech](https://techcommunity.microsoft.com/t5/msix/ct-p/MSIX).
