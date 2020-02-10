@@ -5,12 +5,12 @@ ms.date: 07/02/2019
 ms.topic: article
 keywords: Windows 10, msix, упаковка, макет пакета, пакет ресурсов
 ms.localizationpriority: medium
-ms.openlocfilehash: 90cfd4f477333210f4347e029c239c4e173f26ee
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 0571f61579f95dbe3465f106b4d8860be636dea8
+ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328839"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77072804"
 ---
 # <a name="introduction-to-asset-packages"></a>Вводные сведения о пакетах ресурсов
 
@@ -47,7 +47,7 @@ ms.locfileid: "73328839"
 "Video.mp4"         "Video.mp4"
 ```
 
-Используйте одну из этих команд для создания пакета ресурсов с помощью программе makeappx. exe (для AppX и MSIX).
+Используйте одну из этих команд для создания пакета ресурсов с помощью программе makeappx. exe (для MSIX и appx).
 
 ```cmd
 MakeAppx.exe pack /r /m AppxManifest.xml /f MappingFile.txt /p Videos.appx

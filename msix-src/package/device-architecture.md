@@ -1,18 +1,18 @@
 ---
-title: Типы архитектуры пакетов приложений
-description: Узнайте больше о том, какие типы архитектуры процессоров следует использовать при создании пакета приложения UWP.
+title: Архитектуры пакетов приложений
+description: Сведения о том, какие архитектуры процессоров следует использовать при создании пакета приложения UWP.
 ms.date: 07/13/2017
 ms.topic: article
 keywords: windows 10, uwp, пакет, архитектура, конфигурация пакета
 ms.localizationpriority: medium
-ms.openlocfilehash: dc34d397a613f62bbf75799923954b4114573460
-ms.sourcegitcommit: 8a75eca405536c5f9f7c4fd35dd34c229be7fa3e
+ms.openlocfilehash: 4c48653e66bb01bda2c5da3b2f17544add8e6992
+ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68689883"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77072734"
 ---
-# <a name="app-package-architectures"></a>Типы архитектуры пакетов приложений
+# <a name="app-package-architectures"></a>Архитектуры пакетов приложений
 
 Пакеты приложений настроены для запуска на компьютерах с определенной архитектурой процессора. Выбрав тип архитектуры, вы указываете устройства, для которых предназначено ваше приложение. Приложения универсальной платформы Windows (UWP) можно настроить для работы на следующих типах архитектуры.
 - x86
@@ -25,11 +25,12 @@ ms.locfileid: "68689883"
 ## <a name="windows-10-devices-and-architectures"></a>Типы архитектуры и устройства Windows 10
 
 > [!div class="mx-tableFixed"]
-| Архитектура UWP | Классическая (x86)      | Классическая (x64)      | Классическая (ARM)      | Мобильный             | Windows Mixed Reality и HoloLens           | Xbox               | IoT Core (зависит от устройства) | Surface Hub        |
+| Архитектура UWP | Классическая (x86)      | Классическая (x64)      | Классическая (ARM)      | Мобильные службы             | Windows Mixed Reality и HoloLens           | Xbox               | IoT Core (зависит от устройства) | Surface Hub        |
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|-----------------------------|--------------------|
 | x86              | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark:          | :heavy_check_mark: |
 | x64              | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark:          | :heavy_check_mark: |
-| ARM и ARM64              | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark:          | :x:                |
+| ARM               | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark:          | :x:                |
+| ARM64              | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark:          | :x:                |
 
 
 Рассмотрим эти типы архитектуры более подробно.

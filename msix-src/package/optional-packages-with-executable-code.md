@@ -7,18 +7,18 @@ author: dianmsft
 ms.author: diahar
 keywords: Windows 10, msix, UWP, установщик приложений, AppInstaller, загружать неопубликованные, связанный набор, дополнительные пакеты
 ms.localizationpriority: medium
-ms.openlocfilehash: 35ecf422e3a5b6db8b95d17011b46c09cbdb0218
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 17c225c13f026f2707c392ccaf4d77655faaeebb
+ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328790"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77072544"
 ---
 # <a name="optional-packages-with-executable-code"></a>Дополнительные пакеты с исполняемым кодом
  
-Дополнительные пакеты с исполняемым кодом удобно использовать для разделения больших или сложных приложений или для их добавления в приложения, которые уже были опубликованы. С помощью Visual Studio 2017 версии 15.7 и .NET Native 2.1 можно загрузить исполняемый код из дополнительных пакетов C++ и C#.
+[Необязательные пакеты](optional-packages.md) с исполняемым кодом полезны для разделения большого или сложного приложения или для добавления в уже опубликованное приложение. С помощью Visual Studio 2017 версии 15.7 и .NET Native 2.1 можно загрузить исполняемый код из дополнительных пакетов C++ и C#.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Visual Studio 2019 или Visual Studio 2017 (версия 15,7 или более поздняя)
 - Windows 10, версия 1709 или более поздняя

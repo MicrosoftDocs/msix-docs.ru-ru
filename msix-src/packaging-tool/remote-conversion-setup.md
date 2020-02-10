@@ -6,86 +6,86 @@ ms.topic: article
 keywords: MSIX, MPT, MSIX Packaging Tool, remote IP
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: fa508c3e5729cc9910bb4e54398a45c1660e108e
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 14b33ecb6f204b496065723e160f7a475b4eeb8a
+ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328430"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77073470"
 ---
-# <a name="setup-instructions-for-remote-machine-conversions"></a>Инструкции по настройке преобразования на удаленном компьютере 
+# <a name="setup-instructions-for-remote-machine-conversions"></a>Инструкции по настройке преобразования на удаленном компьютере
 
-Теперь вы можете подключаться к удаленному компьютеру, чтобы выполнять преобразование. Прежде чем начать удаленное преобразование, необходимо выполнить несколько шагов.  
+Подключение к удаленному компьютеру — один из вариантов, чтобы убедиться в соблюдении рекомендаций по [использованию](prepare-your-environment.md)среды преобразования, так как это может быть среда очистки, отличная от локального компьютера. Прежде чем начать удаленное преобразование, необходимо выполнить несколько шагов.  
 
-На удаленном компьютере нужно включить удаленное взаимодействие PowerShell, чтобы обеспечить безопасный доступ. Также на удаленном компьютере у вас должна быть учетная запись администратора.  Чтобы подключиться через IP-адрес, выполните инструкции по подключению к удаленным компьютерам, не присоединенным к домену. 
+На удаленном компьютере нужно включить удаленное взаимодействие PowerShell, чтобы обеспечить безопасный доступ. Кроме того, необходимо иметь учетную запись администратора для удаленного компьютера.  Чтобы подключиться через IP-адрес, выполните инструкции по подключению к удаленным компьютерам, не присоединенным к домену.
 
-## <a name="connecting-to-a-remote-machine-in-a-trusted-domain"></a>Подключение к удаленному компьютеру в доверенном домене 
+## <a name="connecting-to-a-remote-machine-in-a-trusted-domain"></a>Подключение к удаленному компьютеру в доверенном домене
 
-Чтобы включить удаленное взаимодействие PowerShell, на удаленном компьютере из окна **admin** в PowerShell выполните следующую команду: 
+Чтобы включить удаленное взаимодействие PowerShell, выполните следующую команду на удаленном компьютере из окна PowerShell с правами **администратора**: 
 
 ``` PowerShell
-Enable-PSRemoting -Force -SkipNetworkProfileCheck 
+Enable-PSRemoting -Force -SkipNetworkProfileCheck
 ```
 
-Подключаться к присоединенному к домену компьютеру нужно через доменную, а не локальную учетную запись. В противном случае следуйте инструкциям по настройке для компьютера, не присоединенного к домену. 
+Подключаться к присоединенному к домену компьютеру нужно через доменную, а не локальную учетную запись. В противном случае следуйте инструкциям по настройке для компьютера, не присоединенного к домену.
 
-### <a name="port-configuration"></a>Конфигурация порта 
+### <a name="port-configuration"></a>Конфигурация порта
 
 Если удаленный компьютер входит в группу безопасности (например, Azure), необходимо настроить правила безопасности для доступа к серверу средства упаковки MSIX.  
 
-#### <a name="azure"></a>Azure 
+#### <a name="azure"></a>Azure
 
-1. На портале Azure выберите **Сети** > **Добавить входящий порт**. 
+1. На портале Azure выберите **Сети** > **Добавить входящий порт**.
 2. Щелкните **Основной**.
 3. В поле "Служба" должно остаться значение **Custom** (Пользовательская).
-4. Задайте номер порта **1599** (стандартный номер порта для средства упаковки MSIX; его можно изменить в настройках средства) и укажите имя правила (например, AllowMPTServerInBound). 
+4. Задайте номер порта **1599** (стандартный номер порта для средства упаковки MSIX; его можно изменить в настройках средства) и укажите имя правила (например, AllowMPTServerInBound).
 
-#### <a name="other-infrastructure"></a>Другая инфраструктура 
+#### <a name="other-infrastructure"></a>Другая инфраструктура
 
-Конфигурация порта сервера должна соответствовать значению порта для средства упаковки MSIX (стандартный номер порта для средства упаковки MSIX — 1599; его можно изменить в настройках средства). 
+Конфигурация порта сервера должна соответствовать значению порта для средства упаковки MSIX (стандартный номер порта для средства упаковки MSIX — 1599; его можно изменить в настройках средства).
 
-## <a name="connecting-to-a-non-domain-joined-remote-machineincludes-ip-addresses"></a>Подключение к удаленному компьютеру, не присоединенному к домену (с использованием IP-адресов) 
+## <a name="connecting-to-a-non-domain-joined-remote-machineincludes-ip-addresses"></a>Подключение к удаленному компьютеру, не присоединенному к домену (с использованием IP-адресов)
 
-Для компьютеров, не присоединенных к домену, необходим сертификат для подключения через протокол HTTPS. 
+Для компьютеров, не присоединенных к домену, необходим сертификат для подключения через протокол HTTPS.
 
-1. Включите удаленное взаимодействие PowerShell и соответствующие правила брандмауэра, выполнив следующую команду в окне **admin** в PowerShell на удаленном компьютере: 
+1. Включите удаленное взаимодействие PowerShell и соответствующие правила брандмауэра, выполнив следующую команду на удаленном компьютере в окне PowerShell с **правами администратора**:
 
 ``` PowerShell
 Enable-PSRemoting -Force -SkipNetworkProfileCheck  
 
-New-NetFirewallRule -Name "Allow WinRM HTTPS" -DisplayName "WinRM HTTPS" -Enabled  True -Profile Any -Action Allow -Direction Inbound -LocalPort 5986 -Protocol TCP 
+New-NetFirewallRule -Name "Allow WinRM HTTPS" -DisplayName "WinRM HTTPS" -Enabled  True -Profile Any -Action Allow -Direction Inbound -LocalPort 5986 -Protocol TCP
 ```
  
-2. Создайте самозаверяющий сертификат, задайте конфигурацию WinRM HTTPS и экспортируйте сертификат. 
+2. Создайте самозаверяющий сертификат, задайте конфигурацию WinRM HTTPS и экспортируйте сертификат.
 
 ``` PowerShell
-$thumbprint = (New-SelfSignedCertificate -DnsName $env:COMPUTERNAME -CertStoreLocation Cert:\LocalMachine\My -KeyExportPolicy NonExportable).Thumbprint 
+$thumbprint = (New-SelfSignedCertificate -DnsName $env:COMPUTERNAME -CertStoreLocation Cert:\LocalMachine\My -KeyExportPolicy NonExportable).Thumbprint
 
-$command = "winrm create winrm/config/Listener?Address=*+Transport=HTTPS @{Hostname=""$env:computername"";CertificateThumbprint=""$thumbprint""}" 
+$command = "winrm create winrm/config/Listener?Address=*+Transport=HTTPS @{Hostname=""$env:computername"";CertificateThumbprint=""$thumbprint""}"
 
-cmd.exe /C $command 
+cmd.exe /C $command
 
-Export-Certificate -Cert Cert:\LocalMachine\My\$thumbprint -FilePath <path_to_cer_file> 
+Export-Certificate -Cert Cert:\LocalMachine\My\$thumbprint -FilePath <path_to_cer_file>
 ```
 
-3. На локальном компьютере скопируйте экспортированный сертификат и установите его в хранилище доверенных корневых сертификатов. 
+3. На локальном компьютере скопируйте экспортированный сертификат и установите его в хранилище доверенных корневых сертификатов.
 
 ``` PowerShell
-Import-Certificate -FilePath <path> -CertStoreLocation Cert:\LocalMachine\Root 
-``` 
+Import-Certificate -FilePath <path> -CertStoreLocation Cert:\LocalMachine\Root
+```
 
 ### <a name="port-configuration"></a>Конфигурация порта 
 
 Если удаленный компьютер входит в группу безопасности (например, Azure), необходимо настроить правила безопасности для доступа к серверу средства упаковки MSIX.  
 
-#### <a name="azure"></a>Azure 
+#### <a name="azure"></a>Azure
 
-Выполните инструкции по [добавлению пользовательского порта](#azure) для средства упаковки MSIX и добавлению сетевого правила безопасности для WinRM HTTPS. 
+Выполните инструкции по [добавлению пользовательского порта](#azure) для средства упаковки MSIX и добавлению сетевого правила безопасности для WinRM HTTPS.
 
-1. На портале Azure выберите **Сети** > **Добавить входящий порт**. 
-2. Щелкните **Основной**. 
+1. На портале Azure выберите **Сети** > **Добавить входящий порт**.
+2. Щелкните **Основной**.
 3. Задайте для поля "Служба" значение **WinRM**.
 
 #### <a name="other-infrastructure"></a>Другая инфраструктура 
 
-Конфигурация порта сервера должна соответствовать значению порта для средства упаковки MSIX (стандартный номер порта для средства упаковки MSIX — 1599; его можно изменить в настройках средства). 
+Конфигурация порта сервера должна соответствовать значению порта для средства упаковки MSIX (стандартный номер порта для средства упаковки MSIX — 1599; его можно изменить в настройках средства).

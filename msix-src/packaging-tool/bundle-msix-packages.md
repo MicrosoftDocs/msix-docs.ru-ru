@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: b8dfc909cd962e23970397bf673f9a3041cbcb4f
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: d7eaa493577c4a83739829c1bee51acbb41640a8
+ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328742"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77072934"
 ---
 # <a name="bundle-msix-packages"></a>Объединение пакетов MSIX
 
@@ -19,9 +19,9 @@ ms.locfileid: "73328742"
 
 Объединив несколько версий установщика с разными архитектурами в один набор, вы можете выложить в Microsoft Store или на другую платформу распространения только этот набор. Платформа развертывания Windows 10 учитывает тип пакета MSIXBUNDLE и скачивает только те файлы, которые соответствуют архитектуре вашего устройства. Помните, что если вы решите распространять для определенного приложения набор MSIXBUNDLE, вы не сможете извлечь из него обратно только пакет MSIX для распространения. 
 
-В следующем разделе приведены пошаговые инструкции по созданию набора пакетов MSIXBUNDLE. Предполагается, что вы уже [преобразовали существующие версии x86 и x64](https://docs.microsoft.com/windows/msix/mpt-best-practices) установщика Windows в пакеты MSIX. 
+В следующем разделе приведены пошаговые инструкции по созданию набора пакетов MSIXBUNDLE. Предполагается, что вы уже [преобразовали существующие версии x86 и x64](https://docs.microsoft.com/windows/msix/tool-best-practices) установщика Windows в пакеты MSIX. 
 
-### <a name="setup"></a>"Настройка"
+### <a name="setup"></a>Установка
 
 Для успешного создания набора пакетов MSIX необходимо следующее:
 
