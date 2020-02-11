@@ -4,16 +4,30 @@
       href: index.yml
     - name: Что такое MSIX?
       href: overview.md
+    - name: Поддерживаемые платформы
+      href: supported-platforms.md
+    - name: Контейнер MSIX
+      href: msix-container.md
+    - name: Принцип работы пакетов MSIX в Windows
+      href: desktop/desktop-to-uwp-behind-the-scenes.md
+    - name: Подписывание пакетов MSIX
+      items:
+        - name: Обзор
+          href: package/signing-package-overview.md
+        - name: Подписание пакета приложения с помощью SignTool
+          href: package/sign-app-package-using-signtool.md
+        - name: Подписывание пакета MSIX с помощью подписи Device Guard
+          href: package/signing-package-device-guard-signing.md
+        - name: Известные проблемы и устранение неполадок
+          href: package/signing-known-issues.md
     - name: Форматы пакета приложений
       items:
         - name: Обзор
           href: package/app-package-formats.md
+        - name: Архитектуры пакетов приложений
+          href: package/device-architecture.md
         - name: Дополнительные пакеты
-          items:
-            - name: Обзор
-              href: package/optional-packages.md
-            - name: Дополнительные пакеты с исполняемым кодом
-              href: package/optional-packages-with-executable-code.md
+          href: package/optional-packages.md
         - name: Потоковая установка приложений
           items:
             - name: Обзор
@@ -24,95 +38,28 @@
           href: package/flat-bundles.md
         - name: Пакеты активов
           href: package/asset-packages.md
+        - name: Пакеты ресурсов
+          href: package/resource-package.md
         - name: Пакеты с модификациями
-          items:
-            - name: Обзор
-              href: modification-packages.md
-            - name: "Пакеты с модификациями в Windows\_10 версии\_1809"
-              href: modification-package-1809-update.md
-            - name: "Пакеты с модификациями в Windows\_10 версии\_1903"
-              href: modification-package-1903.md
-            - name: Архитектуры пакетов приложений
-              href: package/device-architecture.md
-    - name: Обновления пакетов приложений
+          href: modification-packages.md
+    - name: Справочник по API и схемам
       items:
-        - name: Обзор
-          href: app-package-updates.md
-        - name: 'Обновление приложений, опубликованных в Store, с помощью кода'
-          href: store-developer-package-update.md
-        - name: 'Обновление приложений, опубликованных не в Store, с помощью кода'
-          href: non-store-developer_updates.md
-    - name: Поддержка MSIX в сборках 1709 и 1803
-      href: msix-1709-and-1803-support.md
-    - name: "Поддержка MSIX в Windows Server\_2019"
-      href: msix-server-2019.md
-    - name: "Поддержка MSIX в Windows\_10 версий 1709 и 1803"
-    - name: MSIX Core
-      items:
-        - name: Обзор
-          href: msix-core/msixcore.md
-        - name: Обновление существующего пакета MSIX для включение поддержки MSIX Core
-          href: msix-core/support-msix-core.md
-        - name: Развертывание пакета MSIX с помощью MSIX Core
-          href: msix-core/deploy-with-msix-core.md
-        - name: Создание пакета MSIX из исходного кода с помощью MSIX Core
-          href: msix-core/msixcore-clickonce-solution.md
-        - name: Диагностика
-          href: msix-core/msixcore-troubleshoot.md
-    - name: Групповая политика и упакованные приложения MSIX
-      href: group-policy-msix.md
-- name: Инструменты
-  items:
-    - name: Средство упаковки MSIX
-      items:
-        - name: Обзор
-          href: packaging-tool/mpt-overview.md
-        - name: Изменение пакета с помощью редактора пакетов
-          href: packaging-tool/package-editor.md
-        - name: Изменение значков и ресурсов
-          href: packaging-tool/edit-icons-and-assets.md
-        - name: "Поддержка пакетов MSIX в Windows\_10, начиная со сборки 1709"
-          href: packaging-tool/Support-on-1709-and-later.md
-        - name: Рекомендации по использованию средства упаковки MSIX
-          href: packaging-tool/mpt-best-practices.md
-        - name: Создание пакетов с помощью средства Hyper-V Quick Create
-          href: packaging-tool/Quick-Create-VM.md
-        - name: 'Преобразование установщика, который содержит службы'
-          href: packaging-tool/convert-an-installer-with-services.md
-        - name: Известные проблемы и устранение неполадок
-          href: packaging-tool/mpt-known-issues.md
-        - name: Дублирование настроек средства упаковки MSIX на нескольких устройствах
-          href: packaging-tool/duplicate-mpt-settings-across-devices.md
-        - name: Программа предварительной оценки средства упаковки MSIX
-          items:
-            - name: Обзор
-              href: packaging-tool/insider-program.md
-            - name: Заметки о выпуске
-              href: packaging-tool/release-notes/history.md
-    - name: Платформа поддержки пакетов
-      items:
-        - name: Обзор
-          href: psf/package-support-framework-overview.md
-    - name: Установщик приложений
-      items:
-        - name: Обзор
-          href: app-installer/app-installer-root.md
-        - name: Общие сведения о файле Установщика приложений
-          href: app-installer/app-installer-file-overview.md
-        - name: Известные проблемы
-          items:
-            - name: Устранение неполадок при установке с помощью файла Установщика приложений
-              href: app-installer/troubleshoot-appinstaller-issues.md
-            - name: Проблемы с API
-              href: app-installer/app-installer-api-issues.md
-        - name: Дополнительные пакеты и связанные наборы
-          href: app-installer/install-related-set.md
-        - name: Сопутствующая документация
-          href: app-installer/app-installer-documentation.md
+        - name: API диспетчера пакетов
+          href: 'https://docs.microsoft.com/uwp/api/windows.management.deployment?context=/windows/msix/render'
+        - name: Интерфейсы API для упаковки
+          href: 'https://docs.microsoft.com/windows/desktop/appxpkg/interfaces?context=/windows/msix/render'
+        - name: Схема манифеста приложения
+          href: 'https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest?context=/windows/msix/render'
+        - name: Схема файла Установщика приложений
+          href: 'https://docs.microsoft.com/uwp/schemas/appinstallerschema/app-installer-file?context=/windows/msix/render'
+    - name: Ресурсы MSIX
+      href: resources.md
     - name: SDK для MSIX
       items:
         - name: Обзор
           href: msix-sdk/sdk-overview.md
+        - name: Создание пакета MSIX в Linux
+          href: msix-sdk/msix-linux.md
         - name: Распространение пакета MSIX с помощью пакета SDK для MSIX
           href: msix-sdk/sdk-guidance.md
         - name: Заметки о выпуске
@@ -125,129 +72,235 @@
               href: msix-sdk/release-notes/sdk-release-notes-1.6.md
             - name: 'Пакет SDK для MSIX , выпуск 1.7'
               href: msix-sdk/release-notes/sdk-release-notes-1.7.md
-- name: Пакет
+- name: Создание пакета MSIX из существующего установщика
   items:
-    - name: Упаковка классических приложений
+    - name: Обзор
+      href: packaging-tool/create-an-msix-overview.md
+    - name: Знакомство с установщиком
+      href: packaging-tool/know-your-installer.md
+    - name: Партнеры MSIX
       items:
         - name: Обзор
-          href: desktop/desktop-to-uwp-root.md
-        - name: Подготовка к упаковке классического приложения
-          href: desktop/desktop-to-uwp-prepare.md
-        - name: Упаковка классического приложения из существующего установщика
-          items:
-            - name: 'Создание пакета MSIX из MSI, EXE или App-V на виртуальной машине'
-              href: packaging-tool/create-app-package-MSI-VM.md
-            - name: Создание пакета MSIX с помощью других типов установщика
-              href: packaging-tool/create-other-installer.md
-            - name: Создание пакета MSIX с помощью командной строки
-              href: packaging-tool/package-conversion-cli.md
-            - name: Создание пакета MSIX на удаленном компьютере
-              href: packaging-tool/remote-conversion-setup.md
-            - name: Упаковка с помощью Desktop App Converter
-              href: desktop/desktop-to-uwp-run-desktop-app-converter.md
-        - name: Упаковка классического приложения с помощью исходного кода в Visual Studio
-          items:
-            - name: Обзор
-              href: desktop/desktop-to-uwp-packaging-dot-net.md
-            - name: Оптимизация двоичных файлов с помощью собственных образов
-              href: desktop/desktop-to-uwp-r2r.md
+          href: partners.md
         - name: Упаковка классического приложения с помощью сторонних установщиков
           href: desktop/desktop-to-uwp-third-party-installer.md
-        - name: Принцип работы упакованного классического приложения
+    - name: Настройка среды
+      items:
+        - name: Подготовка среды к преобразованию
+          href: packaging-tool/prepare-your-environment.md
+        - name: Создание среды упаковки MSIX в Hyper-V Quick Create
+          href: packaging-tool/Quick-Create-VM.md
+        - name: Инструкции по настройке преобразования на удаленном компьютере
+          href: packaging-tool/remote-conversion-setup.md
+        - name: Использование средства упаковки MSIX в автономной среде
+          href: packaging-tool/disconnected-environment.md
+    - name: Настройка средства упаковки MSIX
+      items:
+        - name: Общие сведения о средстве упаковки MSIX
+          href: packaging-tool/tool-overview.md
+        - name: Рекомендации по использованию средства упаковки MSIX
+          href: packaging-tool/tool-best-practices.md
+        - name: Известные проблемы при работе со средством упаковки MSIX и советы по их устранению
+          href: packaging-tool/tool-known-issues.md
+        - name: Копирование параметров средства упаковки MSIX между устройствами
+          href: packaging-tool/duplicate-tool-settings-across-devices.md
+        - name: Создание файла шаблона преобразования
+          href: packaging-tool/generate-template-file.md
+        - name: Программа предварительной оценки средства упаковки MSIX
+          href: packaging-tool/insider-program.md
+        - name: Заметки о выпуске средства упаковки MSIX
+          href: packaging-tool/release-notes/history.md
+    - name: Использование средства упаковки MSIX
+      items:
+        - name: Создание пакета MSIX из любого классического установщика
+          href: packaging-tool/create-app-package.md
+        - name: Преобразование с помощью командной строки
+          href: packaging-tool/package-conversion-command-line.md
+        - name: 'Преобразование установщика, который содержит службы'
+          href: packaging-tool/convert-an-installer-with-services.md
+        - name: Изменение пакета с помощью редактора пакетов
+          href: packaging-tool/package-editor.md
+        - name: Изменение значков и ресурсов с помощью средства упаковки MSIX
+          href: packaging-tool/edit-icons-and-assets.md
+    - name: Задачи после создания пакета MSIX
+      items:
+        - name: Платформа поддержки пакетов
+          items:
+            - name: Обзор
+              href: psf/package-support-framework-overview.md
+            - name: Применение исправлений среды выполнения к пакету классического приложения
+              href: psf/package-support-framework.md
+            - name: Выполнение сценариев с помощью платформы поддержки пакетов
+              href: psf/run-scripts-with-package-support-framework.md
+        - name: Объединение пакетов MSIX
+          href: packaging-tool/bundle-msix-packages.md
+    - name: Набор средств MSIX
+      items:
+        - name: Обзор
+          href: toolkit/msix-toolkit-overview.md
+        - name: Изменение скрипта издателя пакета
+          href: toolkit/msix-toolkit-modifypackagepublisher.md
+        - name: Скрипты пакетного преобразования
+          href: toolkit/msix-toolkit-msixbatchconversion.md
+        - name: Средство AppInstaller File Builder
+          href: toolkit/msix-toolkit-appinstallerfilebuilder.md
+- name: Создание пакетов MSIX из исходного кода
+  items:
+    - name: Обзор
+      href: desktop/source-code-overview.md
+    - name: 'Основные понятия, с которыми необходимо ознакомиться перед упаковкой'
+      items:
+        - name: Обзор
+          href: desktop/before-packaging-overview.md
+        - name: Подготовка к упаковке классического приложения
+          href: desktop/desktop-to-uwp-prepare.md
+        - name: Основные сведения о работе упакованных классических приложений в Windows
           href: desktop/desktop-to-uwp-behind-the-scenes.md
-        - name: Известные проблемы
-          href: desktop/desktop-to-uwp-known-issues.md
-    - name: Упаковка приложения MSIX с помощью Visual Studio
-      href: package/packaging-uwp-apps.md
-    - name: Упаковка приложения вручную
+        - name: Объединение пакетов MSIX
+          href: package/bundling-overview.md
+    - name: Упаковка в Visual Studio
+      items:
+        - name: Обзор
+          href: desktop/vs-package-overview.md
+        - name: Настройка классического приложения для упаковки в Visual Studio
+          href: desktop/desktop-to-uwp-packaging-dot-net.md
+        - name: Упаковка классического приложения или приложения UWP в Visual Studio
+          href: package/packaging-uwp-apps.md
+        - name: Оптимизация двоичных файлов с помощью собственных образов
+          href: desktop/desktop-to-uwp-r2r.md
+    - name: Конвейеры CI/CD для сборок MSIX
+      href: desktop/azure-dev-ops.md
+    - name: Упаковка из командной строки
       items:
         - name: Обзор
           href: package/manual-packaging-root.md
-        - name: Создание пакета
+        - name: Создание артефактов пакета
           href: desktop/desktop-to-uwp-manual-conversion.md
-        - name: Создание пакета приложений с помощью средства MakeAppx.exe
+        - name: Создание пакета MSIX с помощью средства MakeAppx.exe
           href: package/create-app-package-with-makeappx-tool.md
         - name: Создание сертификата для подписания пакета
           href: package/create-certificate-package-signing.md
-        - name: Разработка пакетов ресурсов и сворачивание пакета ресурсов
-          href: package/package-folding.md
+        - name: Подписывание пакета приложения с помощью SignTool
+          href: package/sign-app-package-using-signtool.md
         - name: Создание пакета с использованием макета упаковки
           href: package/packaging-layout.md
-    - name: Объединение пакетов MSIX
-      href: packaging-tool/bundle-msix-packages.md
-    - name: Подписание пакета приложения
+        - name: Разработка пакетов ресурсов и сворачивание пакета ресурсов
+          href: package/package-folding.md
+    - name: Расширение приложения
       items:
         - name: Обзор
-          href: package/signing-package-overview.md
-        - name: Подписание пакета приложения с помощью SignTool
-          href: package/sign-app-package-using-signtool.md
-        - name: Подписывание пакета MSIX с помощью подписи Device Guard
-          href: package/signing-package-device-guard-signing.md
-- name: Проверить
+          href: desktop/extend-overview.md
+        - name: Расширения приложений
+          href: 'https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-an-extension?context=/windows/msix/render'
+        - name: Настраиваемые свойства для расширений приложений
+          href: desktop/custom-props-app-extensions.md
+        - name: Дополнительные пакеты
+          href: package/optional-packages-with-executable-code.md
+        - name: Создание приложения с помощью пакета изменений
+          href: package/modification-package-developers.md
+- name: Управление развертыванием MSIX
   items:
-    - name: Комплект сертификации приложений для Windows
-      href: 'https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit?context=/windows/msix/render'
-    - name: Портал устройств Windows
-      href: 'https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal?context=/windows/msix/render'
-    - name: Фокус-тестирование пакетов
-      href: 'https://docs.microsoft.com/windows/uwp/publish/package-flights?context=/windows/msix/render'
-    - name: Отладка и тестирование упакованного классического приложения
+    - name: Обзор
+      href: desktop/managing-your-msix-deployment-overview.md
+    - name: Планирование развертывания
+      href: desktop/Managing-your-MSIX-deployment-targetdevices.md
+    - name: Установка пакета MSIX с помощью Установщика приложений
+      href: app-installer/app-installer-root.md
+    - name: Распространение пакета MSIX в корпоративной среде
       items:
         - name: Обзор
-          href: desktop/desktop-to-uwp-debug.md
-        - name: Тестирование для Windows 10 в S-режиме
-          href: desktop/desktop-to-uwp-test-windows-s.md
-        - name: Определение идентификатора пакета и контекста среды выполнения
-          href: detect-package-identity.md
-    - name: Применение исправлений среды выполнения к пакету классического приложения
-      href: psf/package-support-framework.md
-    - name: Выполнение сценариев с помощью платформы поддержки пакетов
-      href: psf/run-scripts-with-package-support-framework.md
-- name: Распространение
-  items:
-    - name: Публикация в Microsoft Store
-      href: 'https://docs.microsoft.com/windows/uwp/publish/?context=/windows/msix/render'
-    - name: Публикация в Microsoft Store для бизнеса
-      href: 'https://docs.microsoft.com/windows/uwp/publish/distribute-lob-apps-to-enterprises?context=/windows/msix/render'
-    - name: Распространение приложений за пределы Microsoft Store (Установщик приложений)
+          href: desktop/managing-your-msix-deployment-enterprise.md
+        - name: Консоль администрирования диспетчера конечных точек (Майкрософт)
+          href: desktop/managing-your-msix-deployment-mem-adminconsole.md
+        - name: Microsoft Endpoint Configuration Manager
+          href: desktop/managing-your-msix-deployment-configmgr.md
+        - name: Microsoft Intune
+          href: desktop/managing-your-msix-deployment-intune.md
+        - name: Командлеты PowerShell для MSIX
+          href: desktop/powershell-msix-cmdlets.md
+        - name: Использование групповой политики
+          href: group-policy-msix.md
+        - name: Развертывание предустановленных приложений
+          href: desktop/deploy-preinstalled-apps.md
+        - name: Установка приложения для всех пользователей
+          href: desktop/managing-your-msix-deployment-dism-provisioning.md
+        - name: Установка более ранних версий пакета приложения MSIX
+          href: desktop/managing-your-msix-deployment-downgrading.md
+    - name: Развертывание MSIX с помощью файла Установщика приложений
       items:
-        - name: "Распространение приложения для Windows\_10 из Интернета с помощью Установщика приложений"
-          items:
-            - name: Обзор
-              href: app-installer/installing-windows10-apps-web.md
-            - name: "Распространение приложения для Windows\_10 из веб-приложения Azure"
-              href: app-installer/web-install-azure.md
-            - name: "Распространение приложения для Windows\_10 с сервера IIS"
-              href: app-installer/web-install-IIS.md
-            - name: "Распространение приложения для Windows\_10 из веб-службы AWS"
-              href: app-installer/web-install-aws.md
+        - name: Общие сведения о файле Установщика приложений
+          href: app-installer/app-installer-file-overview.md
         - name: Создание файла Установщика приложений в Visual Studio
           href: app-installer/create-appinstallerfile-vs.md
         - name: Создание файла Установщика приложений вручную
           href: app-installer/how-to-create-appinstaller-file.md
-        - name: Настройка параметров обновления в файле Установщика приложений
+        - name: Настройка параметров обновления
           href: app-installer/update-settings.md
-- name: Управление
+        - name: API для файлов Установщика приложений
+          href: app-installer/app-installer-documentation.md
+        - name: Известные проблемы
+          items:
+            - name: Устранение неполадок при установке с помощью файла Установщика приложений
+              href: app-installer/troubleshoot-appinstaller-issues.md
+            - name: Проблемы с API
+              href: app-installer/app-installer-api-issues.md
+    - name: Распространение MSIX через Интернет с помощью Установщика приложений
+      items:
+        - name: Обзор
+          href: app-installer/installing-windows10-apps-web.md
+        - name: "Распространение приложения для Windows\_10 из веб-приложения Azure"
+          href: app-installer/web-install-azure.md
+        - name: "Распространение приложения для Windows\_10 с сервера IIS"
+          href: app-installer/web-install-IIS.md
+        - name: "Распространение приложения для Windows\_10 из веб-службы AWS"
+          href: app-installer/web-install-aws.md
+    - name: Распространение пакета MSIX в потребительской среде
+      items:
+        - name: Обзор
+          href: desktop/managing-your-msix-deployment-retail.md
+        - name: Microsoft Store
+          href: 'https://docs.microsoft.com/windows/uwp/publish/?context=/windows/msix/render'
+    - name: Обновления пакетов MSIX
+      items:
+        - name: Обзор
+          href: app-package-updates.md
+        - name: Разностные обновления для пакетов приложений MSIX
+          href: desktop/managing-your-msix-deployment-update.md
+        - name: 'Обновление приложений, опубликованных в Store, с помощью кода'
+          href: store-developer-package-update.md
+        - name: 'Обновление приложений, опубликованных не в Store, с помощью кода'
+          href: non-store-developer-updates.md
+    - name: "Развертывание MSIX Core для Windows\_10\_1703 и более ранних версий"
+      items:
+        - name: Обзор
+          href: msix-core/msixcore.md
+        - name: Обновление существующего пакета MSIX для включение поддержки MSIX Core
+          href: msix-core/support-msix-core.md
+        - name: Развертывание пакета MSIX с помощью MSIX Core
+          href: msix-core/deploy-with-msix-core.md
+        - name: Создание пакета MSIX из исходного кода с помощью MSIX Core
+          href: msix-core/msixcore-clickonce-solution.md
+        - name: Диагностика
+          href: msix-core/msixcore-troubleshoot.md
+    - name: Проверка развертывания и устранение неполадок
+      href: desktop\managing-your-msix-deployment-troubleshooting.md
+- name: Проверка пакета MSIX и устранение неполадок
   items:
-    - name: Устранение неполадок с контейнерами MSIX
+    - name: "Поддержка MSIX в Windows Server\_2019"
+      href: msix-server-2019.md
+    - name: Портал устройств Windows
+      href: 'https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal?context=/windows/msix/render'
+    - name: Устранение неполадок во время выполнения в контейнере MSIX
       href: manage/troubleshoot-msix-container.md
-    - name: Система обслуживания образов развертывания и управления ими
-      href: 'https://docs.microsoft.com/windows-hardware/manufacture/desktop/what-is-dism?context=/windows/msix/render'
-    - name: Windows PowerShell
-      href: 'https://docs.microsoft.com/powershell/module/appx/?view=win10-ps?context=/windows/msix/render'
-- name: Справочник по API и схемам
-  items:
-    - name: API диспетчера пакетов
-      href: 'https://docs.microsoft.com/uwp/api/windows.management.deployment?context=/windows/msix/render'
-    - name: Интерфейсы API для упаковки
-      href: 'https://docs.microsoft.com/windows/desktop/appxpkg/interfaces?context=/windows/msix/render'
-    - name: Схема манифеста приложения
-      href: 'https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest?context=/windows/msix/render'
-    - name: Схема файла Установщика приложений
-      href: 'https://docs.microsoft.com/uwp/schemas/appinstallerschema/app-installer-file?context=/windows/msix/render'
-- name: Ресурсы
-  items:
-    - name: Партнеры MSIX
-      href: partners.md
-    - name: Видеоролики о MSIX
-      href: team-video.md
+    - name: Отладка и тестирование упакованного приложения
+      items:
+        - name: 'Запуск, отладка и тестирование упакованного классического приложения'
+          href: desktop/desktop-to-uwp-debug.md
+        - name: Определение идентификатора пакета и контекста среды выполнения
+          href: detect-package-identity.md
+        - name: Регистрация макета пакета из сетевой папки
+          href: desktop/register-from-network.md
+        - name: "Тестирование в Windows\_10\_S"
+          href: desktop/desktop-to-uwp-test-windows-s.md
+        - name: Известные проблемы с упаковкой MSIX
+          href: desktop/desktop-to-uwp-known-issues.md

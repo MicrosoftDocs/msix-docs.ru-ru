@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Документация по MSIX
-summary: MSIX — это формат пакетов приложений Windows, который объединяет в себе лучшие возможности MSI, AppX, App-V и ClickOnce, а также обеспечивает надежную упаковку в соответствии с современными требованиями.
+summary: MSIX — это формат пакетов приложений Windows, который объединяет в себе лучшие возможности MSI, APPX, App-V и ClickOnce, а также обеспечивает надежную упаковку в соответствии с современными требованиями.
 metadata:
   title: Документация по MSIX
   description: MSIX — это формат упаковки для приложений Windows, который обеспечивает безопасность и надежность. Он основан на сочетании технологий установки MSI, AppX, App-V и ClickOnce.
@@ -9,12 +9,12 @@ metadata:
   keywords: windows 10, uwp, MSIX
   ms.localizationpriority: medium
   ms.custom: RS5, seodec18
-  ms.openlocfilehash: f85a2dc7a3b0cf8e7bed6785df296c2aeb3ba0c2
-  ms.sourcegitcommit: 228754268930f8abe3839209a1e6672b4ae42944
+  ms.openlocfilehash: ba52f4840f8fb65d2ff7f2952250e88b0ed947c0
+  ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/16/2020
-  ms.locfileid: "76146621"
+  ms.lasthandoff: 02/07/2020
+  ms.locfileid: "77073460"
 highlightedContent:
   items:
   - title: Что такое MSIX?
@@ -23,9 +23,9 @@ highlightedContent:
   - title: Скачать средство упаковки MSIX
     itemType: download
     url: https://www.microsoft.com/p/msix-packaging-tool/9n5lw3jbcxkf
-  - title: Видеоролики о MSIX
+  - title: Ресурсы и видео по MSIX
     itemType: video
-    url: team-video.md
+    url: resources.md
   - title: Техническое сообщество MSIX
     itemType: overview
     url: https://techcommunity.microsoft.com/t5/MSIX/ct-p/MSIX
@@ -35,10 +35,10 @@ additionalContent:
     items:
     - title: Создание пакетов MSIX из существующих установщиков
       summary: Средство упаковки MSIX позволяет преобразовывать существующие пакеты классических приложений в формат MSIX.
-      url: packaging-tool/mpt-overview.md
+      url: packaging-tool/create-an-msix-overview.md
     - title: Создание пакетов MSIX из исходного кода
-      summary: Для упаковки классического приложения из исходного кода используйте Visual Studio.
-      url: desktop/desktop-to-uwp-packaging-dot-net.md
+      summary: Упаковка классических приложений или приложений UWP из исходного кода
+      url: desktop/source-code-overview.md
     - title: Использование MSIX на любой платформе
       summary: Пакет SDK для MSIX предоставляет все API-интерфейсы, необходимые для проверки, подтверждения и распаковки пакета MSIX на любой платформе, включая ОС, отличные от Windows 10.
       url: msix-sdk/sdk-overview.md
@@ -52,86 +52,88 @@ additionalContent:
     items:
     - title: Приступая к работе
       links:
-      - text: Создание пакетов с помощью средства упаковки MSIX
-        url: packaging-tool/create-app-package-msi-vm.md
-      - text: Автоматизация создания пакетов MSIX
-        url: packaging-tool/package-conversion-cli.md
+      - text: Создание пакета MSIX из существующего установщика
+        url: packaging-tool/create-an-msix-overview.md
+      - text: Подготовка среды к преобразованию
+        url: packaging-tool/prepare-your-environment.md
+      - text: Создание среды упаковки MSIX в Hyper-V Quick Create
+        url: packaging-tool/quick-create-vm.md
+      - text: Инструкции по настройке преобразования на удаленном компьютере
+        url: packaging-tool/remote-conversion-setup.md
     - title: Пакет
       links:
-      - text: Общие сведения об упаковке классических приложений
-        url: desktop/desktop-to-uwp-root.md
       - text: Общие сведения о средстве упаковки MSIX
-        url: packaging-tool/mpt-overview.md
+        url: packaging-tool/tool-overview.md
       - text: Изменение пакета MSIX
         url: packaging-tool/package-editor.md
       - text: Рекомендации по использованию средства упаковки MSIX
-        url: packaging-tool/mpt-best-practices.md
+        url: packaging-tool/tool-best-practices.md
       - text: Подписывание пакета MSIX
         url: package/sign-app-package-using-signtool.md
     - title: Проверить
       links:
-      - text: Фокус-тестирование пакетов
-        url: https://docs.microsoft.com/windows/uwp/publish/package-flights
+      - text: Запуск, отладка и тестирование пакета MSIX
+        url: desktop/desktop-to-uwp-debug.md
       - text: Тестирование для Windows 10 в S-режиме
-        url: https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-test-windows-s
+        url: desktop/desktop-to-uwp-test-windows-s.md
       - text: Создание исправлений среды выполнения для упакованных приложений
-        url: psf/package-support-framework-overview.md
+        url: psf/package-support-framework.md
     - title: Распространение
       links:
-      - text: Microsoft Store
-        url: https://docs.microsoft.com/windows/uwp/publish/app-submissions
-      - text: Microsoft Store для бизнеса
-        url: https://docs.microsoft.com/windows/uwp/publish/distribute-lob-apps-to-enterprises
-      - text: Microsoft Endpoint Configuration Manager
-        url: https://docs.microsoft.com/configmgr/apps/understand/introduction-to-application-management
-      - text: Microsoft Intune
-        url: https://docs.microsoft.com/intune/apps/lob-apps-windows
-      - text: Установка пакетов MSIX с помощью Установщика приложений
-        url: app-installer/app-installer-file-overview.md
+      - text: Управление развертыванием MSIX
+        url: desktop/managing-your-msix-deployment-overview.md
+      - text: Распространение пакета MSIX в корпоративной среде
+        url: desktop/managing-your-msix-deployment-enterprise.md
+      - text: Распространение пакета MSIX в среде розничной торговли
+        url: desktop/managing-your-msix-deployment-retail.md
     - title: Ресурсы по теме
       links:
+      - text: Ресурсы и видео по MSIX
+        url: resources.md
       - text: Набор средств MSIX
-        url: https://github.com/microsoft/MSIX-Toolkit
+        url: toolkit/msix-toolkit-overview.md
       - text: Занятия по MSIX
         url: https://github.com/microsoft/MSIX-Labs
   - title: MSIX для разработчиков
     items:
     - title: Приступая к работе
       links:
-      - text: Упаковка классического приложения с помощью Visual Studio
-        url: desktop/desktop-to-uwp-packaging-dot-net.md
-      - text: Упаковка приложения UWP с помощью Visual Studio
-        url: package/packaging-uwp-apps.md
-    - title: Создание
-      links:
-      - text: Общие сведения об упаковке классических приложений
-        url: desktop/desktop-to-uwp-root.md
+      - text: Упаковка классических приложений или приложений UWP из исходного кода
+        url: desktop/source-code-overview.md
       - text: Подготовка к упаковке классического приложения
         url: desktop/desktop-to-uwp-prepare.md
-      - text: Создание пакета вручную
+      - text: Основные сведения о работе упакованных классических приложений в Windows
+        url: desktop/desktop-to-uwp-behind-the-scenes.md
+    - title: Создание
+      links:
+      - text: Подготовка к упаковке классического приложения
+        url: desktop/desktop-to-uwp-prepare.md
+      - text: Настройка классического приложения для упаковки с помощью MSIX в Visual Studio
+        url: desktop/desktop-to-uwp-packaging-dot-net.md
+      - text: Упаковка классического приложения или приложения UWP в Visual Studio
+        url: package/packaging-uwp-apps.md
+      - text: Упаковка из командной строки
         url: package/manual-packaging-root.md
       - text: Подписывание пакета MSIX
         url: package/sign-app-package-using-signtool.md
-      - text: Потоковая установка приложений
-        url: package/streaming-install.md
     - title: Проверить
       links:
+      - text: Запуск, отладка и тестирование пакета MSIX
+        url: desktop/desktop-to-uwp-debug.md
       - text: Комплект сертификации приложений для Windows
         url: https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit
-      - text: Портал устройств Windows
-        url: https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal
       - text: Фокус-тестирование пакетов
         url: https://docs.microsoft.com/windows/uwp/publish/package-flights
       - text: Тестирование для Windows 10 в S-режиме
-        url: https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-test-windows-s
+        url: desktop/desktop-to-uwp-test-windows-s.md
     - title: Распространение
       links:
-      - text: Microsoft Store
-        url: https://docs.microsoft.com/windows/uwp/publish/app-submissions
-      - text: Microsoft Store для бизнеса
-        url: https://docs.microsoft.com/windows/uwp/publish/distribute-lob-apps-to-enterprises
-      - text: Установка пакетов MSIX с помощью Установщика приложений
-        url: app-installer/app-installer-file-overview.md
+      - text: Управление развертыванием MSIX
+        url: desktop/managing-your-msix-deployment-overview.md
+      - text: Распространение пакета MSIX в корпоративной среде
+        url: desktop/managing-your-msix-deployment-enterprise.md
+      - text: Распространение пакета MSIX в среде розничной торговли
+        url: desktop/managing-your-msix-deployment-retail.md
     - title: Справочник по API и схемам
       links:
       - text: API диспетчера пакетов
@@ -142,9 +144,9 @@ additionalContent:
         url: https://docs.microsoft.com/uwp/schemas/appinstallerschema/schema-root
     - title: Ресурсы по теме
       links:
+      - text: Ресурсы и видео по MSIX
+        url: resources.md
       - text: Партнеры MSIX
         url: partners.md
       - text: SDK для MSIX
         url: https://github.com/microsoft/msix-packaging/
-      - text: Платформа поддержки пакетов
-        url: https://github.com/Microsoft/MSIX-PackageSupportFramework
