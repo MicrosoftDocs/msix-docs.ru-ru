@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 64204a73e3547083783cc7367f8bfafc4b2f3eda
-ms.sourcegitcommit: 25811dea7b2b4daa267bbb2879ae9ce3c530a44a
+ms.openlocfilehash: 9aafc33d3ffebf44704e1172ea2eeac991430ca2
+ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67829182"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77073034"
 ---
 # <a name="msix-partners"></a>Партнеры MSIX
 
@@ -40,10 +40,6 @@ ms.locfileid: "67829182"
 
 :::column:::
 [![Логотип Flexera](images/Flexera_Logo.png)](https://www.flexera.com/company/news/press-releases/Flexera-Launches-Support-for-Microsofts-MSIX.html)    
-:::column-end:::
-
-:::column:::
-[![Логотип InstallAware](images/installAware_logo.png)](https://www.installaware.com/msix.htm)
 :::column-end:::
 
 :::row-end:::
