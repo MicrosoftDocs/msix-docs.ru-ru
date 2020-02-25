@@ -92,14 +92,14 @@
           href: packaging-tool/Quick-Create-VM.md
         - name: Инструкции по настройке преобразования на удаленном компьютере
           href: packaging-tool/remote-conversion-setup.md
-        - name: Использование средства упаковки MSIX в автономной среде
-          href: packaging-tool/disconnected-environment.md
     - name: Настройка средства упаковки MSIX
       items:
         - name: Общие сведения о средстве упаковки MSIX
           href: packaging-tool/tool-overview.md
         - name: Рекомендации по использованию средства упаковки MSIX
           href: packaging-tool/tool-best-practices.md
+        - name: Использование средства упаковки MSIX в автономной среде
+          href: packaging-tool/disconnected-environment.md
         - name: Известные проблемы при работе со средством упаковки MSIX и советы по их устранению
           href: packaging-tool/tool-known-issues.md
         - name: Копирование параметров средства упаковки MSIX между устройствами
