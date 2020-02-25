@@ -1,18 +1,18 @@
 ---
-title: Использование средства упаковки MSIX в отключенной среде
+title: Использование средства упаковки MSIX в автономной среде
 description: В этой статье описывается, как получить все ресурсы, необходимые для средства упаковки MSIX, если они находятся в отключенной среде.
 ms.date: 02/05/2020
 ms.topic: article
 keywords: msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 588d6925194bc11cb9d475f229df2227705e751a
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.openlocfilehash: 746ed6b04b548fc4815ee4107e1d7565b56cd013
+ms.sourcegitcommit: 4d912f89e385268757e87bf8fd9ca1828b99e109
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77073500"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77544743"
 ---
-# <a name="using-the-msix-packaging-tool-in-a-disconnected-environment"></a>Использование средства упаковки MSIX в отключенной среде
+# <a name="using-the-msix-packaging-tool-in-a-disconnected-environment"></a>Использование средства упаковки MSIX в автономной среде
 
 В то же время, чтобы пользователи могли получить средство упаковки MSIX с помощью Microsoft Store, мы понимаем, что не все используют магазин или подключенную среду, в которой требуется выполнить преобразование. Эта версия доступна только для наших общедоступных выпусков, а не для выпусков [программы предварительной оценки](insider-program.md) .
 
@@ -33,7 +33,8 @@ PS C:\> Add-AppxProvisionedPackage -Path C:\offline -PackagePath C:\MSIX\MyPacka
 
 Драйвер средства упаковки MSIX поставляется как пакет по [запросу (FOD)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) от Центр обновления Windows и не может быть установлен, если служба центр обновления Windows отключена на компьютере или параметры кольца Microsoft Windows для рейсов не соответствуют сборке ОС компьютера.
 
-Специалисты организаций, в которых используются службы Windows Server Update Services (WSUS), должны выполнить определенные действия для установки драйвера вручную:
+Если вы используете корпоративную среду с Windows Server Update Services (WSUS) или Systems Center (теперь Microsoft Endpoint Manager), вам может потребоваться изменить [конфигурацию по умолчанию](https://docs.microsoft.com/windows/deployment/update/fod-and-lang-packs)или просто загрузить и установить FOD вручную:
+
 - Скачайте файл FOD. cab для [Windows 10 версии 1809, x64](https://download.microsoft.com/download/8/4/3/8436215A-42DB-4FD2-966D-60D436D6EEFC/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~amd64~~.cab) или [Windows 10, версия 1809, x86](https://download.microsoft.com/download/9/9/4/9948d09d-af25-45a5-b01f-cc4bcf05f5bf/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~x86~~.cab)
 - Скачайте файл FOD. cab для [Windows 10, версия 1903, x64](https://download.microsoft.com/download/5/2/e/52ec35e9-3b50-47b2-879d-c815a93bc3fc/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~amd64~~.cab) или [Windows 10, версия 1903, Примечание x86](https://download.microsoft.com/download/2/c/3/2c3a78a2-4d64-426a-976d-dfe4805110cc/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~x86~~.cab) **. Это также будет работать для Windows 10, версия 1909**
 - Полученные отдельно пакеты с компонентами по запросу можно установить с помощью [параметров командной строки системы DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options). В окне PowerShell с повышенными привилегиями введите следующее: ```Dism /Online /add-package /packagepath:(path)```
@@ -45,5 +46,3 @@ PS C:\> Add-AppxProvisionedPackage -Path C:\offline -PackagePath C:\MSIX\MyPacka
 - [Служба корпоративного лицензирования Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx): требуется доступ к корпоративной лицензии.
 - [Портал поставщика вычислительной техники](https://www.microsoftoem.com): требуется доступ к изготовителю оборудования.
 - [Скачать MSDN](https://my.visualstudio.com/Downloads/Featured): требуется подписка MSDN.
-
-Полученные отдельно пакеты с компонентами по запросу можно установить с помощью параметров командной строки системы DISM.

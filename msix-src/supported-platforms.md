@@ -7,12 +7,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 7bc8d140d0d62e0e844ca2f51f407349bd85baf7
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.openlocfilehash: 3918f583a8462a0813bd4104448111c322e739eb
+ms.sourcegitcommit: 4d912f89e385268757e87bf8fd9ca1828b99e109
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77073640"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77544728"
 ---
 # <a name="supported-platforms"></a>Поддерживаемые платформы
 
@@ -25,7 +25,7 @@ ms.locfileid: "77073640"
 В этой статье описывается, как основные функции MSIX поддерживаются в этих версиях Windows.
 
 > [!NOTE]
-> Для Windows Server 2019 LTSC и Windows Enterprise 2019 LTSC необходимо установить приложение **установщика приложений** для поддержки функций MSIX, таких как установка MSIX,. msixbundle,. appx или. appxbundle. Дополнительные сведения о Windows Server 2019 LTSC см. в [этой статье](msix-server-2019.md).
+> Для Windows Server 2019 LTSC и Windows Enterprise 2019 LTSC требуется, чтобы приложение **установщика приложений** поддерживало двойное нажатие кнопки установить или установить непосредственно с веб-сайта для. msix,. msixbundle,. appx или. appxbundle. Без приложения пакеты можно устанавливать через PowerShell, API или использовать поддерживаемый продукт управления системами. Дополнительные сведения о Windows Server 2019 LTSC см. в [этой статье](msix-server-2019.md).
 
 > [!NOTE]
 > Для версий Windows, предшествующих Windows 10 версии 1709, используйте [MSIX Core](msix-core/msixcore.md) для установки пакетов MSIX.
@@ -35,9 +35,9 @@ ms.locfileid: "77073640"
 В следующей таблице показано, какие функции и сценарии MSIX поддерживаются в разных версиях Windows.
 
 > [!div class="mx-tableFixed"]
-| Компоненты | 1709 | 1803 | 1809 | 1903 | 1909 | 2004| Windows Server 2019 LTSC | Windows Enterprise 2019 LTSC|
+| Возможности | 1709 | 1803 | 1809 | 1903 | 1909 | 2004| Windows Server 2019 LTSC | Windows Enterprise 2019 LTSC|
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| Установка и удаление собственного MSIX | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :x: | :x: |
+| Установка и удаление собственного MSIX | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark: |
 | [Поддержка файлов установщика приложений](app-installer/installing-windows10-apps-web.md)| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
 | Удостоверение для упакованных классических приложений | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
 | Разрешить повышение прав | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 
@@ -45,8 +45,8 @@ ms.locfileid: "77073640"
 | Принудительное обновление с любой предыдущей версии |  :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 
 | Платформа поддержки пакетов (ПСФ) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:|  :heavy_check_mark: | :heavy_check_mark:|  
 | Службы Windows | :x: | :x: | :x: | :x:| :x: | :heavy_check_mark:| :x:| :x: | 
-| Отложить флаг регистрации |  :x: | :x: | :x: | :x:| :heavy_check_mark: | :heavy_check_mark:| :x: | :x: |
-| Принудительная подготовка |  :x: | :x: | :x: | :x:| :heavy_check_mark: | :heavy_check_mark:| :x: | :x: |
+| Отложить флаг регистрации |  :x: | :x: | :x: | :x:| :x: | :heavy_check_mark:| :x: | :x: |
+| Принудительная подготовка |  :x: | :x: | :x: | :x:| :x: | :heavy_check_mark:| :x: | :x: |
 
 ## <a name="package-format-support"></a>Поддержка формата пакета
 
@@ -63,7 +63,7 @@ ms.locfileid: "77073640"
 
 В следующей таблице показано, какие функции Microsoft Store поддерживаются в разных версиях Windows 10.
 
-| Компоненты | 1709 | 1803 | 1809 | 1903 | 1909 | 2004
+| Возможности | 1709 | 1803 | 1809 | 1903 | 1909 | 2004
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | публикация             | :x: | :x: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
 | Обновить уведомление| :x: | :x: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
