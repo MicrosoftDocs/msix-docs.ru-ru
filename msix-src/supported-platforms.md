@@ -7,12 +7,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 3918f583a8462a0813bd4104448111c322e739eb
-ms.sourcegitcommit: 4d912f89e385268757e87bf8fd9ca1828b99e109
+ms.openlocfilehash: 3e01fa41354e8c6fa0b1d1096a597dc0b16fa9a9
+ms.sourcegitcommit: 536d6969cde057877ecdd8345cfb0dc12c9582f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544728"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77779082"
 ---
 # <a name="supported-platforms"></a>Поддерживаемые платформы
 
