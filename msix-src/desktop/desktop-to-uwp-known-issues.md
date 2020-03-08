@@ -7,11 +7,11 @@ keywords: windows 10, uwp, msix
 ms.assetid: 71f8ffcb-8a99-4214-ae83-2d4b718a750e
 ms.localizationpriority: medium
 ms.openlocfilehash: 2f56cc122f82f2806b0cc1d014c9ab4c14307895
-ms.sourcegitcommit: 0412ba69187ce791c16313d0109a5d896141d44c
+ms.sourcegitcommit: 536d6969cde057877ecdd8345cfb0dc12c9582f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303191"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78909635"
 ---
 # <a name="known-issues-with-packaged-desktop-apps"></a>Известные проблемы с упакованными классическими приложениями
 
@@ -33,7 +33,7 @@ ms.locfileid: "75303191"
 
 27.10.2016 г. было выпущено [обновление Windows (версия 14393.351 — KB3197954)](https://support.microsoft.com/kb/3197954), в которое вошли важные исправления, направленные на решение этой проблемы. Если вы столкнулись с этой проблемой, обновите свой компьютер. Если вам не удается обновить компьютер, потому что он перезапускается до того, как вам удается войти в систему, восстановите систему до точки более ранней, чем установка одного из затрагиваемых проблемой приложений. О том, как восстановить систему, см. в статье [Параметры восстановления в Windows 10](https://support.microsoft.com/help/12415/windows-10-recovery-options).
 
-Если обновление не устраняет проблему или вы не знаете, как восстановить компьютер, обратитесь в [службу поддержки Microsoft](https://support.microsoft.com/contactus/).
+Если обновление не устраняет проблему или вы не знаете, как восстановить компьютер, обратитесь в [службу поддержки Майкрософт](https://support.microsoft.com/contactus/).
 
 Если вы разработчик, вы можете запретить установку своих упакованных приложений в версиях Windows, в которых нет этого обновления. Обратите внимание, что это приложение будет недоступно для пользователей, которые еще не установили обновление. Чтобы ограничить доступность приложения для пользователей, которые установили это обновление, измените файл AppxManifest. XML следующим образом:
 
@@ -89,13 +89,13 @@ certutil -dump <cert_file.pfx>
 set APPXSIP_LOG=1
 ```
 
-Затем в **командной строке**снова подпишите приложение. Пример
+Затем в **командной строке**снова подпишите приложение. Например:
 
 ```
 signtool.exe sign /a /v /fd SHA256 /f APPX_TEST_0.pfx C:\Users\Contoso\Desktop\pe\VLC.appx
 ```
 
-В **окне консоли**появится информация о файлах, содержащих недействительный сертификат PE. Пример
+В **окне консоли**появится информация о файлах, содержащих недействительный сертификат PE. Например:
 
 ```
 ...
@@ -105,6 +105,6 @@ ERROR: [AppxSipCustomLoggerCallback] File has malformed certificate: uninstall.e
 ...   
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Есть вопросы? Задайте их на Stack Overflow. Наша команда следит за этими [тегами](https://stackoverflow.com/questions/tagged/project-centennial+or+desktop-bridge). Вы также можете задать нам вопросы [здесь](https://social.msdn.microsoft.com/Forums/en-US/home?filter=alltypes&sort=relevancedesc&searchTerm=%5BDesktop%20Converter%5D).
