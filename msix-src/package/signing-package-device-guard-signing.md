@@ -6,11 +6,11 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.openlocfilehash: 73ed0fcb5ef4bb1656eda01dcb8ecbdd2bb5b65e
-ms.sourcegitcommit: 073a228653f004914851c3461b9ad6eef343f915
+ms.sourcegitcommit: 536d6969cde057877ecdd8345cfb0dc12c9582f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309001"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78909650"
 ---
 # <a name="sign-an-msix-package-with-device-guard-signing"></a>Подписывание пакета MSIX с помощью подписи Device Guard
 
@@ -107,7 +107,7 @@ signtool sign /fd sha256 /dlib DgssLib.dll /dmdf <Azure AAD in .json format> /t 
 > * Поддерживается только алгоритм SHA256.
 > * При подписывании пакета с помощью подписи Device Guard пакет не отправляется через Интернет.
 
-## <a name="test"></a>Тестирование
+## <a name="test"></a>Тест
 
 Чтобы проверить подпись Device Guard, скачайте корневой сертификат организацию с портала Microsoft Store для бизнеса.
 
