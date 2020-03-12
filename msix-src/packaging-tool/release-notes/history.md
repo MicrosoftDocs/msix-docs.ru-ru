@@ -6,14 +6,23 @@ ms.topic: article
 keywords: Windows 10, UWP, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: be79b90229ed23b04cfa58f12ee3372491f4b818
-ms.sourcegitcommit: b54bb64bcc05a91b4444b62d52586f8a794e7267
+ms.openlocfilehash: d35eb8712d5830c879011c7d3610d95ab019b9bd
+ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027659"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79097884"
 ---
-# <a name="release-notes-for-the-msix-packaging-tool"></a>Заметки о выпуске для средства упаковки MSIX
+# <a name="release-notes-for-the-msix-packaging-tool"></a>Заметки о выпуске средства упаковки MSIX
+## <a name="version-120202250"></a>Версия 1.2020.225.0
+- Возможность импортировать файлы реестра (. reg) в редакторе пакетов
+- Возможность автоматического добавления [поддержки MSIX Core](../../msix-core/msixcore.md) в MSIX
+- Добавить фиксированные ошибки расширения Инсталледлокатионвиртуализатион:
+- Проверить формат манифеста после изменения 
+- Очищать сообщение при сбое задачи первого запуска 
+- Запрещать относительные пути для распаковки 
+- Обновленные фильтры файлов, чтобы они показывали допустимые форматы (например, для используемых установщиков *.*  и теперь `*.msi, *.exe, ...`) 
+- Исправлено, когда распаковка преобразует пробелы в пути в "%20"
 
 ## <a name="version-120202030"></a>Версия 1.2020.203.0
 - Параметр целостности пакета включен по умолчанию

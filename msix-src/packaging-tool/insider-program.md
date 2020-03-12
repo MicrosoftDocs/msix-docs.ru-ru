@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 3dc664ede52dc757bc3a74ba3e5fb5ebc17141d3
-ms.sourcegitcommit: 4d912f89e385268757e87bf8fd9ca1828b99e109
+ms.openlocfilehash: 8280ad784fad1547b43db14124f1118dfff846f5
+ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544734"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79097838"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -35,10 +35,10 @@ ms.locfileid: "77544734"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-## <a name="version-120202030"></a>Версия 1.2020.203.0
+## <a name="version-120202250"></a>Версия 1.2020.225.0
 
--Параметр целостности пакета включен по умолчанию
-- Возможность экспорта файлов реестра (. reg)
+- Поддержка MSIX Core может быть автоматически добавлена в создаваемые пакеты.
+- Возможность импортировать файлы реестра (. reg) в редакторе пакетов
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 

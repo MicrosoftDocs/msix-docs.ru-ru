@@ -5,12 +5,12 @@ ms.date: 07/13/2017
 ms.topic: article
 keywords: windows 10, uwp, пакет, архитектура, конфигурация пакета
 ms.localizationpriority: medium
-ms.openlocfilehash: 4c48653e66bb01bda2c5da3b2f17544add8e6992
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.openlocfilehash: f64c4ae114d334cb614c417ca45616cc50cd0654
+ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77072734"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79097908"
 ---
 # <a name="app-package-architectures"></a>Архитектуры пакетов приложений
 
@@ -30,7 +30,7 @@ ms.locfileid: "77072734"
 | x86              | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark:          | :heavy_check_mark: |
 | x64              | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark:          | :heavy_check_mark: |
 | ARM               | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark:          | :x:                |
-| ARM64              | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark:          | :x:                |
+| ARM64              | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark:          | :x:                |
 
 
 Рассмотрим эти типы архитектуры более подробно.
