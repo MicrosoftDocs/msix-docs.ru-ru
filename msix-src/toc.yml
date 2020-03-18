@@ -210,7 +210,7 @@
       items:
         - name: Обзор
           href: desktop/managing-your-msix-deployment-enterprise.md
-        - name: Консоль администрирования диспетчера конечных точек (Майкрософт)
+        - name: Консоль администрирования Microsoft Endpoint Manager
           href: desktop/managing-your-msix-deployment-mem-adminconsole.md
         - name: Microsoft Endpoint Configuration Manager
           href: desktop/managing-your-msix-deployment-configmgr.md
@@ -274,8 +274,12 @@
       items:
         - name: Обзор
           href: msix-core/msixcore.md
+        - name: Развертывание MSIX Core с помощью Microsoft Endpoint Configuration Manager
+          href: msix-core/deploy-msix-core-with-configmgr.md
         - name: Обновление существующего пакета MSIX для включение поддержки MSIX Core
           href: msix-core/support-msix-core.md
+        - name: Развертывание приложения MSIX Core с помощью Microsoft Endpoint Configuration Manager
+          href: msix-core/deploy-msix-core-app-with-configmgr.md
         - name: Развертывание пакета MSIX с помощью MSIX Core
           href: msix-core/deploy-with-msix-core.md
         - name: Создание пакета MSIX из исходного кода с помощью MSIX Core
