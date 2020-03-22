@@ -5,12 +5,12 @@ ms.date: 07/12/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 73ed0fcb5ef4bb1656eda01dcb8ecbdd2bb5b65e
-ms.sourcegitcommit: 536d6969cde057877ecdd8345cfb0dc12c9582f2
+ms.openlocfilehash: 7fa356679943afd8267a1e8df8527a2179f61b98
+ms.sourcegitcommit: e703ffe4c635d9b127ecf8c02e087370b676aa9c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78909650"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80108237"
 ---
 # <a name="sign-an-msix-package-with-device-guard-signing"></a>Подписывание пакета MSIX с помощью подписи Device Guard
 
@@ -30,7 +30,10 @@ ms.locfileid: "78909650"
 
 ## <a name="configure-permissions-for-device-guard-signing"></a>Настройка разрешений для подписи Device Guard
 
-Чтобы использовать подписывание Device Guard в Microsoft Store для бизнеса или Microsoft Store для образования, требуется роль " **подписавший" Device Guard** . Это роль минимальных привилегий, которая может подписываться. Также можно подписывать другие роли, такие как **глобальный администратор** и **Владелец учетной записи выставления счетов** .
+Чтобы использовать подписывание Device Guard в Microsoft Store для бизнеса или Microsoft Store для образования, требуется роль " **подписавший" Device Guard** . Это роль минимальных привилегий, которая может подписываться. Также можно подписывать другие роли, такие как **глобальный администратор** и **Владелец учетной записи выставления счетов** . 
+
+ > [!NOTE]
+ > Роль подписи Device Guard используется при подписывании в качестве приложения. Владелец учетной записи глобального администратора и счета выставления счетов используется при входе в систему в качестве пользователя, выполнившего вход.
 
 Чтобы подтвердить или переназначить роли:
 
@@ -78,6 +81,7 @@ function GetToken()
     $Body = @{
       'grant_type' = 'password'
       'client_id'= '<application-id>'
+      'client_secret' = '<client_secret>'
       'resource' = 'https://onestore.microsoft.com'
       'username' = $user
       'password' = $password

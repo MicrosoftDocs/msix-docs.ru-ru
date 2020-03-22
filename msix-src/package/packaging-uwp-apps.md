@@ -10,11 +10,11 @@ f1_keywords:
 - vs.storeassociationwizard
 ms.localizationpriority: medium
 ms.openlocfilehash: 7ecdc839618d7a0e050b89623bf106c2554463f3
-ms.sourcegitcommit: 4d912f89e385268757e87bf8fd9ca1828b99e109
+ms.sourcegitcommit: e703ffe4c635d9b127ecf8c02e087370b676aa9c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544790"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80108197"
 ---
 # <a name="package-a-desktop-or-uwp-app-in-visual-studio"></a>Упаковка классического приложения или приложения UWP в Visual Studio
 

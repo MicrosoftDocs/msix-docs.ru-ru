@@ -7,11 +7,11 @@ keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: b4c78d47a2e9adb53f80090b685583636e064458
-ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
+ms.sourcegitcommit: e703ffe4c635d9b127ecf8c02e087370b676aa9c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79129137"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80108217"
 ---
 # <a name="best-practices-for-the-msix-packaging-tool"></a>Рекомендации по использованию средства упаковки MSIX
 

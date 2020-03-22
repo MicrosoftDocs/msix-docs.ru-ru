@@ -6,12 +6,12 @@ ms.topic: article
 keywords: Windows 10, Windows 7, Windows 8, Windows Server, UWP, msix, мсикскоре, 1709, 1703, 1607, 1511, 1507
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: fb12dcc8513753f8e44bd1141523c913ca91e244
-ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
+ms.openlocfilehash: b338f9bb5b994b21164278a62983cf9f7cb531df
+ms.sourcegitcommit: e703ffe4c635d9b127ecf8c02e087370b676aa9c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79111306"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80070021"
 ---
 # <a name="deploy-msix-core-apps-with-microsoft-endpoint-configuration-manager"></a>Развертывание приложений MSIX Core с помощью конечной точки Майкрософт Configuration Manager
 Доставка MSIX приложений с помощью конечной точки Майкрософт Configuration Manager позволяет ИТ-специалистам связывать другие приложения как зависимости, принудительно устанавливая их перед. Создавая зависимость для приложения MSIX Core, мы принудительно устанавливаем приложение MSIX Core, только если оно требуется для устройства. Дополнительные сведения о зависимостях приложений в Micosoft Endpoint Configuration Manager см. в разделе [Создание приложений: зависимости типа развертывания](https://docs.microsoft.com/configmgr/apps/deploy-use/create-applications#bkmk_dt-depend).
@@ -50,9 +50,9 @@ ms.locfileid: "79111306"
 ```
 1. Задайте для поля программа удаления значение: 
 ```batch
-"C:\Program Files\msixmgr\msixmgr.exe" -RemovePackage [Application Family Name] -quietUX
+"C:\Program Files\msixmgr\msixmgr.exe" -RemovePackage [Package Family Name] -quietUX
 ```
-1. Замените [имя семейства приложений] именем семейства приложений приложения MSIX.
+1. Замените [имя семейства пакетов] именем семейства пакетов приложения MSIX.
 1. Нажмите кнопку **Далее** .
 1. Установите переключатель **использовать настраиваемый сценарий для обнаружения наличия этого переключателя типа развертывания** .
 1. Нажмите кнопку **изменить** .
@@ -63,7 +63,7 @@ Set-Location "C:\Program Files\msixmgr"
 
 IF([Boolean]$(get-item "msixmgr.exe"))
 {
-    $Result = $(.\msixmgr.exe -FindPackage [Application Family Name]*)
+    $Result = $(.\msixmgr.exe -FindPackage [Package Family Name]*)
 
     IF($($Result.GetType().Name) -eq "Object[]")
     {
@@ -71,7 +71,7 @@ IF([Boolean]$(get-item "msixmgr.exe"))
     }
 }
 ```
-1. Обновите [имя семейства приложений], указав имя семейства пакетов MSIX приложения.
+1. Обновите [имя семейства пакетов], указав имя семейства пакетов MSIX приложения.
 1. Нажмите кнопку **ОК** .
 1. Нажмите кнопку **Далее** .
 1. Задайте поведение установки **для параметра установить для пользователя**.
