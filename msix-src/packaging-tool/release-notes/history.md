@@ -1,19 +1,25 @@
 ---
 title: Заметки о выпуске средства упаковки MSIX
 description: В этой статье содержится полный журнал заметок о выпуске для различных версий средства упаковки MSIX.
-ms.date: 12/19/2019
+ms.date: 03/25/2020
 ms.topic: article
 keywords: Windows 10, UWP, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: d35eb8712d5830c879011c7d3610d95ab019b9bd
-ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
+ms.openlocfilehash: 2fb911d4515816a02ad74064e4f7db78efbcb5eb
+ms.sourcegitcommit: f6cee51b46fc36a57b5cf9c8cb3fd24a40ae858a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79097884"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80391647"
 ---
 # <a name="release-notes-for-the-msix-packaging-tool"></a>Заметки о выпуске средства упаковки MSIX
+
+## <a name="version-120203190"></a>Версия 1.2020.319.0
+- Улучшенное качество извлеченных значков
+- Улучшено извлечение значков из ярлыков
+- Общие исправления ошибок
+
 ## <a name="version-120202250"></a>Версия 1.2020.225.0
 - Возможность импортировать файлы реестра (. reg) в редакторе пакетов
 - Возможность автоматического добавления [поддержки MSIX Core](../../msix-core/msixcore.md) в MSIX

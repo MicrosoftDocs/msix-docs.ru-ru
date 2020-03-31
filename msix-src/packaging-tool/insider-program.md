@@ -1,17 +1,17 @@
 ---
 title: Программа предварительной оценки средства упаковки MSIX
 description: В этой статье описывается программа предварительной оценки для программы MSIX Packaging Tool, которая предоставляет выпуски с ранним доступом средства упаковки MSIX.
-ms.date: 06/25/2019
+ms.date: 03/25/2020
 ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 8280ad784fad1547b43db14124f1118dfff846f5
-ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
+ms.openlocfilehash: b6c62eea20f47072492cf0bb5bb0b12632e4ec94
+ms.sourcegitcommit: f6cee51b46fc36a57b5cf9c8cb3fd24a40ae858a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79097838"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80391603"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -35,10 +35,10 @@ ms.locfileid: "79097838"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-## <a name="version-120202250"></a>Версия 1.2020.225.0
+## <a name="version-120203190"></a>Версия 1.2020.319.0
 
-- Поддержка MSIX Core может быть автоматически добавлена в создаваемые пакеты.
-- Возможность импортировать файлы реестра (. reg) в редакторе пакетов
+- Улучшенное качество извлеченных значков
+- Улучшено извлечение значков из ярлыков
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 

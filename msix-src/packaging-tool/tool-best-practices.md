@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: b4c78d47a2e9adb53f80090b685583636e064458
-ms.sourcegitcommit: e703ffe4c635d9b127ecf8c02e087370b676aa9c
+ms.openlocfilehash: b19c4f7c3d898bb3c1a1ed319de6ae0dbd359af0
+ms.sourcegitcommit: f6cee51b46fc36a57b5cf9c8cb3fd24a40ae858a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80108217"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80391628"
 ---
 # <a name="best-practices-for-the-msix-packaging-tool"></a>Рекомендации по использованию средства упаковки MSIX
 
@@ -36,8 +36,8 @@ ms.locfileid: "80108217"
     - Не подписывать пакет. — Если вы хотите подписать пакет с помощью другого метода или позже после создания пакета, можно выбрать этот параметр.
     Кроме того, рекомендуется добавить URL-адрес сервера меток времени к параметрам подписывания (если применимо), чтобы приложение можно было установить даже в случае истечения срока действия сертификата.   
 
-> [!Note]
-> Подписывание приложения формата пакета MSIX с использованием сертификата SHA1 не поддерживается.
+> [!NOTE]
+> Подписывание приложения формата пакета MSIX с помощью сертификата SHA1 не поддерживается.
 
 ### <a name="other-settings"></a>Другие параметры
 

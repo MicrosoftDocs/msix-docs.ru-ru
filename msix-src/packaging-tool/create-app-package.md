@@ -1,17 +1,17 @@
 ---
 title: Создание пакета MSIX из любого классического установщика
 description: Создание пакета MSIX из любого настольного установщика (MSI, EXE, ClickOnce или App-V)
-ms.date: 02/11/2019
+ms.date: 03/25/2020
 ms.topic: article
-keywords: windows 10, uwp
+keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 125dd3dab5fc2884b48dceeac1006614156a8ba8
-ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
+ms.openlocfilehash: 56b01b3081e1271a79728a7b9a32ddb060c99039
+ms.sourcegitcommit: f6cee51b46fc36a57b5cf9c8cb3fd24a40ae858a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79097896"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80391612"
 ---
 # <a name="create-an-msix-package-from-any-desktop-installer-msi-exe-clickonce-or-app-v"></a>Создание пакета MSIX из любого настольного установщика (MSI, EXE, ClickOnce или App-V)
 
@@ -116,7 +116,8 @@ ms.locfileid: "79097896"
 - **Не подписывать пакет** Выберите этот параметр, если вы будете подписаны пакет позднее. Примечание. невозможно установить пакет MSIX, если он не подписан
 - При подписывании мы настоятельно рекомендуем добавить к сертификату **метку времени** , чтобы срок действия вашего сертификата мог быть последним. Допустимый формат — [URL-адрес сервера меток времени](https://docs.microsoft.com/windows/win32/seccrypto/signtool) в соответствии со стандартом RFC 3161.
 
-> Метим Подписывание приложения формата пакета MSIX с использованием сертификата SHA1 не поддерживается.
+> [!NOTE]
+> Подписывание приложения формата пакета MSIX с помощью сертификата SHA1 не поддерживается.
 
 Чтобы продолжить, нажмите кнопку **Далее**.
 
@@ -150,7 +151,7 @@ ms.locfileid: "79097896"
     - Найдите и выберите путь к папке.
     - При установке приложения убедитесь, что этот файл совпадает с расположением для установки установщика.
 - Описание:
-    - Это поле является необязательным. 
+    - Заполнять это поле необязательно. 
 
 ## <a name="installation"></a>Установка
 

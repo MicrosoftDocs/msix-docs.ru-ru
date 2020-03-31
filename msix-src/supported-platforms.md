@@ -2,17 +2,17 @@
 title: Поддерживаемые платформы
 description: В этой статье описывается поддерживаемая платформа для MSIX.
 author: dianmsft
-ms.date: 12/02/2019
+ms.date: 03/06/2020
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 5929bbef4e1b3b6d2199031700ecf94e9a743103
-ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
+ms.openlocfilehash: d30a28fa6a2eb551cc640b5ce2b666089cd5daa8
+ms.sourcegitcommit: f6cee51b46fc36a57b5cf9c8cb3fd24a40ae858a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79097854"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80391593"
 ---
 # <a name="supported-platforms"></a>Поддерживаемые платформы
 
@@ -35,7 +35,7 @@ ms.locfileid: "79097854"
 В следующей таблице показано, какие функции и сценарии MSIX поддерживаются в разных версиях Windows.
 
 > [!div class="mx-tableFixed"]
-| Компоненты | 1709 | 1803 | 1809 | 1903 | 1909 | 2004| Windows Server 2019 LTSC | Windows Enterprise 2019 LTSC|
+| Возможности | 1709 | 1803 | 1809 | 1903 | 1909 | 2004| Windows Server 2019 LTSC | Windows Enterprise 2019 LTSC|
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | [Разрешить повышение прав](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 
 | [Поддержка файлов установщика приложений](app-installer/installing-windows10-apps-web.md)| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
@@ -47,7 +47,6 @@ ms.locfileid: "79097854"
 | Установка и удаление собственного MSIX | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark: |
 | [Платформа поддержки пакетов (ПСФ)](psf/package-support-framework-overview.md) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:|  :heavy_check_mark: | :heavy_check_mark:|  
 | [Службы Windows](packaging-tool/convert-an-installer-with-services.md) | :x: | :x: | :x: | :x:| :x: | :heavy_check_mark:| :x:| :x: | 
-
 
 ## <a name="package-format-support"></a>Поддержка формата пакета
 
@@ -64,7 +63,7 @@ ms.locfileid: "79097854"
 
 В следующей таблице показано, какие функции Microsoft Store поддерживаются в разных версиях Windows 10.
 
-| Компоненты | 1709 | 1803 | 1809 | 1903 | 1909 | 2004
+| Возможности | 1709 | 1803 | 1809 | 1903 | 1909 | 2004
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | публикация             | :x: | :x: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
 | Обновить уведомление| :x: | :x: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 

@@ -1,18 +1,18 @@
 ---
-title: Архитектуры пакетов приложений
-description: Сведения о том, какие архитектуры процессоров следует использовать при создании пакета приложения UWP.
-ms.date: 07/13/2017
+title: Типы архитектуры пакетов приложений
+description: Узнайте больше о том, какие типы архитектуры процессоров следует использовать при создании пакета приложения UWP.
+ms.date: 03/25/2020
 ms.topic: article
 keywords: windows 10, uwp, пакет, архитектура, конфигурация пакета
 ms.localizationpriority: medium
-ms.openlocfilehash: f64c4ae114d334cb614c417ca45616cc50cd0654
-ms.sourcegitcommit: fa41875f6c2b79db3d7dde29b10c0f24765532bc
+ms.openlocfilehash: cbd8924a947d27afd62d6f870b67a6f0f810d69d
+ms.sourcegitcommit: f6cee51b46fc36a57b5cf9c8cb3fd24a40ae858a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79097908"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80391656"
 ---
-# <a name="app-package-architectures"></a>Архитектуры пакетов приложений
+# <a name="app-package-architectures"></a>Типы архитектуры пакетов приложений
 
 Пакеты приложений настроены для запуска на компьютерах с определенной архитектурой процессора. Выбрав тип архитектуры, вы указываете устройства, для которых предназначено ваше приложение. Приложения универсальной платформы Windows (UWP) можно настроить для работы на следующих типах архитектуры.
 - x86
