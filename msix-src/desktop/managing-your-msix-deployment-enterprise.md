@@ -6,26 +6,27 @@ ms.topic: article
 keywords: windows 10, развертывание, msix
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: acfdf9346f5d1a482733671b0b9dbe206a4c42ff
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.openlocfilehash: df42f17642e054ab720a6e0c81bf9639173a1dc6
+ms.sourcegitcommit: f6cee51b46fc36a57b5cf9c8cb3fd24a40ae858a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77073960"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80391640"
 ---
 #   <a name="msix-app-distribution"></a>Распространение приложений MSIX
 Формат упаковки MSIX можно предоставить на клиентские устройства, используя средства управления устройствами и приложениями, такие как Microsoft Intune и Microsoft Endpoint Configuration Manager. 
 
 ##  <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager 
-Microsoft Endpoint Configuration Manager (текущая ветвь) поддерживает развертывание приложений MSIX на клиентских устройствах с использованием модели приложения (см. сведения о том, как получить MSIX в Microsoft Store для бизнеса). MSIX — это стандартизированный формат пакета установки, поэтому сведения о приложении (издателе, имени приложения и версии) будут автоматически извлечены и представлены для просмотра в мастере создания приложений в Microsoft Endpoint Configuration Manager. Аналогичным образом строка установки и методы обнаружения, используемые для приложений MSIX, согласуются и автоматически настраиваются с помощью мастера создания приложений в Microsoft Endpoint Configuration Manager.
 
-При создании приложения в Microsoft Endpoint Configuration Manager выберите тип приложения: <b>пакет приложения для Windows (*.appx, *.appxbundle, *.msix, *.msixbundle)</b>. Рекомендации по созданию и развертыванию приложения с помощью Microsoft Endpoint Configuration Manager см. в [этой статье](https://docs.microsoft.com/configmgr/apps/get-started/create-and-deploy-an-application).
+MSIX — это стандартизированный формат пакета установки, поэтому сведения о приложении (издателе, имени приложения и версии) будут автоматически извлечены и представлены для просмотра в мастере создания приложений в Microsoft Endpoint Configuration Manager. Аналогичным образом строка установки и методы обнаружения, используемые для приложений MSIX, согласуются и автоматически настраиваются с помощью мастера создания приложений в Microsoft Endpoint Configuration Manager.
+
+При создании приложения в Microsoft Endpoint Configuration Manager выберите тип приложения **Пакет приложений для Windows (* .appx, *.appxbundle, *.msix, *.msixbundle)**. Инструкции по созданию и развертыванию приложения с помощью Microsoft Endpoint Configuration Manager см. в [этой статье](https://docs.microsoft.com/configmgr/apps/get-started/create-and-deploy-an-application).
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft Intune поддерживает развертывание приложения MSIX на клиентских устройствах с использованием модели клиентского приложения. MSIX — это стандартизированный формат пакета установки, поэтому сведения о приложении (имя приложения, описание и издатель) автоматически заполняются в разделе сведений о приложении.
+Microsoft Intune поддерживает развертывание приложений MSIX на клиентских устройствах с использованием модели клиентского приложения. MSIX — это стандартизированный формат пакета установки, поэтому сведения о приложении (имя приложения, описание и издатель) автоматически заполняются в разделе сведений о приложении.
 
-Установка приложения MSIX стандартизирована, поэтому при добавлении нового <b>бизнес-приложения</b> в Microsoft Intune нет необходимости настраивать необходимые параметры для автоматической установки. Ниже приведены рекомендации по созданию и развертыванию приложения с помощью Microsoft Intune. 
+Установка приложения MSIX стандартизирована. Поэтому при добавлении нового бизнес-приложения в Microsoft Intune нет необходимости настраивать необходимые параметры для автоматической установки. Инструкции по созданию и развертыванию приложения с помощью Microsoft Intune см. в статье о [создании бизнес-приложений в Intune](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows).
 
 ## <a name="web-app-installer"></a>Через Интернет (Установщик приложений)
 
