@@ -5,12 +5,12 @@ ms.date: 07/12/2019
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 7fa356679943afd8267a1e8df8527a2179f61b98
-ms.sourcegitcommit: e703ffe4c635d9b127ecf8c02e087370b676aa9c
+ms.openlocfilehash: c489a4bed1598c0fecca7f20d33aee4880201b96
+ms.sourcegitcommit: 45bb7e2f642a0c7165366bc0867afe803abfc202
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80108237"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81433750"
 ---
 # <a name="sign-an-msix-package-with-device-guard-signing"></a>Подписывание пакета MSIX с помощью подписи Device Guard
 
@@ -113,7 +113,7 @@ signtool sign /fd sha256 /dlib DgssLib.dll /dmdf <Azure AAD in .json format> /t 
 
 ## <a name="test"></a>Тест
 
-Чтобы проверить подпись Device Guard, скачайте корневой сертификат организацию с портала Microsoft Store для бизнеса.
+Чтобы проверить подпись Device Guard, скачайте корневой сертификат организации на портале Microsoft Store для бизнеса.
 
 1. Войдите в [Microsoft Store для бизнеса](https://businessstore.microsoft.com/).
 2. Выберите **Управление** , а затем щелкните **Параметры**.
@@ -128,4 +128,4 @@ signtool sign /fd sha256 /dlib DgssLib.dll /dmdf <Azure AAD in .json format> /t 
 Ниже приведены распространенные ошибки, которые могут возникнуть.
 
 * 0x800700d: Эта распространенная ошибка означает, что формат JSON-файла Azure AD недопустим.
-* Прежде чем довнлоадиднг корневой сертификат подписывания Device Guard, может потребоваться принять условия и условия Microsoft Store для бизнеса. Это можно сделать, получению бесплатное приложение на портале.
+* Перед скачиванием корневого сертификата подписывания Device Guard может потребоваться принять условия Microsoft Store для бизнеса. Это можно сделать, приобретя бесплатное приложение на портале.
