@@ -6,10 +6,10 @@ ms.topic: article
 keywords: msix
 ms.localizationpriority: medium
 ms.openlocfilehash: eb8e7e88438645ae094f026935f7a4c20208079d
-ms.sourcegitcommit: d749fa662214bddaa6854f1ee95761c547db8dae
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "75008044"
 ---
 # <a name="group-policy-and-msix-packaged-apps"></a>Групповая политика и упакованные приложения MSIX

@@ -7,10 +7,10 @@ keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
 ms.openlocfilehash: 91eacb13777804c63c62a0b3eedd9c39d1e67530
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77073990"
 ---
 # <a name="building-an-app-with-a-modification-package"></a>Создание приложения с помощью пакета изменений 

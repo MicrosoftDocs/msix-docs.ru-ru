@@ -7,10 +7,10 @@ keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: 633cca3493238ea4528e1b3eb37f1c735a78ad2b
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77074160"
 ---
 # <a name="set-up-a-cicd-pipeline-to-automate-your-msix-builds-and-deployments"></a>Настройка конвейера CI/CD для автоматизации сборок MSIX и их развертывания

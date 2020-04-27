@@ -7,10 +7,10 @@ keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: d1c3e4c0b9ff6a0617755a2f7a0ad1674a8ea72e
-ms.sourcegitcommit: 536d6969cde057877ecdd8345cfb0dc12c9582f2
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77779072"
 ---
 # <a name="what-is-msix"></a>Что такое MSIX?

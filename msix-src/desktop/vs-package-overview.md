@@ -7,10 +7,10 @@ keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: aa43076c9ef3e0c8af5735b7a01b39c11f2c703b
-ms.sourcegitcommit: a7f677e024e415168f8bf0080f4e115307833a1d
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77576900"
 ---
 # <a name="package-your-app-as-an-msix-in-visual-studio"></a>Упаковка приложения в формате MSIX в Visual Studio

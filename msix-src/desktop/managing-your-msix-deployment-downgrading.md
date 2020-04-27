@@ -7,10 +7,10 @@ keywords: windows 10, развертывание, msix
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 9e6ab85924ae7120ba2540d6beaeb827a86b1764
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77074250"
 ---
 # <a name="install-earlier-versions-of-an-msix-app-package"></a>Установка более ранних версий пакета приложения MSIX

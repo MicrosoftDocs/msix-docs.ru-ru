@@ -7,10 +7,10 @@ keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: 3be32823427b7c62a84db0933d22aec49d1b3eee
-ms.sourcegitcommit: 45bb7e2f642a0c7165366bc0867afe803abfc202
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "81433730"
 ---
 # <a name="msix-partners"></a>Партнеры MSIX
