@@ -6,10 +6,10 @@ ms.topic: article
 keywords: windows 10, uwp, msix, компилятор собственных образов
 ms.localizationpriority: medium
 ms.openlocfilehash: ebc2c7351fef0856d83529e55ba4ebf012aaaeed
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77073094"
 ---
 # <a name="optimize-your-net-desktop-apps-with-native-images"></a>Оптимизация классических приложений .NET с помощью собственных образов

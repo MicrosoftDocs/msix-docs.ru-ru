@@ -7,10 +7,10 @@ keywords: Windows 10, UWP, mecm, ConfigMgr, приложение, MSIX
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: eb136e71cec242efebe9129d2c6c8bee5fa62a35
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77074180"
 ---
 # <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager

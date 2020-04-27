@@ -7,10 +7,10 @@ keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
 ms.openlocfilehash: 2c34ec830981e9d9907dba9ec4ea124f800cbc02
-ms.sourcegitcommit: e703ffe4c635d9b127ecf8c02e087370b676aa9c
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "80108438"
 ---
 # <a name="set-up-your-desktop-application-for-msix-packaging-in-visual-studio"></a>Настройка классического приложения для упаковки с помощью MSIX в Visual Studio

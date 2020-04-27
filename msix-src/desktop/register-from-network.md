@@ -7,10 +7,10 @@ keywords: windows 10, uwp, msix
 ms.assetid: f45d8b14-02d1-42e1-98df-6c03ce397fd3
 ms.localizationpriority: medium
 ms.openlocfilehash: 08a21a15d5e9929d7f7b01e0865ee90da45f8a7c
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77074190"
 ---
 # <a name="registering-a-package-layout-from-a-network-share"></a>Регистрация макета пакета из сетевой папки

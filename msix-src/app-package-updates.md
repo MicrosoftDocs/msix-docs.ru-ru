@@ -7,10 +7,10 @@ keywords: windows 10, uwp, app package, app update, msix, appx
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
 ms.openlocfilehash: 56db11754c5f9db0480abf0ec249b97486b3e614
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "73328283"
 ---
 # <a name="app-package-updates"></a>Обновления пакетов приложений

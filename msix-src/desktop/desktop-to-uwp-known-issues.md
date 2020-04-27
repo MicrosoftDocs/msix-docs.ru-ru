@@ -7,10 +7,10 @@ keywords: windows 10, uwp, msix
 ms.assetid: 71f8ffcb-8a99-4214-ae83-2d4b718a750e
 ms.localizationpriority: medium
 ms.openlocfilehash: 2f56cc122f82f2806b0cc1d014c9ab4c14307895
-ms.sourcegitcommit: e703ffe4c635d9b127ecf8c02e087370b676aa9c
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "80108448"
 ---
 # <a name="known-issues-with-packaged-desktop-apps"></a>Известные проблемы с упакованными классическими приложениями

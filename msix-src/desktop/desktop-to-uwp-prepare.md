@@ -7,10 +7,10 @@ keywords: windows 10, uwp, msix
 ms.assetid: 71a57ca2-ca00-471d-8ad9-52f285f3022e
 ms.localizationpriority: medium
 ms.openlocfilehash: 432017a083ae3f9553bea88902378ca3e6556bcb
-ms.sourcegitcommit: a7f677e024e415168f8bf0080f4e115307833a1d
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77576909"
 ---
 # <a name="prepare-to-package-a-desktop-application"></a>Подготовка к упаковке классического приложения

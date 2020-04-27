@@ -7,10 +7,10 @@ keywords: windows 10, развертывание, msix, PowerShell, PSH, PS, Po
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: b5c4366ac7e22fc67fb3314737c9f59f4a057aca
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77074050"
 ---
 # <a name="managing-msix-with-powershell"></a>Управление MSIX с помощью PowerShell
