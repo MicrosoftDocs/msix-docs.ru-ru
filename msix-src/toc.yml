@@ -132,6 +132,8 @@
               href: psf/package-support-framework.md
             - name: Выполнение сценариев с помощью платформы поддержки пакетов
               href: psf/run-scripts-with-package-support-framework.md
+            - name: Запуск приложений с использованием параметров
+              href: psf\psf-launch-apps-with-parameters.md
         - name: Объединение пакетов MSIX
           href: packaging-tool/bundle-msix-packages.md
     - name: Набор средств MSIX
@@ -220,10 +222,8 @@
           href: desktop/powershell-msix-cmdlets.md
         - name: Использование групповой политики
           href: group-policy-msix.md
-        - name: Развертывание предустановленных приложений
+        - name: Предварительная установка упакованных приложений
           href: desktop/deploy-preinstalled-apps.md
-        - name: Установка приложения для всех пользователей
-          href: desktop/managing-your-msix-deployment-dism-provisioning.md
         - name: Установка более ранних версий пакета приложения MSIX
           href: desktop/managing-your-msix-deployment-downgrading.md
     - name: Развертывание MSIX с помощью файла Установщика приложений
@@ -298,6 +298,8 @@
       href: manage/troubleshoot-msix-container.md
     - name: Отладка и тестирование упакованного приложения
       items:
+        - name: 'Устранение проблем с упаковкой и развертыванием приложений для Windows, а также с обращением к ним'
+          href: 'https://docs.microsoft.com/windows/win32/appxpkg/troubleshooting?context=/windows/msix/render'
         - name: 'Запуск, отладка и тестирование упакованного классического приложения'
           href: desktop/desktop-to-uwp-debug.md
         - name: Определение идентификатора пакета и контекста среды выполнения
