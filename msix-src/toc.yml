@@ -132,6 +132,8 @@
               href: psf/package-support-framework.md
             - name: Выполнение сценариев с помощью платформы поддержки пакетов
               href: psf/run-scripts-with-package-support-framework.md
+            - name: Текущая рабочая папка
+              href: psf\psf-current-working-directory.md
             - name: Запуск приложений с использованием параметров
               href: psf\psf-launch-apps-with-parameters.md
         - name: Объединение пакетов MSIX
