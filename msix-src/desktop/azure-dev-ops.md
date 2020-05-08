@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 633cca3493238ea4528e1b3eb37f1c735a78ad2b
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 42f2486f0575cb1d7d15614ce65765388eaaa940
+ms.sourcegitcommit: e650c86433c731d62557b31248c7e36fd90b381d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77074160"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "82726443"
 ---
 # <a name="set-up-a-cicd-pipeline-to-automate-your-msix-builds-and-deployments"></a>Настройка конвейера CI/CD для автоматизации сборок MSIX и их развертывания
 
@@ -74,6 +74,7 @@ ms.locfileid: "77074160"
 ```yml
 pool: 
   vmImage: windows-2019
+  
 variables:
   buildPlatform: 'x86'
   buildConfiguration: 'release'
@@ -81,18 +82,15 @@ variables:
   minor: 0
   build: 0
   revision: $[counter('rev', 0)]
+  
 steps:
-- powershell: |
-   [Reflection.Assembly]::LoadWithPartialName("System.Xml.Linq")
-   $path = "Msix/Package.appxmanifest"
-   $doc = [System.Xml.Linq.XDocument]::Load($path)
-   $xName =
-     [System.Xml.Linq.XName]
-       "{http://schemas.microsoft.com/appx/manifest/foundation/windows10}Identity"
-   $doc.Root.Element($xName).Attribute("Version").Value =
-     "$(major).$(minor).$(build).$(revision)";
-   $doc.Save($path)
+ - powershell: |
+     # Update appxmanifest. This must be done before the build.
+     [xml]$manifest= get-content ".\Msix\Package.appxmanifest"
+     $manifest.Package.Identity.Version = "$(major).$(minor).$(build).$(revision)"    
+     $manifest.save("Msix/Package.appxmanifest")
   displayName: 'Version Package Manifest'
+  
 - task: MSBuild@1
   inputs:
     solution: Msix/Msix.wapproj
@@ -101,14 +99,17 @@ steps:
     msbuildArguments: '/p:OutputPath=NonPackagedApp
      /p:UapAppxPackageBuildMode=SideLoadOnly  /p:AppxBundle=Never /p:AppxPackageOutput=$(Build.ArtifactStagingDirectory)\MsixDesktopApp.msix /p:AppxPackageSigningEnabled=false'
   displayName: 'Package the App'
+  
 - task: DownloadSecureFile@1
   inputs:
     secureFile: 'certificate.pfx'
   displayName: 'Download Secure PFX File'
+  
 - script: '"C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\signtool"
     sign /fd SHA256 /f $(Agent.TempDirectory)/certificate.pfx /p secret $(
     Build.ArtifactStagingDirectory)/MsixDesktopApp.msix'
   displayName: 'Sign MSIX Package'
+  
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
 ```
@@ -123,7 +124,7 @@ steps:
 Определение ниже задает каталог компонентов сборки, платформу и указывает, следует ли выполнять сборку пакета. 
 
 ```powershell
-/p:AppxPackageDir="$(Build.ArtifactStagingDirectory)\AppxPackages\\"
+/p:AppxPackageDir="$(Build.ArtifactStagingDirectory)\AppxPackages\"
 /p:UapAppxPackageBuildMode=SideLoadOnly
 /p:AppxBundlePlatforms="$(Build.BuildPlatform)"
 /p:AppxBundle=Never
