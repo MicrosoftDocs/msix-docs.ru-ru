@@ -6,21 +6,31 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: 2c34ec830981e9d9907dba9ec4ea124f800cbc02
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: ac24e33a1580aa8a3ddac6899f4b37829e625620
+ms.sourcegitcommit: e650c86433c731d62557b31248c7e36fd90b381d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "80108438"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "82726476"
 ---
 # <a name="set-up-your-desktop-application-for-msix-packaging-in-visual-studio"></a>Настройка классического приложения для упаковки с помощью MSIX в Visual Studio
 
-Для создания пакета для классического приложения в Visual Studio можно использовать **Проект упаковки приложений Windows**. Затем вы можете опубликовать этот пакет в Microsoft Store или установить его на один или несколько компьютеров без публикации.
+Для создания пакета для классического приложения в Visual Studio можно использовать **Проект упаковки приложений Windows**. Затем вы можете распространить пакет в Microsoft Store, в Интернете, на своем предприятии или с помощью любого другого механизма распространения.
 
-**Проект упаковки приложений Windows** доступен в приведенных ниже версиях Visual Studio. Для оптимальной работы рекомендуется использовать последнюю версию.
+## <a name="required-visual-studio-version-and-workload"></a>Требуемая версия и рабочая нагрузка Visual Studio
+
+**Проект упаковки приложений Windows** доступен в приведенных ниже версиях Visual Studio.
 
 * Visual Studio 2019
 * Visual Studio 2017 15.5 и более поздних версий
+
+Чтобы шаблон проекта упаковки приложений Windows отобразился в меню "Добавление проекта", убедитесь, что у вас установлена **хотя бы одна** из следующих рабочих нагрузок Visual Studio:
+
+* рабочая нагрузка "Разработка приложений для универсальной платформы Windows";
+* дополнительный компонент "Средства упаковки MSIX" в рабочей нагрузке .NET Core;
+* дополнительный компонент "Средства упаковки MSIX" в рабочей нагрузке "Разработка классических приложений .NET".
+
+ Для оптимальной работы рекомендуем использовать последний выпуск Visual Studio.
 
 > [!IMPORTANT]
 > **Проект упаковки приложений Windows** в Visual Studio поддерживается в Windows 10 версии 1607 и более поздних версиях. Его можно использовать только в проектах, предназначенных для юбилейного обновления Windows 10 (10.0; сборка 14393) или более поздней версии.
@@ -68,11 +78,43 @@ ms.locfileid: "80108438"
 
    ![Задать как точку входа](images/entry-point-set.png)
 
-6. Соберите проект упаковки, чтобы убедиться, что ошибок нет. При возникновении ошибок откройте **Диспетчер конфигурации** и убедитесь, что проекты предназначены для той же платформы.
+6. Если упакованное приложение предназначено для .NET Core 3, выполните следующие действия, чтобы добавить новый целевой объект сборки в файл проекта. Это необходимо только для приложений, предназначенных для .NET Core 3.  
+
+    1. В обозревателе решений щелкните правой кнопкой мыши узел "Проект упаковки" и выберите **Изменить файл проекта**.
+
+    2. Найдите в этом файле элемент `<Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />`.
+
+    3. Замените этот элемент следующим XML-кодом.
+
+        ``` xml
+        <ItemGroup>
+          <SDKReference Include="Microsoft.VCLibs,Version=14.0">
+            <TargetedSDKConfiguration Condition="'$(Configuration)'!='Debug'">Retail</TargetedSDKConfiguration>
+            <TargetedSDKConfiguration Condition="'$(Configuration)'=='Debug'">Debug</TargetedSDKConfiguration>
+            <TargetedSDKArchitecture>$(PlatformShortName)</TargetedSDKArchitecture>
+            <Implicit>true</Implicit>
+          </SDKReference>
+        </ItemGroup>
+        <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
+        <Target Name="_StompSourceProjectForWapProject" BeforeTargets="_ConvertItems">
+          <ItemGroup>
+            <_TemporaryFilteredWapProjOutput Include="@(_FilteredNonWapProjProjectOutput)" />
+            <_FilteredNonWapProjProjectOutput Remove="@(_TemporaryFilteredWapProjOutput)" />
+            <_FilteredNonWapProjProjectOutput Include="@(_TemporaryFilteredWapProjOutput)">
+              <SourceProject>
+              </SourceProject>
+            </_FilteredNonWapProjProjectOutput>
+          </ItemGroup>
+        </Target>
+        ```
+
+    4. Сохраните файл проекта и закройте его.
+
+7. Соберите проект упаковки, чтобы убедиться, что ошибок нет. При возникновении ошибок откройте **Диспетчер конфигурации** и убедитесь, что проекты предназначены для той же платформы.
 
    ![Диспетчер конфигурации](images/config-manager.png)
 
-7. Используйте мастер [Создание пакетов приложения](../package/packaging-uwp-apps.md), чтобы создать пакет или набор MSIX или файл .msixupload/.appxupload (для публикации в Store).
+8. Используйте мастер [Создание пакетов приложения](../package/packaging-uwp-apps.md), чтобы создать пакет или набор MSIX или файл .msixupload/.appxupload (для публикации в Store).
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
