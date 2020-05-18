@@ -54,6 +54,8 @@
           href: 'https://docs.microsoft.com/uwp/schemas/appinstallerschema/app-installer-file?context=/windows/msix/render'
     - name: Ресурсы MSIX
       href: resources.md
+    - name: Циклы взаимодействия с клиентами MSIX
+      href: customer-journey.md
     - name: SDK для MSIX
       items:
         - name: Обзор
@@ -124,18 +126,22 @@
           href: packaging-tool/edit-icons-and-assets.md
     - name: Задачи после создания пакета MSIX
       items:
-        - name: Платформа поддержки пакетов
+        - name: Платформа поддержки пакетов (PSF)
           items:
             - name: Обзор
               href: psf/package-support-framework-overview.md
-            - name: Применение исправлений среды выполнения к пакету классического приложения
+            - name: Начало работы с платформой поддержки пакетов
               href: psf/package-support-framework.md
+            - name: Платформа поддержки пакетов текущего рабочего каталога
+              href: psf\psf-current-working-directory.md
+            - name: Запуск приложений с параметрами при помощи PSF
+              href: psf\psf-launch-apps-with-parameters.md
+            - name: Применение платформы поддержки пакетов в Visual Studio
+              href: psf\package-support-framework-vs.md
             - name: Выполнение сценариев с помощью платформы поддержки пакетов
               href: psf/run-scripts-with-package-support-framework.md
-            - name: Текущая рабочая папка
-              href: psf\psf-current-working-directory.md
-            - name: Запуск приложений с использованием параметров
-              href: psf\psf-launch-apps-with-parameters.md
+            - name: Создание привязки для платформы поддержки пакетов
+              href: psf/create-package-support-framework.md
         - name: Объединение пакетов MSIX
           href: packaging-tool/bundle-msix-packages.md
     - name: Набор средств MSIX
