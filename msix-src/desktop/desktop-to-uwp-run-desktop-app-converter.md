@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.assetid: 74c84eb6-4714-4e12-a658-09cb92b576e3
 ms.localizationpriority: medium
-ms.openlocfilehash: 45c6bbf652768054f5ae13d3b662792723ffea76
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: e5fafa90820eed04e33ff3405a8aaf21588e89e5
+ms.sourcegitcommit: 4593ba54c2c75ce82878e948566c92e21c27699d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75303342"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83383654"
 ---
 # <a name="package-a-desktop-application-using-the-desktop-app-converter"></a>Упаковка классического приложения с помощью Desktop App Converter
 
@@ -368,7 +368,7 @@ Desktop App Converter не поддерживает Юникод, поэтому
 
 ## <a name="known-issues-with-the-desktop-app-converter"></a>Известные проблемы с Desktop App Converter
 
-### <a name="e_creating_isolated_env_failed-an-e_starting_isolated_env_failed-errors"></a>Ошибки E_CREATING_ISOLATED_ENV_FAILED и E_STARTING_ISOLATED_ENV_FAILED    
+### <a name="e_creating_isolated_env_failed-and-e_starting_isolated_env_failed-errors"></a>Ошибки E_CREATING_ISOLATED_ENV_FAILED и E_STARTING_ISOLATED_ENV_FAILED    
 
 Если возникла какая-либо из этих ошибок, убедитесь, что вы используете правильный базовый образ из [центра загрузки](https://aka.ms/converterimages).
 Если вы используете правильный базовый образ, попробуйте выполнить команду ``-Cleanup All``.
@@ -398,7 +398,7 @@ Desktop App Converter не поддерживает Юникод, поэтому
 
 Эта проблема может произойти, если исполняемые файлы в вашем приложении имеют расширение **.EXE**, написанное прописными буквами. Несмотря на то что регистр расширения не должен влиять на работу вашего приложения, он может привести к возникновению этой ошибки в DAC.
 
-Чтобы решить эту проблему, попробуйте во время упаковки указать флаг **-AppExecutable** и использовать расширение основного исполняемого файла, записанное в нижнем регистре (например, MYAPP.exe).    Либо вы можете изменить регистр всех исполняемых файлов в вашем приложении с нижнего на верхний (например, из EXE в exe).
+Чтобы решить эту проблему, попробуйте во время упаковки указать флаг **-AppExecutable** и использовать расширение основного исполняемого файла, записанное в нижнем регистре (например, MYAPP.exe).    Либо вы можете изменить регистр всех исполняемых файлов в вашем приложении с верхнего на нижний (например, из EXE в exe).
 
 ### <a name="corrupted-or-malformed-authenticode-signatures"></a>Поврежденные или деформированные подписи Authenticode
 
