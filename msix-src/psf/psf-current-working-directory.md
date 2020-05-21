@@ -1,19 +1,19 @@
 ---
 Description: Платформа поддержки пакетов помогает работать с рабочим каталогом.
 title: Текущий рабочий каталог платформы поддержки пакетов
-ms.date: 09/05/2018
+ms.date: 05/14/2020
 ms.topic: article
 keywords: Windows 10, UWP, msix, ПСФ
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 50b58af26d826b7dd09828b3a6705590d992068b
-ms.sourcegitcommit: e650c86433c731d62557b31248c7e36fd90b381d
+ms.openlocfilehash: 69c5d73ad3be28f1c138553b6f8da27c0820940a
+ms.sourcegitcommit: 8d6bc53d5f5ae80d9ce191fe81660407e9f11e0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82726668"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83427356"
 ---
-# <a name="package-support-framework---current-working-directory"></a>Платформа поддержки пакетов — текущий рабочий каталог
+# <a name="current-working-directory-psf"></a>Платформа поддержки пакетов текущего рабочего каталога
 Платформа поддержки пакетов использует файл config. JSON для настройки поведения приложения.
 
 ## <a name="proceedure"></a>Процедуры
@@ -29,7 +29,7 @@ ms.locfileid: "82726668"
 Платформу поддержки пакетов можно получить с помощью автономного средства командной строки NuGet или с помощью Visual Studio.
 
 ### <a name="nuget-comandline-tool"></a>Средство командлине NuGet:
-Установите средство командной строки NuGet с веб-сайта NuGet [https://www.nuget.org/downloads](https://www.nuget.org/downloads):. После установки запустите следующую командную строку в окне администрирования PowerShell.
+Установите средство командной строки NuGet с веб-сайта NuGet: [https://www.nuget.org/downloads](https://www.nuget.org/downloads) . После установки запустите следующую командную строку в окне администрирования PowerShell.
 
 ``` powershell
 nuget install Microsoft.PackageSupportFramework
@@ -45,9 +45,9 @@ nuget install Microsoft.PackageSupportFramework
 
 ### <a name="json-schema"></a>Схема JSON
 
-|Array          | ключ               | Значение  |
+|Массив          | key               | Значение  |
 |---------------|-------------------|--------|
-| веб-масштабированием;  | идентификатор                | Используйте значение атрибута ID элемента Application в манифесте пакета.|
+| веб-масштабированием;  | id                | Используйте значение атрибута ID элемента Application в манифесте пакета.|
 | веб-масштабированием;  | исполняемый файл        | Относительный путь пакета к исполняемому файлу, который необходимо запустить. Это значение атрибута Executable элемента Application. |
 | веб-масштабированием;  | аргументы         | Используемых Аргументы параметра командной строки для исполняемого файла. |
 | веб-масштабированием;  | workingDirectory  | Используемых Путь относительно пакета, используемый в качестве рабочего каталога запускаемого приложения. Если это значение не задано, операционная система использует каталог System32 в качестве рабочего каталога приложения. Если указать значение в виде пустой строки, будет использоваться каталог исполняемого файла, на который указывает ссылка. |
@@ -89,8 +89,8 @@ nuget install Microsoft.PackageSupportFramework
 
 | Архитектура ОС | Каталог                                                   |
 |-----------------|-------------------------------------------------------------|
-| Windows 10 x86  | C:\Program Files\Windows Kits\10\bin\[**Version**] \x86\makeappx.exe       |
-| Windows 10 x64  | C:\Program Files (x86) \Windows\[Kits\10\bin**Version**] \x64\makeappx.exe |
+| Windows 10 x86  | C:\Program Files\Windows Kits\10\bin \[ **Version**] \x86\makeappx.exe       |
+| Windows 10 x64  | C:\Program Files (x86) \Windows Kits\10\bin \[ **Version**] \x64\makeappx.exe |
 
 ```powershell
 makeappx unpack /p PrimaryApp.msix /d PackageContents
