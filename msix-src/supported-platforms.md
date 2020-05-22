@@ -7,12 +7,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: ad03f17ce2a34347959f2723ea83408ae97f623c
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 9cece807e2206f754e96f6a394c5da626129c177
+ms.sourcegitcommit: d65b3457343e0590f53e36fc2710863cc2f13897
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81614016"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83790583"
 ---
 # <a name="supported-platforms"></a>Поддерживаемые платформы
 
@@ -37,7 +37,7 @@ ms.locfileid: "81614016"
 В следующей таблице показано, какие функции и сценарии MSIX поддерживаются в разных версиях Windows.
 
 > [!div class="mx-tableFixed"]
-| Компоненты | 1709 | 1803 | 1809 | 1903 | 1909 | 2004| Windows Server 2019 LTSC | Windows Enterprise 2019 LTSC|
+| Возможности | 1709 | 1803 | 1809 | 1903 | 1909 | 2004| Windows Server 2019 LTSC | Windows Enterprise 2019 LTSC|
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | [Разрешить повышение прав](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 
 | [Поддержка файлов установщика приложений](app-installer/installing-windows10-apps-web.md)| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
@@ -47,7 +47,7 @@ ms.locfileid: "81614016"
 | Удостоверение для упакованных классических приложений | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
 | [Пакеты с модификациями](modification-packages.md) | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 
 | Установка и удаление собственного MSIX | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark: |
-| [Платформа поддержки пакетов (ПСФ)](psf/package-support-framework-overview.md) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:|  :heavy_check_mark: | :heavy_check_mark:|  
+| [Платформа поддержки пакетов (PSF)](psf/package-support-framework-overview.md) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:|  :heavy_check_mark: | :heavy_check_mark:|  
 | [Службы Windows](packaging-tool/convert-an-installer-with-services.md) | :x: | :x: | :x: | :x:| :x: | :heavy_check_mark:| :x:| :x: | 
 | [Принудительная целостность пакетов для пакетов, не относящихся к хранилищу](package/signing-package-overview.md#package-integrity-enforcement) | :x: | :x: | :x: | :x:| :x: | :heavy_check_mark:| :x:| :x: | 
 ## <a name="package-format-support"></a>Поддержка формата пакета
@@ -65,7 +65,7 @@ ms.locfileid: "81614016"
 
 В следующей таблице показано, какие функции Microsoft Store поддерживаются в разных версиях Windows 10.
 
-| Компоненты | 1709 | 1803 | 1809 | 1903 | 1909 | 2004
+| Возможности | 1709 | 1803 | 1809 | 1903 | 1909 | 2004
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | Публикация             | :x: | :x: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
 | Обновить уведомление| :x: | :x: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
@@ -77,8 +77,11 @@ ms.locfileid: "81614016"
 
 ### <a name="microsoft-store-submissions"></a>Microsoft Store отправки
 
-Минимальная версия операционной системы, поддерживаемая пакетом MSIX, указана в файле манифеста пакета как `MinVersion` в элементе `TargetDeviceFamily`. Например, пакет MSIX может иметь в `MinVersion="10.0.17701.0"` качестве минимальной поддерживаемой версии, что означает, что пакет MSIX может работать в этой и более поздних версиях ОС.
+Минимальная версия операционной системы, поддерживаемая пакетом MSIX, указана в файле манифеста пакета как `MinVersion` в элементе `TargetDeviceFamily`. Например, пакет MSIX может иметь `MinVersion="10.0.17701.0"` в качестве минимальной поддерживаемой версии, что означает, что пакет MSIX может работать в этой и более поздних версиях ОС.
 
 В Windows 10 версий 1709, 1803 и 1809 поддерживаются основные сценарии корпоративного развертывания. К ним относятся установка с помощью Microsoft Endpoint Configuration Manager, Microsoft Intune, PowerShell или двойной щелчок по установке.
 
 В настоящее время MSIX установка с помощью Microsoft Store и Microsoft Store для бизнеса требует Windows 10, 1809 и более поздних версий.
+
+### <a name="non-windows-platform"></a>Платформа, не относящаяся к Windows
+[Пакет SDK для MSIX](https://github.com/Microsoft/msix-packaging) — это проект с открытым кодом, позволяющий разработчикам использовать формат пакета MSIX на всех платформах. Пакет SDK может использоваться любым межплатформенным клиентским приложением, позволяющим сторонним производителям создавать подключаемые модули или расширения. Разработчики клиентских приложений могут использовать модель расширения приложения, доступную на платформе Windows 10, и использовать пакет SDK MSIX на платформах, отличных от Windows 10, таких как macOS, iOS, Android и Linux. 
