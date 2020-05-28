@@ -6,12 +6,12 @@ ms.topic: article
 keywords: Windows 10, Windows 7, Windows 8, Windows Server, UWP, msix, мсикскоре, 1709, 1703, 1607, 1511, 1507
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: a916cdf10b6fcf97f4e96f029bf7a2ad883615b9
-ms.sourcegitcommit: e650c86433c731d62557b31248c7e36fd90b381d
+ms.openlocfilehash: df3a15600257487f89416a80307baae37e8f3d1b
+ms.sourcegitcommit: 7a52883434aa05272c15d033d85b67e2dd1e8c75
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82726425"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84107352"
 ---
 # <a name="update-your-existing-msix-package-to-support-msix-core"></a>Обновление существующего пакета MSIX для поддержки MSIX Core
 
@@ -47,7 +47,6 @@ ms.locfileid: "82726425"
 5. В разделе **файл манифеста**щелкните **Открыть файл** .
 6. Вы просматриваете манифест пакета. В разделе **зависимость** добавьте MSIX Core в качестве целевого семейства устройств (см. выше).
 7. Сохранение и закрытие манифеста 
-
 8. Повторно подписать пакет 
 9. Нажмите кнопку **сохранить** и укажите, нужно ли увеличивать пакет. 
 
@@ -76,7 +75,7 @@ ms.locfileid: "82726425"
 | Windows 8.1 (обновление 1) |6.3.9600.0|
 | Windows 10 2015 LTSB (1507)|10.0.10240.0|
 | Windows 10 2016 LTSB (1607)|10.0.14393.0|
-| Windows Server 2008 R2| 6.1.7601.0|
+| Windows Server 2008 R2| 6.1.7601.0|
 | Windows Server 2012| 6.2.9200.0|
 | Windows Server 2012 R2| 6.3.9600.0|
 | Windows Server 2016 | 10.0.14393.0|
