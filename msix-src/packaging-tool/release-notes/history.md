@@ -6,14 +6,17 @@ ms.topic: article
 keywords: Windows 10, UWP, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: 651b4b6c5c8d47e8eedf63434f9016518fa1a6f9
-ms.sourcegitcommit: c35618a528daaebcf9e4d4f8effdcb44743b9452
+ms.openlocfilehash: c03cf8ba7fd1098184b8e370298997c3a7c51878
+ms.sourcegitcommit: bd738ef9264bd4c2785e5d175c44f2b785092e58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84310985"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84633858"
 ---
 # <a name="release-notes-for-the-msix-packaging-tool"></a>Заметки о выпуске средства упаковки MSIX
+
+## <a name="version-120206030"></a>Версия 1.2020.603.0
+- Исправлена проблема со значениями реестра App-V во время преобразования.
 
 ## <a name="version-120205280"></a>Версия 1.2020.528.0
 - Возможность добавления нескольких файлов в редактор пакетов
