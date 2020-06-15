@@ -176,6 +176,8 @@
           href: desktop/desktop-to-uwp-packaging-dot-net.md
         - name: Упаковка классического приложения или приложения UWP в Visual Studio
           href: package/packaging-uwp-apps.md
+        - name: Подписывание пакетов с помощью Azure Key Vault
+          href: desktop/sign-with-akv-cert.md
         - name: Оптимизация двоичных файлов с помощью собственных образов
           href: desktop/desktop-to-uwp-r2r.md
     - name: Конвейеры CI/CD для сборок MSIX
