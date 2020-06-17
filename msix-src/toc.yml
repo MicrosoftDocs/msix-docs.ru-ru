@@ -150,7 +150,7 @@
           href: toolkit/msix-toolkit-overview.md
         - name: Изменение скрипта издателя пакета
           href: toolkit/msix-toolkit-modifypackagepublisher.md
-        - name: Скрипты пакетного преобразования
+        - name: Скрипты для массового преобразования
           href: toolkit/msix-toolkit-msixbatchconversion.md
         - name: Средство AppInstaller File Builder
           href: toolkit/msix-toolkit-appinstallerfilebuilder.md
