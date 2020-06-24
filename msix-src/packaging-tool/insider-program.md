@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 781c59a2b62cdc1066e7ee884edc3c6161b1c40e
-ms.sourcegitcommit: bd738ef9264bd4c2785e5d175c44f2b785092e58
+ms.openlocfilehash: 485fda5e4d0ef4ca39a1cf2d8220a5cdf003881b
+ms.sourcegitcommit: 6c517bd2f6354db1a2c51217a208e1d2cfd466da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84633868"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85295571"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -35,8 +35,9 @@ ms.locfileid: "84633868"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-## <a name="version-120206030"></a>Версия 1.2020.603.0
-- Исправлена проблема со значениями реестра App-V во время преобразования.
+## <a name="version-120206180"></a>Версия 1.2020.618.0
+- Добавлено более длительное время ожидания для удаленных преобразований командной строки
+- Улучшенные параметры ОС MSIX Core для снижения конфликтов и путаницы
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
