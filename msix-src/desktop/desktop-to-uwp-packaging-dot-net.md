@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: bd6cf9c3c00221fc929e395296eb527b3e3fc049
-ms.sourcegitcommit: 7a52883434aa05272c15d033d85b67e2dd1e8c75
+ms.openlocfilehash: fcaca4943d3101600ef408b0e1d0349e2fc06f94
+ms.sourcegitcommit: e3a06eccd3322053b8b498cb6343fb6f711a7a0b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84107382"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84724558"
 ---
 # <a name="set-up-your-desktop-application-for-msix-packaging-in-visual-studio"></a>Настройка классического приложения для упаковки с помощью MSIX в Visual Studio
 
@@ -45,12 +45,11 @@ ms.locfileid: "84107382"
 
 :heavy_check_mark: (При публикации в Microsoft Store) Простое назначение приложению идентификатора на основе имени, уже зарезервированного в [Центре партнеров](https://partner.microsoft.com/dashboard).
 
-
 ## <a name="prepare-your-application"></a>Подготовьте свое приложение
 
 Прежде чем приступить к созданию пакета для приложения, ознакомьтесь с этим руководством. [Prepare to package a desktop application](desktop-to-uwp-prepare.md) (Подготовка к упаковке классического приложения).
 
-<a id="new-packaging-project"/>
+<a id="new-packaging-project"></a>
 
 ## <a name="setup-the-windows-application-packaging-project-in-your-solution"></a>Установите Проект упаковки приложения Windows в свое решение.
 

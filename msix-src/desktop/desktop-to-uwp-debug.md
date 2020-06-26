@@ -6,18 +6,18 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: f45d8b14-02d1-42e1-98df-6c03ce397fd3
 ms.localizationpriority: medium
-ms.openlocfilehash: f778c51afe1e25bbadca48dc2d9644e8645bdde3
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 2f4e0fe597847ab88c7929fd398c4ddb5dfa1f9c
+ms.sourcegitcommit: e3a06eccd3322053b8b498cb6343fb6f711a7a0b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77072814"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84724598"
 ---
 # <a name="run-debug-and-test-an-msix-package"></a>Запуск, отладка и тестирование пакета MSIX
 
 Запустите неподписанное упакованное приложение и посмотрите, как оно выглядит. Затем установите точки останова и пошагово выполните код. Когда будете готовы протестировать приложение в рабочей среде, подпишите его, а затем установите. В данной статье приведено подробное описание выполнения каждого из этих действий.
 
-<a id="run-app" />
+<a id="run-app"></a>
 
 ## <a name="run-your-application"></a>Запуск приложения
 

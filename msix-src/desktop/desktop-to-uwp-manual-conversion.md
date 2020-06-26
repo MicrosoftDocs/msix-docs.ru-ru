@@ -7,12 +7,12 @@ keywords: windows 10, uwp, msix
 ms.assetid: e8c2a803-9803-47c5-b117-73c4af52c5b6
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 6799625432b42303b81ddcc7fcaacfb72e36f8fe
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 0345e15ad014afb9461eccc6ed112550a3c0c7a8
+ms.sourcegitcommit: e3a06eccd3322053b8b498cb6343fb6f711a7a0b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "80108458"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84724546"
 ---
 # <a name="generating-msix-package-components"></a>Создание компонентов пакета MSIX
 
@@ -145,7 +145,7 @@ ms.locfileid: "80108458"
     Square44x44Logo="images\small_icon.png"
     Description="A useful description" />
 ```
-<a id="target-based-assets" />
+<a id="target-based-assets"></a>
 
 ## <a name="optional-add-target-based-unplated-assets"></a>Добавление специальных ресурсов без покрытия (необязательно)
 
@@ -162,7 +162,7 @@ ms.locfileid: "80108458"
 
 4. Перейдите к следующему подразделу для создания нового файла индекса ресурсов пакета.
 
-<a id="make-pri" />
+<a id="make-pri"></a>
 
 ### <a name="generate-a-package-resource-index-pri-file-using-makepri"></a>Создание файла индекса ресурсов пакета (PRI) с помощью MakePri
 
@@ -184,7 +184,7 @@ ms.locfileid: "80108458"
 
 6.  Упакуйте приложение, руководствуясь инструкциями в следующем шаге.
 
-<a id="make-appx" />
+<a id="make-appx"></a>
 
 ## <a name="test-your-application-before-packaging"></a>Протестируйте приложение перед упаковкой
 
