@@ -6,18 +6,22 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 3be32823427b7c62a84db0933d22aec49d1b3eee
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 33c7a07c72b6d820f9ce51c09532e70435daea50
+ms.sourcegitcommit: c95c0a9ddbe944863b131298c158703385835445
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "81433730"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85795560"
 ---
 # <a name="msix-partners"></a>Партнеры MSIX
 
 Указанные ниже партнеры предоставляют дополнительные средства и поддержку для сценариев разработки MSIX.
 
 :::row:::
+:::column:::
+[![Логотип Access IT Automation](images/AccessITAutomationLogoTransp.png)](http://info.accessitautomation.com/ty-evergreen-it-webinar-0)
+:::column-end:::
+
 :::column:::
 [![Логотип Advanced Installer](images/AdvancedInstaller_Logo.png)](https://www.advancedinstaller.com/desktop-bridge)
 :::column-end:::
@@ -26,13 +30,12 @@ ms.locfileid: "81433730"
 [![Логотип Camwood](images/Camwood_Logo_2.png)](http://camwood.com/windows-10/)
 :::column-end:::
 
-:::column:::
-[![Логотип Cloudhouse](images/CloudHouse_Logo.png)](https://cloudhouse.com/msixpr)
-:::column-end:::
-
 :::row-end:::
 
 :::row:::
+:::column:::
+[![Логотип Cloudhouse](images/CloudHouse_Logo.png)](https://cloudhouse.com/msixpr)
+:::column-end:::
 
 :::column:::
 [![Логотип FireGiant](images/FireGiant_Logo.png)](https://www.firegiant.com/r/msix/)
@@ -42,14 +45,15 @@ ms.locfileid: "81433730"
 [![Логотип Flexera](images/Flexera_Logo.png)](https://www.flexera.com/company/news/press-releases/Flexera-Launches-Support-for-Microsofts-MSIX.html)    
 :::column-end:::
 
-:::column:::
-[![Логотип InstallAware](images/installAware_logo.png)](https://www.installaware.com/msix.htm)    
-:::column-end:::
+
 
 
 :::row-end:::
 
 :::row:::
+:::column:::
+[![Логотип InstallAware](images/installAware_logo.png)](https://www.installaware.com/msix.htm)    
+:::column-end:::
 
 :::column:::
 [![Логотип Raynet](images/RayPackStudio_Logo_offset.png)](https://raynet.de/en/msix/)
