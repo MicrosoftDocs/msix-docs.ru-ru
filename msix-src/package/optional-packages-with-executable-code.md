@@ -7,12 +7,12 @@ author: dianmsft
 ms.author: diahar
 keywords: Windows 10, msix, UWP, установщик приложений, AppInstaller, загружать неопубликованные, связанный набор, дополнительные пакеты
 ms.localizationpriority: medium
-ms.openlocfilehash: 17c225c13f026f2707c392ccaf4d77655faaeebb
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.openlocfilehash: 6a3862f0c7eaa875444fc9fb99f7b54e1dbe7b5d
+ms.sourcegitcommit: 769bbff22df0ab9e46e1306b4180bbec6a44daba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77072544"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87538469"
 ---
 # <a name="optional-packages-with-executable-code"></a>Дополнительные пакеты с исполняемым кодом
  
@@ -21,7 +21,7 @@ ms.locfileid: "77072544"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Visual Studio 2019 или Visual Studio 2017 (версия 15,7 или более поздняя)
-- Windows 10, версия 1709 или более поздняя
+- Windows 10 версии 1709 и выше
 - Windows 10, пакет SDK для версии 1709 или более поздней
 
 Чтобы скачать самые последние средства для разработки, см. раздел [Загружаемые файлы и инструменты для Windows 10](https://developer.microsoft.com/windows/downloads).
@@ -30,7 +30,7 @@ ms.locfileid: "77072544"
 > Чтобы отправить приложение, использующее дополнительные пакеты и (или) связанные наборы, в Store, вам потребуется разрешение. Необязательные пакеты и связанные наборы можно использовать для бизнес-приложений или корпоративных приложения без разрешения центра партнеров, если они не отправлены в магазин. Для получения разрешения на отправку приложений, использующих дополнительные пакеты и связанные наборы, см. раздел [Поддержка разработчиков для Windows](https://developer.microsoft.com/windows/support).
 
 > [!NOTE]
-> Необязательные пакеты, содержащие исполняемый код, должны быть частью [связанного набора](optional-packages.md#related_sets). Вы не сможете выполнить код из необязательного пакета, если он не является частью связанного набора.
+> Необязательные пакеты, содержащие исполняемый код, должны быть частью [связанного набора](optional-packages.md#related-sets). Вы не сможете выполнить код из необязательного пакета, если он не является частью связанного набора.
 
 ## <a name="c-optional-packages-with-executable-code"></a>Дополнительные пакеты C++ с исполняемым кодом
 
@@ -60,7 +60,7 @@ ms.locfileid: "77072544"
     <uap3:MainPackageDependency Name="12345.MainAppProjectTest" />
     ```
 
-6. Добавьте файл `Bundle.mapping.txt` в основное приложение. Выполните действия в разделе [Связанные наборы](optional-packages.md#related_sets), чтобы создать связанный набор, содержащий оба приложения.
+6. Добавьте файл `Bundle.mapping.txt` в основное приложение. Выполните действия в разделе [Связанные наборы](optional-packages.md#related-sets), чтобы создать связанный набор, содержащий оба приложения.
 
 7. Создайте проект дополнительного пакета и перейдите к папке пакета "Справочник" в выходных данных сборки, расположенной в `..\[PathToOptionalPackageProject]\bin\[architecture]\[configuration]\Reference`. Обратите внимание, что в пути к папке "Справочник" можно выбрать любую архитектуру, так как файл `.winmd` (шаг 8) не зависит от архитектуры.
 

@@ -1,16 +1,16 @@
 ---
 description: В этой статье описывается, как подписать пакет MSIX с помощью подписи Device Guard, что позволяет предприятиям гарантировать, что приложения поступают из надежного источника.
 title: Подписывание пакета MSIX с помощью подписи Device Guard
-ms.date: 07/12/2019
+ms.date: 07/24/2020
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: c489a4bed1598c0fecca7f20d33aee4880201b96
-ms.sourcegitcommit: 45bb7e2f642a0c7165366bc0867afe803abfc202
+ms.openlocfilehash: dd122ccded203482f32a367473d55bdde4c9d814
+ms.sourcegitcommit: 769bbff22df0ab9e46e1306b4180bbec6a44daba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81433750"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87538479"
 ---
 # <a name="sign-an-msix-package-with-device-guard-signing"></a>Подписывание пакета MSIX с помощью подписи Device Guard
 
@@ -50,13 +50,13 @@ ms.locfileid: "81433750"
 1. Войдите в [портал Azure](https://portal.azure.com/) и следуйте инструкциям в [кратком руководстве по регистрации приложения на платформе Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) , чтобы зарегистрировать приложение, которое будет использовать подписывание Device Guard.
 
     > [!NOTE]
-    > В разделе **URI перенаправления** рекомендуется выбрать **общедоступный клиент (мобильный & Рабочий стол)** . В противном случае, если выбран вариант " **Интернет** " для типа приложения, необходимо указать [секрет клиента](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application) при получении маркера доступа Azure AD позже в этом процессе.
+    > В разделе **URI перенаправления** рекомендуется выбрать **общедоступный клиент (мобильный & Рабочий стол)**. В противном случае, если выбран вариант " **Интернет** " для типа приложения, необходимо указать [секрет клиента](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application) при получении маркера доступа Azure AD позже в этом процессе.
 
-2. После регистрации приложения на главной странице приложения в портал Azure щелкните **разрешения API** и добавьте разрешение для **API магазина Windows для бизнеса**.
+2. После регистрации приложения на главной странице приложения в портал Azure щелкните **разрешения API**, в разделе **API-интерфейсы, используемые моей организацией** , а затем добавьте разрешение для **API магазина Windows для бизнеса**.
 
 3. Затем выберите **делегированные разрешения** и щелкните **user_impersonation**.
 
-## <a name="get-an-azure-ad-access-token"></a>Получение маркера доступа Azure AD
+## <a name="get-an-azure-ad-access-token"></a>Получение токена доступа Azure AD
 
 Затем получите маркер доступа Azure AD для приложения Azure AD в формате JSON. Это можно сделать с помощью различных языков программирования и сценариев. Дополнительные сведения об этом процессе см. [в разделе Авторизация доступа к Azure Active Directory веб-приложениям с помощью потока предоставления кода OAuth 2,0](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Рекомендуется получить [маркер обновления](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code#refreshing-the-access-tokens) вместе с маркером доступа, так как срок действия маркера доступа истечет через один час.
 
@@ -113,15 +113,15 @@ signtool sign /fd sha256 /dlib DgssLib.dll /dmdf <Azure AAD in .json format> /t 
 
 ## <a name="test"></a>Тест
 
-Чтобы проверить подпись Device Guard, скачайте корневой сертификат организации на портале Microsoft Store для бизнеса.
+Чтобы проверить подпись Device Guard, Скачайте сертификат с портала Microsoft Store для бизнеса.
 
 1. Войдите в [Microsoft Store для бизнеса](https://businessstore.microsoft.com/).
 2. Выберите **Управление** , а затем щелкните **Параметры**.
 3. Просмотр **устройств**.
 4. Просмотр **Скачайте корневой сертификат организации для использования с Device Guard**
-5. Нажмите кнопку **скачать** .
+5. Нажмите кнопку **скачать** . 
 
-Разверните этот сертификат на устройстве. Установите новое подписанное приложение, чтобы убедиться, что приложение успешно подписано с помощью подписи Device Guard.
+Установите корневой сертификат в **список доверенных корневых центров сертификации** на устройстве. Установите новое подписанное приложение, чтобы убедиться, что приложение успешно подписано с помощью подписи Device Guard.
 
 ## <a name="common-errors"></a>Распространенные ошибки
 
