@@ -7,12 +7,12 @@ ms.topic: article
 keywords: windows 10, uwp, app package, app update, msix, appx
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: e68269c0a17254fd92fb00fad6bcbc1d7a16e588
-ms.sourcegitcommit: 6243b7aca6f52f007f4571c835f580f433c31769
+ms.openlocfilehash: 1c120193a278fb8584761d7b6aaa4ab0430697ad
+ms.sourcegitcommit: f1c366459764cf1f3c0bc9edcac4f845937794bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812779"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87754513"
 ---
 # <a name="update-non-store-published-app-packages-from-your-code"></a>Обновление опубликованных пакетов приложений без сохранения из кода
 
@@ -137,6 +137,7 @@ private async void CommandInvokedHandler(IUICommand command)
     }
 }
 ```
+
 ## <a name="automatically-restarting-your-app-after-an-update"></a>Автоматический перезапуск приложения после обновления
 
 Если приложение является приложением UWP, передача в Аддпаккажебяппинсталлероптионс. Форцеаппликатионшутдовн или Аддпаккажеоптионс. Форцетаржетаппшутдовн при применении обновления должна запланировать перезапуск приложения после завершения работы и обновления. Для приложений, не являющихся универсальными UWP, необходимо вызвать [регистераппликатионрестарт](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-extensions#updates) перед применением обновления.
