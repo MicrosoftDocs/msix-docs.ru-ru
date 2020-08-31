@@ -6,12 +6,12 @@ ms.topic: article
 keywords: msix packaging tool, known issues, troubleshooting
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 466e7527ae1c7dc20322aa6eb2c3d507f1a1962f
-ms.sourcegitcommit: 6243b7aca6f52f007f4571c835f580f433c31769
+ms.openlocfilehash: 0c432cd0bd02d68f52034f5f392a1f16e9f552ab
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812759"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090772"
 ---
 # <a name="known-issues-and-troubleshooting-tips-for-the-msix-packaging-tool"></a>Известные проблемы при работе со средством упаковки MSIX и советы по их устранению
 
@@ -32,7 +32,7 @@ ms.locfileid: "84812759"
 
 ### <a name="msix-packaging-tool-driver"></a>Драйвер средства упаковки MSIX
 
-Драйвер средства упаковки MSIX поставляется как пакет по [запросу (FOD)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) от Центр обновления Windows. Установка не будет выполнена, если на компьютере отключена служба Центр обновления Windows или если параметры Microsoft Windows для рейсов не соответствуют сборке ОС компьютера.
+Драйвер средства упаковки MSIX поставляется как пакет по [запросу (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) от Центр обновления Windows. Установка не будет выполнена, если на компьютере отключена служба Центр обновления Windows или если параметры Microsoft Windows для рейсов не соответствуют сборке ОС компьютера.
 
 Если у вас возникли проблемы с получением драйвера или вы работаете в автономной среде, можно найти ссылки для скачивания [драйвера.](disconnected-environment.md#get-the-msix-packaging-tool-driver) 
 
@@ -50,7 +50,7 @@ ms.locfileid: "84812759"
 
 Следующий код ошибки может указывать на то, что политики на вашем компьютере влияют на Центр обновления Windows подключение:-2145124306 (0x8024002e).
 
-Если вы получаете этот код ошибки, возможно, потребуется проверить [Параметры среды и политики](https://docs.microsoft.com/windows/deployment/update/fod-and-lang-packs).
+Если вы получаете этот код ошибки, возможно, потребуется проверить [Параметры среды и политики](/windows/deployment/update/fod-and-lang-packs).
 
 #### <a name="driver-required-a-reinstall"></a>Драйвер требует переустановки
 
@@ -131,7 +131,7 @@ ms.locfileid: "84812759"
 
 #### <a name="file-type-associations"></a>Сопоставления типов файлов
 
-Проблемы, касающиеся сопоставлений типов файлов (ФТА), зависят от пакета и пакета. Средство упаковки MSIX поддерживает сопоставление файлов для установки двойного щелчка. Например, если приложение имеет контекстное меню, оно не добавляется автоматически, поэтому его необходимо добавить в манифест вручную. Пример см. в элементе манифеста [desktop4: филиксплорерконтекстменус](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-desktop4-fileexplorercontextmenus) .
+Проблемы, касающиеся сопоставлений типов файлов (ФТА), зависят от пакета и пакета. Средство упаковки MSIX поддерживает сопоставление файлов для установки двойного щелчка. Например, если приложение имеет контекстное меню, оно не добавляется автоматически, поэтому его необходимо добавить в манифест вручную. Пример см. в элементе манифеста [desktop4: филиксплорерконтекстменус](/uwp/schemas/appxpackage/uapmanifestschema/element-desktop4-fileexplorercontextmenus) .
 
 #### <a name="shortcuts-with-arguments"></a>Сочетания клавиш с аргументами
 

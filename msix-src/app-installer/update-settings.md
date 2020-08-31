@@ -6,18 +6,18 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 10a8c443097f15ab18144198134d1f0fcedb939d
-ms.sourcegitcommit: 6243b7aca6f52f007f4571c835f580f433c31769
+ms.openlocfilehash: f4ffccb0cdfbdd851c6561593e92059f72198ced
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812752"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89089932"
 ---
 # <a name="configure-update-settings-in-the-app-installer-file"></a>Настройка параметров обновления в файле Установщика приложений
 
 Как упоминалось в разделе [Общие сведения о файле установщика приложений](app-installer-file-overview.md), можно настроить поведение обновления приложения в файле установщика приложения. В этой статье рассматриваются варианты обновления и соответствующие компромиссы.
 
-Поведение обновления приложения можно настроить с помощью элемента [упдатесеттингс](https://docs.microsoft.com/uwp/schemas/appinstallerschema/element-update-settings) . Здесь мы рассмотрим параметры обновления и их компромиссы.
+Поведение обновления приложения можно настроить с помощью элемента [упдатесеттингс](/uwp/schemas/appinstallerschema/element-update-settings) . Здесь мы рассмотрим параметры обновления и их компромиссы.
 
 Вкратце, можно проверить наличие обновлений двумя способами:
 1. Независимо от пользователя, запускающего приложение.
@@ -30,7 +30,7 @@ ms.locfileid: "84812752"
 Наконец, при уведомлении пользователя об обновлении можно либо принудительно принять обновление, прежде чем разрешить им запускать приложение, либо разрешить им запускать приложение и применить обновление в оппортуне время.
 
 
-Элемент [упдатесеттингс](https://docs.microsoft.com/uwp/schemas/appinstallerschema/element-update-settings) может иметь следующие дочерние элементы:
+Элемент [упдатесеттингс](/uwp/schemas/appinstallerschema/element-update-settings) может иметь следующие дочерние элементы:
 
 | Параметр обновления файла установщика приложений | Минимальная версия Windows 10
 |------------------|--------------------|

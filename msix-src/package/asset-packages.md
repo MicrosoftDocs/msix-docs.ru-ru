@@ -5,12 +5,12 @@ ms.date: 07/02/2019
 ms.topic: article
 keywords: Windows 10, msix, упаковка, макет пакета, пакет ресурсов
 ms.localizationpriority: medium
-ms.openlocfilehash: 0571f61579f95dbe3465f106b4d8860be636dea8
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.openlocfilehash: 0279d052f5a5d98ec13ab26bfd130882afd5255a
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77072804"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091172"
 ---
 # <a name="introduction-to-asset-packages"></a>Вводные сведения о пакетах ресурсов
 
@@ -47,7 +47,7 @@ ms.locfileid: "77072804"
 "Video.mp4"         "Video.mp4"
 ```
 
-Используйте одну из этих команд для создания пакета ресурсов с помощью программе makeappx. exe (для MSIX и appx).
+Используйте одну из этих команд для создания пакета ресурсов с помощью MakeAppx.exe (для MSIX и appx).
 
 ```cmd
 MakeAppx.exe pack /r /m AppxManifest.xml /f MappingFile.txt /p Videos.appx
@@ -58,7 +58,7 @@ MakeAppx.exe pack /r /m AppxManifest.xml /f MappingFile.txt /p Videos.msix
 
 Пакеты активов также не должны содержать файл resources.pri; использовать MRT для доступа к файлам пакета активов невозможно. Чтобы узнать больше о том, как осуществлять доступ к файлам пакета активов и почему пакеты активов требуют установки приложения на диск NTFS, изучите раздел [Разработка с использованием пакетов активов и сворачивания пакетов](Package-Folding.md).
 
-Чтобы проконтролировать, возможно ли выполнение пакета активов, можно воспользоваться командой **[uap6:AllowExecution](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap6-allowexecution)** в элементе **Properties** манифеста AppxManifest. Кроме того, необходимо добавить **uap6** к элементу верхнего уровня **Package**, чтобы получить следующее: 
+Чтобы проконтролировать, возможно ли выполнение пакета активов, можно воспользоваться командой **[uap6:AllowExecution](/uwp/schemas/appxpackage/uapmanifestschema/element-uap6-allowexecution)** в элементе **Properties** манифеста AppxManifest. Кроме того, необходимо добавить **uap6** к элементу верхнего уровня **Package**, чтобы получить следующее: 
 
 ```XML
 <Package IgnorableNamespaces="uap uap6" 
@@ -67,4 +67,4 @@ xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
 xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
 ```
 
- Если не указано, значение по умолчанию для **AllowExecution** — **true**. Задайте это значение равным **false** для пакетов активов без выполняемых файлов, чтобы ускорить публикацию.  
+ Если не указано, значение по умолчанию для **AllowExecution** — **true**. Задайте это значение равным **false** для пакетов активов без выполняемых файлов, чтобы ускорить публикацию.

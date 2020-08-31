@@ -3,15 +3,15 @@ title: Изменение пакета с помощью редактора па
 description: В этой статье описывается, как использовать редактор пакетов в средстве пакета MSIX для изменения сведений о пакете, таких как свойства в манифесте.
 ms.date: 09/07/2018
 ms.topic: article
-keywords: windows 10, uwp
+keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: a64a25074f8ff20c9eff461cdbad541548c6c284
-ms.sourcegitcommit: e650c86433c731d62557b31248c7e36fd90b381d
+ms.openlocfilehash: b71f94871b9cce020cf0a20f86c36ca32b0c0bf1
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82726500"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090882"
 ---
 # <a name="edit-a-package-using-package-editor"></a>Изменение пакета с помощью редактора пакетов
 
@@ -35,7 +35,7 @@ ms.locfileid: "82726500"
 
 ## <a name="capabilities-page"></a>Страница возможностей
 
-На странице **возможности** можно добавить или удалить [возможности](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-capability) пакета. Если возможность есть в пакете, для нее будет установлен флажок. Если выбрать возможность или отменить ее выбор, манифест будет обновлен. Элемент <capability> в манифесте MSIX при этом будет соответствующим образом изменен.
+На странице **возможности** можно добавить или удалить [возможности](/uwp/schemas/appxpackage/uapmanifestschema/element-capability) пакета. Если возможность есть в пакете, для нее будет установлен флажок. Если выбрать возможность или отменить ее выбор, манифест будет обновлен. Элемент <capability> в манифесте MSIX при этом будет соответствующим образом изменен.
 
 ![Рис. 11](images/pic11.png)
 

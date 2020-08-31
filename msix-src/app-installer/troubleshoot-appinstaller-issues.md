@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, установщик приложений, AppInstaller, загрузка неопубликованного приложения
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 99f38075d1ad586186261bfb9c39e7f3253ed05e
-ms.sourcegitcommit: f1c366459764cf1f3c0bc9edcac4f845937794bd
+ms.openlocfilehash: c9e4e454500f401faf4a39abaca1fc79d1228fab
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87754548"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89089892"
 ---
 # <a name="troubleshoot-installation-issues-with-the-app-installer-file"></a>Устранение неполадок при установке с помощью файла Установщика приложений
 
@@ -21,7 +21,7 @@ ms.locfileid: "87754548"
 
 Чтобы иметь возможность загрузки неопубликованных приложений в Windows 10, устройство пользователя должно удовлетворять следующим требованиям:
 
-- На устройстве необходимо включить режим разработчика или загрузку неопубликованных приложений. Подробнее об этом см. в разделе [Включение устройства для разработки](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development).
+- На устройстве необходимо включить режим разработчика или загрузку неопубликованных приложений. Подробнее об этом см. в разделе [Включение устройства для разработки](/windows/uwp/get-started/enable-your-device-for-development).
 - Сертификат, используемый для подписи пакета, должен быть доверенным сертификатом на устройстве. См. дополнительные сведения в разделе **Доверенные сертификаты** ниже.
 - Версия Windows 10 должна поддерживать схему файла `.appinstaller` и протокол распространения.
 
@@ -39,8 +39,8 @@ ms.locfileid: "87754548"
 | Сборка 16299 (Fall Creators Update, версия 1709) | Впервые представлен файл `.appinstaller`, отвечающий за автоматические обновления приложения. Эта версия поддерживает только конечные точки HTTP. Проверки обновлений не настраиваются и происходят каждые 24 часа. |
 | Сборка 15063 (Creators Update, версия 1703)      | Установщик приложений может скачивать зависимости приложений (только в режиме выпуска) из Store. |
 | Сборка 14393 (Юбилейное обновление, версия 1607)   | Представлено приложение "Установщик приложений" для установки файлов .appx и .appxbundle, файл .appinstaller не поддерживается. |
-| Сборка 10586 (ноябрьское обновление, версия 1511)      | Загрузка неопубликованных приложений доступна только через PowerShell с использованием команды [Add-AppxPackage](https://docs.microsoft.com/powershell/module/appx/add-appxpackage?view=win10-ps). |
-| Сборка 10240 (Windows 10, версия 1507)           | Загрузка неопубликованных приложений доступна только через PowerShell с использованием команды [Add-AppxPackage](https://docs.microsoft.com/powershell/module/appx/add-appxpackage?view=win10-ps). |
+| Сборка 10586 (ноябрьское обновление, версия 1511)      | Загрузка неопубликованных приложений доступна только через PowerShell с использованием команды [Add-AppxPackage](/powershell/module/appx/add-appxpackage?view=win10-ps). |
+| Сборка 10240 (Windows 10, версия 1507)           | Загрузка неопубликованных приложений доступна только через PowerShell с использованием команды [Add-AppxPackage](/powershell/module/appx/add-appxpackage?view=win10-ps). |
 
 ### <a name="trusted-certificates"></a>Доверенные сертификаты
 
@@ -77,8 +77,8 @@ ms.locfileid: "87754548"
 
 При установке из конечной точки HTTP необходимо убедиться, что все файлы доступны с правильным типом MIME. Самый простой способ проверить эти файлы — пройти по ссылкам на странице HTML, созданной Visual Studio. Необходимо проверить эти файлы:
 
-- `.appinstaller`файл, доступный в виде`application/xml`
-- `.appx`и `.appxbundle` файлы, доступные как`application/vns.ms-appx`
+- `.appinstaller` файл, доступный в виде `application/xml`
+- `.appx` и `.appxbundle` файлы, доступные как `application/vns.ms-appx`
 
 ## <a name="isolate-app-installer-app-issues"></a>Изоляция проблем установщика приложений
 
@@ -86,10 +86,10 @@ ms.locfileid: "87754548"
 
 ### <a name="verify-app-package-file-installation"></a>Проверка установки файла пакета приложения
 
-- Скачайте файл пакета приложения в локальную папку и попытайтесь установить его с помощью команды PowerShell [Add-AppxPackage](https://docs.microsoft.com/powershell/module/appx/add-appxpackage?view=win10-ps) .
+- Скачайте файл пакета приложения в локальную папку и попытайтесь установить его с помощью команды PowerShell [Add-AppxPackage](/powershell/module/appx/add-appxpackage?view=win10-ps) .
 
 - Скачайте файл `.appinstaller` и сохраните его в локальную папку. Попробуйте установить его с помощью команды PowerShell `Add-AppxPackage -Appinstaller`.
 
 ### <a name="app-installer-event-logs"></a>Журналы событий установщика приложений
 
-Инфраструктура развертывания приложений создает журналы, которые часто используются для отладки проблем с установкой с помощью Просмотр событий Windows.`Application and Services Logs -> Microsoft -> Windows -> AppxDeployment-Server`
+Инфраструктура развертывания приложений создает журналы, которые часто используются для отладки проблем с установкой с помощью Просмотр событий Windows. `Application and Services Logs -> Microsoft -> Windows -> AppxDeployment-Server`

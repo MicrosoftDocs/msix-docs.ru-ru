@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 4af514f0027efba09b2ffcdbeaff55d729c39c53
-ms.sourcegitcommit: e650c86433c731d62557b31248c7e36fd90b381d
+ms.openlocfilehash: d890ff472baa343c5b87873f85fce1b435d37b62
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82726553"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090332"
 ---
 # <a name="customize-your-enterprise-apps-with-modification-packages"></a>Настройка корпоративных приложений с помощью пакетов изменений
 
@@ -21,7 +21,7 @@ ms.locfileid: "82726553"
 
 ## <a name="how-it-works"></a>Принцип работы
 
-Пакеты изменений предназначены для предприятий, которые не владеют кодом приложения и имеют только установщик. Пакет изменений можно создать с помощью последней версии средства упаковки MSIX (для Windows 10 версии 1809 или более поздней). Если у вас есть код для приложения, можно также создать [расширение приложения](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-an-extension). 
+Пакеты изменений предназначены для предприятий, которые не владеют кодом приложения и имеют только установщик. Пакет изменений можно создать с помощью последней версии средства упаковки MSIX (для Windows 10 версии 1809 или более поздней). Если у вас есть код для приложения, можно также создать [расширение приложения](/windows/uwp/launch-resume/how-to-create-an-extension). 
 
 <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://www.microsoft.com/p/msix-packaging-tool/9n5lw3jbcxkf" data-linktype="external">Получить средство упаковки MSIX</a></p></div>
 
@@ -44,13 +44,13 @@ ms.locfileid: "82726553"
 
 ```
 
-Это простая конфигурация, если связь между пакетом изменений и основным пакетом — один к одному. Типичные настройки часто занимают разделы реестра в разделе HKEY_CURRENT_USER или HKEY_CURRENT_USERCLASS. Внутри нашего пакета MSIX у нас есть файлы user. dat и userclass. dat для записи разделов реестра. Необходимо создать User. dat, если вам нужны разделы реестра в разделе Хкку\софтваре\* (так же, как Registry. dat используется для HKLM\Software\*). Используйте userclass. dat, если вам нужны ключи в\*разделе хкку\софваре\классес. 
+Это простая конфигурация, если связь между пакетом изменений и основным пакетом — один к одному. Типичные настройки часто занимают разделы реестра в разделе HKEY_CURRENT_USER или HKEY_CURRENT_USERCLASS. Внутри нашего пакета MSIX у нас есть файлы user. dat и userclass. dat для записи разделов реестра. Необходимо создать User. dat, если вам нужны разделы реестра в разделе Хкку\софтваре \* (так же, как Registry. dat используется для HKLM\Software \* ). Используйте userclass. dat, если вам нужны ключи в разделе Хкку\софваре\классес \* . 
 
 Ниже приведены типичные способы создания файла. dat.
 
 * Используйте Regedit для создания файла. Создайте куст реестра в Regedit и вставьте необходимые ключи. По сравнению с щелчком правой кнопкой мыши, экспортом и сохранением файла Hive. Убедитесь, что имя файла — User. dat или userclass. dat.
 
-* Используйте API для создания необходимых файлов. Для сохранения dat-файла можно использовать функцию [орсавехиве](https://docs.microsoft.com/windows/win32/devnotes/orsavehive) . Убедитесь, что имя файла Ether User. dat или userclass. dat
+* Используйте API для создания необходимых файлов. Для сохранения dat-файла можно использовать функцию [орсавехиве](/windows/win32/devnotes/orsavehive) . Убедитесь, что имя файла Ether User. dat или userclass. dat
 
 После внесения необходимых изменений можно создать пакет изменений, как и любой другой пакет MSIX. Затем можно развернуть пакет с текущим набором развертывания. При перезапуске основного приложения можно увидеть изменения, внесенные в пакет изменений. Если вы решили удалить пакет изменений, основное приложение вернется в состояние без пакета изменений. 
 
@@ -104,7 +104,7 @@ Get-AppPackage -PackageTypeFilter Optional
 
 ### <a name="create-a-modification-package-using-makeappxexe"></a>Создание пакета изменений с помощью MakeAppx.exe
 
-Пакет модификации можно создать вручную с помощью средства [программе makeappx. exe](package/create-app-package-with-makeappx-tool.md) , включенного в пакет SDK для Windows 10.
+Пакет модификации можно создать вручную с помощью средства [MakeAppX.exe](package/create-app-package-with-makeappx-tool.md) , включенного в пакет SDK для Windows 10.
 
 * В манифесте определите основной пакет. Укажите издателя и имя основного пакета.
 

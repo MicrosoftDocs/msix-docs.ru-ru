@@ -9,12 +9,12 @@ metadata:
   keywords: windows 10, uwp, MSIX
   ms.localizationpriority: medium
   ms.custom: RS5, seodec18
-  ms.openlocfilehash: 38d9e7c76e999bd8f9544788fa7f588957594ff1
-  ms.sourcegitcommit: 8b02a0d376ab16873607ed84d1560b1c69c9e915
+  ms.openlocfilehash: 6b91da584e491727fe5ea7117d6cbd67c0aff64c
+  ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/19/2020
-  ms.locfileid: "83632607"
+  ms.lasthandoff: 08/29/2020
+  ms.locfileid: "89090372"
 highlightedContent:
   items:
   - title: Что такое MSIX?
@@ -124,9 +124,9 @@ additionalContent:
       - text: Запуск, отладка и тестирование пакета MSIX
         url: desktop/desktop-to-uwp-debug.md
       - text: Комплект сертификации приложений для Windows
-        url: https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit
+        url: /windows/uwp/debug-test-perf/windows-app-certification-kit
       - text: Фокус-тестирование пакетов
-        url: https://docs.microsoft.com/windows/uwp/publish/package-flights
+        url: /windows/uwp/publish/package-flights
       - text: Тестирование для Windows 10 в S-режиме
         url: desktop/desktop-to-uwp-test-windows-s.md
     - title: Распространение
@@ -140,11 +140,11 @@ additionalContent:
     - title: Справочник по API и схемам
       links:
       - text: API диспетчера пакетов
-        url: https://docs.microsoft.com/uwp/api/windows.management.deployment
+        url: /uwp/api/windows.management.deployment
       - text: Схема манифеста приложения
-        url: https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest
+        url: /uwp/schemas/appxpackage/appx-package-manifest
       - text: Схема файла Установщика приложений
-        url: https://docs.microsoft.com/uwp/schemas/appinstallerschema/schema-root
+        url: /uwp/schemas/appinstallerschema/schema-root
     - title: Ресурсы по теме
       links:
       - text: Ресурсы и видео по MSIX

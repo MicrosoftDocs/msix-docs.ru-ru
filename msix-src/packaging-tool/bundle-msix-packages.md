@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: d7eaa493577c4a83739829c1bee51acbb41640a8
-ms.sourcegitcommit: 37bc5d6ef6be2ffa373c0aeacea4226829feee02
+ms.openlocfilehash: a33817b4fa45ab6eb447ebd00ab1934b396d7de1
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77072934"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090932"
 ---
 # <a name="bundle-msix-packages"></a>Объединение пакетов MSIX
 
@@ -21,16 +21,16 @@ ms.locfileid: "77072934"
 
 В следующем разделе приведены пошаговые инструкции по созданию набора пакетов MSIXBUNDLE. Предполагается, что вы уже [преобразовали существующие версии x86 и x64](https://docs.microsoft.com/windows/msix/tool-best-practices) установщика Windows в пакеты MSIX. 
 
-### <a name="setup"></a>Установка
+### <a name="setup"></a>Настройка
 
 Для успешного создания набора пакетов MSIX необходимо следующее:
 
 - [пакет SDK для Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) (версия 1809 или более новая);
 - преобразованные пакеты MSIX x64 и x86.
 
-## <a name="step-1-find-makeappxexe"></a>Шаг 1. Поиск программе makeappx. exe
+## <a name="step-1-find-makeappxexe"></a>Шаг 1. Поиск MakeAppx.exe
 
-[MakeAppx.exe](https://docs.microsoft.com/windows/desktop/appxpkg/make-appx-package--makeappx-exe-) — это средство из пакета SDK для Windows 10, которое позволяет создавать и объединять пакеты MSIX. С его помощью вы объедините два пакета MSIX.
+[MakeAppx.exe](/windows/desktop/appxpkg/make-appx-package--makeappx-exe-) — это средство из пакета SDK для Windows 10, которое позволяет создавать и объединять пакеты MSIX. С его помощью вы объедините два пакета MSIX.
 
 Средство MakeAppx.exe можно использовать для извлечения файлов из пакета приложения или набора пакетов Windows 10. Оно также позволяет шифровать и расшифровывать пакеты приложений и наборы пакетов.
 
@@ -93,5 +93,4 @@ C:\> "C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\SignTool.exe" 
 
 Дополнительные сведения о подписании пакетов приложений с помощью SignTool.exe см. в [этой статье](../package/sign-app-package-using-signtool.md). 
 
-Подписав набор пакетов, вы можете разместить его в сетевой общей папке или в любой сети распространения содержимого для доступа пользователей. 
-
+Подписав набор пакетов, вы можете разместить его в сетевой общей папке или в любой сети распространения содержимого для доступа пользователей.

@@ -1,22 +1,22 @@
 ---
-title: Типы архитектуры пакетов приложений
-description: Узнайте больше о том, какие типы архитектуры процессоров следует использовать при создании пакета приложения UWP.
+title: Архитектуры пакетов приложений
+description: Сведения о том, какие архитектуры процессоров следует использовать при создании пакета приложения UWP.
 ms.date: 03/25/2020
 ms.topic: article
 keywords: windows 10, uwp, пакет, архитектура, конфигурация пакета
 ms.localizationpriority: medium
-ms.openlocfilehash: cbd8924a947d27afd62d6f870b67a6f0f810d69d
-ms.sourcegitcommit: f6cee51b46fc36a57b5cf9c8cb3fd24a40ae858a
+ms.openlocfilehash: 857c3cd89d17d8a442c1ccbe2897f549d8d7b8d9
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80391656"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091102"
 ---
-# <a name="app-package-architectures"></a>Типы архитектуры пакетов приложений
+# <a name="app-package-architectures"></a>Архитектуры пакетов приложений
 
 Пакеты приложений настроены для запуска на компьютерах с определенной архитектурой процессора. Выбрав тип архитектуры, вы указываете устройства, для которых предназначено ваше приложение. Приложения универсальной платформы Windows (UWP) можно настроить для работы на следующих типах архитектуры.
 - x86
-- x64
+- X64
 - ARM
 - ARM64
 
@@ -25,10 +25,10 @@ ms.locfileid: "80391656"
 ## <a name="windows-10-devices-and-architectures"></a>Типы архитектуры и устройства Windows 10
 
 > [!div class="mx-tableFixed"]
-| Архитектура UWP | Классическая (x86)      | Классическая (x64)      | Классическая (ARM)      | Мобильные службы             | Windows Mixed Reality и HoloLens           | Xbox               | IoT Core (зависит от устройства) | Surface Hub        |
+| Архитектура UWP | Классическая (x86)      | Классическая (x64)      | Классическая (ARM)      | Мобильные приложения             | Windows Mixed Reality и HoloLens           | Xbox               | IoT Core (зависит от устройства) | Surface Hub        |
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|-----------------------------|--------------------|
 | x86              | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark:          | :heavy_check_mark: |
-| x64              | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark:          | :heavy_check_mark: |
+| X64              | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark:          | :heavy_check_mark: |
 | ARM               | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark:          | :x:                |
 | ARM64              | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark:          | :x:                |
 
@@ -38,8 +38,8 @@ ms.locfileid: "80391656"
 ### <a name="x86"></a>x86
 Выбор архитектуры x86 обычно является самой надежной конфигурацией для пакета приложения, поскольку в таком случае оно будет работать почти на всех устройствах. На некоторых устройствах пакет приложения с конфигурацией x86 не будет работать, например на Xbox и некоторых устройствах IoT Core. Тем не менее, для компьютеров пакет x86 представляет собой наиболее надежный вариант и обеспечивает наибольший охват для развертывания на различных устройствах. Значительная часть устройств под управлением Windows 10 продолжает работать с Windows версии x86.
 
-### <a name="x64"></a>x64
-Эта конфигурация используется реже, чем конфигурация x86. Следует отметить, что эта конфигурация зарезервирована для настольных ПК с 64-разрядными версиями Windows 10, [приложений UWP на Xbox](https://docs.microsoft.com/windows/uwp/xbox-apps/system-resource-allocation) и Windows 10 IoT Базовая на платформе Intel Joule.
+### <a name="x64"></a>X64
+Эта конфигурация используется реже, чем конфигурация x86. Следует отметить, что эта конфигурация зарезервирована для настольных ПК с 64-разрядными версиями Windows 10, [приложений UWP на Xbox](/windows/uwp/xbox-apps/system-resource-allocation) и Windows 10 IoT Базовая на платформе Intel Joule.
 
 ### <a name="arm-and-arm64"></a>ARM и ARM64
 Windows 10 на архитектуре ARM включает в себя настольные компьютеры, мобильные устройства и некоторые устройства IoT Core (Raspberry Pi 2, Raspberry Pi 3 и DragonBoard). Windows 10 на настольных компьютерах с архитектурой ARM — это новое пополнение в семействе Windows, поэтому если вы разрабатываете приложения UWP, вам потребуется отправлять пакеты для ARM в Магазин, чтобы обеспечить оптимальную работу на таких компьютерах.
@@ -47,6 +47,6 @@ Windows 10 на архитектуре ARM включает в себя наст
 >[!NOTE]
 > Чтобы создать приложение UWP для платформы ARM64, необходимо установить Visual Studio 2017 версии 15,9 или более поздней. Дополнительные сведения см. в [этой записи блога](https://blogs.windows.com/buildingapps/2018/11/15/official-support-for-windows-10-on-arm-development/).
 
-Дополнительные сведения см. [в статье Windows 10 на ARM](https://docs.microsoft.com/windows/uwp/porting/apps-on-arm.md). Посмотрите это обсуждение //Build, чтобы ознакомиться с демонстрацией [Windows 10 на ARM](https://channel9.msdn.com/Events/Build/2017/P4171) и узнать больше о том, как это работает.
+Дополнительные сведения см. [в статье Windows 10 на ARM](/windows/uwp/porting/apps-on-arm). Посмотрите это обсуждение //Build, чтобы ознакомиться с демонстрацией [Windows 10 на ARM](https://channel9.msdn.com/Events/Build/2017/P4171) и узнать больше о том, как это работает.
 
-Дополнительные сведения о разделах, относящихся к IoT, см. в разделе [развертывание приложения с помощью Visual Studio](https://developer.microsoft.com/windows/iot/Docs/AppDeployment).
+Дополнительные сведения о разделах, относящихся к IoT, см. в разделе [развертывание приложения с помощью Visual Studio](/windows/iot-core/develop-your-app/AppDeployment).

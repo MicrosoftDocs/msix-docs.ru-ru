@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 54bc62d90ee3fef134668c562655d4b4bef39801
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: db873832bdcaf68ca4e29d0e7e58f3b945696866
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328730"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090992"
 ---
 # <a name="edit-icons-and-assets-using-the-msix-packaging-tool"></a>Изменение значков и ресурсов с помощью средства упаковки MSIX
 
@@ -20,7 +20,7 @@ ms.locfileid: "73328730"
 * Ресурсы пакета приложения можно изменить во время преобразования.
 * Кроме того, вы можете изменить ресурсы пакета приложения с помощью [редактора пакетов](package-editor.md) после создания пакета.
 
-При внесении изменений руководствуйтесь [инструкциями по работе со значками и ресурсами](https://docs.microsoft.com/windows/uwp/design/style/app-icons-and-logos).
+При внесении изменений руководствуйтесь [инструкциями по работе со значками и ресурсами](/windows/uwp/design/style/app-icons-and-logos).
 
 ## <a name="modify-assets-during-the-conversion-process"></a>Изменение ресурсов во время преобразования
 
@@ -33,4 +33,4 @@ ms.locfileid: "73328730"
 - Чтобы добавить новый файл ресурсов, щелкните правой кнопкой мыши папку ресурсов и выберите **Добавить файл** или **Добавить папку**.
 - Чтобы удалить существующий файл ресурсов, щелкните правой кнопкой мыши файл и выберите **Удалить**.
 
-Чтобы проверить, внесены ли в ресурс изменения, перейдите к странице **Сведения о пакете** и откройте файл манифеста. Убедитесь, что сведения о добавленных или удаленных вами ресурсах представлены в узле [uap:VisualElements](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap-visualelements). Ссылка на манифест должна быть конкретной, при этом файлы ресурсов можно называть как угодно. 
+Чтобы проверить, внесены ли в ресурс изменения, перейдите к странице **Сведения о пакете** и откройте файл манифеста. Убедитесь, что сведения о добавленных или удаленных вами ресурсах представлены в узле [uap:VisualElements](/uwp/schemas/appxpackage/uapmanifestschema/element-uap-visualelements). Ссылка на манифест должна быть конкретной, при этом файлы ресурсов можно называть как угодно.

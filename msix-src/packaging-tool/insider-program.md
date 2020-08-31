@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 3c60ae9d5f247de8b5b1923beea274a18ede4e4f
-ms.sourcegitcommit: 642563e98a52d4cc384987e618c5482022e29aba
+ms.openlocfilehash: 7621f3de4f20cec8f120b6b6c2d6aba5c7407b59
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86556269"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090832"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -35,10 +35,9 @@ ms.locfileid: "86556269"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-## <a name="version-120207090---public-release"></a>Версия 1.2020.709.0 — общедоступный выпуск
-- Возможность добавления нескольких файлов в редактор пакетов
-- Возможность импортировать несколько файлов. reg в редактор пакетов
-- Улучшенная поддержка преобразования любого типа установщика
+## <a name="version-120208240"></a>Версия 1.2020.824.0
+- Добавлен отчет о службах в редактор пакетов.
+- Исправлены общие ошибки.
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 

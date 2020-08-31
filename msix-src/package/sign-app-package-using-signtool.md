@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.assetid: 171f332d-2a54-4c68-8aa0-52975d975fb1
 ms.localizationpriority: medium
-ms.openlocfilehash: 484f2ba6df7044b628154fd73990089652cede20
-ms.sourcegitcommit: e703ffe4c635d9b127ecf8c02e087370b676aa9c
+ms.openlocfilehash: 5df8516441ab7acb8eea54afe6443f92c586c7a4
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80108177"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091052"
 ---
 # <a name="sign-an-app-package-using-signtool"></a>Подписание пакета приложения с помощью SignTool
 
@@ -20,24 +20,24 @@ ms.locfileid: "80108177"
 > [!IMPORTANT] 
 > Если для разработки приложения использовали Visual Studio, рекомендуется применять мастер Visual Studio для создания и подписывания пакета приложения. Дополнительные сведения см. в статьях [Упаковка приложения UWP с помощью Visual Studio](packaging-uwp-apps.md) и [упаковка классического приложения из исходного кода с помощью Visual Studio](../desktop/desktop-to-uwp-packaging-dot-net.md).
 
-Дополнительные сведения о подписи кода и сертификатах в целом см. в разделе [Знакомство с процессом подписания кода](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools).
+Дополнительные сведения о подписи кода и сертификатах в целом см. в разделе [Знакомство с процессом подписания кода](/windows/desktop/SecCrypto/cryptography-tools).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 - **Упакованное приложение**  
     Подробнее о ручном создании пакета приложения, [создания пакета приложения с помощью средства MakeAppx.exe](create-app-package-with-makeappx-tool.md).
 
-- **Допустимый сертификат для подписи**  
+- **Действительный сертификат подписи**  
     Дополнительные сведения о создании или импорте действительного сертификата подписи см. в разделе [Создание или импорт сертификата для подписания пакета](create-certificate-package-signing.md).
 
-- **SignTool. exe**  
+- **SignTool.exe**  
     В зависимости от пути установки пакета SDK **SignTool** может находиться в следующих расположениях на компьютере с Windows 10:
-    - x86: C:\Program Files (x86) \Windows Kits\10\bin\\&lt;SDK версия&gt;\x86\SignTool.exe
-    - x64: C:\Program Files (x86) \Windows Kits\10\bin\\&lt;SDK версия&gt;\x64\SignTool.exe
+    - x86: C:\Program Files (x86) \Windows Kits\10\bin \\ &lt; sdk версии &gt;\x86\SignTool.exe
+    - x64: C:\Program Files (x86) \Windows Kits\10\bin \\ &lt; sdk версии &gt;\x64\SignTool.exe
 
 ## <a name="using-signtool"></a>Применение SignTool
 
-**SignTool** может использоваться для подписывания файлов, проверки подписей и меток времени, удаления подписей и другого. Так как нас интересует подписывание пакета приложения, мы рассмотрим команду **sign**. Подробные сведения об инструменте **SignTool** см. на справочной странице [SignTool](https://docs.microsoft.com/windows/desktop/SecCrypto/signtool).
+**SignTool** может использоваться для подписывания файлов, проверки подписей и меток времени, удаления подписей и другого. Так как нас интересует подписывание пакета приложения, мы рассмотрим команду **sign**. Подробные сведения об инструменте **SignTool** см. на справочной странице [SignTool](/windows/desktop/SecCrypto/signtool).
 
 ### <a name="determine-the-hash-algorithm"></a>Определение хэш-алгоритма
 
@@ -108,4 +108,4 @@ SignTool sign /fd <Hash Algorithm> /sha1 <SHA1 hash> <File Path>.msix
 
 Обратите внимание, что с некоторыми сертификатами пароль не используется. Если для вашего сертификата не требуется пароль, опустите параметр "/p &lt;Ваш пароль&gt;" в примерах команд.
 
-Подписав пакет приложения с помощью действительного сертификата, вы сможете отправить пакет в Store. Дополнительные рекомендации по загрузке и отправке приложений в Store см. в разделе [Отправка приложений](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+Подписав пакет приложения с помощью действительного сертификата, вы сможете отправить пакет в Store. Дополнительные рекомендации по загрузке и отправке приложений в Store см. в разделе [Отправка приложений](/windows/uwp/publish/app-submissions).

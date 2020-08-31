@@ -7,12 +7,12 @@ ms.topic: article
 keywords: windows 10, uwp, app package, app update, msix, appx
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 1c120193a278fb8584761d7b6aaa4ab0430697ad
-ms.sourcegitcommit: f1c366459764cf1f3c0bc9edcac4f845937794bd
+ms.openlocfilehash: ae161305bccd1e0fa53bde5be66ab808e1334e3b
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87754513"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091202"
 ---
 # <a name="update-non-store-published-app-packages-from-your-code"></a>Обновление опубликованных пакетов приложений без сохранения из кода
 
@@ -22,7 +22,7 @@ ms.locfileid: "87754513"
 
 ## <a name="add-the-packagemanagement-capability-to-your-package-manifest"></a>Добавление функции PackageManagement в манифест пакета
 
-Чтобы использовать `PackageManager` API, приложение должно объявить `packageManagement` [ограниченную возможность](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#restricted-capabilities) в [манифесте пакета](https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest).
+Чтобы использовать `PackageManager` API, приложение должно объявить `packageManagement` [ограниченную возможность](/windows/uwp/packaging/app-capability-declarations#restricted-capabilities) в [манифесте пакета](/uwp/schemas/appxpackage/appx-package-manifest).
 
 ```xml
 <Package>
@@ -38,7 +38,7 @@ ms.locfileid: "87754513"
 
 ## <a name="updating-packages-deployed-using-an-app-installer-file"></a>Обновление пакетов, развернутых с помощью файла установщика приложения
 
-При развертывании приложения с помощью файла установщика приложения все выполняемые обновления, управляемые кодом, должны использовать [API файлов установщика приложений](https://docs.microsoft.com/windows/msix/app-installer/app-installer-documentation#app-installer-file-apis). Это гарантирует, что ваши обновления файлов установщика приложения будут продолжать работать. Для интиатинг обновления на основе установщика приложений из кода можно использовать [PackageManager. аддпаккажебяппинсталлерфилеасинк](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager.addpackagebyappinstallerfileasync?view=winrt-19041) или [PackageManager. рекуестаддпаккажебяппинсталлерфилеасинк](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager.requestaddpackagebyappinstallerfileasync?view=winrt-19041). Проверить, доступно ли обновление, можно с помощью API [Package. чеккупдатеаваилабилитясинк](https://docs.microsoft.com/uwp/api/windows.applicationmodel.package.checkupdateavailabilityasync?view=winrt-19041) . Ниже приведен пример кода.
+При развертывании приложения с помощью файла установщика приложения все выполняемые обновления, управляемые кодом, должны использовать [API файлов установщика приложений](./app-installer/app-installer-documentation.md#app-installer-file-apis). Это гарантирует, что ваши обновления файлов установщика приложения будут продолжать работать. Для интиатинг обновления на основе установщика приложений из кода можно использовать [PackageManager. аддпаккажебяппинсталлерфилеасинк](/uwp/api/windows.management.deployment.packagemanager.addpackagebyappinstallerfileasync?view=winrt-19041) или [PackageManager. рекуестаддпаккажебяппинсталлерфилеасинк](/uwp/api/windows.management.deployment.packagemanager.requestaddpackagebyappinstallerfileasync?view=winrt-19041). Проверить, доступно ли обновление, можно с помощью API [Package. чеккупдатеаваилабилитясинк](/uwp/api/windows.applicationmodel.package.checkupdateavailabilityasync?view=winrt-19041) . Ниже приведен пример кода.
 
 ```csharp
 using Windows.Management.Deployment;
@@ -119,7 +119,7 @@ private async void CheckUpdate(object sender, TappedRoutedEventArgs e)
 
 ### <a name="apply-the-update"></a>Применение обновления 
 
-После того как вы определили, что обновление доступно, вы можете поставить его в очередь для скачивания и установки с помощью API [аддпаккажеасинк](https://docs.microsoft.com/uwp/api/windows.management.deployment.packagemanager.addpackageasync?view=winrt-19041) . Обновление будет применено при следующем завершении работы приложения. После перезапуска приложения новая версия будет доступна пользователю. Ниже приведен пример кода.
+После того как вы определили, что обновление доступно, вы можете поставить его в очередь для скачивания и установки с помощью API [аддпаккажеасинк](/uwp/api/windows.management.deployment.packagemanager.addpackageasync?view=winrt-19041) . Обновление будет применено при следующем завершении работы приложения. После перезапуска приложения новая версия будет доступна пользователю. Ниже приведен пример кода.
 
 ```csharp
 
@@ -140,7 +140,7 @@ private async void CommandInvokedHandler(IUICommand command)
 
 ## <a name="automatically-restarting-your-app-after-an-update"></a>Автоматический перезапуск приложения после обновления
 
-Если приложение является приложением UWP, передача в Аддпаккажебяппинсталлероптионс. Форцеаппликатионшутдовн или Аддпаккажеоптионс. Форцетаржетаппшутдовн при применении обновления должна запланировать перезапуск приложения после завершения работы и обновления. Для приложений, не являющихся универсальными UWP, необходимо вызвать [регистераппликатионрестарт](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-extensions#updates) перед применением обновления.
+Если приложение является приложением UWP, передача в Аддпаккажебяппинсталлероптионс. Форцеаппликатионшутдовн или Аддпаккажеоптионс. Форцетаржетаппшутдовн при применении обновления должна запланировать перезапуск приложения после завершения работы и обновления. Для приложений, не являющихся универсальными UWP, необходимо вызвать [регистераппликатионрестарт](/windows/apps/desktop/modernize/desktop-to-uwp-extensions#updates) перед применением обновления.
 
 Необходимо вызвать Регистераппликатионрестарт, прежде чем приложение начнет работу. Ниже приведен пример использования служб взаимодействия для вызова собственного метода в C#:
 

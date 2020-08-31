@@ -7,12 +7,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 9cece807e2206f754e96f6a394c5da626129c177
-ms.sourcegitcommit: d65b3457343e0590f53e36fc2710863cc2f13897
+ms.openlocfilehash: e1b040901339e921931e96c951ee1a7f95250402
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83790583"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090652"
 ---
 # <a name="supported-platforms"></a>Поддерживаемые платформы
 
@@ -37,9 +37,9 @@ ms.locfileid: "83790583"
 В следующей таблице показано, какие функции и сценарии MSIX поддерживаются в разных версиях Windows.
 
 > [!div class="mx-tableFixed"]
-| Возможности | 1709 | 1803 | 1809 | 1903 | 1909 | 2004| Windows Server 2019 LTSC | Windows Enterprise 2019 LTSC|
+| Компоненты | 1709 | 1803 | 1809 | 1903 | 1909 | 2004| Windows Server 2019 LTSC | Windows Enterprise 2019 LTSC|
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| [Разрешить повышение прав](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 
+| [Разрешить повышение прав](/windows/uwp/packaging/app-capability-declarations) | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 
 | [Поддержка файлов установщика приложений](app-installer/installing-windows10-apps-web.md)| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
 | [Отложить флаг регистрации](desktop/managing-your-msix-deployment-update.md) |  :x: | :x: | :x: | :x:| :x: | :heavy_check_mark:| :x: | :x: |
 | [Принудительное обновление с любой предыдущей версии](desktop/managing-your-msix-deployment-targetdevices.md) |  :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 
@@ -65,7 +65,7 @@ ms.locfileid: "83790583"
 
 В следующей таблице показано, какие функции Microsoft Store поддерживаются в разных версиях Windows 10.
 
-| Возможности | 1709 | 1803 | 1809 | 1903 | 1909 | 2004
+| Компоненты | 1709 | 1803 | 1809 | 1903 | 1909 | 2004
 |------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | Публикация             | :x: | :x: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
 | Обновить уведомление| :x: | :x: | :heavy_check_mark: | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark:| 
@@ -84,4 +84,4 @@ ms.locfileid: "83790583"
 В настоящее время MSIX установка с помощью Microsoft Store и Microsoft Store для бизнеса требует Windows 10, 1809 и более поздних версий.
 
 ### <a name="non-windows-platform"></a>Платформа, не относящаяся к Windows
-[Пакет SDK для MSIX](https://github.com/Microsoft/msix-packaging) — это проект с открытым кодом, позволяющий разработчикам использовать формат пакета MSIX на всех платформах. Пакет SDK может использоваться любым межплатформенным клиентским приложением, позволяющим сторонним производителям создавать подключаемые модули или расширения. Разработчики клиентских приложений могут использовать модель расширения приложения, доступную на платформе Windows 10, и использовать пакет SDK MSIX на платформах, отличных от Windows 10, таких как macOS, iOS, Android и Linux. 
+[Пакет SDK для MSIX](https://github.com/Microsoft/msix-packaging) — это проект с открытым кодом, позволяющий разработчикам использовать формат пакета MSIX на всех платформах. Пакет SDK может использоваться любым межплатформенным клиентским приложением, позволяющим сторонним производителям создавать подключаемые модули или расширения. Разработчики клиентских приложений могут использовать модель расширения приложения, доступную на платформе Windows 10, и использовать пакет SDK MSIX на платформах, отличных от Windows 10, таких как macOS, iOS, Android и Linux.

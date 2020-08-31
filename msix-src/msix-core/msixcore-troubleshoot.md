@@ -6,12 +6,12 @@ ms.topic: article
 keywords: Windows 10, Windows 7, Windows 8, Windows Server, UWP, msix, мсикскоре, 1709, 1703, 1607, 1511, 1507
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: abd3165eb23cf90e86a80ca685e5c3794648a54f
-ms.sourcegitcommit: 0412ba69187ce791c16313d0109a5d896141d44c
+ms.openlocfilehash: 2a18add1641e56cf3117ab8ad281a9696538e95e
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303275"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090272"
 ---
 # <a name="troubleshooting-issues-for-msix-core"></a>Устранение неполадок, связанных с MSIX Core
 
@@ -89,13 +89,13 @@ ms.locfileid: "75303275"
 | 0x8BAD1003 | ксмлфатал |
 | 0x8BAD1004 | ксмлинвалиддата |
 
-Чтобы найти другие коды ошибок, перейдите [сюда](https://docs.microsoft.com/windows/win32/debug/system-error-codes).
+Чтобы найти другие коды ошибок, перейдите [сюда](/windows/win32/debug/system-error-codes).
 
 Полный список см. на странице с [кодом ошибки MSIX Core](https://github.com/microsoft/msix-packaging/blob/master/src/inc/public/MsixErrors.hpp) . 
 
 ## <a name="msix-tracing-powershell-script"></a>Сценарий PowerShell для трассировки MSIX
 
-Перейдите на нашу [страницу выпуска](https://github.com/microsoft/msix-packaging/releases/tag/MSIX-Core-1.1-release) и скачайте **мсикстраце. ps1**. Это сценарий PowerShell для трассировки MSIX, который будет создавать журналы, чтобы помочь при возникновении проблем с установкой MSIX.
+Перейдите на нашу [страницу выпуска](https://github.com/microsoft/msix-packaging/releases/tag/MSIX-Core-1.1-release) и скачайте **msixtrace.ps1**. Это сценарий PowerShell для трассировки MSIX, который будет создавать журналы, чтобы помочь при возникновении проблем с установкой MSIX.
 
 Используйте следующие команды.
 

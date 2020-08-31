@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: bac524ead0db9d7c56502b534571989aa9e6d0d9
-ms.sourcegitcommit: e9a890c674dd21c9a09048e2520a3de632753d27
+ms.openlocfilehash: 446e0d90f9aeb2670d1fa5e5d1f3bc85f3b01567
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73328912"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090342"
 ---
 # <a name="troubleshoot-runtime-issues-in-an-msix-container"></a>Устранение неполадок во время выполнения в контейнере MSIX 
 
@@ -19,7 +19,7 @@ ms.locfileid: "73328912"
 
 Возможны случаи, когда порядок установки этих приложений может вызвать непредвиденные проблемы, при которых ожидаемые разделы реестра могут быть перезаписаны, а ожидаемые файлы могут быть заменены. 
 
-Чтобы помочь в диагностике таких проблем, [Invoke-коммандиндесктоппаккаже](https://docs.microsoft.com/powershell/module/appx/invoke-commandindesktoppackage?view=win10-ps) — это командлет PowerShell, который можно использовать для запуска приложения в контейнере MSIX. Это позволяет пользователям запускать командную строку, редактор реестра, PowerShell в контейнере MSIX и просматривать объединенную файловую систему и Объединенный куст реестра. 
+Чтобы помочь в диагностике таких проблем, [Invoke-коммандиндесктоппаккаже](/powershell/module/appx/invoke-commandindesktoppackage?view=win10-ps) — это командлет PowerShell, который можно использовать для запуска приложения в контейнере MSIX. Это позволяет пользователям запускать командную строку, редактор реестра, PowerShell в контейнере MSIX и просматривать объединенную файловую систему и Объединенный куст реестра. 
 
  > [!IMPORTANT]
  > Командлет Invoke-Коммандиндесктоппаккаже требует, чтобы устройство было в режиме разработчика для сборок Windows 10, предшествовавших версии 18922.
@@ -33,7 +33,7 @@ ms.locfileid: "73328912"
 Invoke-CommandInDesktopPackage -AppId "AppPackage1" -PackageFamilyName "Contoso.AppPackage1_8h66172c634n0" -Command "cmd.exe" -PreventBreakaway
 ```
 
-Приведенная выше команда запустит экземпляр Cmd. exe в контейнере пакета *contoso. AppPackage1_8h66172c634n0* . При запуске командной строки в контейнере можно просмотреть файловую систему и просмотреть объединенные файлы. 
+Приведенная выше команда запустит экземпляр cmd.exe в контейнере пакета *contoso. AppPackage1_8h66172c634n0* . При запуске командной строки в контейнере можно просмотреть файловую систему и просмотреть объединенные файлы. 
 
 ## <a name="view-the-merged-registry-hive"></a>Просмотр Объединенного куста реестра
 
@@ -49,4 +49,4 @@ Invoke-CommandInDesktopPackage -AppId "AppPackage1" -PackageFamilyName "Contoso.
  > Используйте флаг "-Превентбреакавай" при использовании командлета Invoke-Коммандиндесктоппаккаже, если хотите запускать последующие процессы в том же контейнере. В противном случае все последующие запуски будут прерываться в контейнере. 
 
  >[!NOTE]
- > В контейнере могут быть запущены не все приложения. Например, Explorer. exe будет изменять контейнер.
+ > В контейнере могут быть запущены не все приложения. Например, explorer.exe будет изменять контейнер.
