@@ -5,12 +5,12 @@ ms.date: 07/29/2019
 ms.topic: article
 keywords: Windows 10 S, UWP, MSIX
 ms.localizationpriority: medium
-ms.openlocfilehash: 11989302e0c5c1d69623aaffafec59d06db5353b
-ms.sourcegitcommit: f6bb9ced4cce853ae6acd3a359cbbb5e2e3f7187
+ms.openlocfilehash: 4cceecd65452b96eed96692095947a7e17c6418e
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85441671"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89089872"
 ---
 # <a name="test-your-windows-app-for-windows-10-in-s-mode"></a>Тестирование приложения для Windows 10 в S-режиме
 
@@ -49,7 +49,7 @@ ms.locfileid: "85441671"
 Этот режим безопасен и не помешает запуску системы.
 
 #### <a name="optional-find-specific-failure-points-in-the-call-stack"></a>(Необязательно) Поиск конкретных точек сбоя в стеке вызовов
-Чтобы найти в стеке вызовов конкретные точки, в которых возникают блокирующие проблемы, добавьте этот раздел реестра, а затем [настройте среду отладки в режиме ядра](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-#span-idsetupakernel-modedebuggingspanspan-idsetupakernel-modedebuggingspanspan-idsetupakernel-modedebuggingspanset-up-a-kernel-mode-debugging).
+Чтобы найти в стеке вызовов конкретные точки, в которых возникают блокирующие проблемы, добавьте этот раздел реестра, а затем [настройте среду отладки в режиме ядра](/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-#span-idsetupakernel-modedebuggingspanspan-idsetupakernel-modedebuggingspanspan-idsetupakernel-modedebuggingspanset-up-a-kernel-mode-debugging).
 
 |Клавиши|Название|Type|Применение|
 |--|---|--|--|
@@ -87,8 +87,8 @@ ms.locfileid: "85441671"
 
 **Просмотрите подробную запись в блоге, размещенную нашей группой консультантов по приложениям**
 
-См. [Перенос и тестирование классических приложений на Windows 10 S с помощью моста для классических приложений](https://blogs.msdn.microsoft.com/appconsult/2017/06/15/porting-and-testing-your-classic-desktop-applications-on-windows-10-s-with-the-desktop-bridge/).
+См. [Перенос и тестирование классических приложений на Windows 10 S с помощью моста для классических приложений](/archive/blogs/appconsult/porting-and-testing-your-classic-desktop-applications-on-windows-10-s-with-the-desktop-bridge).
 
 **Узнайте о средствах, которые упрощают тестирование для Windows в режиме S**
 
-См. [Распаковка, изменение, перепаковка и подписание APPX](https://blogs.msdn.microsoft.com/appconsult/2017/08/07/unpack-modify-repack-sign-appx/).
+См. [Распаковка, изменение, перепаковка и подписание APPX](/archive/blogs/appconsult/unpack-modify-repack-sign-appx).

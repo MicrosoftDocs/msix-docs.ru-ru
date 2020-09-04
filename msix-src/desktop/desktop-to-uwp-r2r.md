@@ -1,16 +1,16 @@
 ---
-Description: В этом руководстве объясняется, как настроить решение Visual Studio для оптимизации двоичных файлов приложения с помощью собственных образов.
+description: В этом руководстве объясняется, как настроить решение Visual Studio для оптимизации двоичных файлов приложения с помощью собственных образов.
 title: Оптимизация классических приложений .NET с помощью собственных образов
 ms.date: 07/29/2019
 ms.topic: article
 keywords: windows 10, uwp, msix, компилятор собственных образов
 ms.localizationpriority: medium
-ms.openlocfilehash: ebc2c7351fef0856d83529e55ba4ebf012aaaeed
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: c4f0bfda14c6d14b75da0478366196cbaf14ca16
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77073094"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090042"
 ---
 # <a name="optimize-your-net-desktop-apps-with-native-images"></a>Оптимизация классических приложений .NET с помощью собственных образов
 
@@ -91,7 +91,7 @@ Native image compilation can be triggered on non-release builds by setting the p
 
 **Вопрос. Как отправить отзыв или сообщить о возникающих проблемах?**
 
-А) Сообщайте о проблемах с помощью средства обратной связи в Visual Studio 2017. См. [дополнительные сведения](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+А) Сообщайте о проблемах с помощью средства обратной связи в Visual Studio 2017. См. [дополнительные сведения](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
 
 **Вопрос. Как влияет добавление собственного образа в существующие двоичные файлы?**
 

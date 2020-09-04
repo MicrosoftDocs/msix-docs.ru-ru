@@ -5,12 +5,12 @@ ms.date: 02/06/2020
 ms.topic: article
 keywords: windows 10, msix, uwp, расширения
 ms.localizationpriority: medium
-ms.openlocfilehash: 126fa9b8f897e543d0418ea39d35cd088f0aeace
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 4cf0edb1ae5a8c9e9c180fcec2922bbf60ccbfb5
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77073880"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090132"
 ---
 # <a name="using-custom-properties-for-app-extensions"></a>Использование настраиваемых свойств для расширений приложений
 
@@ -60,7 +60,7 @@ ms.locfileid: "77073880"
 </uap3:Properties>
 ```
 
-Чтобы получить эти данные во время выполнения, в расширениях приложения достаточно вызвать [GetExtensionPropertiesAsync()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.appextensions.appextension.getextensionpropertiesasync).
+Чтобы получить эти данные во время выполнения, в расширениях приложения достаточно вызвать [GetExtensionPropertiesAsync()](/uwp/api/windows.applicationmodel.appextensions.appextension.getextensionpropertiesasync).
 
 ```csharp
 string extensionVersion = "Unknown";

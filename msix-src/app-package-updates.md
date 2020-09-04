@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, app package, app update, msix, appx
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 56db11754c5f9db0480abf0ec249b97486b3e614
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 5d088f60103543e998b4499977fc273f80f97a69
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "73328283"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090192"
 ---
 # <a name="app-package-updates"></a>Обновления пакетов приложений
 
@@ -55,7 +55,7 @@ ms.locfileid: "73328283"
 Семейство пакетов состоит из имени и издателя пакета. Для выполнения обновления новые метаданные пакета должны быть такими же, как у ранее установленного пакета. 
 
 #### <a name="app-updates-must-increment-to-a-higher-version"></a>Обновления приложения должны иметь больший номер версии
-Как правило, чтобы обновить приложение, обычно требуется, чтобы у новой версии пакета был больший номер, чем у текущей. При обновлении приложения по умолчанию нельзя устанавливать пакеты более ранних версий. Начиная с Windows 10, версия 1809, вы можете использовать ForceUpdateToAnyVersion, чтобы устанавливать пакеты более ранних версий, если параметр переопределения предоставляется как часть аргументов обновления. В настоящее время он доступен в PowerShell при использовании параметра [ForceUpdateFromAnyVersion](https://docs.microsoft.com/powershell/module/appx/add-appxpackage?view=win10-ps), [API PackageManager](https://docs.microsoft.com/uwp/api/windows.management.deployment.deploymentoptions), [поставщика служб конфигурации EnterpriseModernAppManagement](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) и [файла AppInstaller](https://docs.microsoft.com/windows/msix/app-installer/update-settings).  
+Как правило, чтобы обновить приложение, обычно требуется, чтобы у новой версии пакета был больший номер, чем у текущей. При обновлении приложения по умолчанию нельзя устанавливать пакеты более ранних версий. Начиная с Windows 10, версия 1809, вы можете использовать ForceUpdateToAnyVersion, чтобы устанавливать пакеты более ранних версий, если параметр переопределения предоставляется как часть аргументов обновления. В настоящее время он доступен в PowerShell при использовании параметра [ForceUpdateFromAnyVersion](/powershell/module/appx/add-appxpackage?view=win10-ps), [API PackageManager](/uwp/api/windows.management.deployment.deploymentoptions), [поставщика служб конфигурации EnterpriseModernAppManagement](/windows/client-management/mdm/enterprisemodernappmanagement-csp) и [файла AppInstaller](./app-installer/update-settings.md).  
 
 > [!NOTE]
 > Если вы используете ForceUpdateToAnyVersion для приложения из Microsoft Store, то Центр обновления Windows автоматически выполнит обновление до последней применимой версии.
@@ -73,5 +73,3 @@ ms.locfileid: "73328283"
 - Храните небольшие файлы в пакете. Так вы сможете гарантировать, что при изменении не будут затронуты все файлы, а обновление не будет большим.
 - По возможности сделайте изменения для файлов добавочными, чтобы устройства пользователей скачивали только измененные блоки.
 - Постарайтесь поместить изменения для файлов в блоки, размером 64 КБ. Если в приложении есть большие файлы и вам нужно внести изменение в середину файла, будет значительно эффективнее поместить изменения в набор блоков.
- 
-

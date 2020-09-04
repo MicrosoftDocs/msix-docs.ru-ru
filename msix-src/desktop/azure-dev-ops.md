@@ -1,17 +1,17 @@
 ---
-Description: С помощью Azure Pipelines можно создавать автоматизированные сборки для проекта MSIX.
+description: С помощью Azure Pipelines можно создавать автоматизированные сборки для проекта MSIX.
 title: Настройка конвейера CI/CD для автоматизации сборок MSIX и их развертывания
 ms.date: 01/27/2020
 ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 21b5f8f78a12f1942ca3f723f0c0b8052c44062e
-ms.sourcegitcommit: e3a06eccd3322053b8b498cb6343fb6f711a7a0b
+ms.openlocfilehash: 79b8e7472685f63104a8d5e1066a316a970ab8aa
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84724588"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090632"
 ---
 # <a name="set-up-a-cicd-pipeline-to-automate-your-msix-builds-and-deployments"></a>Настройка конвейера CI/CD для автоматизации сборок MSIX и их развертывания
 
@@ -19,9 +19,9 @@ ms.locfileid: "84724588"
 
 ## <a name="create-a-new-azure-pipeline"></a>Создание конвейера Azure
 
-[Зарегистрируйтесь в Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-sign-up), если вы этого еще не сделали.
+[Зарегистрируйтесь в Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-sign-up), если вы этого еще не сделали.
 
-Затем создайте конвейер, который можно использовать для сборки исходного кода. Учебник по созданию конвейера для создания репозитория GitHub см. в статье [Create your first pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml) (Создание первого конвейера). Предложение Azure Pipelines поддерживает типы репозиториев, перечисленные [в этой статье](https://docs.microsoft.com/azure/devops/pipelines/repos).
+Затем создайте конвейер, который можно использовать для сборки исходного кода. Учебник по созданию конвейера для создания репозитория GitHub см. в статье [Create your first pipeline](/azure/devops/pipelines/get-started-yaml) (Создание первого конвейера). Предложение Azure Pipelines поддерживает типы репозиториев, перечисленные [в этой статье](/azure/devops/pipelines/repos).
 
 Чтобы настроить фактический конвейер сборки, перейдите на портал Azure DevOps по адресу dev.azure.com/\<organization\> и создайте проект. Если у вас нет учетной записи, ее можно создать бесплатно. После входа и создания проекта можно отправить исходный код в репозиторий GIT, который будет настроен по адресу https://\<organization\>@dev.azure.com/<организация\>/\<project\>/_git/\<project\>, или использовать любой другой поставщик, например GitHub. Вы можете выбрать расположение для своего репозитория при создании конвейера на портале. Для этого нажмите кнопку **Конвейеры**, а затем щелкните элемент **Создать конвейер**.
 
@@ -30,7 +30,7 @@ ms.locfileid: "84724588"
 ## <a name="add-your-project-certificate-to-the-secure-files-library"></a>Добавление сертификата проекта в библиотеку защищенных файлов
 
 > [!NOTE]
->Не следует отправлять сертификаты в репозиторий, если это возможно. По умолчанию GIT игнорирует их. Для управления безопасной обработкой конфиденциальных файлов, таких как сертификаты, Azure DevOps поддерживает функцию [защищенных файлов](https://docs.microsoft.com/azure/devops/pipelines/library/secure-files?view=azure-devops).
+>Не следует отправлять сертификаты в репозиторий, если это возможно. По умолчанию GIT игнорирует их. Для управления безопасной обработкой конфиденциальных файлов, таких как сертификаты, Azure DevOps поддерживает функцию [защищенных файлов](/azure/devops/pipelines/library/secure-files?view=azure-devops).
 
 Чтобы отправить сертификат для автоматизированной сборки, выполните следующие действия.
 
@@ -38,10 +38,10 @@ ms.locfileid: "84724588"
 2. Перейдите на вкладку **Защищенные файлы** и щелкните **+ Secure file** (+ Защищенный файл).
 3. Перейдите к файлу сертификата и нажмите кнопку **ОК**.
 4. После отправки сертификата выберите его и просмотрите его свойства. В разделе **Разрешения конвейера** включите переключатель **Авторизовать использование во всех конвейерах**.
-5. Если у закрытого ключа в сертификате есть пароль, рекомендуется сохранить пароль в [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/about-keys-secrets-and-certificates), а затем связать пароль с [группой переменных](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups). Для доступа к паролю из конвейера можно использовать переменную. Обратите внимание, что пароль поддерживается только для закрытого ключа. Использование файла сертификата, защищенного паролем, сейчас не поддерживается.
+5. Если у закрытого ключа в сертификате есть пароль, рекомендуется сохранить пароль в [Azure Key Vault](/azure/key-vault/about-keys-secrets-and-certificates), а затем связать пароль с [группой переменных](/azure/devops/pipelines/library/variable-groups). Для доступа к паролю из конвейера можно использовать переменную. Обратите внимание, что пароль поддерживается только для закрытого ключа. Использование файла сертификата, защищенного паролем, сейчас не поддерживается.
 
 > [!NOTE]
-> Начиная с Visual Studio 2019, временный сертификат больше не создается в проектах MSIX. Чтобы создать или экспортировать сертификаты, используйте командлеты PowerShell, описанные в [этой статье](/windows/msix/package/create-certificate-package-signing).
+> Начиная с Visual Studio 2019, временный сертификат больше не создается в проектах MSIX. Чтобы создать или экспортировать сертификаты, используйте командлеты PowerShell, описанные в [этой статье](../package/create-certificate-package-signing.md).
 
 
 ## <a name="configure-the-build-in-your-yaml-file"></a>Настройка сборки в файле YAML
@@ -59,7 +59,7 @@ ms.locfileid: "84724588"
 | AppxPackageSigningEnabled | верно | Включает подписывание пакетов. |
 | PackageCertificateThumbprint | Отпечаток сертификата | Это значение **должно** соответствовать отпечатку в сертификате для подписи, или строка должна быть пустой. |
 | PackageCertificateKeyFile | Путь | Путь к файлу сертификата. Это значение извлекается из метаданных защищенного файла. |
-| PackageCertificatePassword | Пароль | Пароль для закрытого ключа в сертификате. Рекомендуется сохранить пароль в [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/about-keys-secrets-and-certificates) и связать пароль с [группой переменных](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups). Можно передать переменную в этот аргумент. |
+| PackageCertificatePassword | Пароль | Пароль для закрытого ключа в сертификате. Рекомендуется сохранить пароль в [Azure Key Vault](/azure/key-vault/about-keys-secrets-and-certificates) и связать пароль с [группой переменных](/azure/devops/pipelines/library/variable-groups). Можно передать переменную в этот аргумент. |
 
 
 
@@ -164,7 +164,7 @@ steps:
 Параметры, определенные с использованием синтаксиса `$()` — это переменные, заданные в определении сборки, которые меняются в других системах сборки.
 
 
-Все предопределенные переменные см. в статье [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) (Предварительно заданные переменные сборки).
+Все предопределенные переменные см. в статье [Use predefined variables](/azure/devops/pipelines/build/variables) (Предварительно заданные переменные сборки).
 
 ## <a name="configure-the-publish-build-artifacts-task"></a>Настройка задачи публикации артефактов сборки
 
@@ -291,5 +291,3 @@ displayName: 'Modify URIs in App Installer File'
 ```
 
 Если вы настроили конвейер выпуска, который публикует содержимое папки сброса в интрасети или на любом другом веб-сайте, а веб-сервер поддерживает запросы байтового диапазона и правильно настроен, пользователи смогут использовать эту ссылку для прямой установки приложения без предварительного скачивания пакета MSIX.
-
-

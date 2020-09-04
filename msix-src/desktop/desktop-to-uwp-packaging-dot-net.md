@@ -1,17 +1,17 @@
 ---
-Description: В этом руководстве объясняется, как настроить решение Visual Studio для изменения, отладки и упаковки классических приложений.
+description: В этом руководстве объясняется, как настроить решение Visual Studio для изменения, отладки и упаковки классических приложений.
 title: Упаковка классического приложения с помощью исходного кода в Visual Studio
 ms.date: 02/02/2020
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: 807a99a7-d285-46e7-af6a-7214da908907
 ms.localizationpriority: medium
-ms.openlocfilehash: fcaca4943d3101600ef408b0e1d0349e2fc06f94
-ms.sourcegitcommit: e3a06eccd3322053b8b498cb6343fb6f711a7a0b
+ms.openlocfilehash: d609bfa787cd1e53dfe66a02566a9fd66b8db185
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84724558"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090122"
 ---
 # <a name="set-up-your-desktop-application-for-msix-packaging-in-visual-studio"></a>Настройка классического приложения для упаковки с помощью MSIX в Visual Studio
 
@@ -103,12 +103,12 @@ ms.locfileid: "84724558"
 
 **Call UWP APIs in desktop apps** (Вызов API UWP в классических приложениях)
 
-См. [Улучшение классического приложения для Windows 10](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-enhance)
+См. [Улучшение классического приложения для Windows 10](/windows/apps/desktop/modernize/desktop-to-uwp-enhance)
 
 **Улучшение классического приложения путем добавления проектов UWP и компоненты среды выполнения Windows**
 
-См. в статье [Extend your desktop app with modern UWP components](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-extend) (Улучшение классических приложений с помощью современных компонентов UWP).
+См. в статье [Extend your desktop app with modern UWP components](/windows/apps/desktop/modernize/desktop-to-uwp-extend) (Улучшение классических приложений с помощью современных компонентов UWP).
 
 **Распространение приложения**
 
-См. статью [Distribute your packaged desktop app](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-distribute) (Распространение упакованного классического приложения)
+См. статью [Distribute your packaged desktop app](/windows/apps/desktop/modernize/desktop-to-uwp-distribute) (Распространение упакованного классического приложения)

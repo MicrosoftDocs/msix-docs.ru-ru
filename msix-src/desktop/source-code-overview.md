@@ -7,12 +7,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: ce394fa310da995a59289bfb463d643bf2b46413
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 34308aefcd0417bc4461c69f3b3459b125a8bf8c
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77074090"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091222"
 ---
 # <a name="building-an-msix-package-from-your-code"></a>Сборка пакета MSIX из исходного кода 
 
@@ -36,16 +36,16 @@ ms.locfileid: "77074090"
 
 После упаковки приложения вы можете улучшить его с помощью таких функций, как живые плитки и push-уведомления. Некоторые из этих возможностей могут значительно повысить уровень вовлечения для вашего приложения, и они стоят того, чтобы потратить немного времени на их добавление. Для некоторых возможностей требуется добавить небольшой код.
 
-Дополнительные сведения см. в статье [Use UWP APIs in desktop applications](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-enhance) (Использование API UWP в классических приложениях).
+Дополнительные сведения см. в статье [Use UWP APIs in desktop applications](/windows/apps/desktop/modernize/desktop-to-uwp-enhance) (Использование API UWP в классических приложениях).
 
 ### <a name="integrate-with-package-extensions"></a>Интеграция с использованием расширений пакета
 
 Если ваше приложение должно интегрироваться с системой (например, для установки правил брандмауэра), опишите эти требования в манифесте пакета вашего приложения, а все остальное система сделает сама. Для большинства этих задач вам вообще не придется писать код. Используя небольшой объем разметки XML в манифесте, можно выполнять такие действия, как запуск процесса при входе пользователя в систему, интеграция приложения в проводник и добавление вашего приложения в список целевых объектов, которые отображаются в других приложениях.
 
-Дополнительные сведения см. в статье [Integrate your desktop application with package extensions](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-extensions) (Интеграция пакетных расширений в классическое приложение).
+Дополнительные сведения см. в статье [Integrate your desktop application with package extensions](/windows/apps/desktop/modernize/desktop-to-uwp-extensions) (Интеграция пакетных расширений в классическое приложение).
 
 ### <a name="extend-with-uwp-components"></a>Расширение возможностей с помощью компонентов UWP
 
-Некоторые возможности Windows 10, такие как страницы с подходящим для сенсорного ввода интерфейсом, должны выполняться внутри современного контейнера приложения. Как правило, сначала необходимо определить, можно ли добавить возможность путем [усовершенствования](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-enhance) существующего классического приложения с помощью API UWP. Если вам требуется использовать компонент UWP для достижения результата, можно добавить в решение проект UWP и использовать службы приложений для обмена данными между классическим приложением и компонентом UWP.
+Некоторые возможности Windows 10, такие как страницы с подходящим для сенсорного ввода интерфейсом, должны выполняться внутри современного контейнера приложения. Как правило, сначала необходимо определить, можно ли добавить возможность путем [усовершенствования](/windows/apps/desktop/modernize/desktop-to-uwp-enhance) существующего классического приложения с помощью API UWP. Если вам требуется использовать компонент UWP для достижения результата, можно добавить в решение проект UWP и использовать службы приложений для обмена данными между классическим приложением и компонентом UWP.
 
-Дополнительные сведения см. в статье [Extend your desktop app with modern UWP components](https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-extend) (Улучшение классических приложений с помощью компонентов UWP).
+Дополнительные сведения см. в статье [Extend your desktop app with modern UWP components](/windows/apps/desktop/modernize/desktop-to-uwp-extend) (Улучшение классических приложений с помощью компонентов UWP).

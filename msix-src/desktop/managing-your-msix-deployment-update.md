@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, развертывание, msix
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 893b67394b4ed996d4506a65b030205a1b8a9f3f
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 80258b0b63b16ed02ac12a0b103ac1a4c8949c8e
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77074120"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091242"
 ---
 # <a name="differential-updates-for-msix-app-packages"></a>Разностные обновления для пакетов приложений MSIX
 
@@ -47,5 +47,4 @@ ms.locfileid: "77074120"
 | -RetainFilesOnFailure | Если для этого параметра задано значение true, в случае сбоя развертывания файлы, созданные на целевом компьютере во время установки, не удаляются. |
 | -Update | Указывает, что добавляемый пакет является обновлением пакета зависимостей. Пакет зависимостей удаляется при удалении родительского приложения. Если этот параметр не указан, пакет не будет удален при удалении родительского приложения. |
 
-Полный список параметров, доступных для этого командлета, см. в статье для PowerShell [add-appxpackage](https://docs.microsoft.com/powershell/module/appx/add-appxpackage?view=win10-ps).
-
+Полный список параметров, доступных для этого командлета, см. в статье для PowerShell [add-appxpackage](/powershell/module/appx/add-appxpackage?view=win10-ps).

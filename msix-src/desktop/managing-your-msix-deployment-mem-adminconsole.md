@@ -1,17 +1,17 @@
 ---
-Description: Это руководство содержит инструкции по созданию и развертыванию приложения MSIX с помощью консоли администрирования Microsoft Endpoint Manager
+description: Это руководство содержит инструкции по созданию и развертыванию приложения MSIX с помощью консоли администрирования Microsoft Endpoint Manager
 title: Консоль администрирования Microsoft Endpoint Manager
 ms.date: 06/17/2019
 ms.topic: article
 keywords: Windows 10, UWP, MEM, MEM AC, консоль администрирования MEM, приложение
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: f0ed835c3eb94dda358fbf88fe587bcb44277af1
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 6073f787630751df88734f293b65e63a90bebc02
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77073920"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090522"
 ---
 # <a name="microsoft-endpoint-manager-admin-console"></a>Консоль администрирования Microsoft Endpoint Manager
 [Консоль администрирования Microsoft Endpoint Manager](https://devicemanagement.microsoft.com) можно использовать для развертывания пакета MSIX на клиентских устройствах. Чтобы развернуть приложение MSIX с помощью консоли администрирования Microsoft Endpoint Configuration Manager, вам потребуется само приложение MSIX для развертывания и группа Azure Active Directory в качестве целевого объекта для установки.
@@ -21,6 +21,6 @@ ms.locfileid: "77073920"
 
 |||
 |-----|------|
-| 1. Запись пакета MSIX из установщика или получение существующего приложения MSIX | [Создание пакета MSIX из классического установщика](../packaging-tool/create-app-package-msi-vm.md)  |
+| 1. Запись пакета MSIX из установщика или получение существующего приложения MSIX | [Создание пакета MSIX из классического установщика](../packaging-tool/create-app-package.md)  |
 | 2. Запуск консоли администрирования Microsoft Endpoint Manager | [Консоль администрирования Microsoft Endpoint Manager](https://devicemanagement.microsoft.com) |
-| 3. Создание и развертывание бизнес-приложения | [Создание бизнес-приложения](https://docs.microsoft.com/intune/apps/lob-apps-windows) |
+| 3. Создание и развертывание бизнес-приложения | [Создание бизнес-приложения](/intune/apps/lob-apps-windows) |

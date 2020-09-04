@@ -1,5 +1,5 @@
 ---
-Description: Процедура ручной упаковки классического приложения Windows (например, Win32, WPF и Windows Forms) для Windows 10.
+description: Процедура ручной упаковки классического приложения Windows (например, Win32, WPF и Windows Forms) для Windows 10.
 title: Упаковка приложения вручную (мост для классических приложений)
 ms.date: 07/29/2019
 ms.topic: article
@@ -7,12 +7,12 @@ keywords: windows 10, uwp, msix
 ms.assetid: e8c2a803-9803-47c5-b117-73c4af52c5b6
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 0345e15ad014afb9461eccc6ed112550a3c0c7a8
-ms.sourcegitcommit: e3a06eccd3322053b8b498cb6343fb6f711a7a0b
+ms.openlocfilehash: 0abfa56857bc417df1381ec56ef3627ac17b7e1c
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84724546"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090052"
 ---
 # <a name="generating-msix-package-components"></a>Создание компонентов пакета MSIX
 
@@ -80,7 +80,7 @@ ms.locfileid: "84724546"
 
 ### <a name="properties"></a>Свойства
 
-Элемент [Properties](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-properties) имеет три обязательных дочерних элемента. Вот пример узла **Properties** с замещающим текстом для элементов. **DisplayName** — это имя приложения, которое вы резервируете в Store для отправляемых в этот Store приложений.
+Элемент [Properties](/uwp/schemas/appxpackage/appxmanifestschema/element-properties) имеет три обязательных дочерних элемента. Вот пример узла **Properties** с замещающим текстом для элементов. **DisplayName** — это имя приложения, которое вы резервируете в Store для отправляемых в этот Store приложений.
 
 ```XML
 <Properties>
@@ -92,7 +92,7 @@ ms.locfileid: "84724546"
 
 ### <a name="resources"></a>Ресурсы
 
-Вот пример узла [Resources](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-resources).
+Вот пример узла [Resources](/uwp/schemas/appxpackage/appxmanifestschema/element-resources).
 
 ```XML
 <Resources>
@@ -135,7 +135,7 @@ ms.locfileid: "84724546"
 
 ### <a name="visual-elements"></a>Визуальные элементы
 
-Вот пример узла [VisualElements](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-visualelements).
+Вот пример узла [VisualElements](/uwp/schemas/appxpackage/appxmanifestschema/element-visualelements).
 
 ```XML
 <uap:VisualElements
@@ -149,7 +149,7 @@ ms.locfileid: "84724546"
 
 ## <a name="optional-add-target-based-unplated-assets"></a>Добавление специальных ресурсов без покрытия (необязательно)
 
-Специальные ресурсы предназначены для значков и плиток, которые отображаются на панели задач Windows, в представлении задач, в окне, вызываемом сочетанием клавиш ALT+TAB, в Snap Assist и в правом нижнем углу плиток начального экрана. Подробнее об этом см. [здесь](https://docs.microsoft.com/windows/uwp/design/style/app-icons-and-logos#unplated-assets).
+Специальные ресурсы предназначены для значков и плиток, которые отображаются на панели задач Windows, в представлении задач, в окне, вызываемом сочетанием клавиш ALT+TAB, в Snap Assist и в правом нижнем углу плиток начального экрана. Подробнее об этом см. [здесь](/windows/uwp/design/style/app-icons-and-logos#unplated-assets).
 
 1. Получите правильные изображения 44x44 и скопируйте их в папку с изображениями (например, "Ресурсы").
 
@@ -204,5 +204,3 @@ ms.locfileid: "84724546"
 
 > [!NOTE]
 > Упакованное приложение всегда выполняется от лица текущего пользователя, а диск, на который производится установка приложения, должен быть отформатирован в NTFS.
-
-

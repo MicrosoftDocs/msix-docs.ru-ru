@@ -7,18 +7,18 @@ ms.topic: article
 keywords: windows 10, uwp, app package, app update, msix, appx
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 0fe0a721368b10f68ba30665883e9070692dbb04
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: da35e755235f1dc22d51c52e54462e5765945e97
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76726594"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091212"
 ---
 # <a name="detect-package-identity-and-runtime-context"></a>Определение идентификатора пакета и контекста среды выполнения
 
 Возможно, у вас есть некоторые версии приложения, которые не были распространены в MSIX-пакете. Во время выполнения приложение можно определить, было ли оно развернуто как пакет MSIX с помощью API диспетчера пакетов Windows или собственного пользовательского установщика. Вам может потребоваться изменить поведение приложения, например параметры обновления, или воспользоваться преимуществами функций, доступных только для пакетов MSIX.
 
-Чтобы определить, запущено ли ваше приложение в виде MSIX-пакета на версии Windows, поддерживающей полный набор возможностей MSIX, можно использовать собственную функцию [GetCurrentPackageFullName](https://msdn.microsoft.com/library/windows/desktop/hh446599(v=vs.85).aspx) в kernel32.dll. Если классическое приложение выполняется как неупакованное приложение без удостоверения пакета, эта функция возвращает ошибку, которая может помочь определить контекст, в котором выполняется приложение.
+Чтобы определить, запущено ли ваше приложение в виде MSIX-пакета на версии Windows, поддерживающей полный набор возможностей MSIX, можно использовать собственную функцию [GetCurrentPackageFullName](/windows/win32/api/appmodel/nf-appmodel-getcurrentpackagefullname) в kernel32.dll. Если классическое приложение выполняется как неупакованное приложение без удостоверения пакета, эта функция возвращает ошибку, которая может помочь определить контекст, в котором выполняется приложение.
 
 Если функция выполнена, это означает:
 
@@ -27,7 +27,7 @@ ms.locfileid: "76726594"
 
 ## <a name="use-getcurrentpackagefullname-in-native-code"></a>Использование GetCurrentPackageFullName в машинном коде
 
-В следующем примере кода показано, как использовать [GetCurrentPackageFullName](https://msdn.microsoft.com/library/windows/desktop/hh446599(v=vs.85).aspx) для определения контекста приложения.
+В следующем примере кода показано, как использовать [GetCurrentPackageFullName](/windows/win32/api/appmodel/nf-appmodel-getcurrentpackagefullname) для определения контекста приложения.
 
 ```cpp
 #define _UNICODE 1
@@ -74,7 +74,7 @@ int __cdecl wmain()
 
 ## <a name="use-getcurrentpackagefullname-function-in-managed-code"></a>Использование функции GetCurrentPackageFullName в управляемом коде
 
-Чтобы вызвать [GetCurrentPackageFullName](https://msdn.microsoft.com/library/windows/desktop/hh446599(v=vs.85).aspx) в управляемом приложении .NET Framework, необходимо использовать [Вызов неуправляемого кода (P/Invoke)](https://docs.microsoft.com/dotnet/standard/native-interop/pinvoke) или другую форму взаимодействия.
+Чтобы вызвать [GetCurrentPackageFullName](/windows/win32/api/appmodel/nf-appmodel-getcurrentpackagefullname) в управляемом приложении .NET Framework, необходимо использовать [Вызов неуправляемого кода (P/Invoke)](/dotnet/standard/native-interop/pinvoke) или другую форму взаимодействия.
 
 Чтобы упростить этот процесс, можно использовать библиотеку [DesktopBridgeHelpers](https://github.com/qmatteoq/DesktopBridgeHelpers/). Эта библиотека поддерживает .NET Framework 4 и более поздних версий и использует P/Invoke внутри для предоставления вспомогательного класса, который определяет, выполняется ли приложение в версии Windows, поддерживающей полный набор функций MSIX. Эта библиотека также доступна в качестве [пакета NuGet](https://www.nuget.org/packages/DesktopBridge.Helpers/).
 

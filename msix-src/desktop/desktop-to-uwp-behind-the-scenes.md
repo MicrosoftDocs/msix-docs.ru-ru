@@ -1,17 +1,17 @@
 ---
-Description: В этой статье подробно рассматривается внутренняя работа моста для классических приложений.
+description: В этой статье подробно рассматривается внутренняя работа моста для классических приложений.
 title: Как работает Desktop Bridge
 ms.date: 01/30/2020
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.assetid: a399fae9-122c-46c4-a1dc-a1a241e5547a
 ms.localizationpriority: medium
-ms.openlocfilehash: c646f8c393c43a6aa01fc0cf594b269cef984433
-ms.sourcegitcommit: ccfd90b4a62144f45e002b3ce6a2618b07510c71
+ms.openlocfilehash: 6e7641f095ef7a74210c796d52f62c778d8b040d
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77072745"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090082"
 ---
 # <a name="understanding-how-packaged-desktop-apps-run-on-windows"></a>Основные сведения о работе упакованных классических приложений в Windows
 
@@ -58,7 +58,7 @@ ms.locfileid: "77072745"
 
 ### <a name="packaged-vfs-locations"></a>Расположения, соответствующие расположениям в каталоге VFS пакета
 
-В следующей таблице показано, где в системе для приложения создаются оверлеи файлов, поставляемых в составе пакета. Приложение будет считать, что эти файлы находятся в указанных системных расположениях, но на самом деле они будут находиться в перенаправленных расположениях внутри каталога *C:\Program Files\WindowsApps\имя_пакета\VFS*. Расположения FOLDERID происходят от констант [**KNOWNFOLDERID**](https://msdn.microsoft.com/library/windows/desktop/dd378457.aspx).
+В следующей таблице показано, где в системе для приложения создаются оверлеи файлов, поставляемых в составе пакета. Приложение будет считать, что эти файлы находятся в указанных системных расположениях, но на самом деле они будут находиться в перенаправленных расположениях внутри каталога *C:\Program Files\WindowsApps\имя_пакета\VFS*. Расположения FOLDERID происходят от констант [**KNOWNFOLDERID**](/windows/win32/shell/knownfolderid).
 
 Системное расположение | Перенаправленное расположение (в [Корневой каталог пакета]\VFS\) | Действительно для следующих архитектур
  :--- | :--- | :---

@@ -5,12 +5,12 @@ ms.date: 05/07/2020
 ms.topic: article
 keywords: Windows 10, MSIX, UWP, Azure Key Vault, Visual Studio
 ms.localizationpriority: medium
-ms.openlocfilehash: d7dec1116ddbb56d335a5734f360eb7cfffa41f6
-ms.sourcegitcommit: e3a06eccd3322053b8b498cb6343fb6f711a7a0b
+ms.openlocfilehash: ac69ae105dbd1fff5d64c20f50af644f9d27504f
+ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84740493"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89090432"
 ---
 # <a name="sign-packages-with-azure-key-vault"></a>Подписывание пакетов с помощью Azure Key Vault
 
@@ -22,7 +22,7 @@ ms.locfileid: "84740493"
 ## <a name="prerequisites"></a>Предварительные условия
 
 - Учетная запись Azure. Если у вас еще нет учетной записи, зарегистрируйте ее [здесь](https://azure.microsoft.com/free/).
-- Azure Key Vault. Дополнительные сведения см. в разделе [Создание хранилища](https://docs.microsoft.com/azure/key-vault/secrets/quick-create-portal#create-a-vault).
+- Azure Key Vault. Дополнительные сведения см. в разделе [Создание хранилища](/azure/key-vault/secrets/quick-create-portal#create-a-vault).
 - Действительный сертификат для подписывания пакета, импортированный в Azure Key Vault. Сертификат, который создается в Azure Key Vault по умолчанию, не подходит для этого. Дополнительные сведения см. в статье [Создание сертификата для подписывания пакета](../package/create-certificate-package-signing.md).
 
 ## <a name="import-a-certificate-to-your-key-vault"></a>Импорт сертификата в Key Vault
@@ -43,7 +43,7 @@ ms.locfileid: "84740493"
 
 ## <a name="configure-the-access-policies-for-your-key-vault"></a>Настройка политик доступа для Key Vault
 
-Вы можете управлять доступом к содержимому Key Vault с помощью **политик доступа**. Политики доступа Key Vault предоставляют разрешения отдельно для ключей, секретов и сертификатов. Вы можете предоставить пользователю доступ только к ключам, но не к секретам. Разрешения на доступ к ключам, секретам и сертификатам управляются на уровне хранилища. Дополнительные сведения см. в статье [Безопасность Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview-security#identity-and-access-management).
+Вы можете управлять доступом к содержимому Key Vault с помощью **политик доступа**. Политики доступа Key Vault предоставляют разрешения отдельно для ключей, секретов и сертификатов. Вы можете предоставить пользователю доступ только к ключам, но не к секретам. Разрешения на доступ к ключам, секретам и сертификатам управляются на уровне хранилища. Дополнительные сведения см. в статье [Безопасность Azure Key Vault](/azure/key-vault/general/overview-security#identity-and-access-management).
 
 > [!NOTE]
 > При создании Key Vault в подписке Azure решение автоматически связывается с клиентом Azure Active Directory этой подписки. Любому пользователю, пытающемуся управлять содержимым в Key Vault или извлекать его из Key Vault, следует пройти аутентификацию в Azure AD.
