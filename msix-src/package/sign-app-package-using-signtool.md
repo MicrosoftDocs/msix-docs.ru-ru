@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.assetid: 171f332d-2a54-4c68-8aa0-52975d975fb1
 ms.localizationpriority: medium
-ms.openlocfilehash: 5df8516441ab7acb8eea54afe6443f92c586c7a4
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: 58fa5477c8b1503a061e3c72a4342b25acc2387f
+ms.sourcegitcommit: cb145c63d700446e6aec1be8f9e6d2ae7481fb6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091052"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92011573"
 ---
 # <a name="sign-an-app-package-using-signtool"></a>Подписание пакета приложения с помощью SignTool
 
@@ -22,7 +22,7 @@ ms.locfileid: "89091052"
 
 Дополнительные сведения о подписи кода и сертификатах в целом см. в разделе [Знакомство с процессом подписания кода](/windows/desktop/SecCrypto/cryptography-tools).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - **Упакованное приложение**  
     Подробнее о ручном создании пакета приложения, [создания пакета приложения с помощью средства MakeAppx.exe](create-app-package-with-makeappx-tool.md).
@@ -105,6 +105,8 @@ SignTool sign /fd <Hash Algorithm> /sha1 <SHA1 hash> <File Path>.appx
 ```syntax
 SignTool sign /fd <Hash Algorithm> /sha1 <SHA1 hash> <File Path>.msix
 ```
+
+Дополнительные примеры см. [в разделе Использование средства SignTool для подписания файла](/windows/win32/seccrypto/using-signtool-to-sign-a-file) .
 
 Обратите внимание, что с некоторыми сертификатами пароль не используется. Если для вашего сертификата не требуется пароль, опустите параметр "/p &lt;Ваш пароль&gt;" в примерах команд.
 
