@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.assetid: 74c84eb6-4714-4e12-a658-09cb92b576e3
 ms.localizationpriority: medium
-ms.openlocfilehash: 16e9c5b24f213dfcde2555354b364a222b6c1947
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: 6a295086873813d888207214d1f8cefe3255949e
+ms.sourcegitcommit: cb145c63d700446e6aec1be8f9e6d2ae7481fb6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89090182"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92011599"
 ---
 # <a name="package-a-desktop-application-using-the-desktop-app-converter"></a>Упаковка классического приложения с помощью Desktop App Converter
 
@@ -279,7 +279,7 @@ DesktopAppConverter.exe -Installer C:\Installer\MyAppSetup.exe -InstallerArgumen
 |-ExpandedBaseImage &lt;строка&gt;  |Необязательный |Полный путь к уже развернутому базовому образу.|
 |-LogFile &lt;строка&gt;  |Необязательный |Определяет файл журнала. Если этот параметр пропущен, для файла журнала будет создано временное расположение. |
 | -Sign [&lt;параметр-переключатель&gt;] |Необязательный |Сообщает этому скрипту, что требуется подписать выходной пакет приложения для Windows, используя созданный сертификат для тестирования. Этот параметр следует использовать вместе с параметром ```-MakeAppx```. |
-|&lt;Общие параметры&gt; |Обязательный |Этот командлет поддерживает общие параметры: *Verbose*, *Debug*, *ErrorAction*, *ErrorVariable*, *WarningAction*, *WarningVariable*, *OutBuffer*, *PipelineVariable* и *OutVariable*. Дополнительные сведения см. в разделе [about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216). |
+|&lt;Общие параметры&gt; |Обязательный |Этот командлет поддерживает общие параметры: *Verbose*, *Debug*, *ErrorAction*, *ErrorVariable*, *WarningAction*, *WarningVariable*, *OutBuffer*, *PipelineVariable* и *OutVariable*. Дополнительные сведения см. в разделе [about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters). |
 | -Verify [&lt;параметр-переключатель&gt;] |Необязательный |Если указан этот переключатель, он передает DAC команду проверить пакет приложения на соответствие требованиям для упакованного приложения и Microsoft Store. Результат — отчет о проверке VerifyReport.xml, который лучше всего отображается в браузере. Этот параметр следует использовать вместе с параметром `-MakeAppx`. |
 |-PublishComRegistrations| Необязательный| Сканирует все общедоступные регистрации COM, выполненные вашим установщиком, и публикует в манифесте те из них, которые являются допустимыми. Используйте этот флаг, только если хотите, чтобы эти регистрации стали доступны для других приложений. Не указывайте этот флаг, если эти регистрации будут использоваться только вашим приложением. <br><br>Ознакомьтесь с [этой статьей](https://blogs.windows.com/buildingapps/2017/04/13/com-server-ole-document-support-desktop-bridge/#lDg5gSFxJ2TDlpC6.97), чтобы убедиться, что поведение ваших регистраций COM после упаковки приложения соответствует ожидаемому.
 
