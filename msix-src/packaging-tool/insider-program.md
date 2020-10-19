@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 7621f3de4f20cec8f120b6b6c2d6aba5c7407b59
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: 8f2c4ed6f42bd4e66ef008caa4be25df943deae5
+ms.sourcegitcommit: 79a5d5b901b123ec2590d3b9fb305f281a9bcc1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89090832"
+ms.lasthandoff: 10/18/2020
+ms.locfileid: "92169257"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -35,9 +35,10 @@ ms.locfileid: "89090832"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-## <a name="version-120208240"></a>Версия 1.2020.824.0
-- Добавлен отчет о службах в редактор пакетов.
-- Исправлены общие ошибки.
+## <a name="version-1202010060"></a>Версия 1.2020.1006.0
+- Добавлена поддержка [подписывания Device Guard версии 2](../package/signing-package-device-guard-signing.md). Если у вас возникнут вопросы, обратитесь в службу поддержки подписывания для Device Guard. DGSSMigration@microsoft.com
+- Добавлено исправление для Maxversiontested укажите установленную для обновления манифеста в актуальном состоянии.
+- Исправлена ошибка для сохранения значков в сочетаниях клавиш для преобразования App-V
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 

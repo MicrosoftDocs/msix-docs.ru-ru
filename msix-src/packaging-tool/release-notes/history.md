@@ -6,14 +6,19 @@ ms.topic: article
 keywords: Windows 10, UWP, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: e954eb6fec69a57b8ca9460a6aab860eae2cba70
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: c694256f43c91278ad7ffaa7917c3b43983d486f
+ms.sourcegitcommit: 79a5d5b901b123ec2590d3b9fb305f281a9bcc1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89090792"
+ms.lasthandoff: 10/18/2020
+ms.locfileid: "92169247"
 ---
 # <a name="release-notes-for-the-msix-packaging-tool"></a>Заметки о выпуске средства упаковки MSIX
+
+## <a name="version-1202010060"></a>Версия 1.2020.1006.0
+- Добавлена поддержка [подписывания Device Guard версии 2](../../package/signing-package-device-guard-signing.md). Если у вас возникнут вопросы, обратитесь в службу поддержки подписывания для Device Guard. DGSSMigration@microsoft.com
+- Добавлено исправление для Maxversiontested укажите установленную для обновления манифеста в актуальном состоянии.
+- Исправлена ошибка для сохранения значков в сочетаниях клавиш для преобразования App-V
 
 ## <a name="version-120208240"></a>Версия 1.2020.824.0
 - Добавлен отчет о службах в редактор пакетов.
