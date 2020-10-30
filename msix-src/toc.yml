@@ -45,13 +45,13 @@
     - name: Справочник по API и схемам
       items:
         - name: API диспетчера пакетов
-          href: /uwp/api/windows.management.deployment?context=%252fwindows%252fmsix%252frender
+          href: /uwp/api/windows.management.deployment?context=/windows/msix/render
         - name: Интерфейсы API для упаковки
-          href: /windows/desktop/appxpkg/interfaces?context=%252fwindows%252fmsix%252frender
+          href: /windows/desktop/appxpkg/interfaces?context=/windows/msix/render
         - name: Схема манифеста приложения
-          href: /uwp/schemas/appxpackage/appx-package-manifest?context=%252fwindows%252fmsix%252frender
+          href: /uwp/schemas/appxpackage/appx-package-manifest?context=/windows/msix/render
         - name: Схема файла Установщика приложений
-          href: /uwp/schemas/appinstallerschema/app-installer-file?context=%252fwindows%252fmsix%252frender
+          href: /uwp/schemas/appinstallerschema/app-installer-file?context=/windows/msix/render
     - name: Ресурсы MSIX
       href: resources.md
     - name: Циклы взаимодействия с клиентом
@@ -213,7 +213,7 @@
         - name: Обзор
           href: desktop/extend-overview.md
         - name: Расширения приложений
-          href: /windows/uwp/launch-resume/how-to-create-an-extension?context=%252fwindows%252fmsix%252frender
+          href: /windows/uwp/launch-resume/how-to-create-an-extension?context=/windows/msix/render
         - name: Настраиваемые свойства для расширений приложений
           href: desktop/custom-props-app-extensions.md
         - name: Дополнительные пакеты
@@ -279,7 +279,7 @@
         - name: Обзор
           href: desktop/managing-your-msix-deployment-retail.md
         - name: Microsoft Store
-          href: /windows/uwp/publish/?context=%252fwindows%252fmsix%252frender
+          href: /windows/uwp/publish/?context=/windows/msix/render
     - name: Обновления пакетов MSIX
       items:
         - name: Обзор
@@ -313,13 +313,13 @@
     - name: "Поддержка MSIX в Windows Server\_2019"
       href: msix-server-2019.md
     - name: Портал устройств Windows
-      href: /windows/uwp/debug-test-perf/device-portal?context=%252fwindows%252fmsix%252frender
+      href: /windows/uwp/debug-test-perf/device-portal?context=/windows/msix/render
     - name: Устранение неполадок во время выполнения в контейнере MSIX
       href: manage/troubleshoot-msix-container.md
     - name: Отладка и тестирование упакованного приложения
       items:
         - name: 'Устранение проблем с упаковкой и развертыванием приложений для Windows, а также с обращением к ним'
-          href: /windows/win32/appxpkg/troubleshooting?context=%252fwindows%252fmsix%252frender
+          href: /windows/win32/appxpkg/troubleshooting?context=/windows/msix/render
         - name: 'Запуск, отладка и тестирование упакованного классического приложения'
           href: desktop/desktop-to-uwp-debug.md
         - name: Определение идентификатора пакета и контекста среды выполнения
