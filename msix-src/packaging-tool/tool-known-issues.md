@@ -7,10 +7,10 @@ keywords: msix packaging tool, known issues, troubleshooting
 ms.localizationpriority: medium
 ms.custom: RS5
 ms.openlocfilehash: faa2183021235b32d59c1266f0098bbe1165bb6e
-ms.sourcegitcommit: 4ecff6f1386c6239cfd79ddf82265f4194302bbb
+ms.sourcegitcommit: 756699a3652540fca31b444179de38ebc23cb277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 11/02/2020
 ms.locfileid: "92686864"
 ---
 # <a name="known-issues-and-troubleshooting-tips-for-the-msix-packaging-tool"></a>Известные проблемы при работе со средством упаковки MSIX и советы по их устранению
