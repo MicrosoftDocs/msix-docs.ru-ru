@@ -5,19 +5,17 @@ ms.date: 10/26/2020
 ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: af2f8984cc44c67ce2671e0cc910adc75db3daa5
-ms.sourcegitcommit: 4ecff6f1386c6239cfd79ddf82265f4194302bbb
+ms.openlocfilehash: 687d2c0ab59b8a02c0c08f1f7bade7c1301666be
+ms.sourcegitcommit: b907ca46c847bfff6278fdcf2af84efb6e23c3e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92686841"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93191508"
 ---
 # <a name="sign-an-msix-package-with-device-guard-signing"></a>Подписывание пакета MSIX с помощью подписи Device Guard
 
 > [!IMPORTANT]
 > Теперь доступна [Служба подписывания Device Guard версии 2](https://docs.microsoft.com/microsoft-store/device-guard-signing-portal) . Как было объявлено ранее, у вас будет до конца декабря 2020 переходить на ДГСС v2. В конце декабря 2020 года существующие веб-механизмы для текущей версии службы DGSS будут удалены и больше не будут доступны для использования. Прежде чем Декабрь 2020, необходимо создать план для перехода на новую версию службы. Для получения дополнительных сведений свяжитесь с DGSSMigration@Microsoft.com. 
-
-
 
 [Подписывание Device Guard](/microsoft-store/device-guard-signing-portal) — это функция Device Guard, доступная в Microsoft Store для бизнеса и образовательных учреждений. Она позволяет компаниям гарантировать, что каждое приложение поступает из надежного источника. Начиная с Windows 10 Insider Preview Build 18945 можно использовать средство SignTool в Windows SDK для подписи приложений MSIX с подписыванием Device Guard. Эта поддержка позволяет легко включить вход в пакет MSIX для создания и подписи рабочих процессов.
 
@@ -100,12 +98,20 @@ function GetToken()
 > [!NOTE]
 > Мы выполним команду, которая сохраняет файл JSON для последующего использования.
 
+## <a name="obtain-the-device-guard-signing-version-2-dll"></a>Получение библиотеки DLL для подписания Device Guard версии 2
+Чтобы подписать подписывание Device Guard версии 2, получите **Microsoft.Acs.Dlib.dll** , загрузив [пакет NuGet](https://www.nuget.org/packages/Microsoft.Acs.Dgss.Client/) , который будет использоваться для подписания пакета. Это также необходимо для получения корневого сертификата. 
+
 ## <a name="sign-your-package"></a>Подписать пакет
 
 После получения маркера доступа Azure AD вы можете использовать средство SignTool для подписания пакета с помощью подписи Device Guard. Дополнительные сведения об использовании средства SignTool для подписания пакетов см. в статье [Подписывание пакета приложения с помощью средства SignTool](/windows/uwp/packaging/sign-app-package-using-signtool?context=%252fwindows%252fmsix%252frender#prerequisites).
 
-В следующем примере командной строки показано, как подписать пакет с помощью подписи Device Guard.
+В следующем примере командной строки показано, как подписать пакет с помощью подписывания Device Guard версии 2.
 
+```cmd
+signtool sign /fd sha256 /dlib Microsoft.Acs.Dlib.dll /dmdf <Azure AAD in .json format> /t <timestamp-service-url> <your .msix package>
+```
+
+В следующем примере командной строки показано, как подписать с помощью подписывания Device Guard версии 1. Обратите внимание, что это будет считаться устаревшим до окончания декабря 2020.
 ```cmd
 signtool sign /fd sha256 /dlib DgssLib.dll /dmdf <Azure AAD in .json format> /t <timestamp-service-url> <your .msix package>
 ```
@@ -123,7 +129,10 @@ signtool sign /fd sha256 /dlib DgssLib.dll /dmdf <Azure AAD in .json format> /t 
 Get-RootCertificate
 ```
 
-Установите корневой сертификат в **список доверенных корневых центров сертификации** на устройстве. Установите новое подписанное приложение, чтобы убедиться, что приложение успешно подписано с помощью подписи Device Guard.
+Установите корневой сертификат в **список доверенных корневых центров сертификации** на устройстве. Установите новое подписанное приложение, чтобы убедиться, что приложение успешно подписано с помощью подписи Device Guard. 
+
+> [!NOTE]
+> Рекомендуется использовать политику CI для дальнейшей изоляции. Обязательно ознакомьтесь с документацией по readme_cmdlets и переносом из DGSSv1 в документацию по DGSSv2, которая включена в пакет NuGet. 
 
 ## <a name="common-errors"></a>Распространенные ошибки
 
