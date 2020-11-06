@@ -7,12 +7,12 @@ author: dianmsft
 keywords: Windows 10, Windows 7, Windows 8, Windows Server, UWP, msix, мсикскоре, 1709, 1703, 1607, 1511, 1507
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 55ff75fffb4c6c512c857a4b727e764471889c12
-ms.sourcegitcommit: 53b064a0e56e526728545575e404512440dde761
+ms.openlocfilehash: d7ad0bf345bdfa8fe3aa3ef0cb02060f48d9bb1e
+ms.sourcegitcommit: d6f8b07e60cfd87dfac46a9b7f679e731a56a740
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "84221687"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413669"
 ---
 # <a name="msix-resources"></a>Ресурсы MSIX
 
@@ -47,6 +47,15 @@ ms.locfileid: "84221687"
 :::row-end:::
 :::row:::
     :::column:::
+        <h3>MSIX на предприятии</h3>
+        <p>Платформа MSIX продолжает расти и адаптироваться к потребностям клиентов. Давайте посмотрим, что нового в прошлом году для платформы MSIX и что это значит для вашего предприятия.  Мы также рассмотрим планы, предстоящие для платформы MSIX.</p>
+    :::column-end:::
+    :::column:::
+        <iframe src="https://www.youtube.com/embed/orh87lo6VKY" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
         <h3>MSIX App Attach на Виртуальном рабочем столе Windows</h3>
         <p>Узнайте, как с помощью MSIX реализовать динамическую доставку приложений в виртуальных средах, таких как Виртуальный рабочий стол Windows.</p>
     :::column-end:::
@@ -56,11 +65,11 @@ ms.locfileid: "84221687"
 :::row-end:::
 :::row:::
     :::column:::
-        <h3>Безопасность и развертывание приложений</h3>
-        <p>Узнайте, как улучшить распространение приложений.  Мы поговорим об использовании подписывания кода для улучшения подлинности приложения и усовершенствований, которые мы делаем для снижения трения разработчика.  Кроме того, мы подробно расскажем, как улучшить упаковку и развертывание приложения с помощью MSIX.  Мы рассмотрим преимущества, функции и перенос существующего приложения в MSIX.</p>
+        <h3>Использование MSIX с конвейерами CI/CD для изменения кода</h3>
+        <p>С помощью MSIX и Azure DevOps вы можете изменить код в репозитории, чтобы получить обновленный выпуск приложения на компьютерах пользователей за считанные минуты. Мы покажем, как использовать конвейеры CI/CD MSIX для автоматизации создания, упаковки и развертывания настольных приложений.</p>
     :::column-end:::
     :::column:::
-        <iframe src="https://www.youtube.com/embed/iju9KAAIUCM" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+        <iframe src="https://www.youtube.com/embed/MnDCaQNnZc0" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
     :::column-end:::
 :::row-end:::
 :::row:::
