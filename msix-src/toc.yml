@@ -190,8 +190,12 @@
           href: desktop/sign-with-akv-cert.md
         - name: Оптимизация двоичных файлов с помощью собственных образов
           href: desktop/desktop-to-uwp-r2r.md
-    - name: Конвейеры CI/CD для сборок MSIX
-      href: desktop/azure-dev-ops.md
+    - name: MSIX и конвейеры CI/CD
+      items:
+        - name: Конвейеры CI/CD для сборок MSIX
+          href: desktop/azure-dev-ops.md
+        - name: Расширение пакета MSIX
+          href: desktop/msix-packaging-extension.md
     - name: Упаковка из командной строки
       items:
         - name: Обзор
