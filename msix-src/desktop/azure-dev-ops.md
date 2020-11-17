@@ -6,16 +6,18 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 79b8e7472685f63104a8d5e1066a316a970ab8aa
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: 1f01d24a2ed6c7ea9b0e54760a5af883ab6c303b
+ms.sourcegitcommit: 0b5b7bfc2985f2b420f0ba9f2edb25c5843f8ce6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89090632"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94378974"
 ---
 # <a name="set-up-a-cicd-pipeline-to-automate-your-msix-builds-and-deployments"></a>Настройка конвейера CI/CD для автоматизации сборок MSIX и их развертывания
 
 С помощью Azure Pipelines можно создавать автоматизированные сборки для проекта MSIX. В этой статье рассматривается, как это сделать в Azure DevOps. Мы также покажем, как выполнить эти задачи с помощью командной строки, чтобы взаимодействовать с другими системами сборки.
+
+Если вы хотите использовать расширение Azure DevOps на основе пользовательского интерфейса для настройки конвейера, используйте расширение [*Упаковка MSIX*](msix-packaging-extension.md).
 
 ## <a name="create-a-new-azure-pipeline"></a>Создание конвейера Azure
 
