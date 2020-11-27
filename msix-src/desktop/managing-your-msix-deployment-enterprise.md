@@ -7,10 +7,10 @@ keywords: windows 10, развертывание, msix
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 0d0fba14c51b95149e77f553e5f2fe415d660d54
-ms.sourcegitcommit: cb145c63d700446e6aec1be8f9e6d2ae7481fb6b
+ms.sourcegitcommit: 0b5b7bfc2985f2b420f0ba9f2edb25c5843f8ce6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "92011541"
 ---
 #   <a name="msix-app-distribution"></a>Распространение приложений MSIX
