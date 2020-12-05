@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, msix
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: a33817b4fa45ab6eb447ebd00ab1934b396d7de1
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: 382577bc0f5f219295f38f9a7c118eb1eece59b6
+ms.sourcegitcommit: de0c711ce28851ef6976a71dd1317291f278b4d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89090932"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96612102"
 ---
 # <a name="bundle-msix-packages"></a>Объединение пакетов MSIX
 
@@ -41,7 +41,7 @@ ms.locfileid: "89090932"
 
 ## <a name="step-2-bundle-the-packages"></a>Шаг 2. Объединение пакетов
 
-Самый простой способ объединения пакетов с помощью MakeApp.exe — добавить все нужные пакеты в одну папку. В каталоге должны быть только пакеты, которые нужно объединить, и больше никаких лишних файлов.
+Самый простой способ объединения пакетов с помощью MakeApp.exe — добавить все нужные пакеты в одну папку. Каталог должен быть свободным от всех остальных, за исключением пакетов, которые должны быть объединены в пакеты.
 
 Переместите нужные пакеты приложений в один каталог, как показано на снимке экрана ниже.
 
