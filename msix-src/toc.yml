@@ -312,6 +312,8 @@
           href: msix-core/msixcore-troubleshoot.md
     - name: Проверка развертывания и устранение неполадок
       href: desktop\managing-your-msix-deployment-troubleshooting.md
+    - name: Сброс и восстановление приложений MSIX
+      href: desktop\managing-your-msix-reset-and-repair.md
 - name: Проверка пакета MSIX и устранение неполадок
   items:
     - name: "Поддержка MSIX в Windows Server\_2019"
