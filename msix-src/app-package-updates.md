@@ -1,17 +1,17 @@
 ---
 title: Обновления пакетов приложений
 description: Описывается, как оптимизированы пакеты MSIX, чтобы для обновления имеющегося приложения для Windows скачивались только измененные части приложения.
-ms.date: 09/10/2018
+ms.date: 11/30/2020
 ms.topic: article
-keywords: windows 10, uwp, app package, app update, msix, appx
+keywords: windows 10, uwp, пакет программы, обновление приложения, msix, appx, pfan, имя семейства пакетов
 ms.localizationpriority: medium
 ms.custom: RS5, seodec18
-ms.openlocfilehash: 5d088f60103543e998b4499977fc273f80f97a69
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: f5ba16e6cc691846735dcbc26f8695fc95fab294
+ms.sourcegitcommit: de0c711ce28851ef6976a71dd1317291f278b4d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89090192"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96612753"
 ---
 # <a name="app-package-updates"></a>Обновления пакетов приложений
 
@@ -52,7 +52,7 @@ ms.locfileid: "89090192"
 ## <a name="app-update-constraints"></a>Ограничения на обновление приложения
 
 #### <a name="updates-are-performed-within-the-same-package-family"></a>Обновления выполняются в том же семействе пакетов
-Семейство пакетов состоит из имени и издателя пакета. Для выполнения обновления новые метаданные пакета должны быть такими же, как у ранее установленного пакета. 
+Имя семейства пакетов состоит из имени и издателя пакета. Для выполнения обновления новые метаданные пакета должны быть такими же, как у ранее установленного пакета. Ниже представлен пример для имени семейства пакетов: `Contoso.ContosoApp_8wekyb3d8bbwe`.
 
 #### <a name="app-updates-must-increment-to-a-higher-version"></a>Обновления приложения должны иметь больший номер версии
 Как правило, чтобы обновить приложение, обычно требуется, чтобы у новой версии пакета был больший номер, чем у текущей. При обновлении приложения по умолчанию нельзя устанавливать пакеты более ранних версий. Начиная с Windows 10, версия 1809, вы можете использовать ForceUpdateToAnyVersion, чтобы устанавливать пакеты более ранних версий, если параметр переопределения предоставляется как часть аргументов обновления. В настоящее время он доступен в PowerShell при использовании параметра [ForceUpdateFromAnyVersion](/powershell/module/appx/add-appxpackage?view=win10-ps), [API PackageManager](/uwp/api/windows.management.deployment.deploymentoptions), [поставщика служб конфигурации EnterpriseModernAppManagement](/windows/client-management/mdm/enterprisemodernappmanagement-csp) и [файла AppInstaller](./app-installer/update-settings.md).  
