@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: c98a63b1118a79a8e9efb1c9761aa0b162f1d922
-ms.sourcegitcommit: 8359e46fdfb62d87c6aa85e3347048a9d7bd8fde
+ms.openlocfilehash: 129834b10303a76e350ef2b6c0088438001f192b
+ms.sourcegitcommit: 77e8b10706d4ad2fa97b2c71d82947528555398b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92346245"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97691699"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -19,7 +19,7 @@ ms.locfileid: "92346245"
 
 <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://aka.ms/MSIXPackagingPreviewProgram" data-linktype="external">Щелкните здесь, чтобы присоединиться</a></p></div>
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Windows 10, версия 1809 или более поздняя.
 - Допустимая учетная запись Майкрософт для доступа к приложению из Microsoft Store.
@@ -35,10 +35,10 @@ ms.locfileid: "92346245"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-## <a name="version-1202010060---public-release"></a>Версия 1.2020.1006.0 — общедоступный выпуск
-- Добавлена поддержка [подписывания Device Guard версии 2](../package/signing-package-device-guard-signing.md). Если у вас возникнут вопросы, обратитесь в службу поддержки подписывания для Device Guard. DGSSMigration@microsoft.com
-- Добавлено исправление для Maxversiontested укажите установленную для обновления манифеста в актуальном состоянии.
-- Исправлена ошибка для сохранения значков в сочетаниях клавиш для преобразования App-V
+## <a name="version-1202011300"></a>Версия 1.2020.1130.0
+- Исправлена проблема, при которой нажатие в той же строке в файлах пакета не привело к выделению элемента.
+- Улучшения UX для страницы "Выбор установщика"
+- Добавлять логотип по умолчанию для магазина, если он не извлекается из приложения
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
@@ -50,7 +50,7 @@ ms.locfileid: "92346245"
 
 **Центр отзывов** также позволяет обмениваться идеями и предложениями, связанными с новыми функциями, которые вы хотели бы видеть в приложении.  
 
-## <a name="faqs"></a>Часто задаваемые вопросы
+## <a name="faqs"></a>Частые вопросы
 
 1. Мне не пришло сообщение электронной почты с подтверждением моей регистрации в Программе предварительной оценки. 
     - Попробуйте [присоединиться к программе](https://aka.ms/MSIXPackagingPreviewProgram) еще раз.  

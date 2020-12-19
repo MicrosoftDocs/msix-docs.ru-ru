@@ -6,14 +6,22 @@ ms.topic: article
 keywords: Windows 10, UWP, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: f1cc2465c36b4bfd0db610ed85bfb7a73ad3b2cd
-ms.sourcegitcommit: 8359e46fdfb62d87c6aa85e3347048a9d7bd8fde
+ms.openlocfilehash: 5371305d2ae1b1b76e76236913393aab7fd4b241
+ms.sourcegitcommit: 77e8b10706d4ad2fa97b2c71d82947528555398b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92346228"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97691693"
 ---
 # <a name="release-notes-for-the-msix-packaging-tool"></a>Заметки о выпуске средства упаковки MSIX
+
+## <a name="version-1202011300"></a>Версия 1.2020.1130.0
+- Исправлена проблема, при которой нажатие в той же строке в файлах пакета не привело к выделению элемента.
+- Улучшения UX для страницы "Выбор установщика"
+  - Разрешить установку установщиков в указанном пути витаут, указав полный путь
+  - Отображение строки командной строки, используемой для выполнения выбранного установщика
+  - Расширение текстового поля аргументы установщика для длинных строк аргументов, чтобы их было проще просматривать и изменять.
+- Добавлять логотип по умолчанию для магазина, если он не извлекается из приложения
 
 ## <a name="version-1202010060---public-release"></a>Версия 1.2020.1006.0 — общедоступный выпуск
 - Добавлена поддержка [подписывания Device Guard версии 2](../../package/signing-package-device-guard-signing.md). Если у вас возникнут вопросы, обратитесь в службу поддержки подписывания для Device Guard. DGSSMigration@microsoft.com
