@@ -278,6 +278,8 @@
           href: app-installer/web-install-IIS.md
         - name: "Распространение приложения для Windows\_10 из веб-службы AWS"
           href: app-installer/web-install-aws.md
+    - name: Передача параметров установки в приложение с помощью Установщика приложений
+      href: app-installer/install-parameters.md
     - name: Распространение пакета MSIX в потребительской среде
       items:
         - name: Обзор
