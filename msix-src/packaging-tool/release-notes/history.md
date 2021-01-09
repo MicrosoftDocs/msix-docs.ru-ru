@@ -6,14 +6,17 @@ ms.topic: article
 keywords: Windows 10, UWP, msix, средство упаковки msix, программа предварительной оценки
 ms.localizationpriority: medium
 ms.custom: Vibranium
-ms.openlocfilehash: 5371305d2ae1b1b76e76236913393aab7fd4b241
-ms.sourcegitcommit: 77e8b10706d4ad2fa97b2c71d82947528555398b
+ms.openlocfilehash: 2a63cd0927216d71b5a8006b646a001817249c5c
+ms.sourcegitcommit: 3a9aae783331833bbf244091544c48848768137e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691693"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98041115"
 ---
 # <a name="release-notes-for-the-msix-packaging-tool"></a>Заметки о выпуске средства упаковки MSIX
+
+## <a name="version-1202012190"></a>Версия 1.2020.1219.0
+- Удалена поддержка подписи Device Guard версии 1. См. документацию по использованию [версии 2](../../package/signing-package-device-guard-signing.md). Если у вас возникнут вопросы, обратитесь в службу поддержки подписывания для Device Guard. DGSSMigration@microsoft.com
 
 ## <a name="version-1202011300"></a>Версия 1.2020.1130.0
 - Исправлена проблема, при которой нажатие в той же строке в файлах пакета не привело к выделению элемента.

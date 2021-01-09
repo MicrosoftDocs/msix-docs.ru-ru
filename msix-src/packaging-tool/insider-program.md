@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: 129834b10303a76e350ef2b6c0088438001f192b
-ms.sourcegitcommit: 77e8b10706d4ad2fa97b2c71d82947528555398b
+ms.openlocfilehash: ba38b2b58d667f6fefc29647fe9e8bb4d3ea0e00
+ms.sourcegitcommit: 3a9aae783331833bbf244091544c48848768137e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691699"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98041135"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -19,7 +19,7 @@ ms.locfileid: "97691699"
 
 <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://aka.ms/MSIXPackagingPreviewProgram" data-linktype="external">Щелкните здесь, чтобы присоединиться</a></p></div>
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Windows 10, версия 1809 или более поздняя.
 - Допустимая учетная запись Майкрософт для доступа к приложению из Microsoft Store.
@@ -35,10 +35,8 @@ ms.locfileid: "97691699"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-## <a name="version-1202011300"></a>Версия 1.2020.1130.0
-- Исправлена проблема, при которой нажатие в той же строке в файлах пакета не привело к выделению элемента.
-- Улучшения UX для страницы "Выбор установщика"
-- Добавлять логотип по умолчанию для магазина, если он не извлекается из приложения
+## <a name="version-1202012190"></a>Версия 1.2020.1219.0
+- Удалена поддержка подписи Device Guard версии 1. См. документацию по использованию [версии 2](../package/signing-package-device-guard-signing.md). Если у вас возникнут вопросы, обратитесь в службу поддержки подписывания для Device Guard. DGSSMigration@microsoft.com
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
@@ -50,7 +48,7 @@ ms.locfileid: "97691699"
 
 **Центр отзывов** также позволяет обмениваться идеями и предложениями, связанными с новыми функциями, которые вы хотели бы видеть в приложении.  
 
-## <a name="faqs"></a>Частые вопросы
+## <a name="faqs"></a>Часто задаваемые вопросы
 
 1. Мне не пришло сообщение электронной почты с подтверждением моей регистрации в Программе предварительной оценки. 
     - Попробуйте [присоединиться к программе](https://aka.ms/MSIXPackagingPreviewProgram) еще раз.  

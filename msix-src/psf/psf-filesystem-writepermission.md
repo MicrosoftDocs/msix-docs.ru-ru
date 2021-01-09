@@ -1,22 +1,22 @@
 ---
-description: Содержит инструкции по применению исправления рабочего каталога среды выполнения с помощью платформы поддержки пакетов.
-title: Платформа поддержки пакетов — адресная привязка рабочего каталога
+description: Содержит рекомендации по применению исправлений разрешений записи файловой системы к платформе поддержки пакетов.
+title: Платформа поддержки пакетов — исправление разрешения записи файловой системы
 ms.date: 12/16/2020
 ms.topic: article
-keywords: Windows 10, UWP, ПСФ, платформа поддержки пакетов, Рабочий каталог, WorkingDirectory, msix
+keywords: Windows 10, UWP, ПСФ, платформа поддержки пакетов, файловая система, разрешение на запись, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 35204dd37847f4ab9aab96322e08bb68d8cf2e5a
+ms.openlocfilehash: 9ab3e24da14096c298f02c9c950c996814c918d5
 ms.sourcegitcommit: 3a9aae783331833bbf244091544c48848768137e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "98041186"
+ms.locfileid: "98043319"
 ---
-# <a name="package-support-framework---working-directory-fixup"></a>Платформа поддержки пакетов — адресная привязка рабочего каталога
+# <a name="package-support-framework---filesystem-write-permission-fixup"></a>Платформа поддержки пакетов — исправление разрешения записи файловой системы
 
 ## <a name="investigation"></a>Исследование
 
-Приложения Windows будут перенаправлять определенные каталоги, связанные с приложением, в папку контейнера приложений Windows. Если приложение создает вложенную папку ( `C:\Program Files\Vendor\subfolder` ) в составе установки и позже вызывает эту вложенную папку, не удается найти каталог, так как он не существует.
+Приложения Windows будут перенаправлять определенные каталоги, связанные с приложением, в папку контейнера приложений Windows. Если приложение пытается выполнить запись в контейнер приложения Windows, будет вызвана ошибка, и запись не будет выполнена. 
 
 С помощью платформы поддержки пакетов (ПСФ) для решения этой проблемы можно внести улучшения в пакет приложения Windows. Сначала необходимо задать сбой и пути к каталогам, запрашиваемые приложением.
 
@@ -49,17 +49,17 @@ ms.locfileid: "98041186"
 
 1. Проверьте результаты в мониторе процесса SysInternals, выполнив поиск ошибок, описанных в приведенной выше таблице.
 1. Если в результатах отображается результат **"имя не найдено"** , отображаются сведения **"требуемый доступ:..."** для конкретного приложения, предназначенного для каталога за пределами **"C:\Program филес\виндовсаппс \\ ... \\ "** (как показано на рисунке ниже), вы успешно определили сбой, связанный с рабочим каталогом, используйте статью [ПСФ support-FileSystem для получения]() инструкций по применению исправления ПСФ к приложению.
-:::image type="content" source="images/procmon-psfsampleapp-readfailure.png" alt-text="Отображает сообщение об ошибке, следящий в мониторе процессов SysInternals, для сбоя записи в каталог.":::
+:::image type="content" source="images/procmon-psfsampleapp-writefailure.png" alt-text="Отображает сообщение об ошибке, следящий в мониторе процессов SysInternals, для сбоя записи в каталог.":::
 
 ## <a name="resolution"></a>Решение
 
-Приложения Windows будут перенаправлять определенные каталоги, связанные с приложением, в папку контейнера приложений Windows. Если приложение создает вложенную папку ( `C:\Program Files\Vendor\subfolder` ) в составе установки и позже вызывает эту вложенную папку, не удается найти каталог, так как он не существует.
+Приложения Windows будут перенаправлять определенные каталоги, связанные с приложением, в папку контейнера приложений Windows. Если приложение пытается выполнить запись в контейнер приложения Windows, будет вызвана ошибка, и запись не будет выполнена. 
 
-Чтобы устранить проблему, связанную с тем, что приложение Windows ссылается на неверный рабочий каталог, необходимо выполнить следующие четыре шага:
+Чтобы устранить проблему, связанную с невозможностью записи приложения Windows в контейнер приложения Windows, необходимо выполнить следующие четыре шага:
 
 1. [Размещение приложения Windows в локальном каталоге](#stage-the-windows-app)
 1. [Создание Config.jsи вставка необходимых файлов ПСФ](#create-and-inject-required-psf-files)
-1. [Обновление файла AppxManifest приложения Windows](#update-appxmanifest) 
+1. [Обновление файла AppxManifest приложения Windows](#update-appxmanifest)
 1. [Переупаковка и Подписывание приложения Windows](#re-package-the-application)
 
 В приведенных выше шагах приведены инструкции по извлечению содержимого приложения Windows в локальный промежуточный каталог, внедрению файлов адресной привязки ПСФ в промежуточный каталог приложений Windows, настройке средства запуска приложений для указания на средство запуска ПСФ, а также настройке ПСФ config.jsв файле для перенаправления средства запуска ПСФ в приложение, в котором указан рабочий каталог.
@@ -128,13 +128,29 @@ ms.locfileid: "98041186"
         "applications": [
             {
                 "id": "",
-                "executable": "",
-                "workingDirectory": ""
+                "executable": ""
             }
         ],
         "processes": [
             {
-                "executable": ""
+                "executable": "",
+                "fixups": [
+                {
+                    "dll": "",
+                    "config": {
+                        "redirectedPaths": {
+                            "packageRelative": [
+                                {
+                                    "base": "",
+                                    "patterns": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
             }
         ]
     }
@@ -151,17 +167,24 @@ ms.locfileid: "98041186"
     </Applications>
     ```
 
-1. Скопируйте значение в поле **идентификатор** , расположенное в файле **AppxManifest.xml** , расположенном в, в `Package.Applications.Application` поле Application ID (идентификатор приложения) в файле **config.js** .
+1. Задайте `applications.id` для параметра *config.js* значение, совпадающее со значением, которое содержится в поле **Applications.Application.ID** файла *AppxManifest.xml* .
     :::image type="content" source="images/appxmanifest-application-id.png" alt-text="Image изогнутыми расположение идентификатора в файле AppxManifest.":::
 
-1. Скопируйте путь, относительный от пакета, из поля **исполняемый** файл, расположенного в файле **AppxManifest.xml** , расположенном в, в `Package.Applications.Application` поле **исполняемый** файл приложения в **config.js** .
+1. Задайте `applications.executable` значение в *config.js* , чтобы указать относительный путь к приложению, расположенному в поле **Applications.Application.Exeкутабле** файла *AppxManifest.xml* .
     :::image type="content" source="images/appxmanifest-application-executable.png" alt-text="Image изогнутыми расположение исполняемого файла в файле AppxManifest.":::
 
-1. Скопируйте связанный с пакетом родительский путь из поля **исполняемого** файла, расположенного в файле **AppxManifest.xml** , расположенном в, в `Package.Applications.Application` поле Application **WorkingDirectory** (приложения) в файле **config.js** .
+1. Задайте `applications.workingdirectory` значение в *config.js* , чтобы указать относительный путь к папке, найденный в поле **Applications.Application.Exeкутабле** файла *AppxManifest.xml* .
     :::image type="content" source="images/appxmanifest-application-workingdirectory.png" alt-text="Image изогнутыми расположение рабочего каталога в файле AppxManifest.":::
 
-1. Скопируйте имя исполняемого файла из поля **исполняемого** файла, расположенного в файле **AppxManifest.xml** , расположенном в, в `Package.Applications.Application` поле процессы **исполняемого** файла в **config.js** .
+1. Задайте `process.executable` значение в *config.js* , чтобы указать целевое имя файла (без пути и расширений), которое находится в поле **Applications.Application.Exeкутабле** файла *AppxManifest.xml* .
     :::image type="content" source="images/appxmanifest-application-processexecutable.png" alt-text="Image изогнутыми расположение исполняемого файла процесса в файле AppxManifest.":::
+
+1. Задайте `processes.fixups.dll` значение в *config.js* для, чтобы указать целевую **FileRedirectionFixup.dll** архитектуры. Если исправление предназначено для архитектуры x64, задайте значение **FileRedirectionFixup64.dll**. Если архитектура x86 или неизвестна, установите значение **FileRedirectionFixup86.dll**
+
+1. Задайте `processes.fixups.config.redirectedPaths.packageRelative.base` значение в *config.js* для параметра путь к папке относительно пакета, как указано в **Applications.Application.Exeкутабле** файла *AppxManifest.xml* .
+    :::image type="content" source="images/appxmanifest-application-workingdirectory.png" alt-text="Image изогнутыми расположение рабочего каталога в файле AppxManifest.":::
+
+1. Задайте `processes.fixups.config.redirectedPaths.packageRelative.patterns` значение в поле *config.js* для файла в соответствии с типом файла, создаваемого приложением. С помощью **". * \\ . log"** ПСФ перенаправляет записи для всех файлов журналов, которые находятся в каталоге, указанном в файле **processes.fixups.config. редиректедпасс. паккажерелативе. base** , а также в дочерних каталогах.
 
 1. Сохраните обновленный **config.jsв** файле.
     ```json
@@ -169,25 +192,42 @@ ms.locfileid: "98041186"
         "applications": [
             {
             "id": "PSFSample",
-            "executable": "VFS/ProgramFilesX64/PS Sample App/PSFSample.exe",
-            "workingDirectory": "VFS/ProgramFilesX64/PS Sample App/"
+            "executable": "VFS/ProgramFilesX64/PS Sample App/PSFSample.exe"
             }
         ],
         "processes": [
             {
-            "executable": "PSFSample"
+                "executable": "PSFSample",
+                "fixups": [
+                    {
+                        "dll": "FileRedirectionFixup64.dll",
+                        "config": {
+                            "redirectedPaths": {
+                                "packageRelative": [
+                                    {
+                                        "base": "VFS/ProgramFilesX64/PS Sample App/",
+                                        "patterns": [
+                                            ".*\\.log"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
             }
         ]
     }
     ```
 
-1. Скопируйте следующие три файла из платформы поддержки пакетов, основанной на исполняемой архитектуре приложения, в корневую папку промежуточного приложения Windows. Следующие файлы находятся в папке **.\микрософт.паккажесуппортфрамеворк. <Version> \bin**.
+1. Скопируйте следующие четыре файла из платформы поддержки пакетов, основанной на исполняемой архитектуре приложения, в корневую папку промежуточного приложения Windows. Следующие файлы находятся в папке **.\микрософт.паккажесуппортфрамеворк. <Version> \bin**.
 
-    | Приложение (x64) | Приложение (x86) | 
-    |-------------------|-------------------|
-    | PSFLauncher64.exe | PSFLauncher32.exe |
-    | PSFRuntime64.dll  | PSFRuntime32.dll  |
-    | PSFRunDll64.exe   | PSFRunDll32.exe   |
+    | Приложение (x64)          | Приложение (x86)          | 
+    |----------------------------|----------------------------|
+    | PSFLauncher64.exe          | PSFLauncher32.exe          |
+    | PSFRuntime64.dll           | PSFRuntime32.dll           |
+    | PSFRunDll64.exe            | PSFRunDll32.exe            |
+    | FileRedirectionFixup64.dll | FileRedirectionFixup64.dll |
 
 
 ### <a name="update-appxmanifest"></a>Обновление AppxManifest
