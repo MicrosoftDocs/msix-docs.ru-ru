@@ -142,18 +142,24 @@
               href: psf/package-support-framework-overview.md
             - name: Начало работы с платформой поддержки пакетов
               href: psf/package-support-framework.md
-            - name: Платформа поддержки пакетов текущего рабочего каталога
-              href: psf\psf-current-working-directory.md
-            - name: Запуск приложений с параметрами при помощи PSF
-              href: psf\psf-launch-apps-with-parameters.md
-            - name: Применение платформы поддержки пакетов в Visual Studio
-              href: psf\package-support-framework-vs.md
-            - name: Выполнение сценариев с помощью платформы поддержки пакетов
-              href: psf/run-scripts-with-package-support-framework.md
             - name: Создание привязки для платформы поддержки пакетов
               href: psf/create-package-support-framework.md
+            - name: Реализация PSF в пакете
+              items:
+                - name: Ошибка рабочего каталога приложения Windows
+                  href: psf\psf-current-working-directory.md
+                - name: Ошибка записи в каталог приложения Windows
+                  href: psf/psf-filesystem-writepermission.md
+                - name: Требование к параметру средства запуска для приложения Windows
+                  href: psf\psf-launch-apps-with-parameters.md
+                - name: Применение платформы поддержки пакетов в Visual Studio
+                  href: psf\package-support-framework-vs.md
+                - name: Выполнение сценариев с помощью платформы поддержки пакетов
+                  href: psf/run-scripts-with-package-support-framework.md
         - name: Объединение пакетов MSIX
           href: packaging-tool/bundle-msix-packages.md
+        - name: Группировка приложений в папке в меню "Пуск"
+          href: packaging-tool/create-start-group.md
     - name: Набор средств MSIX
       items:
         - name: Обзор
