@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, MSIX, MSIX Packaging Tool
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.openlocfilehash: ba38b2b58d667f6fefc29647fe9e8bb4d3ea0e00
-ms.sourcegitcommit: 3a9aae783331833bbf244091544c48848768137e
+ms.openlocfilehash: b55cb8b4622c3d72109129eca24d2d314437de9a
+ms.sourcegitcommit: 789ba344260b0afd46206f94954de3120aefb91e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98041135"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98177673"
 ---
 # <a name="msix-packaging-tool-insider-program"></a>Программа предварительной оценки средства упаковки MSIX
 
@@ -19,7 +19,7 @@ ms.locfileid: "98041135"
 
 <div class="nextstepaction"><p><a class="x-hidden-focus" href="https://aka.ms/MSIXPackagingPreviewProgram" data-linktype="external">Щелкните здесь, чтобы присоединиться</a></p></div>
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Windows 10, версия 1809 или более поздняя.
 - Допустимая учетная запись Майкрософт для доступа к приложению из Microsoft Store.
@@ -35,8 +35,10 @@ ms.locfileid: "98041135"
 
 ## <a name="current-insider-preview-build"></a>Текущая предварительная сборка Insider Preview
 
-## <a name="version-1202012190"></a>Версия 1.2020.1219.0
+### <a name="version-1202012190---public-version"></a>Версия 1.2020.1219.0 — общедоступная версия
 - Удалена поддержка подписи Device Guard версии 1. См. документацию по использованию [версии 2](../package/signing-package-device-guard-signing.md). Если у вас возникнут вопросы, обратитесь в службу поддержки подписывания для Device Guard. DGSSMigration@microsoft.com
+- Исправлена проблема, при которой нажатие в той же строке в файлах пакета не привело к выделению элемента.
+- Улучшения UX для страницы "Выбор установщика"
 
 См. [полный журнал заметок о выпуске средства упаковки MSIX](release-notes/history.md).
 
