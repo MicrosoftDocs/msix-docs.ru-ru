@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, развертывание, msix
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 0d0fba14c51b95149e77f553e5f2fe415d660d54
-ms.sourcegitcommit: 0b5b7bfc2985f2b420f0ba9f2edb25c5843f8ce6
+ms.openlocfilehash: 3d0ba4470183730f06553779491fbbf4bb180d21
+ms.sourcegitcommit: 3a9aae783331833bbf244091544c48848768137e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92011541"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98041105"
 ---
 #   <a name="msix-app-distribution"></a>Распространение приложений MSIX
 Формат упаковки MSIX можно предоставить на клиентские устройства, используя средства управления устройствами и приложениями, такие как Microsoft Intune и Microsoft Endpoint Configuration Manager. 

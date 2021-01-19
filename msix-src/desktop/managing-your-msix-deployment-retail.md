@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, развертывание, msix
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 284023d31ef249e515afb42a2675f28bdacf875f
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: 62dc7479a888aa94156612cff103271b65bb4323
+ms.sourcegitcommit: 3a9aae783331833bbf244091544c48848768137e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89090483"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98041145"
 ---
 # <a name="distribute-your-msix-in-a-consumer-environment"></a>Распространение пакета MSIX в потребительской среде
 
@@ -19,11 +19,11 @@ ms.locfileid: "89090483"
 
 ## <a name="microsoft-store"></a>Microsoft Store
 
-Платформа [Microsoft App Store](https://www.microsoft.com/store/apps/windows) может стать отличным способом для распространения приложений.  Она стала доступной для потребителей с момента запуска Windows 8 в конце 2012 г. Пользователи могут здесь просматривать, искать и скачивать приложения или игры для Windows.
+[Microsoft Store](https://www.microsoft.com/store/apps/windows) может стать отличной платформой для распространения вашего приложения.  Она стала доступной для потребителей с момента запуска Windows 8 в конце 2012 г. Пользователи могут здесь просматривать, искать и скачивать приложения или игры для Windows.
 
-Дополнительные сведения о платформе Microsoft App Store и ее возможностях см. [здесь](/windows/uwp/publish/). 
+Дополнительные сведения о платформе Microsoft Store и ее возможностях см. [здесь](/windows/uwp/publish/). 
 
-Чтобы приступить к публикации приложения на платформе Microsoft App Store и освоить ее, откройте [Центр партнеров](https://partner.microsoft.com/dashboard/home).
+Чтобы приступить к публикации приложения на платформе Microsoft Store и освоить ее, откройте [Центр партнеров](https://partner.microsoft.com/dashboard/home).
 
 ## <a name="app-center"></a>Центр приложений
 
