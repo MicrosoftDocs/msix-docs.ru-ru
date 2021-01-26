@@ -198,10 +198,12 @@
           href: desktop/desktop-to-uwp-r2r.md
     - name: MSIX и конвейеры CI/CD
       items:
-        - name: Конвейеры CI/CD для сборок MSIX
-          href: desktop/azure-dev-ops.md
+        - name: Обзор
+          href: desktop/cicd-overview.md
         - name: Расширение пакета MSIX
           href: desktop/msix-packaging-extension.md
+        - name: Настройка конвейера CI/CD с помощью файла YAML
+          href: desktop/azure-dev-ops.md
     - name: Упаковка из командной строки
       items:
         - name: Обзор
