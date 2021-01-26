@@ -5,12 +5,12 @@ ms.date: 12/16/2020
 ms.topic: article
 keywords: Windows 10, UWP, ПСФ, платформа поддержки пакетов, файловая система, разрешение на запись, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 9ab3e24da14096c298f02c9c950c996814c918d5
-ms.sourcegitcommit: 3a9aae783331833bbf244091544c48848768137e
+ms.openlocfilehash: 577dd4d1f7d68bdf8a7be0bd69732373f97faf36
+ms.sourcegitcommit: 059f215a0804adeeefeaaa09b376684caa4382eb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98043319"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98768864"
 ---
 # <a name="package-support-framework---filesystem-write-permission-fixup"></a>Платформа поддержки пакетов — исправление разрешения записи файловой системы
 
@@ -24,7 +24,7 @@ ms.locfileid: "98043319"
 
 Фильтрация результатов — это необязательный шаг, позволяющий упростить просмотр ошибок, связанных с приложениями. Для этого будут созданы два правила фильтрации. Первый фильтр включения для имени процесса приложения, второй — включение всех неудачных результатов.
 
-1. Скачайте и извлеките [Монитор процессов Sysinternals](https://docs.microsoft.com/sysinternals/downloads/procmon) в каталог **к:\псф\процессмонитор** .
+1. Скачайте и извлеките [Монитор процессов Sysinternals](/sysinternals/downloads/procmon) в каталог **к:\псф\процессмонитор** .
 1. Откройте проводник Windows и перейдите к папке извлеченных мониторов процессов SysInternals
 1. Дважды щелкните файл "монитор процессов SysInternals" (procmon.exe), чтобы запустить приложение.
 1. При появлении запроса UAC нажмите кнопку **Да** .
@@ -74,7 +74,7 @@ ms.locfileid: "98043319"
 Ниже приведены пошаговые инструкции по скачиванию и установке необходимых средств.
 
 1. Скачайте последнюю версию [средства клиента NuGet](https://www.nuget.org/downloads)(не для предварительного просмотра) и сохраните **nuget.exe** в `C:\PSF\nuget` папке.
-1. Скачайте платформу поддержки пакетов с помощью [NuGet](https://docs.microsoft.com/nuget/install-nuget-client-tools#nugetexe-cli) , выполнив следующую команду в окне администрирования PowerShell:
+1. Скачайте платформу поддержки пакетов с помощью [NuGet](/nuget/install-nuget-client-tools#nugetexe-cli) , выполнив следующую команду в окне администрирования PowerShell:
     ```PowerShell
     Set-Location "C:\PSF"
     .\nuget\nuget.exe install Microsoft.PackageSupportFramework

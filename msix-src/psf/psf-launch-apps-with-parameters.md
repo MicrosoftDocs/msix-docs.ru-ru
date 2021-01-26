@@ -5,12 +5,12 @@ ms.date: 12/16/2020
 ms.topic: article
 keywords: Windows 10, UWP, ПСФ, платформа поддержки пакетов, аргументы, средство запуска приложений, параметры, ярлык, msix
 ms.localizationpriority: medium
-ms.openlocfilehash: b0a82a00d578d23297341f39d03bf783cb3ca443
-ms.sourcegitcommit: 3a9aae783331833bbf244091544c48848768137e
+ms.openlocfilehash: 4eaee3a4b514527500f715ec3390fbad136790c7
+ms.sourcegitcommit: 059f215a0804adeeefeaaa09b376684caa4382eb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98041253"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98768852"
 ---
 # <a name="launching-windows-app-with-parameters"></a>Запуск приложения Windows с параметрами
 
@@ -59,7 +59,7 @@ ms.locfileid: "98041253"
 Ниже приведены пошаговые инструкции по скачиванию и установке необходимых средств.
 
 1. Скачайте последнюю версию [средства клиента NuGet](https://www.nuget.org/downloads)(не для предварительного просмотра) и сохраните **nuget.exe** в `C:\PSF\nuget` папке.
-1. Скачайте платформу поддержки пакетов с помощью [NuGet](https://docs.microsoft.com/nuget/install-nuget-client-tools#nugetexe-cli) , выполнив следующую команду в окне администрирования PowerShell:
+1. Скачайте платформу поддержки пакетов с помощью [NuGet](/nuget/install-nuget-client-tools#nugetexe-cli) , выполнив следующую команду в окне администрирования PowerShell:
     ```PowerShell
     Set-Location "C:\PSF"
     .\nuget\nuget.exe install Microsoft.PackageSupportFramework
