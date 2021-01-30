@@ -6,12 +6,12 @@ ms.topic: article
 keywords: msix, расширение devops, упаковка, ci/cd, azure devops
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 53d63fec204fad166f8de4548f1ae401a5c1556a
-ms.sourcegitcommit: 0b5b7bfc2985f2b420f0ba9f2edb25c5843f8ce6
+ms.openlocfilehash: f4ddb293bcb25fc85c574f9108d399c83877715c
+ms.sourcegitcommit: 059f215a0804adeeefeaaa09b376684caa4382eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94384989"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98768887"
 ---
 # <a name="msix-packaging-extension"></a>Расширение "Упаковка MSIX"
 
@@ -67,7 +67,7 @@ ms.locfileid: "94384989"
 ![Задача сборки и упаковки](images/msix-packaging-ext/build-and-package.png)
 
 - **Display name** (Отображаемое имя) — имя задачи.
-- **Output Path** (Выходной путь) — выходной путь для пакета MSIX, который будет создан этой задачей. В пути в приведенном выше примере используется [предопределенная переменная](https://docs.microsoft.com/azure/devops/pipelines/build/variables) **Build.ArtifactStagingDirectory**, которая представляет локальный путь в агенте для хранения артефактов. Она используется здесь для хранения выходных файлов задач, которые позже могут быть опубликованы с помощью задачи публикации артефактов.
+- **Output Path** (Выходной путь) — выходной путь для пакета MSIX, который будет создан этой задачей. В пути в приведенном выше примере используется [предопределенная переменная](/azure/devops/pipelines/build/variables) **Build.ArtifactStagingDirectory**, которая представляет локальный путь в агенте для хранения артефактов. Она используется здесь для хранения выходных файлов задач, которые позже могут быть опубликованы с помощью задачи публикации артефактов.
 - **Build Solution with MSBuild** (Сборка решения с помощью MSBuild) — создание решения с помощью MSBuild для указанной целевой платформы. Не устанавливайте этот флажок, если у вас уже есть двоичные файлы, которые нужно упаковать. Если оставить флажок снятым, вам будет предложено указать путь к двоичным файлам.
 - **Project to Build** (Проект для сборки) — укажите путь к файлу проекта или решения, который необходимо создать.
 - **Clean before Building** (Очистить перед сборкой) — установите этот флажок, если требуется, чтобы задача выполняла чистую сборку перед сборкой.

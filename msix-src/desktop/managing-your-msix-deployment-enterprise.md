@@ -6,17 +6,17 @@ ms.topic: article
 keywords: windows 10, развертывание, msix
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 3d0ba4470183730f06553779491fbbf4bb180d21
-ms.sourcegitcommit: 3a9aae783331833bbf244091544c48848768137e
+ms.openlocfilehash: 383d87a6e9ae9050299a422fe47d552f00cb2669
+ms.sourcegitcommit: 059f215a0804adeeefeaaa09b376684caa4382eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98041105"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98768848"
 ---
 #   <a name="msix-app-distribution"></a>Распространение приложений MSIX
 Формат упаковки MSIX можно предоставить на клиентские устройства, используя средства управления устройствами и приложениями, такие как Microsoft Intune и Microsoft Endpoint Configuration Manager. 
 
-Упакованные приложения MSIX можно установить с помощью средств развертывания, PowerShell или [AppInstaller](https://www.microsoft.com/p/app-installer/9nblggh4nns1?ocid=9nblggh4nns1_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab). Используя AppInstaller для установки упакованного приложения MSIX, можно щелкнуть правой кнопкой мыши и выбрать пункт Install (Установить) или дважды щелкнуть установщик MSIX. При таком подходе появляется запрос с кнопкой **Install** (Установить), после нажатия которой запускается установка и отображается ее ход. При использовании доступных [командлетов PowerShell](https://docs.microsoft.com/windows/msix/desktop/powershell-msix-cmdlets) установка и удаление упакованного приложения MSIX выполняются автоматически.
+Упакованные приложения MSIX можно установить с помощью средств развертывания, PowerShell или [AppInstaller](https://www.microsoft.com/p/app-installer/9nblggh4nns1?ocid=9nblggh4nns1_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab). Используя AppInstaller для установки упакованного приложения MSIX, можно щелкнуть правой кнопкой мыши и выбрать пункт Install (Установить) или дважды щелкнуть установщик MSIX. При таком подходе появляется запрос с кнопкой **Install** (Установить), после нажатия которой запускается установка и отображается ее ход. При использовании доступных [командлетов PowerShell](./powershell-msix-cmdlets.md) установка и удаление упакованного приложения MSIX выполняются автоматически.
 
 ##  <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager 
 
