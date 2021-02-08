@@ -1,5 +1,5 @@
 ---
-Description: Обзор статей по созданию пакета MSIX из исходного кода
+description: Обзор статей по созданию пакета MSIX из исходного кода
 title: Обзор сборки пакета MSIX из исходного кода
 author: Huios
 ms.date: 02/03/2020
@@ -7,12 +7,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 34308aefcd0417bc4461c69f3b3459b125a8bf8c
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: 33a6589273bbb0e3fd7c9d0b61c35f69017a595c
+ms.sourcegitcommit: 9e844d74e1f6710c9068d8d92f87e1d9754339f1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091222"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99081554"
 ---
 # <a name="building-an-msix-package-from-your-code"></a>Сборка пакета MSIX из исходного кода 
 
@@ -22,7 +22,7 @@ ms.locfileid: "89091222"
 
 |Раздел| Описание |
 |:---|:---|
-|[What to know before packaging your desktop app](before-packaging-overview.md) (Информация, которую необходимо знать, прежде чем упаковывать классические приложения)| Общие сведения о поведении среды выполнения MSIX и требованиях упакованных классических приложений. Это полезно знать перед сборкой пакета MSIX для вашего классического приложения. Если вы создаете приложение UWP, этот раздел можно пропустить. | 
+|[What to know before packaging your desktop app](before-packaging-overview.md) (Информация, которую необходимо знать, прежде чем упаковывать классические приложения)| Общие сведения о требованиях MSIX и поведении среды выполнения упакованного приложения. Это полезно знать перед сборкой пакета MSIX для вашего классического приложения. Если вы создаете приложение UWP, этот раздел можно пропустить. | 
 |[Packaging a desktop or UWP app in Visual Studio](vs-package-overview.md) (Упаковка классического приложения или приложения UWP в Visual Studio)| В этом разделе описывается упаковка рабочего стола (Windows Forms, WPF, Win32 и т. д.) или приложения UWP в виде MSIX в Visual Studio.|
 |[Set up a CI/CD pipeline to automate your MSIX builds and deployments](azure-dev-ops.md) (Настройка конвейера CI/CD для автоматизации сборки и развертывания MSIX).| В этом разделе описывается, как автоматизировать процессы сборки и развертывания с помощью конвейеров CI/CD в Azure DevOps.|
 |[Packaging from the command line](../package/manual-packaging-root.md) (Упаковка из командной строки)| В этом разделе описано, как упаковать приложение в качестве MSIX с помощью средств командной строки.|

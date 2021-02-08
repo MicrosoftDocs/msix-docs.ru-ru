@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp, msix
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 6089aad8ce5b8dac1884f9a4ec74b4017ee1027b
-ms.sourcegitcommit: de0c711ce28851ef6976a71dd1317291f278b4d1
+ms.openlocfilehash: 215319b7edb2b4a8ce5a48bbeada745c1f61b18f
+ms.sourcegitcommit: 9e844d74e1f6710c9068d8d92f87e1d9754339f1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96612122"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99081613"
 ---
 # <a name="msix-partners"></a>Партнеры MSIX
 
@@ -24,6 +24,10 @@ ms.locfileid: "96612122"
 
 :::column:::
 [![Логотип Advanced Installer](images/AdvancedInstaller_Logo.png)](https://www.advancedinstaller.com/desktop-bridge)
+:::column-end:::
+
+:::column:::
+[![Логитип appCure](images/AppCure-WB.png)](https://www.appcure.io/)
 :::column-end:::
 
 :::column:::
@@ -67,9 +71,7 @@ ms.locfileid: "96612122"
 [![Логотип Rimo3](images/Rimo3_Logo.png)](https://rimo3.com/msix)
 :::column-end:::
 
-:::column:::
-[![Логотип SSH2](images/SSH2_Logo.png)](https://ssh2.xyz/)
-:::column-end:::
+
 
 :::row-end:::
 
