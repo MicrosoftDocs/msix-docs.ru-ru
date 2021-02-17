@@ -8,12 +8,12 @@ author: dianmsft
 ms.author: diahar
 keywords: Windows 10, msix, UWP, необязательные пакеты, связанный набор, расширение пакета, Visual Studio
 ms.localizationpriority: medium
-ms.openlocfilehash: c896edc6b2bc835bd6b37917675dbd466ec256ae
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: aee0817b2d9e56b6254e74dfe1a1d3a3dc722d12
+ms.sourcegitcommit: 1c4e671172104bba39eebd513d849cfbbb689539
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091092"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630865"
 ---
 # <a name="optional-packages-and-related-set-authoring"></a>Разработка дополнительных пакетов и связанных наборов
 
@@ -49,6 +49,9 @@ ms.locfileid: "89091092"
     ```XML
     <uap3:MainPackageDependency Name="[MainPackageDependency]"/>
     ```
+
+> [!NOTE]
+> Если вы хотите создать дополнительный пакет от другого издателя, необходимо будет указать издателя основного приложения, если они отличаются. Например, <uap4: Маинпаккажедепенденци Name = "Main_app" Publisher = "CN = contoso..."/>. Это не будет работать при публикации в хранилище.
 
 После настройки зависимостей пакета из шагов с 1 по 4 можно продолжить разработку, как обычно. Дополнительные сведения см. [в записи блога: создание первого необязательного пакета](/archive/blogs/appinstaller/build-your-first-optional-package).
 
