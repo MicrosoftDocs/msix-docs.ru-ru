@@ -326,23 +326,21 @@
       href: desktop\managing-your-msix-reset-and-repair.md
 - name: Проверка пакета MSIX и устранение неполадок
   items:
+    - name: 'Устранение проблем с упаковкой и развертыванием приложений для Windows, а также с обращением к ним'
+      href: /windows/win32/appxpkg/troubleshooting?context=/windows/msix/render
+    - name: Устранение неполадок во время выполнения в контейнере MSIX
+      href: manage/troubleshoot-msix-container.md
     - name: "Поддержка MSIX в Windows Server\_2019"
       href: msix-server-2019.md
     - name: Портал устройств Windows
       href: /windows/uwp/debug-test-perf/device-portal?context=/windows/msix/render
-    - name: Устранение неполадок во время выполнения в контейнере MSIX
-      href: manage/troubleshoot-msix-container.md
-    - name: Отладка и тестирование упакованного приложения
-      items:
-        - name: 'Устранение проблем с упаковкой и развертыванием приложений для Windows, а также с обращением к ним'
-          href: /windows/win32/appxpkg/troubleshooting?context=/windows/msix/render
-        - name: 'Запуск, отладка и тестирование упакованного классического приложения'
-          href: desktop/desktop-to-uwp-debug.md
-        - name: Определение идентификатора пакета и контекста среды выполнения
-          href: detect-package-identity.md
-        - name: Регистрация макета пакета из сетевой папки
-          href: desktop/register-from-network.md
-        - name: "Тестирование в Windows\_10\_S"
-          href: desktop/desktop-to-uwp-test-windows-s.md
-        - name: Известные проблемы с упаковкой MSIX
-          href: desktop/desktop-to-uwp-known-issues.md
+    - name: 'Запуск, отладка и тестирование упакованного классического приложения'
+      href: desktop/desktop-to-uwp-debug.md
+    - name: Определение идентификатора пакета и контекста среды выполнения
+      href: detect-package-identity.md
+    - name: Регистрация макета пакета из сетевой папки
+      href: desktop/register-from-network.md
+    - name: "Тестирование в Windows\_10\_S"
+      href: desktop/desktop-to-uwp-test-windows-s.md
+    - name: Известные проблемы с упаковкой MSIX
+      href: desktop/desktop-to-uwp-known-issues.md
