@@ -5,12 +5,12 @@ ms.date: 02/05/2020
 ms.topic: article
 keywords: msix
 ms.localizationpriority: medium
-ms.openlocfilehash: 7387efe58438fe6781fdfb1ad01b2a15087940e5
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: 9663ab9f43f0e9a36ca23cad2bce584a49dd0415
+ms.sourcegitcommit: f0d0dd5275990c50ca4a72a9c6a689ba604aba38
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89090862"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101841149"
 ---
 # <a name="using-the-msix-packaging-tool-in-a-disconnected-environment"></a>Использование средства упаковки MSIX в автономной среде
 
@@ -37,6 +37,7 @@ PS C:\> Add-AppxProvisionedPackage -Path C:\offline -PackagePath C:\MSIX\MyPacka
 
 - Скачайте файл FOD. cab для [Windows 10 версии 1809, x64](https://download.microsoft.com/download/8/4/3/8436215A-42DB-4FD2-966D-60D436D6EEFC/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~amd64~~.cab) или [Windows 10, версия 1809, x86](https://download.microsoft.com/download/9/9/4/9948d09d-af25-45a5-b01f-cc4bcf05f5bf/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~x86~~.cab)
 - Скачайте файл FOD. cab для [Windows 10, версия 1903, x64](https://download.microsoft.com/download/5/2/e/52ec35e9-3b50-47b2-879d-c815a93bc3fc/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~amd64~~.cab) или [Windows 10, версия 1903, Примечание x86](https://download.microsoft.com/download/2/c/3/2c3a78a2-4d64-426a-976d-dfe4805110cc/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~x86~~.cab) **. Это также будет работать для Windows 10, версия 1909**
+- Скачайте файл FOD. cab для [Windows 10 версии 2004, x64](https://download.microsoft.com/download/a/f/1/af16ad00-3b28-4c8a-9765-1e14a21e93d2/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~amd64~~.cab) или [Windows 10, версия 2004, x86](https://download.microsoft.com/download/e/5/7/e57f0cec-807b-403e-9ac8-abb2799d09e5/Msix-PackagingTool-Driver-Package~31bf3856ad364e35~x86~~.cab)
 - Полученные отдельно пакеты с компонентами по запросу можно установить с помощью [параметров командной строки системы DISM](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options). В окне PowerShell с повышенными привилегиями введите следующее: ```Dism /Online /add-package /packagepath:(path)```
 
 ИТ-администраторы также могут создать [параллельное хранилище компонентов (общую папку)](/windows-server/administration/server-manager/configure-features-on-demand-in-windows-server), чтобы обеспечить доступ к компоненту по запросу с драйвером средства упаковки MSIX. Подробные сведения можно найти внизу этой [записи блога](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Language-pack-acquisition-and-retention-for-enterprise-devices/ba-p/275404).
