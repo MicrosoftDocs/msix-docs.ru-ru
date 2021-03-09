@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 83a071db2d9ca15e044b2f0f01d45059cf19ed0e
-ms.sourcegitcommit: 9e844d74e1f6710c9068d8d92f87e1d9754339f1
+ms.openlocfilehash: 9143bcba76bd168d38b36d2c8bca2ff4fc89fb80
+ms.sourcegitcommit: f0d0dd5275990c50ca4a72a9c6a689ba604aba38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99081592"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101841167"
 ---
 # <a name="package-a-desktop-app-using-third-party-installers"></a>Упаковка классического приложения с помощью сторонних установщиков
 
@@ -172,3 +172,23 @@ InstallShield предоставляет единое решение для ра
 * RayQC: [https://raynet.de/Raynet-Products/RayQC](https://raynet.de/Raynet-Products/RayQC)
 * RayQC Advanced: [https://raynet.de/Raynet-Products/RayQCad](https://raynet.de/Raynet-Products/RayQCad)
 * Лицензия на бесплатную пробную версию: [https://raynet.de/contact?init=license](https://raynet.de/contact?init=license)
+
+## <a name="rimo3-cloud"></a>Rimo3 Cloud
+
+Rimo3 Cloud позволяет внедрять новые технологии в большом масштабе за счет интеллектуальной автоматизации. Благодаря этому вы можете не только создавать готовые к развертыванию пакеты MSIX, но и помогать клиентам принимать информированные, основанные на данных решения о том, какие приложения следует преобразовать и в каких средах эти приложения будут работать лучше всего.
+
+<img width="20%" src="images/Rimo3CLOUD-Logo-Colour-RGB.png" Alt-text="Logo of Rimo3 Cloud">
+
+При модернизации приложений с помощью Rimo3 Cloud задействуются возможности автоматизации и оркестрации, позволяющие не только выполнять пакетное тестирование и исправление приложений, а также их преобразование в готовые к развертыванию пакеты MSIX, но и: 
+
+* определять приложения, подходящие для преобразования; 
+* гарантировать работу приложений в целевой современной ОС перед их преобразованием; 
+* протестировать преобразованные приложения.
+
+Rimo3 Cloud позволяет практически полностью избавиться от выполняемых вручную действий, необходимых для преобразования технологий, будь то крупномасштабная трансформация всей среды или первоначальное изучение MSIX. 
+
+Ознакомьтесь с нашим 5-этапным [руководством](https://rimo3.com/rimo3cloud/?msix-guide) по быстрой модернизации приложений с помощью MSIX.
+
+Дополнительные сведения о модернизациии приложений с помощью Rimo3 Cloud и о том, что еще можно сделать с помощью интеллектуальной автоматизации в большом масштабе, см. на странице https://rimo3.com
+
+
