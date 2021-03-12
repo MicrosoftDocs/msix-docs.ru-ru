@@ -66,6 +66,8 @@
           href: customer/sap.md
         - name: Schneider Electric
           href: customer/schneider-electric.md
+        - name: Trend Micro
+          href: customer/trend-micro.md
     - name: Партнеры MSIX
       href: partners.md
     - name: SDK для MSIX
