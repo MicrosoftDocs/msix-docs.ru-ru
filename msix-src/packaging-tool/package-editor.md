@@ -6,12 +6,12 @@ ms.topic: article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: b71f94871b9cce020cf0a20f86c36ca32b0c0bf1
-ms.sourcegitcommit: 6b1ec6420dbaa327b65c208b4cd00da87985104b
+ms.openlocfilehash: bb4961f712b7186f92156b91a2e84079767f83b8
+ms.sourcegitcommit: 08c68ac2dd42098d734baeea215dfbdffda750a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89090882"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102782690"
 ---
 # <a name="edit-a-package-using-package-editor"></a>Изменение пакета с помощью редактора пакетов
 
@@ -29,15 +29,15 @@ ms.locfileid: "89090882"
 
 Можно переходить к другим разделам редактора пакетов, чтобы изменить возможности, виртуальный реестр или файлы пакета. Завершив редактирование пакета, обязательно подпишите его и обновите версию, прежде чем сохранять изменения.
 
-![packageeditorpkginfo1](images/PackageEditorPkgInfo1.png)
+![Пакет Едиторпкг Info1](images/PackageEditorPkgInfo1.png)
 
-![packageeditorpkginfo2](images/PackageEditorPkgInfo2.png)
+![Пакет Едиторпкг Info2](images/PackageEditorPkgInfo2.png)
 
 ## <a name="capabilities-page"></a>Страница возможностей
 
 На странице **возможности** можно добавить или удалить [возможности](/uwp/schemas/appxpackage/uapmanifestschema/element-capability) пакета. Если возможность есть в пакете, для нее будет установлен флажок. Если выбрать возможность или отменить ее выбор, манифест будет обновлен. Элемент <capability> в манифесте MSIX при этом будет соответствующим образом изменен.
 
-![Рис. 11](images/pic11.png)
+![Pic 11](images/pic11.png)
 
 ## <a name="virtual-registry-page"></a>Страница виртуального реестра
 
@@ -56,7 +56,7 @@ ms.locfileid: "89090882"
 - Add binary (Добавить двоичное значение) добавляет в раздел двоичное значение.
 - Add DWORD (Добавить DWORD) добавляет в раздел значение DWORD.
 
-![Рис. 12](images/pic12.png)
+![Pic 12](images/pic12.png)
 
 ## <a name="package-files-page"></a>Страница файлов пакета
 
@@ -75,4 +75,4 @@ ms.locfileid: "89090882"
 - Удалить: Удаление выбранного файла.
 - Переместить: переименовать или переместить файл в новое расположение.
 
-![Рис. 13](images/pic13.png)
+![Pic 13](images/pic13.png)
